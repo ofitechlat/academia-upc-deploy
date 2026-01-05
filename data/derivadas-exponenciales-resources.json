@@ -1,0 +1,218 @@
+{
+  "derivadas-exponenciales": {
+    "derivada-e-elevado-x": [
+      {
+        "title": "La función e^x y su derivada única",
+        "url": "https://www.youtube.com/watch?v=ejemplo-ex-derivada",
+        "type": "video",
+        "description": "Explicación de por qué e^x es su propia derivada. Deducción por límites y demostración geométrica."
+      },
+      {
+        "title": "¿Qué hace especial al número e?",
+        "url": "https://www.khanacademy.org/math/calculus/exponential-functions",
+        "type": "article",
+        "description": "Artículo sobre el número e ≈ 2.71828 y su importancia en cálculo. Definición como límite."
+      },
+      {
+        "title": "Demostración: d/dx[e^x] = e^x",
+        "url": "https://www.youtube.com/watch?v=ejemplo-demostracion-ex",
+        "type": "video",
+        "description": "Demostración rigurosa usando la definición de derivada por límite. Incluye el límite especial de e."
+      },
+      {
+        "title": "Ejercicios: Derivadas con e^x",
+        "url": "https://www.symbolab.com/practice/exponential-derivative",
+        "type": "practice",
+        "description": "Práctica con constantes, sumas y múltiplos de e^x. Soluciones paso a paso."
+      },
+      {
+        "title": "Propiedades de la función exponencial natural",
+        "url": "https://mathworld.wolfram.com/ExponentialFunction.html",
+        "type": "reference",
+        "description": "Referencia completa sobre e^x: propiedades, gráfica, derivadas sucesivas, integrales."
+      },
+      {
+        "title": "Derivadas de orden superior de e^x",
+        "url": "https://www.youtube.com/watch?v=ejemplo-derivadas-sucesivas",
+        "type": "video",
+        "description": "Todas las derivadas f^(n)(x) de e^x son e^x. Aplicaciones en ecuaciones diferenciales."
+      }
+    ],
+    "derivada-a-elevado-x": [
+      {
+        "title": "Derivada de a^x con base arbitraria",
+        "url": "https://www.youtube.com/watch?v=ejemplo-ax-derivada",
+        "type": "video",
+        "description": "Fórmula d/dx[a^x] = a^x·ln(a). Demostración usando cambio de base a exponencial natural."
+      },
+      {
+        "title": "El factor ln(a) en derivadas exponenciales",
+        "url": "https://www.khanacademy.org/math/calculus/exponential-general-base",
+        "type": "article",
+        "description": "Explicación de por qué aparece ln(a). Comparación entre diferentes bases (2, 10, e)."
+      },
+      {
+        "title": "Derivadas de 2^x, 10^x, y otras bases",
+        "url": "https://www.youtube.com/watch?v=ejemplo-bases-comunes",
+        "type": "video",
+        "description": "Ejemplos con bases comunes. Cálculo de ln(2), ln(10). Aplicaciones prácticas."
+      },
+      {
+        "title": "Convertir a^x a base e",
+        "url": "https://www.youtube.com/watch?v=ejemplo-cambio-base",
+        "type": "video",
+        "description": "Técnica: a^x = e^(x·ln(a)). Útil para derivar e integrar funciones exponenciales."
+      },
+      {
+        "title": "Ejercicios: d/dx[a^x] con diversas bases",
+        "url": "https://www.symbolab.com/practice/general-exponential",
+        "type": "practice",
+        "description": "Práctica con 2^x, 3^x, 10^x, (1/2)^x, π^x. Verificación de resultados."
+      },
+      {
+        "title": "Tabla de derivadas exponenciales",
+        "url": "https://www.mathsisfun.com/calculus/derivatives-rules.html",
+        "type": "reference",
+        "description": "Tabla de referencia: e^x, a^x, e^(kx), a^(kx). Fórmulas y ejemplos."
+      }
+    ],
+    "exponencial-regla-cadena": [
+      {
+        "title": "Regla de la cadena con exponenciales",
+        "url": "https://www.youtube.com/watch?v=ejemplo-cadena-exp",
+        "type": "video",
+        "description": "d/dx[e^(g(x))] = e^(g(x))·g'(x). Ejemplos: e^(3x), e^(x²), e^(sin(x))."
+      },
+      {
+        "title": "Derivadas de e^(kx) donde k es constante",
+        "url": "https://www.khanacademy.org/math/calculus/chain-rule-exponentials",
+        "type": "video",
+        "description": "Patrón: d/dx[e^(kx)] = k·e^(kx). Casos con k positivo y negativo."
+      },
+      {
+        "title": "Composiciones complejas: e^(x²), e^(sin(x))",
+        "url": "https://www.youtube.com/watch?v=ejemplo-composiciones",
+        "type": "video",
+        "description": "Derivar funciones exponenciales con funciones internas polinomiales, trigonométricas, etc."
+      },
+      {
+        "title": "Decrecimiento exponencial: e^(-x), e^(-kt)",
+        "url": "https://www.youtube.com/watch?v=ejemplo-decrecimiento",
+        "type": "video",
+        "description": "Derivadas con exponente negativo. Modelado de desintegración radioactiva y enfriamiento."
+      },
+      {
+        "title": "Ejercicios: Cadena con exponenciales",
+        "url": "https://www.symbolab.com/practice/chain-exponential",
+        "type": "practice",
+        "description": "Práctica con e^(f(x)) donde f(x) varía. Nivel básico a avanzado."
+      },
+      {
+        "title": "Derivadas de a^(g(x)) con cadena",
+        "url": "https://www.youtube.com/watch?v=ejemplo-ax-cadena",
+        "type": "video",
+        "description": "Combinar d/dx[a^x] = a^x·ln(a) con regla de la cadena. Ejemplo: 2^(x²)."
+      }
+    ],
+    "crecimiento-decrecimiento": [
+      {
+        "title": "Modelo de crecimiento exponencial P(t) = P₀e^(kt)",
+        "url": "https://www.youtube.com/watch?v=ejemplo-crecimiento",
+        "type": "video",
+        "description": "Interpretación de parámetros P₀, k, t. Ecuación diferencial dP/dt = kP."
+      },
+      {
+        "title": "Modelo de decrecimiento exponencial A(t) = A₀e^(-kt)",
+        "url": "https://www.youtube.com/watch?v=ejemplo-decaimiento",
+        "type": "video",
+        "description": "Aplicaciones: radioactividad, enfriamiento, eliminación de medicamentos. Vida media."
+      },
+      {
+        "title": "Tiempo de duplicación y vida media",
+        "url": "https://www.khanacademy.org/math/exponential-growth-decay",
+        "type": "article",
+        "description": "Fórmulas: t_duplicación = ln(2)/k, t_vida_media = ln(2)/k. Ejemplos con poblaciones y átomos."
+      },
+      {
+        "title": "Ecuación diferencial: dy/dt = ky",
+        "url": "https://www.youtube.com/watch?v=ejemplo-ec-diferencial",
+        "type": "video",
+        "description": "La solución general es y = Ce^(kt). Condiciones iniciales. Separación de variables."
+      },
+      {
+        "title": "Derivada de modelos exponenciales",
+        "url": "https://www.youtube.com/watch?v=ejemplo-derivada-modelos",
+        "type": "video",
+        "description": "Calcular tasas de cambio instantáneas. Interpretación de dP/dt, dN/dt."
+      },
+      {
+        "title": "Ejercicios: Crecimiento y decrecimiento",
+        "url": "https://www.symbolab.com/practice/exponential-models",
+        "type": "practice",
+        "description": "Problemas aplicados: bacterias, poblaciones, inversiones, radioactividad."
+      }
+    ],
+    "aplicaciones-exponenciales": [
+      {
+        "title": "Interés compuesto continuo: A = Pe^(rt)",
+        "url": "https://www.youtube.com/watch?v=ejemplo-interes-continuo",
+        "type": "video",
+        "description": "Fórmula del interés compuesto continuo. Comparación con composición discreta."
+      },
+      {
+        "title": "Crecimiento poblacional exponencial",
+        "url": "https://www.khanacademy.org/math/population-growth",
+        "type": "video",
+        "description": "Modelo maltusiano: P(t) = P₀e^(rt). Limitaciones del modelo (recursos infinitos)."
+      },
+      {
+        "title": "Decaimiento radioactivo",
+        "url": "https://www.youtube.com/watch?v=ejemplo-radioactividad",
+        "type": "video",
+        "description": "Ley de desintegración exponencial. Carbono-14 y datación. Vidas medias de isótopos."
+      },
+      {
+        "title": "Ley de enfriamiento de Newton",
+        "url": "https://www.youtube.com/watch?v=ejemplo-enfriamiento",
+        "type": "video",
+        "description": "T(t) = T_amb + (T₀ - T_amb)e^(-kt). Aplicaciones forenses (determinar hora de muerte)."
+      },
+      {
+        "title": "Farmacocinética: eliminación de medicamentos",
+        "url": "https://www.youtube.com/watch?v=ejemplo-farmacocinetica",
+        "type": "video",
+        "description": "Concentración de fármaco en sangre. Vida media de eliminación. Dosis múltiples."
+      },
+      {
+        "title": "Propagación de epidemias (modelo SIR simplificado)",
+        "url": "https://www.youtube.com/watch?v=ejemplo-epidemia",
+        "type": "video",
+        "description": "Fase exponencial inicial de contagio. Transición a modelo logístico."
+      },
+      {
+        "title": "Ejercicios aplicados de exponenciales",
+        "url": "https://www.symbolab.com/practice/exponential-applications",
+        "type": "practice",
+        "description": "Problemas del mundo real: finanzas, biología, física, química. Con derivadas."
+      },
+      {
+        "title": "Derivada del producto: x^n · e^x",
+        "url": "https://www.youtube.com/watch?v=ejemplo-producto-polinomio",
+        "type": "video",
+        "description": "Regla del producto con polinomios y exponenciales. Factorización de resultados."
+      },
+      {
+        "title": "Derivada del cociente: e^x/g(x), g(x)/e^x",
+        "url": "https://www.youtube.com/watch?v=ejemplo-cociente-exp",
+        "type": "video",
+        "description": "Regla del cociente con funciones exponenciales. Simplificación de fracciones."
+      },
+      {
+        "title": "Optimización con exponenciales",
+        "url": "https://www.youtube.com/watch?v=ejemplo-optimizacion-exp",
+        "type": "video",
+        "description": "Maximizar/minimizar funciones con e^x. Puntos críticos: f'(x) = 0."
+      }
+    ]
+  }
+}

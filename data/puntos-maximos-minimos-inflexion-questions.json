@@ -1,0 +1,441 @@
+{
+  "puntos-maximos-minimos-inflexion": [
+    {
+      "id": "ext-001",
+      "topic": "maximos-minimos",
+      "question": "¿Cuál es la condición necesaria para que x = c sea un punto crítico de f?",
+      "type": "multiple-choice",
+      "options": [
+        "f'(c) = 0 o f'(c) no existe",
+        "f'(c) = 0 y f''(c) > 0",
+        "f(c) = 0",
+        "f''(c) = 0"
+      ],
+      "correct": 0,
+      "difficulty": "facil",
+      "hints": [
+        "Un punto crítico es donde la derivada se anula o no existe",
+        "No todas las condiciones son necesarias, solo una de las dos",
+        "Piensa en los casos: vértice de parábola (f'=0) y cúspide (f' no existe)"
+      ],
+      "stepByStep": [
+        "📐 **Puntos Críticos**",
+        "",
+        "**Definición:**",
+        "Un punto c ∈ ℝ es un punto crítico de f si:",
+        "1. f'(c) = 0, o",
+        "2. f'(c) no existe",
+        "",
+        "**Tipos de puntos críticos:**",
+        "• Máximos relativos",
+        "• Mínimos relativos",
+        "• Puntos de silla (ni máximo ni mínimo)",
+        "",
+        "**Importante:**",
+        "No todos los puntos críticos son extremos relativos.",
+        "Ejemplo: f(x) = x³ tiene punto crítico en x=0 pero no es extremo."
+      ],
+      "explanation": "Un punto crítico ocurre donde la derivada se anula (f'(c) = 0) o donde la derivada no existe. Ambas condiciones son suficientes por separado, no se requieren ambas simultáneamente."
+    },
+    {
+      "id": "ext-002",
+      "topic": "maximos-minimos",
+      "question": "Usa el criterio de la segunda derivada para clasificar los puntos críticos de f(x) = x³ - 3x²",
+      "type": "multiple-choice",
+      "options": [
+        "Máximo en x = 0, Mínimo en x = 2",
+        "Mínimo en x = 0, Máximo en x = 2",
+        "Máximo en x = 2, Mínimo en x = 0",
+        "Ambos son puntos de silla"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Primero encuentra los puntos críticos resolviendo f'(x) = 0",
+        "Luego calcula la segunda derivada f''(x)",
+        "Aplica el criterio: f''(c) > 0 ⇒ mínimo, f''(c) < 0 ⇒ máximo"
+      ],
+      "stepByStep": [
+        "📐 **Criterio de la Segunda Derivada**",
+        "",
+        "**Paso 1:** Encontrar puntos críticos",
+        "f(x) = x³ - 3x²",
+        "f'(x) = 3x² - 6x = 3x(x - 2)",
+        "Puntos críticos: x = 0, x = 2",
+        "",
+        "**Paso 2:** Calcular segunda derivada",
+        "f''(x) = 6x - 6 = 6(x - 1)",
+        "",
+        "**Paso 3:** Evaluar en puntos críticos",
+        "• f''(0) = 6(0 - 1) = -6 < 0 ⇒ Máximo en x = 0",
+        "• f''(2) = 6(2 - 1) = 6 > 0 ⇒ Mínimo en x = 2",
+        "",
+        "**Paso 4:** Calcular valores extremos",
+        "• f(0) = 0³ - 3·0² = 0",
+        "• f(2) = 2³ - 3·2² = 8 - 12 = -4",
+        "",
+        "**Resultado:**",
+        "Máximo relativo en (0, 0)",
+        "Mínimo relativo en (2, -4)"
+      ],
+      "explanation": "Calculamos f'(x) = 3x² - 6x = 3x(x-2) para encontrar puntos críticos en x=0 y x=2. Luego f''(x) = 6x-6. Evaluando: f''(0) = -6 < 0 (máximo) y f''(2) = 6 > 0 (mínimo)."
+    },
+    {
+      "id": "ext-003",
+      "topic": "maximos-minimos",
+      "question": "Encuentra los extremos absolutos de f(x) = x³ - 6x² + 9x + 1 en el intervalo [0, 3]",
+      "type": "multiple-choice",
+      "options": [
+        "Mínimo absoluto: (0, 1), Máximo absoluto: (3, 1)",
+        "Mínimo absoluto: (3, 1), Máximo absoluto: (1, 5)",
+        "Mínimo absoluto: (0, 1), Máximo absoluto: (1, 5)",
+        "Mínimo absoluto: (2, 3), Máximo absoluto: (1, 5)"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Para extremos absolutos en intervalo cerrado, evalúa en puntos críticos y extremos del intervalo",
+        "Encuentra puntos críticos resolviendo f'(x) = 0",
+        "Compara los valores de f en todos los puntos candidatos"
+      ],
+      "stepByStep": [
+        "📐 **Extremos Absolutos en Intervalo Cerrado**",
+        "",
+        "**Teorema del Valor Extremo:**",
+        "Si f es continua en [a, b], entonces alcanza sus extremos absolutos en [a, b].",
+        "",
+        "**Procedimiento:**",
+        "1. Encontrar puntos críticos en (a, b)",
+        "2. Evaluar f en puntos críticos",
+        "3. Evaluar f en los extremos a y b",
+        "4. Comparar todos los valores",
+        "",
+        "**Aplicación:**",
+        "f(x) = x³ - 6x² + 9x + 1 en [0, 3]",
+        "",
+        "Paso 1: f'(x) = 3x² - 12x + 9 = 3(x² - 4x + 3) = 3(x-1)(x-3)",
+        "Puntos críticos: x = 1, x = 3",
+        "",
+        "Paso 2-4: Evaluar",
+        "• f(0) = 0³ - 6·0² + 9·0 + 1 = 1",
+        "• f(1) = 1³ - 6·1² + 9·1 + 1 = 5",
+        "• f(3) = 3³ - 6·3² + 9·3 + 1 = 1",
+        "",
+        "**Conclusión:**",
+        "Máximo absoluto: (1, 5)",
+        "Mínimo absoluto: (0, 1) y (3, 1)"
+      ],
+      "explanation": "Encontramos puntos críticos resolviendo f'(x) = 0, obteniendo x=1 y x=3. Evaluamos f en x=0, 1, 3: f(0)=1, f(1)=5, f(3)=1. El máximo absoluto es (1,5) y los mínimos absolutos son (0,1) y (3,1)."
+    },
+    {
+      "id": "ext-004",
+      "topic": "puntos-inflexion",
+      "question": "¿Cuál es la definición de punto de inflexión?",
+      "type": "multiple-choice",
+      "options": [
+        "Un punto donde la concavidad de la función cambia",
+        "Un punto donde la función tiene un máximo o mínimo",
+        "Un punto donde la derivada es cero",
+        "Un punto donde la función cruza el eje x"
+      ],
+      "correct": 0,
+      "difficulty": "facil",
+      "hints": [
+        "Piensa en el cambio de 'curvatura' de la función",
+        "La función pasa de ser 'cóncava hacia arriba' a 'cóncava hacia abajo' o viceversa",
+        "Visualmente: la gráfica cambia de sonreír a fruncir el ceño"
+      ],
+      "stepByStep": [
+        "📐 **Puntos de Inflexión**",
+        "",
+        "**Definición:**",
+        "Un punto (c, f(c)) es un punto de inflexión si la concavidad de f cambia en c.",
+        "",
+        "**Condición necesaria:**",
+        "Si (c, f(c)) es un punto de inflexión y f'' es continua en c, entonces f''(c) = 0.",
+        "",
+        "**Condición suficiente:**",
+        "Si f''(c) = 0 y f'' cambia de signo al pasar por c, entonces (c, f(c)) es un punto de inflexión.",
+        "",
+        "**Tipos de cambios de concavidad:**",
+        "• De cóncava hacia arriba a cóncava hacia abajo",
+        "• De cóncava hacia abajo a cóncava hacia arriba",
+        "",
+        "**Importante:**",
+        "No todos los puntos donde f''(c) = 0 son puntos de inflexión.",
+        "Ejemplo: f(x) = x⁴, f''(0) = 0 pero no hay cambio de concavidad."
+      ],
+      "explanation": "Un punto de inflexión es donde la concavidad de la función cambia. Formalmente, si f'' cambia de signo al pasar por c, entonces (c, f(c)) es un punto de inflexión."
+    },
+    {
+      "id": "ext-005",
+      "topic": "puntos-inflexion",
+      "question": "Encuentra los puntos de inflexión de f(x) = x³ - 3x² + 2",
+      "type": "code-editor",
+      "difficulty": "medio",
+      "problemText": "Determina los puntos de inflexión de la función f(x) = x³ - 3x² + 2\n\nPasos:\n1. Calcula la primera derivada f'(x)\n2. Calcula la segunda derivada f''(x)\n3. Encuentra los puntos donde f''(x) = 0\n4. Verifica si hay cambio de concavidad\n5. Determina las coordenadas de los puntos de inflexión",
+      "initialCode": "// f(x) = x³ - 3x² + 2\n\n// Paso 1: Primera derivada\n// f'(x) = ?\n\n// Paso 2: Segunda derivada\n// f''(x) = ?\n\n// Paso 3: Resolver f''(x) = 0\n// ? = 0 ⇒ x = ?\n\n// Paso 4: Verificar cambio de concavidad\n// Analiza el signo de f''(x) antes y después del punto\n\n// Paso 5: Calcular coordenadas del punto de inflexión\n// f(?) = ?",
+      "expectedOutput": "Punto de inflexión en (1, 0)",
+      "hints": [
+        "f'(x) = 3x² - 6x",
+        "f''(x) = 6x - 6 = 6(x - 1)",
+        "Resuelve 6(x - 1) = 0 ⇒ x = 1",
+        "Verifica que f'' cambia de signo al pasar por x = 1",
+        "Calcula f(1) = 1³ - 3·1² + 2 = 0"
+      ],
+      "testCases": [
+        {
+          "input": "",
+          "expectedOutput": "Punto de inflexión en (1, 0)"
+        }
+      ],
+      "stepByStep": [
+        "📐 **Cálculo de Puntos de Inflexión**",
+        "",
+        "**Paso 1:** Primera derivada",
+        "f(x) = x³ - 3x² + 2",
+        "f'(x) = 3x² - 6x",
+        "",
+        "**Paso 2:** Segunda derivada",
+        "f''(x) = 6x - 6 = 6(x - 1)",
+        "",
+        "**Paso 3:** Puntos donde f''(x) = 0",
+        "6(x - 1) = 0 ⇒ x = 1",
+        "",
+        "**Paso 4:** Verificar cambio de concavidad",
+        "• Para x < 1: f''(x) < 0 (cóncava hacia abajo)",
+        "• Para x > 1: f''(x) > 0 (cóncava hacia arriba)",
+        "Hay cambio de concavidad en x = 1",
+        "",
+        "**Paso 5:** Coordenadas del punto",
+        "f(1) = 1³ - 3·1² + 2 = 0",
+        "",
+        "**Resultado:**",
+        "Punto de inflexión en (1, 0)"
+      ]
+    },
+    {
+      "id": "ext-006",
+      "topic": "maximos-minimos",
+      "question": "¿Cuál es la diferencia entre extremo relativo y extremo absoluto?",
+      "type": "multiple-choice",
+      "options": [
+        "Relativo: en un entorno del punto; Absoluto: en todo el dominio",
+        "Relativo: siempre es mayor que cero; Absoluto: puede ser negativo",
+        "Relativo: ocurre en puntos críticos; Absoluto: ocurre en los extremos del dominio",
+        "No hay diferencia, son términos sinónimos"
+      ],
+      "correct": 0,
+      "difficulty": "facil",
+      "hints": [
+        "Piensa en la escala de comparación",
+        "Relativo compara con valores 'cercanos'",
+        "Absoluto compara con 'todos' los valores"
+      ],
+      "stepByStep": [
+        "📐 **Extremos Relativos vs Absolutos**",
+        "",
+        "**Extremo Relativo (o Local):**",
+        "f tiene un máximo relativo en c si existe δ > 0 tal que",
+        "f(c) ≥ f(x) para todo x en (c-δ, c+δ)",
+        "",
+        "**Extremo Absoluto (o Global):**",
+        "f tiene un máximo absoluto en c si",
+        "f(c) ≥ f(x) para todo x en el dominio de f",
+        "",
+        "**Relación entre ellos:**",
+        "• Todo extremo absoluto es también relativo",
+        "• No todo extremo relativo es absoluto",
+        "• Una función puede tener múltiples extremos relativos",
+        "• Una función tiene a lo más un máximo absoluto y un mínimo absoluto",
+        "",
+        "**Ejemplo:**",
+        "f(x) = x³ - 3x en [-2, 2]",
+        "• Máximo relativo en x = -1, pero no es absoluto",
+        "• Máximo absoluto en x = 2"
+      ],
+      "explanation": "Un extremo relativo se compara solo con valores cercanos al punto, mientras que un extremo absoluto se compara con todos los valores de la función en su dominio."
+    },
+    {
+      "id": "ext-007",
+      "topic": "maximos-minimos",
+      "question": "Si f'(c) = 0 y f''(c) = 0, ¿qué puede concluirse sobre el punto c?",
+      "type": "multiple-choice",
+      "options": [
+        "No se puede determinar, se necesita más información",
+        "c es necesariamente un punto de inflexión",
+        "c es necesariamente un máximo relativo",
+        "c es necesariamente un mínimo relativo"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "El criterio de la segunda derivada no es concluyente cuando f''(c) = 0",
+        "Piensa en diferentes funciones donde f'(0) = f''(0) = 0",
+        "Considera f(x) = x³, f(x) = x⁴, f(x) = -x⁴"
+      ],
+      "stepByStep": [
+        "📐 **Caso Indeterminado del Criterio de la Segunda Derivada**",
+        "",
+        "**Situación:** f'(c) = 0 y f''(c) = 0",
+        "",
+        "**Posibilidades:**",
+        "1. **Punto de silla**: f(x) = x³ en x = 0",
+        "   • f'(0) = 0, f''(0) = 0",
+        "   • No es extremo ni punto de inflexión",
+        "",
+        "2. **Mínimo relativo**: f(x) = x⁴ en x = 0",
+        "   • f'(0) = 0, f''(0) = 0",
+        "   • Es un mínimo relativo",
+        "",
+        "3. **Máximo relativo**: f(x) = -x⁴ en x = 0",
+        "   • f'(0) = 0, f''(0) = 0",
+        "   • Es un máximo relativo",
+        "",
+        "4. **Punto de inflexión horizontal**: f(x) = x³ en x = 0",
+        "   • f'(0) = 0, f''(0) = 0",
+        "   • Es punto de inflexión con tangente horizontal",
+        "",
+        "**Conclusión:**",
+        "Cuando f''(c) = 0, se necesita usar el criterio de la primera derivada o derivadas de orden superior."
+      ],
+      "explanation": "Cuando f'(c) = 0 y f''(c) = 0, el criterio de la segunda derivada es inconcluso. El punto podría ser un máximo, un mínimo, un punto de inflexión o un punto de silla. Se necesita analizar con otros métodos."
+    },
+    {
+      "id": "ext-008",
+      "topic": "puntos-inflexion",
+      "question": "Ordena los pasos para encontrar puntos de inflexión de una función",
+      "type": "ordering",
+      "difficulty": "facil",
+      "items": [
+        "Calcular la segunda derivada f''(x)",
+        "Encontrar los puntos donde f''(x) = 0 o no existe",
+        "Determinar los intervalos usando estos puntos",
+        "Analizar el signo de f''(x) en cada intervalo",
+        "Identificar dónde cambia el signo de f''(x)"
+      ],
+      "correctOrder": [0, 1, 2, 3, 4],
+      "hints": [
+        "Primero necesitas la segunda derivada para analizar concavidad",
+        "Los puntos donde f''(x) = 0 o no existe son candidatos",
+        "El cambio de signo de f'' indica cambio de concavidad"
+      ],
+      "stepByStep": [
+        "📐 **Proceso para Encontrar Puntos de Inflexión**",
+        "",
+        "**Paso 1:** Calcular f''(x)",
+        "• La segunda derivada mide la concavidad",
+        "• f''(x) > 0: cóncava hacia arriba",
+        "• f''(x) < 0: cóncava hacia abajo",
+        "",
+        "**Paso 2:** Encontrar puntos candidatos",
+        "• Resolver f''(x) = 0",
+        "• Identificar donde f''(x) no existe",
+        "",
+        "**Paso 3:** Determinar intervalos",
+        "• Los puntos candidatos dividen el dominio",
+        "• En cada intervalo f'' mantiene su signo",
+        "",
+        "**Paso 4:** Analizar signo de f''",
+        "• Evaluar f'' en puntos de prueba",
+        "• Determinar concavidad en cada intervalo",
+        "",
+        "**Paso 5:** Identificar cambios",
+        "• Donde f'' cambia de signo hay punto de inflexión",
+        "• Calcular coordenadas completas"
+      ],
+      "explanation": "El proceso sistemático para encontrar puntos de inflexión comienza calculando la segunda derivada, luego encontrando puntos candidatos, determinando intervalos, analizando signos y finalmente identificando dónde hay cambios de concavidad."
+    },
+    {
+      "id": "ext-009",
+      "topic": "maximos-minimos",
+      "question": "Encuentra los extremos relativos de f(x) = x·e^(-x)",
+      "type": "multiple-choice",
+      "options": [
+        "Máximo relativo en x = 1",
+        "Mínimo relativo en x = 1",
+        "Máximo relativo en x = 0",
+        "No tiene extremos relativos"
+      ],
+      "correct": 0,
+      "difficulty": "dificil",
+      "hints": [
+        "Usa la regla del producto para derivar: (uv)' = u'v + uv'",
+        "Recuerda que la derivada de e^(-x) es -e^(-x)",
+        "Para encontrar extremos, resuelve f'(x) = 0"
+      ],
+      "stepByStep": [
+        "📐 **Extremos de Función con Exponencial**",
+        "",
+        "**Función:** f(x) = x·e^(-x)",
+        "",
+        "**Paso 1:** Calcular la derivada",
+        "f'(x) = 1·e^(-x) + x·(-e^(-x))",
+        "f'(x) = e^(-x) - x·e^(-x)",
+        "f'(x) = e^(-x)(1 - x)",
+        "",
+        "**Paso 2:** Encontrar puntos críticos",
+        "f'(x) = 0 ⇒ e^(-x)(1 - x) = 0",
+        "Como e^(-x) > 0 ∀x, entonces 1 - x = 0 ⇒ x = 1",
+        "",
+        "**Paso 3:** Clasificar con segunda derivada",
+        "f''(x) = -e^(-x)(1 - x) - e^(-x) = -e^(-x)(2 - x)",
+        "f''(1) = -e^(-1)(2 - 1) = -e^(-1) < 0",
+        "",
+        "**Conclusión:**",
+        "Como f''(1) < 0, x = 1 es un máximo relativo",
+        "f(1) = 1·e^(-1) = 1/e",
+        "",
+        "**Resultado:**",
+        "Máximo relativo en (1, 1/e)"
+      ],
+      "explanation": "Derivamos usando la regla del producto: f'(x) = e^(-x)(1-x). El único punto crítico es x=1. Con la segunda derivada f''(1) = -e^(-1) < 0, confirming que es un máximo relativo."
+    },
+    {
+      "id": "ext-010",
+      "topic": "puntos-inflexion",
+      "question": "¿Cuántos puntos de inflexión tiene como máximo un polinomio de grado 5?",
+      "type": "multiple-choice",
+      "options": [
+        "3",
+        "5",
+        "2",
+        "4"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Los puntos de inflexión ocurren donde f''(x) = 0",
+        "Si f es un polinomio de grado n, f'' es de grado n-2",
+        "Un polinomio de grado m tiene como máximo m raíces reales"
+      ],
+      "stepByStep": [
+        "📐 **Puntos de Inflexión en Polinomios**",
+        "",
+        "**Relación entre grados:**",
+        "Si f(x) es un polinomio de grado n, entonces:",
+        "• f'(x) es un polinomio de grado n-1",
+        "• f''(x) es un polinomio de grado n-2",
+        "",
+        "**Puntos de inflexión:**",
+        "Los puntos de inflexión ocurren donde f''(x) = 0",
+        "Por lo tanto, el número máximo de puntos de inflexión",
+        "es igual al número máximo de raíces reales de f''(x).",
+        "",
+        "**Para polinomio de grado 5:**",
+        "• f(x): grado 5",
+        "• f'(x): grado 4",
+        "• f''(x): grado 3",
+        "",
+        "**Máximo de raíces:**",
+        "Un polinomio de grado 3 tiene como máximo 3 raíces reales.",
+        "Por lo tanto, un polinomio de grado 5 tiene como máximo 3 puntos de inflexión.",
+        "",
+        "**Ejemplo:** f(x) = x⁵ - 5x³",
+        "f''(x) = 20x³ - 30x = 10x(2x² - 3)",
+        "Tiene 3 puntos de inflexión: x = 0, x = ±√(3/2)"
+      ],
+      "explanation": "Un polinomio de grado 5 tiene una segunda derivada de grado 3. Como un polinomio de grado 3 puede tener como máximo 3 raíces reales, el polinomio original puede tener como máximo 3 puntos de inflexión."
+    }
+  ]
+}

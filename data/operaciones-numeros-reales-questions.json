@@ -1,0 +1,145 @@
+{
+  "operaciones-numeros-reales": [
+    {
+      "id": "onr-001",
+      "topic": "potencias-exponentes",
+      "question": "Simplifica: $2^3 \\cdot 2^4$",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$2^7 = 128$ (sumar exponentes)",
+        "$2^{12}$ (multiplicar exponentes)",
+        "$4^7$",
+        "$8 \\cdot 16 = 128$ sin simplificar"
+      ],
+      "correct": 0,
+      "difficulty": "facil",
+      "hints": [
+        "Cuando multiplicas potencias con la misma base, SUMAS los exponentes",
+        "$a^m \\cdot a^n = a^{m+n}$",
+        "$2^3 \\cdot 2^4 = 2^{3+4} = 2^7$"
+      ],
+      "stepByStep": [
+        "📚 **Propiedades de Exponentes**",
+        "",
+        "**Propiedad:** $a^m \\cdot a^n = a^{m+n}$",
+        "",
+        "**Aplicación:**",
+        "$$2^3 \\cdot 2^4 = 2^{3+4} = 2^7$$",
+        "",
+        "**Cálculo:**",
+        "$$2^7 = 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 = 128$$",
+        "",
+        "**Verificación:**",
+        "* $2^3 = 8$",
+        "* $2^4 = 16$",
+        "* $8 \\times 16 = 128$ ✓",
+        "",
+        "✅ **$2^7 = 128$**"
+      ],
+      "explanation": "Al multiplicar potencias de igual base, se suman los exponentes: 2³·2⁴ = 2⁷ = 128"
+    },
+    {
+      "id": "onr-002",
+      "topic": "raices-radicales",
+      "question": "Simplifica: $\\sqrt{50}$",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$5\\sqrt{2}$",
+        "$25\\sqrt{2}$",
+        "$2\\sqrt{5}$",
+        "$\\sqrt{50}$ (no se puede simplificar)"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Busca factores que sean cuadrados perfectos",
+        "50 = 25 × 2",
+        "$\\sqrt{25 \\times 2} = \\sqrt{25} \\times \\sqrt{2} = 5\\sqrt{2}$"
+      ],
+      "stepByStep": [
+        "🔍 **Simplificar Radicales**",
+        "",
+        "**Método:** Factorizar en cuadrados perfectos",
+        "",
+        "**Paso 1:** Descomponer 50",
+        "$$50 = 25 \\times 2 = 5^2 \\times 2$$",
+        "",
+        "**Paso 2:** Separar la raíz",
+        "$$\\sqrt{50} = \\sqrt{25 \\times 2} = \\sqrt{25} \\cdot \\sqrt{2}$$",
+        "",
+        "**Paso 3:** Simplificar",
+        "$$\\sqrt{25} \\cdot \\sqrt{2} = 5\\sqrt{2}$$",
+        "",
+        "✅ **$5\\sqrt{2}$**"
+      ],
+      "explanation": "50 = 25×2, entonces √50 = √25·√2 = 5√2"
+    },
+    {
+      "id": "onr-003",
+      "topic": "orden-operaciones",
+      "question": "Evalúa: $3 + 2 \\times 5^2 - 4$",
+      "type": "numeric",
+      "correct": 49,
+      "tolerance": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Orden: PEMDAS (Paréntesis, Exponentes, Mult/Div, Suma/Resta)",
+        "Primero: 5² = 25",
+        "Luego: 2×25 = 50, después 3+50-4"
+      ],
+      "stepByStep": [
+        "📚 **Orden de Operaciones - PEMDAS**",
+        "",
+        "**P**aréntesis, **E**xponentes, **M**ultiplicación/**D**ivisión, **S**uma/Resta",
+        "",
+        "**Expresión:** $3 + 2 \\times 5^2 - 4$",
+        "",
+        "**Paso 1: Exponentes**",
+        "$$3 + 2 \\times 25 - 4$$",
+        "",
+        "**Paso 2: Multiplicación**",
+        "$$3 + 50 - 4$$",
+        "",
+        "**Paso 3: Suma y Resta (izq a der)**",
+        "$$53 - 4 = 49$$",
+        "",
+        "✅ **49**"
+      ],
+      "explanation": "Primero exponente (5²=25), luego multiplicación (2×25=50), finalmente suma y resta: 3+50-4=49"
+    },
+    {
+      "id": "onr-004",
+      "topic": "fracciones-decimales",
+      "question": "Convierte a fracción: $0.75$",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$\\frac{3}{4}$",
+        "$\\frac{75}{10}$",
+        "$\\frac{7}{5}$",
+        "$\\frac{15}{20}$"
+      ],
+      "correct": 0,
+      "difficulty": "facil",
+      "hints": [
+        "0.75 = 75/100",
+        "Simplifica dividiendo entre el MCD",
+        "75 y 100 se dividen entre 25"
+      ],
+      "stepByStep": [
+        "🔄 **Decimal a Fracción**",
+        "",
+        "**Paso 1:** Escribir sobre potencia de 10",
+        "$$0.75 = \\frac{75}{100}$$",
+        "",
+        "**Paso 2:** Simplificar (MCD = 25)",
+        "$$\\frac{75 \\div 25}{100 \\div 25} = \\frac{3}{4}$$",
+        "",
+        "✅ **$\\frac{3}{4}$**"
+      ],
+      "explanation": "0.75 = 75/100, simplificando entre 25: 3/4"
+    }
+  ]
+}

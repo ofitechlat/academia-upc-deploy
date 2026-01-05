@@ -1,0 +1,206 @@
+{
+  "derivadas-logaritmicas": {
+    "derivada-ln-x": [
+      {
+        "title": "Derivada del logaritmo natural: d/dx[ln(x)] = 1/x",
+        "url": "https://www.youtube.com/watch?v=ejemplo-ln-derivada",
+        "type": "video",
+        "description": "Demostración de la derivada de ln(x) usando derivación implícita y la relación con e^x."
+      },
+      {
+        "title": "¿Por qué ln(x) tiene derivada 1/x?",
+        "url": "https://www.khanacademy.org/math/calculus/logarithmic-derivative",
+        "type": "article",
+        "description": "Explicación intuitiva y formal. Relación entre ln(x) y e^x como funciones inversas."
+      },
+      {
+        "title": "Derivadas de orden superior de ln(x)",
+        "url": "https://www.youtube.com/watch?v=ejemplo-derivadas-sucesivas-ln",
+        "type": "video",
+        "description": "f'(x) = 1/x, f''(x) = -1/x², f'''(x) = 2/x³. Patrón general."
+      },
+      {
+        "title": "Gráfica de ln(x) y su derivada",
+        "url": "https://www.desmos.com/calculator/logaritmo-derivada",
+        "type": "practice",
+        "description": "Visualización interactiva de ln(x) y 1/x. Relación entre pendiente y valor de derivada."
+      },
+      {
+        "title": "Propiedades del logaritmo natural",
+        "url": "https://mathworld.wolfram.com/NaturalLogarithm.html",
+        "type": "reference",
+        "description": "Referencia completa: definición, propiedades, derivadas, integrales, series."
+      }
+    ],
+    "derivada-log-base-a": [
+      {
+        "title": "Derivada de log_a(x) con base arbitraria",
+        "url": "https://www.youtube.com/watch?v=ejemplo-log-base-a",
+        "type": "video",
+        "description": "Fórmula: d/dx[log_a(x)] = 1/(x·ln(a)). Demostración usando cambio de base."
+      },
+      {
+        "title": "Cambio de base de logaritmos",
+        "url": "https://www.khanacademy.org/math/logarithm-change-base",
+        "type": "article",
+        "description": "log_a(x) = ln(x)/ln(a). Conversión entre bases y aplicación en derivadas."
+      },
+      {
+        "title": "Derivadas de log₁₀(x) y log₂(x)",
+        "url": "https://www.youtube.com/watch?v=ejemplo-log10-log2",
+        "type": "video",
+        "description": "Casos particulares con bases comunes. Valores de ln(10) ≈ 2.303, ln(2) ≈ 0.693."
+      },
+      {
+        "title": "Ejercicios: Derivadas con diferentes bases",
+        "url": "https://www.symbolab.com/practice/logarithm-bases",
+        "type": "practice",
+        "description": "Práctica con log₂(x), log₁₀(x), log_e(x). Verificación de fórmulas."
+      },
+      {
+        "title": "Comparación: ln(x) vs log₁₀(x)",
+        "url": "https://www.mathsisfun.com/algebra/logarithms.html",
+        "type": "reference",
+        "description": "Diferencias, conversiones, uso en ciencias. Logaritmo natural vs logaritmo común."
+      }
+    ],
+    "logaritmo-regla-cadena": [
+      {
+        "title": "Regla de la cadena con logaritmos",
+        "url": "https://www.youtube.com/watch?v=ejemplo-cadena-log",
+        "type": "video",
+        "description": "d/dx[ln(g(x))] = (1/g(x))·g'(x). Ejemplos: ln(3x), ln(x²), ln(sin(x))."
+      },
+      {
+        "title": "Derivada de ln(f(x)): patrón general",
+        "url": "https://www.khanacademy.org/math/chain-logarithm",
+        "type": "video",
+        "description": "Fórmula: f'(x)/f(x). Aplicaciones con funciones polinomiales, trigonométricas."
+      },
+      {
+        "title": "Logaritmo de composiciones complejas",
+        "url": "https://www.youtube.com/watch?v=ejemplo-ln-composiciones",
+        "type": "video",
+        "description": "ln(√x), ln(e^x), ln(sin²(x)). Cuándo usar propiedades vs cadena directa."
+      },
+      {
+        "title": "Simplificación: ¿Propiedades o cadena?",
+        "url": "https://www.youtube.com/watch?v=ejemplo-estrategia",
+        "type": "video",
+        "description": "Cuándo conviene usar propiedades de logaritmos antes de derivar."
+      },
+      {
+        "title": "Ejercicios: Cadena con logaritmos",
+        "url": "https://www.symbolab.com/practice/chain-logarithm",
+        "type": "practice",
+        "description": "Práctica con ln(f(x)) donde f(x) varía en complejidad."
+      },
+      {
+        "title": "Derivada logarítmica: f'(x)/f(x)",
+        "url": "https://www.youtube.com/watch?v=ejemplo-der-logaritmica",
+        "type": "video",
+        "description": "Concepto de derivada logarítmica. Aplicación en tasas de crecimiento relativo."
+      }
+    ],
+    "propiedades-logaritmicas": [
+      {
+        "title": "Propiedades de logaritmos para simplificar",
+        "url": "https://www.youtube.com/watch?v=ejemplo-propiedades-log",
+        "type": "video",
+        "description": "ln(ab) = ln(a) + ln(b), ln(a/b) = ln(a) - ln(b), ln(a^n) = n·ln(a)."
+      },
+      {
+        "title": "Estrategia: Simplificar antes de derivar",
+        "url": "https://www.khanacademy.org/math/simplify-logarithms",
+        "type": "article",
+        "description": "Por qué es más fácil usar propiedades primero. Ejemplos comparativos."
+      },
+      {
+        "title": "Derivar ln(productos y cocientes)",
+        "url": "https://www.youtube.com/watch?v=ejemplo-ln-producto-cociente",
+        "type": "video",
+        "description": "ln(x²·e^x), ln(x/√y), ln(x³/e^x). Aplicación de propiedades."
+      },
+      {
+        "title": "Ejercicios: Simplificar y derivar",
+        "url": "https://www.symbolab.com/practice/logarithm-properties-derivative",
+        "type": "practice",
+        "description": "Práctica con expresiones complejas. Usar propiedades antes de derivar."
+      },
+      {
+        "title": "Tabla de propiedades logarítmicas",
+        "url": "https://www.mathsisfun.com/algebra/logarithms-properties.html",
+        "type": "reference",
+        "description": "Referencia completa de propiedades. Producto, cociente, potencia, cambio de base."
+      }
+    ],
+    "aplicaciones-logaritmicas": [
+      {
+        "title": "Escala de pH: aplicación de logaritmos",
+        "url": "https://www.youtube.com/watch?v=ejemplo-ph",
+        "type": "video",
+        "description": "pH = -log₁₀[H⁺]. Relación entre concentración de iones y acidez. Derivadas."
+      },
+      {
+        "title": "Escala de decibeles (dB)",
+        "url": "https://www.youtube.com/watch?v=ejemplo-decibeles",
+        "type": "video",
+        "description": "dB = 10·log₁₀(I/I₀). Intensidad sonora. Derivada respecto a intensidad."
+      },
+      {
+        "title": "Escala de Richter (terremotos)",
+        "url": "https://www.khanacademy.org/science/earthquake-scale",
+        "type": "article",
+        "description": "Magnitud logarítmica. Cada unidad = 10× más energía. Aplicación de derivadas."
+      },
+      {
+        "title": "Elasticidad en economía",
+        "url": "https://www.youtube.com/watch?v=ejemplo-elasticidad",
+        "type": "video",
+        "description": "E = d[ln(Q)]/d[ln(I)]. Elasticidad ingreso, precio. Interpretación económica."
+      },
+      {
+        "title": "Crecimiento relativo: d[ln(y)]/dx",
+        "url": "https://www.youtube.com/watch?v=ejemplo-crecimiento-relativo",
+        "type": "video",
+        "description": "Tasa de crecimiento relativo = (dy/dx)/y = d[ln(y)]/dx. Aplicaciones en biología."
+      },
+      {
+        "title": "Derivada de x·ln(x): producto",
+        "url": "https://www.youtube.com/watch?v=ejemplo-x-ln-x",
+        "type": "video",
+        "description": "Regla del producto. Aparece en entropía de información, estadística."
+      },
+      {
+        "title": "Derivada de ln(x)/x: cociente",
+        "url": "https://www.youtube.com/watch?v=ejemplo-ln-x-sobre-x",
+        "type": "video",
+        "description": "Regla del cociente. Máximo en x = e. Aplicaciones en optimización."
+      },
+      {
+        "title": "Derivada de x^x usando logaritmos",
+        "url": "https://www.youtube.com/watch?v=ejemplo-x-elevado-x",
+        "type": "video",
+        "description": "Técnica: y = x^x, ln(y) = x·ln(x), derivar implícitamente."
+      },
+      {
+        "title": "Ejercicios aplicados con logaritmos",
+        "url": "https://www.symbolab.com/practice/logarithm-applications",
+        "type": "practice",
+        "description": "Problemas del mundo real: pH, decibeles, economía, biología."
+      },
+      {
+        "title": "Optimización con logaritmos",
+        "url": "https://www.youtube.com/watch?v=ejemplo-optimizacion-log",
+        "type": "video",
+        "description": "Encontrar máximos/mínimos de funciones con ln(x). Puntos críticos."
+      },
+      {
+        "title": "Tabla de derivadas logarítmicas",
+        "url": "https://www.mathsisfun.com/calculus/derivatives-rules.html",
+        "type": "reference",
+        "description": "Referencia: ln(x), log_a(x), ln(f(x)), combinaciones. Fórmulas y ejemplos."
+      }
+    ]
+  }
+}

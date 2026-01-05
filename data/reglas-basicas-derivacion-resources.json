@@ -1,0 +1,140 @@
+{
+  "reglas-basicas-derivacion": {
+    "regla-constante": [
+      {
+        "title": "Derivada de una Constante - Introducción",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-2/v/derivative-of-a-constant",
+        "type": "video",
+        "description": "Explicación visual de por qué la derivada de una constante es cero"
+      },
+      {
+        "title": "Regla de la Constante - Ejercicios",
+        "url": "https://www.mathsisfun.com/calculus/derivatives-rules.html",
+        "type": "article",
+        "description": "Tabla de reglas básicas de derivación con ejemplos"
+      },
+      {
+        "title": "Práctica: Derivadas de Constantes",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-2/e/derivatives-of-constants",
+        "type": "practice",
+        "description": "Ejercicios interactivos sobre derivadas de constantes"
+      }
+    ],
+    "regla-potencia": [
+      {
+        "title": "La Regla de la Potencia",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-3/v/power-rule",
+        "type": "video",
+        "description": "Introducción completa a la regla de la potencia con demostración"
+      },
+      {
+        "title": "Regla de la Potencia - Guía Completa",
+        "url": "https://tutorial.math.lamar.edu/classes/calci/DerivativeIntro.aspx",
+        "type": "article",
+        "description": "Tutorial detallado de Paul's Online Math Notes sobre derivadas"
+      },
+      {
+        "title": "Derivadas con Exponentes Negativos",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-3/v/negative-power-rule",
+        "type": "video",
+        "description": "Cómo aplicar la regla de la potencia con exponentes negativos"
+      },
+      {
+        "title": "Práctica: Regla de la Potencia",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-3/e/power-rule",
+        "type": "practice",
+        "description": "Ejercicios progresivos de la regla de la potencia"
+      },
+      {
+        "title": "Derivadas de Raíces",
+        "url": "https://www.mathsisfun.com/calculus/derivatives-rules.html#power",
+        "type": "article",
+        "description": "Cómo derivar raíces cuadradas y cúbicas usando potencias fraccionarias"
+      }
+    ],
+    "regla-suma-diferencia": [
+      {
+        "title": "Regla de la Suma y Diferencia",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-4/v/sum-rule",
+        "type": "video",
+        "description": "Por qué podemos derivar término por término"
+      },
+      {
+        "title": "Linealdiad de la Derivada",
+        "url": "https://tutorial.math.lamar.edu/classes/calci/DiffFormulas.aspx",
+        "type": "article",
+        "description": "Explicación matemática de la propiedad de linealidad"
+      },
+      {
+        "title": "Práctica: Suma y Diferencia",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-4/e/derivative-sum-rule",
+        "type": "practice",
+        "description": "Ejercicios de derivación de polinomios usando suma/diferencia"
+      },
+      {
+        "title": "Derivación de Polinomios",
+        "url": "https://www.mathsisfun.com/calculus/derivatives-rules.html#sum",
+        "type": "article",
+        "description": "Guía práctica para derivar polinomios completos"
+      }
+    ],
+    "constante-multiplicada": [
+      {
+        "title": "Regla de la Constante Multiplicada",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-4/v/constant-multiple-rule",
+        "type": "video",
+        "description": "Cómo manejar constantes que multiplican funciones"
+      },
+      {
+        "title": "Escalamiento de Derivadas",
+        "url": "https://tutorial.math.lamar.edu/classes/calci/DiffFormulas.aspx#Deriv_Props",
+        "type": "article",
+        "description": "Propiedades algebraicas de las derivadas"
+      },
+      {
+        "title": "Práctica: Constante por Función",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-4/e/constant-multiple-rule",
+        "type": "practice",
+        "description": "Ejercicios con constantes multiplicando funciones"
+      },
+      {
+        "title": "Constantes Especiales: π y e",
+        "url": "https://www.mathsisfun.com/calculus/derivatives-rules.html",
+        "type": "reference",
+        "description": "Cómo tratar constantes matemáticas como π y e en derivadas"
+      }
+    ],
+    "ejercicios-combinados": [
+      {
+        "title": "Derivación de Polinomios Completos",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-5/v/polynomial-derivatives",
+        "type": "video",
+        "description": "Estrategia completa para derivar cualquier polinomio"
+      },
+      {
+        "title": "100 Ejercicios de Derivadas Básicas",
+        "url": "https://www.analyzemath.com/calculus/Differentiation/basic_derivatives.html",
+        "type": "practice",
+        "description": "Colección extensa de ejercicios con soluciones"
+      },
+      {
+        "title": "Aplicaciones de Derivadas Básicas",
+        "url": "https://tutorial.math.lamar.edu/classes/calci/DerivativeApps.aspx",
+        "type": "article",
+        "description": "Velocidad, aceleración y otras aplicaciones físicas"
+      },
+      {
+        "title": "Problemas Resueltos Paso a Paso",
+        "url": "https://www.symbolab.com/solver/derivative-calculator",
+        "type": "reference",
+        "description": "Calculadora con solución paso a paso para verificar respuestas"
+      },
+      {
+        "title": "Práctica Mixta: Reglas Básicas",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-5/e/basic-derivative-rules",
+        "type": "practice",
+        "description": "Ejercicios que combinan todas las reglas básicas"
+      }
+    ]
+  }
+}

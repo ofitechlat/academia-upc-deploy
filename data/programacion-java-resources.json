@@ -1,0 +1,106 @@
+{
+  "programacion-java": {
+    "introduccion-herramientas": [
+      {
+        "title": "Documentación oficial de Java",
+        "type": "documentation",
+        "url": "https://docs.oracle.com/javase/tutorial/",
+        "description": "Tutorial oficial de Oracle para aprender Java desde cero"
+      },
+      {
+        "title": "Instalación de JDK",
+        "type": "tutorial",
+        "url": "https://www.oracle.com/java/technologies/downloads/",
+        "description": "Cómo descargar e instalar el Java Development Kit"
+      }
+    ],
+    "fundamentos-lenguaje": [
+      {
+        "title": "Tipos de datos en Java",
+        "type": "reference",
+        "url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html",
+        "description": "Guía completa sobre tipos primitivos y no primitivos"
+      },
+      {
+        "title": "Variables y operadores",
+        "type": "tutorial", 
+        "url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/variables.html",
+        "description": "Declaración de variables y operadores en Java"
+      }
+    ],
+    "estructuras-control": [
+      {
+        "title": "Estructuras de control",
+        "type": "tutorial",
+        "url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/flow.html", 
+        "description": "If-else, switch, bucles for y while"
+      }
+    ],
+    "introduccion-poo": [
+      {
+        "title": "Conceptos de POO",
+        "type": "tutorial",
+        "url": "https://docs.oracle.com/javase/tutorial/java/concepts/",
+        "description": "Introducción a la programación orientada a objetos"
+      },
+      {
+        "title": "Clases y objetos",
+        "type": "tutorial",
+        "url": "https://docs.oracle.com/javase/tutorial/java/javaOO/classes.html",
+        "description": "Cómo crear y usar clases y objetos en Java"
+      }
+    ],
+    "constructores-objetos": [
+      {
+        "title": "Constructores",
+        "type": "tutorial",
+        "url": "https://docs.oracle.com/javase/tutorial/java/javaOO/constructors.html",
+        "description": "Creación y uso de constructores en Java"
+      }
+    ],
+    "arreglos-estructuras": [
+      {
+        "title": "Arreglos en Java",
+        "type": "tutorial",
+        "url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html",
+        "description": "Declaración, inicialización y uso de arreglos"
+      }
+    ],
+    "algoritmos-fundamentales": [
+      {
+        "title": "Algoritmos de búsqueda",
+        "type": "tutorial",
+        "url": "https://www.geeksforgeeks.org/searching-algorithms/",
+        "description": "Búsqueda lineal, binaria y otros algoritmos"
+      },
+      {
+        "title": "Recursión en Java",
+        "type": "tutorial", 
+        "url": "https://www.geeksforgeeks.org/recursion-in-java/",
+        "description": "Conceptos y ejemplos de programación recursiva"
+      }
+    ],
+    "debugging-buenas-practicas": [
+      {
+        "title": "Convenciones de código Java",
+        "type": "reference",
+        "url": "https://www.oracle.com/java/technologies/javase/codeconventions-contents.html",
+        "description": "Estándares y mejores prácticas para escribir código Java"
+      }
+    ],
+    "proyecto-integrador": [
+      {
+        "title": "Diseño de juegos en Java",
+        "type": "tutorial",
+        "url": "https://www.gamedev.net/articles/programming/general-and-gameplay-programming/java-games-programming-tutorial-r2171/",
+        "description": "Fundamentos para crear juegos con Java"
+      },
+      {
+        "title": "Patrones de diseño en juegos",
+        "type": "reference",
+        "url": "https://gameprogrammingpatterns.com/",
+        "description": "Patrones de diseño aplicados al desarrollo de videojuegos"
+      }
+    ]
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "calculo-economicas": {
+    "aplicaciones-funciones": [
+      {
+        "title": "Funciones de costo, ingreso y utilidad",
+        "url": "https://es.khanacademy.org/math/microeconomics/production-possibilities-frontier/v/production-possibilities-frontier",
+        "type": "video",
+        "description": "Explicación de las funciones económicas básicas y su relación"
+      },
+      {
+        "title": "Punto de equilibrio empresarial",
+        "url": "https://es.khanacademy.org/math/finance/interest-and-debt/v/interest-basics",
+        "type": "article",
+        "description": "Concepto y cálculo del punto de equilibrio en empresas"
+      },
+      {
+        "title": "Interés simple y compuesto",
+        "url": "https://es.khanacademy.org/math/finance/interest-and-debt/v/compound-interest",
+        "type": "video",
+        "description": "Diferencias y aplicaciones del interés simple y compuesto"
+      },
+      {
+        "title": "Progresiones aritméticas y geométricas",
+        "url": "https://es.khanacademy.org/math/algebra/x2f8bb11595b61c86:sequences/x2f8bb11595b61c86:introduction-to-arithmetic-sequences/v/arithmetic-sequences-intro",
+        "type": "article",
+        "description": "Definición y propiedades de las progresiones"
+      },
+      {
+        "title": "Ejercicios de funciones económicas",
+        "url": "https://es.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:evaluating-functions/e/functions_1",
+        "type": "practice",
+        "description": "Práctica con problemas de funciones aplicadas a la economía"
+      }
+    ],
+    "limites-continuidad": [
+      {
+        "title": "Introducción a los límites",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-limits-new/ab-1-1/v/limits-introduction",
+        "type": "video",
+        "description": "Concepto básico de límite y su interpretación gráfica"
+      },
+      {
+        "title": "Propiedades de los límites",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-limits-new/ab-1-3/v/limit-properties",
+        "type": "article",
+        "description": "Propiedades fundamentales para calcular límites"
+      },
+      {
+        "title": "Formas indeterminadas 0/0",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-limits-new/ab-1-5/v/limits-by-factoring",
+        "type": "video",
+        "description": "Técnicas para resolver límites de la forma 0/0"
+      },
+      {
+        "title": "Límites al infinito y asíntotas",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-limits-new/ab-1-6/v/limits-at-infinity-and-horizontal-asymptotes",
+        "type": "video",
+        "description": "Cálculo de límites al infinito y determinación de asíntotas"
+      },
+      {
+        "title": "Continuidad de funciones",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-limits-new/ab-1-8/v/continuity-at-a-point",
+        "type": "article",
+        "description": "Definición y criterios de continuidad"
+      },
+      {
+        "title": "Ejercicios de límites y continuidad",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-limits-new/ab-1-4/e/limits-from-graphs",
+        "type": "practice",
+        "description": "Problemas variados de límites y continuidad"
+      }
+    ],
+    "derivacion": [
+      {
+        "title": "Definición de derivada",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-1/v/derivative-as-a-concept",
+        "type": "video",
+        "description": "Introducción al concepto de derivada usando la definición"
+      },
+      {
+        "title": "Reglas de derivación básicas",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-2/v/power-rule-intro",
+        "type": "article",
+        "description": "Reglas fundamentales para derivar funciones"
+      },
+      {
+        "title": "Regla del producto y del cociente",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-7/v/product-rule",
+        "type": "video",
+        "description": "Explicación y ejemplos de la regla del producto y cociente"
+      },
+      {
+        "title": "Regla de la cadena",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-6/v/chain-rule-introduction",
+        "type": "video",
+        "description": "Una de las reglas más importantes en derivación"
+      },
+      {
+        "title": "Derivación implícita",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-2/v/implicit-differentiation",
+        "type": "video",
+        "description": "Técnica para derivar funciones no explícitas"
+      },
+      {
+        "title": "Aplicaciones económicas de la derivada",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-applications-derivations-new/ab-4-7/v/marginal-cost-marginal-revenue",
+        "type": "article",
+        "description": "Costo marginal, ingreso marginal y otras aplicaciones"
+      },
+      {
+        "title": "Optimización en economía",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-applications-derivations-new/ab-4-5/v/optimizing-box-volume",
+        "type": "video",
+        "description": "Problemas de optimización con aplicación económica"
+      },
+      {
+        "title": "Ejercicios de derivación",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-3/e/derivative-rules",
+        "type": "practice",
+        "description": "Práctica completa de reglas de derivación"
+      }
+    ],
+    "integracion": [
+      {
+        "title": "Introducción a la integral",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-1/v/introduction-to-definite-integrals",
+        "type": "video",
+        "description": "Concepto de integral y su relación con el área"
+      },
+      {
+        "title": "Reglas básicas de integración",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-7/v/antiderivatives-and-indefinite-integrals",
+        "type": "article",
+        "description": "Reglas fundamentales para calcular integrales"
+      },
+      {
+        "title": "Método de sustitución",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-8/v/u-substitution",
+        "type": "video",
+        "description": "Técnica fundamental para integrales complejas"
+      },
+      {
+        "title": "Integración por partes",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-11/v/integration-by-parts-intro",
+        "type": "video",
+        "description": "Método para integrar productos de funciones"
+      },
+      {
+        "title": "Teorema Fundamental del Cálculo",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-3/v/fundamental-theorem-of-calculus",
+        "type": "video",
+        "description": "Conexión entre derivación e integración"
+      },
+      {
+        "title": "Área entre curvas",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-applications-integration-new/ab-6-8/v/area-between-curves",
+        "type": "video",
+        "description": "Cálculo de áreas delimitadas por funciones"
+      },
+      {
+        "title": "Aplicaciones económicas de la integral",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-applications-integration-new/ab-6-13/v/consumer-and-producer-surplus",
+        "type": "article",
+        "description": "Excedente del consumidor y productor"
+      },
+      {
+        "title": "Ejercicios de integración",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-9/e/u-substitution-definite-integrals",
+        "type": "practice",
+        "description": "Problemas variados de integración"
+      }
+    ]
+  }
+}

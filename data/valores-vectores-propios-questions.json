@@ -1,0 +1,196 @@
+{
+    "valores-vectores-propios": [
+        {
+            "id": "vvp-t1-dd1",
+            "topic": "definiciones",
+            "question": "Clasifica cada afirmación sobre valores y vectores propios.",
+            "type": "drag-drop",
+            "items": [
+                "0 puede ser autovalor",
+                "El vector nulo puede ser autovector",
+                "Una matriz n×n tiene exactamente n autovalores",
+                "TodoAutovector tiene norma 1"
+            ],
+            "categories": [
+                "Verdadero",
+                "Falso"
+            ],
+            "correctMapping": [
+                0,
+                1,
+                1,
+                1
+            ],
+            "difficulty": "facil",
+            "hints": [
+                "Matrices singulares tienen λ=0",
+                "Los autovectores deben ser no nulos por definición",
+                "Considera multiplicidad algebraica vs geométrica"
+            ],
+            "explanation": "**λ=0: VERDADERO** (matrices singulares)\\n**v⃗=0⃗ autovector: FALSO** (por definición, autovectores ≠ 0⃗)\\n**n autovalores: FALSO** (puede tener repetidos/complejos)\\n**Norma 1: FALSO** (cualquier múltiplo de autovector es autovector)"
+        },
+        {
+            "id": "vvp-t2-n1",
+            "topic": "polinomio-caracteristico",
+            "question": "Calcula el autovalor de la matriz diagonal $A = \\begin{bmatrix} 5 & 0 \\\\ 0 & 5 \\end{bmatrix}$ (ingresa el valor que se repite).",
+            "type": "numeric",
+            "answer": 5,
+            "tolerance": 0.01,
+            "difficulty": "facil",
+            "hints": [
+                "Para matrices diagonales, los autovalores son los elementos de la diagonal",
+                "Esta matriz es λI con λ=5"
+            ],
+            "explanation": "Para una **matriz diagonal**, los autovalores son los elementos de la diagonal. En este caso, ambos son **5** (con multiplicidad 2)."
+        },
+        {
+            "id": "vvp-t2-mn1",
+            "topic": "polinomio-caracteristico",
+            "question": "Encuentra los autovalores de $A = \\begin{bmatrix} 3 & 1 \\\\ 0 & 2 \\end{bmatrix}$ (matriz triangular superior).",
+            "type": "multiple-numeric",
+            "fields": [
+                {
+                    "label": "$\\lambda_1 =$",
+                    "answer": 3,
+                    "tolerance": 0.01
+                },
+                {
+                    "label": "$\\lambda_2 =$",
+                    "answer": 2,
+                    "tolerance": 0.01
+                }
+            ],
+            "difficulty": "medio",
+            "hints": [
+                "Para matrices triangulares, los autovalores son los elementos de la diagonal",
+                "No necesitas calcular det(A-λI)"
+            ],
+            "explanation": "Para una **matriz triangular** (superior o inferior), los autovalores son los **elementos de la diagonal**:\\n$$\\lambda_1 = 3, \\quad \\lambda_2 = 2$$"
+        },
+        {
+            "id": "vvp-t3-dd2",
+            "topic": "diagonalizacion",
+            "question": "Clasifica las afirmaciones sobre diagonalización.",
+            "type": "drag-drop",
+            "items": [
+                "Toda matriz diagonal es diagonalizable",
+                "Si A es diagonalizable, todos sus autovalores son distintos",
+                "Si todos los autovalores son distintos, A es diagonalizable",
+                "Toda matriz simétrica es diagonalizable"
+            ],
+            "categories": [
+                "Verdadero",
+                "Falso"
+            ],
+            "correctMapping": [
+                0,
+                1,
+                0,
+                0
+            ],
+            "difficulty": "medio",
+            "hints": [
+                "Una matriz diagonal ya ES diagonal",
+                "Contraejemplo para (2): matriz identidad"
+            ],
+            "explanation": "**Diagonal → diagonalizable: VERDADERO** (ya está diagonal)\\n**Diag → distintos: FALSO** (ej: identidad)\\n**Distintos → diag: VERDADERO** (teorema)\\n**Simétrica → diag: VERDADERO** (teorema espectral)"
+        },
+        {
+            "id": "vvp-t3-cat1",
+            "topic": "diagonalizacion",
+            "question": "Clasifica cada matriz según su diagonalizabilidad.",
+            "type": "categorize",
+            "items": [
+                "$\\begin{bmatrix} 1 & 0 \\\\ 0 & 2 \\end{bmatrix}$",
+                "$\\begin{bmatrix} 1 & 1 \\\\ 0 & 1 \\end{bmatrix}$",
+                "$\\begin{bmatrix} 2 & 1 \\\\ 1 & 2 \\end{bmatrix}$"
+            ],
+            "categories": {
+                "diagonalizable": "Diagonalizable",
+                "no-diagonalizable": "No Diagonalizable"
+            },
+            "correctCategories": {
+                "$\\begin{bmatrix} 1 & 0 \\\\ 0 & 2 \\end{bmatrix}$": "diagonalizable",
+                "$\\begin{bmatrix} 1 & 1 \\\\ 0 & 1 \\end{bmatrix}$": "no-diagonalizable",
+                "$\\begin{bmatrix} 2 & 1 \\\\ 1 & 2 \\end{bmatrix}$": "diagonalizable"
+            },
+            "difficulty": "avanzado",
+            "hints": [
+                "Primera: ya es diagonal",
+                "Segunda: λ=1 con multiplicidad 2, pero espacio propio tiene dim=1",
+                "Tercera: es simétrica"
+            ],
+            "explanation": "**Primera:** Ya diagonal → Diagonalizable\\n**Segunda:** λ=1 doble, pero 1 autovector l.i. → **NO** diagonalizable\\n**Tercera:** Simétrica → Diagonalizable (teorema)"
+        },
+        {
+            "id": "vvp-t3-or1",
+            "topic": "diagonalizacion",
+            "question": "Ordena los pasos para diagonalizar una matriz.",
+            "type": "ordering",
+            "items": [
+                "Calcular el polinomio característico det(A-λI)",
+                "Encontrar las raíces (autovalores λᵢ)",
+                "Para cada λᵢ, encontrar base del espacio propio",
+                "Verificar que hay n autovectores l.i. (si no, no es diagonalizable)",
+                "Formar P con autovectores como columnas y D con autovalores en diagonal"
+            ],
+            "correctOrder": [
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "difficulty": "avanzado",
+            "hints": [
+                "El proceso sigue el orden lógico matemático",
+                "Primero autovalores, luego autovectores"
+            ],
+            "explanation": "**Proceso de diagonalización:**\\n1. Polinomio característico\\n2. Resolver para λ\\n3. Espacios propios\\n4. Verificar n vectores l.i.\\n5. Construir P y D con $A = PDP^{-1}$"
+        },
+        {
+            "id": "vvp-t4-mi1",
+            "topic": "espacios-propios",
+            "question": "Encuentra un autovector asociado al autovalor λ=2 de $A=\\begin{bmatrix} 2 & 0 \\\\ 0 & 3 \\end{bmatrix}$.",
+            "type": "matrix-input",
+            "matrix": {
+                "rows": 2,
+                "cols": 1,
+                "correctAnswer": [
+                    [
+                        1
+                    ],
+                    [
+                        0
+                    ]
+                ]
+            },
+            "difficulty": "medio",
+            "hints": [
+                "Resuelve $(A - 2I)\\vec{v} = \\vec{0}$",
+                "Para matriz diagonal, los autovectores canónicos funcionan"
+            ],
+            "explanation": "$(A - 2I) = \\begin{bmatrix} 0 & 0 \\\\ 0 & 1 \\end{bmatrix}$\\n\\nResolviendo $(A-2I)\\vec{v} = \\vec{0}$: la segunda componente debe ser 0, la primera es libre.\\n\\nAutovector: $\\vec{v} = \\begin{bmatrix} 1 \\\\ 0 \\end{bmatrix}$ (o cualquier múltiplo no nulo)"
+        },
+        {
+            "id": "vvp-t2-mc1",
+            "topic": "polinomio-caracteristico",
+            "question": "¿Cuál es el grado del polinomio característico de una matriz 5×5?",
+            "type": "multiple-choice",
+            "shuffle": true,
+            "options": [
+                "3",
+                "4",
+                "5",
+                "25",
+                "10"
+            ],
+            "correct": 2,
+            "difficulty": "facil",
+            "hints": [
+                "El grado es igual al orden de la matriz"
+            ],
+            "explanation": "El polinomio característico $p(\\lambda) = \\det(A - \\lambda I)$ de una matriz $n \\times n$ tiene grado **n**. Por tanto, para una matriz $5 \\times 5$, el grado es **5**."
+        }
+    ]
+}

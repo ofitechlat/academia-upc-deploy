@@ -1,0 +1,20 @@
+{
+    "espacios-vectoriales": {
+        "independencia-lineal": [
+            {
+                "title": "📺 Independencia Lineal Explicada",
+                "url": "https://es.khanacademy.org/math/linear-algebra/vectors-and-spaces/linear-independence/v/linear-algebra-introduction-to-linear-independence",
+                "type": "video",
+                "description": "Video introductorio sobre qué significa que un conjunto de vectores sea linealmente independiente."
+            }
+        ],
+        "subespacios-M2R": [
+            {
+                "title": "📖 Definición de Subespacio Vectorial",
+                "url": "https://es.khanacademy.org/math/linear-algebra/vectors-and-spaces/subspace-basis/a/subspaces",
+                "type": "article",
+                "description": "Las tres condiciones fundamentales para que un subconjunto sea un subespacio."
+            }
+        ]
+    }
+}

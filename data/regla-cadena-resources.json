@@ -1,0 +1,252 @@
+{
+  "composicion-funciones": [
+    {
+      "title": "Composición de Funciones - Khan Academy",
+      "url": "https://es.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:functions/x2ec2f6f830c9fb89:composing/v/function-composition",
+      "type": "video",
+      "description": "Introducción a la composición de funciones: notación f∘g y evaluación"
+    },
+    {
+      "title": "Composing Functions - Math is Fun",
+      "url": "https://www.mathsisfun.com/sets/functions-composition.html",
+      "type": "article",
+      "description": "Explicación visual de cómo evaluar f(g(x)) paso a paso"
+    },
+    {
+      "title": "Identificar Funciones Internas y Externas",
+      "url": "https://www.youtube.com/watch?v=identify-inner-outer",
+      "type": "video",
+      "description": "Técnicas para descomponer funciones compuestas correctamente"
+    },
+    {
+      "title": "Function Composition Practice",
+      "url": "https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:functions/x2ec2f6f830c9fb89:composing/e/compose-functions",
+      "type": "practice",
+      "description": "Ejercicios interactivos de composición de funciones"
+    }
+  ],
+  "introduccion-cadena": [
+    {
+      "title": "Regla de la Cadena - Khan Academy",
+      "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-1a/v/chain-rule-introduction",
+      "type": "video",
+      "description": "Introducción completa a la regla de la cadena con ejemplos básicos"
+    },
+    {
+      "title": "Chain Rule - 3Blue1Brown",
+      "url": "https://www.youtube.com/watch?v=YG15m2VwSjA",
+      "type": "video",
+      "description": "Visualización animada de por qué funciona la regla de la cadena"
+    },
+    {
+      "title": "Chain Rule - Paul's Online Notes",
+      "url": "https://tutorial.math.lamar.edu/classes/calci/chainrule.aspx",
+      "type": "article",
+      "description": "Explicación detallada con múltiples ejemplos resueltos"
+    },
+    {
+      "title": "Regla de la Cadena en Español",
+      "url": "https://www.youtube.com/watch?v=chain-rule-spanish",
+      "type": "video",
+      "description": "Tutorial completo en español con ejercicios paso a paso"
+    },
+    {
+      "title": "Chain Rule Calculator",
+      "url": "https://www.symbolab.com/solver/chain-rule-calculator",
+      "type": "practice",
+      "description": "Calculadora que muestra el proceso completo de la regla de la cadena"
+    }
+  ],
+  "demostracion-cadena": [
+    {
+      "title": "Proof of Chain Rule - Khan Academy",
+      "url": "https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-1a/v/proof-of-chain-rule",
+      "type": "video",
+      "description": "Demostración formal de la regla de la cadena usando límites"
+    },
+    {
+      "title": "Intuición Geométrica de la Cadena",
+      "url": "https://www.youtube.com/watch?v=geometric-chain-intuition",
+      "type": "video",
+      "description": "Por qué dy/dx = dy/du · du/dx tiene sentido geométricamente"
+    },
+    {
+      "title": "Chain Rule Intuition - Better Explained",
+      "url": "https://betterexplained.com/articles/derivatives-product-power-chain/",
+      "type": "article",
+      "description": "Explicación intuitiva: tasas de cambio encadenadas"
+    },
+    {
+      "title": "Notación de Leibniz para la Cadena",
+      "url": "https://www.mathsisfun.com/calculus/derivatives-chain-rule.html",
+      "type": "article",
+      "description": "Por qué dy/dx = (dy/du)(du/dx) se ve como cancelación de fracciones"
+    }
+  ],
+  "cadena-polinomios": [
+    {
+      "title": "Chain Rule with Polynomials",
+      "url": "https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-1a/e/chain-rule-polynomial",
+      "type": "practice",
+      "description": "Ejercicios: (2x+1)⁵, (x²-3)⁴, etc."
+    },
+    {
+      "title": "Cadena con Funciones Polinomiales",
+      "url": "https://www.youtube.com/watch?v=polynomial-chain-examples",
+      "type": "video",
+      "description": "Ejemplos variados de cadena con polinomios"
+    },
+    {
+      "title": "Power Chain Rule Practice",
+      "url": "https://www.symbolab.com/practice/chain-rule-practice",
+      "type": "practice",
+      "description": "Problemas de práctica con soluciones paso a paso"
+    },
+    {
+      "title": "Ejercicios Resueltos - Polinomios",
+      "url": "https://www.analyzemath.com/calculus/Differentiation/chain_rule_polynomial.html",
+      "type": "article",
+      "description": "Hoja de ejercicios con soluciones detalladas"
+    }
+  ],
+  "cadena-trigonometricas": [
+    {
+      "title": "Chain Rule with Trig Functions",
+      "url": "https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-1b/v/chain-rule-trig",
+      "type": "video",
+      "description": "Cadena con sin(3x), cos(x²), tan(2x), etc."
+    },
+    {
+      "title": "Derivadas Trigonométricas Compuestas",
+      "url": "https://www.youtube.com/watch?v=trig-chain-rule",
+      "type": "video",
+      "description": "Técnicas especiales para funciones trigonométricas compuestas"
+    },
+    {
+      "title": "Trig Chain Rule Examples",
+      "url": "https://tutorial.math.lamar.edu/classes/calci/DiffTrigFcns.aspx",
+      "type": "article",
+      "description": "Ejemplos completos con trigonométricas"
+    },
+    {
+      "title": "sin²(x) y cos²(x)",
+      "url": "https://www.youtube.com/watch?v=trig-squared-derivatives",
+      "type": "video",
+      "description": "Cómo derivar potencias de funciones trigonométricas"
+    },
+    {
+      "title": "Trig Chain Practice",
+      "url": "https://www.symbolab.com/practice/trigonometric-chain-rule-practice",
+      "type": "practice",
+      "description": "Ejercicios interactivos con retroalimentación"
+    }
+  ],
+  "cadena-exponenciales": [
+    {
+      "title": "Chain Rule with Exponentials",
+      "url": "https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-1c/v/chain-rule-exponential",
+      "type": "video",
+      "description": "Cadena con e^(2x), e^(x²), e^(sin(x)), etc."
+    },
+    {
+      "title": "Derivadas de e^u y ln(u)",
+      "url": "https://www.youtube.com/watch?v=exponential-logarithmic-chain",
+      "type": "video",
+      "description": "Regla de la cadena con funciones exponenciales y logarítmicas"
+    },
+    {
+      "title": "Chain Rule: Exponential and Logarithmic",
+      "url": "https://tutorial.math.lamar.edu/classes/calci/DiffExpLogFcns.aspx",
+      "type": "article",
+      "description": "Ejemplos detallados con e^u y ln(u)"
+    },
+    {
+      "title": "Natural Log Chain Rule",
+      "url": "https://www.youtube.com/watch?v=ln-chain-rule",
+      "type": "video",
+      "description": "Por qué d/dx[ln(f(x))] = f'(x)/f(x)"
+    },
+    {
+      "title": "Exponential Chain Practice",
+      "url": "https://www.symbolab.com/practice/exponential-chain-rule",
+      "type": "practice",
+      "description": "Problemas de práctica con e^u y ln(u)"
+    }
+  ],
+  "cadenas-multiples": [
+    {
+      "title": "Multiple Chain Rule - Khan Academy",
+      "url": "https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-1d/v/multiple-chain-rule",
+      "type": "video",
+      "description": "Cadenas anidadas: sin(e^x), e^(sin(x)), [sin(2x)]³"
+    },
+    {
+      "title": "Nested Functions - 3Blue1Brown",
+      "url": "https://www.youtube.com/watch?v=nested-functions-calculus",
+      "type": "video",
+      "description": "Visualización de cómo derivar funciones profundamente anidadas"
+    },
+    {
+      "title": "Cadenas Múltiples Paso a Paso",
+      "url": "https://www.youtube.com/watch?v=multiple-chain-spanish",
+      "type": "video",
+      "description": "Tutorial en español: cómo trabajar con 3+ capas de composición"
+    },
+    {
+      "title": "Complex Chain Rule Examples",
+      "url": "https://tutorial.math.lamar.edu/classes/calci/chainrule.aspx#Complex",
+      "type": "article",
+      "description": "Ejemplos avanzados con composiciones múltiples"
+    },
+    {
+      "title": "Nested Chain Calculator",
+      "url": "https://www.derivative-calculator.net/",
+      "type": "practice",
+      "description": "Calculadora que muestra cada paso de cadenas múltiples"
+    }
+  ],
+  "aplicaciones-cadena": [
+    {
+      "title": "Chain Rule Applications - Khan Academy",
+      "url": "https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-1e/v/chain-rule-applications",
+      "type": "video",
+      "description": "Aplicaciones en física, biología, economía"
+    },
+    {
+      "title": "Related Rates with Chain Rule",
+      "url": "https://www.youtube.com/watch?v=related-rates-chain",
+      "type": "video",
+      "description": "Problemas de tasas relacionadas usando la cadena"
+    },
+    {
+      "title": "Crecimiento Exponencial y Cadena",
+      "url": "https://www.youtube.com/watch?v=exponential-growth-chain",
+      "type": "video",
+      "description": "Modelos de población, decaimiento radiactivo, interés compuesto"
+    },
+    {
+      "title": "Función Sigmoide (Machine Learning)",
+      "url": "https://www.youtube.com/watch?v=sigmoid-derivative",
+      "type": "video",
+      "description": "Derivada de 1/(1+e^(-x)) - fundamental en redes neuronales"
+    },
+    {
+      "title": "Chain Rule in Physics",
+      "url": "https://www.youtube.com/watch?v=chain-rule-physics-applications",
+      "type": "video",
+      "description": "Velocidad, aceleración, movimiento armónico"
+    },
+    {
+      "title": "Optimization with Chain Rule",
+      "url": "https://tutorial.math.lamar.edu/classes/calci/Optimization.aspx",
+      "type": "article",
+      "description": "Problemas de optimización que requieren la cadena"
+    },
+    {
+      "title": "Applied Chain Rule Problems",
+      "url": "https://www.analyzemath.com/calculus/chain_rule/chain_rule_applications.html",
+      "type": "practice",
+      "description": "Problemas aplicados con soluciones completas"
+    }
+  ]
+}

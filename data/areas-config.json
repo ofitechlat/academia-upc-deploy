@@ -1,0 +1,85 @@
+{
+  "areas": [
+    {
+      "id": "precalculo",
+      "title": "Precálculo",
+      "description": "Fundamentos matemáticos: números reales, álgebra, ecuaciones y funciones básicas",
+      "icon": "fas fa-square-root-alt",
+      "courseIds": [
+        "numeros-reales",
+        "propiedades-operaciones",
+        "orden-reales",
+        "desigualdades-intervalos",
+        "operaciones-numeros-reales",
+        "expresiones-algebraicas",
+        "ecuaciones-inecuaciones",
+        "conceptos-basicos-funciones",
+        "precalculo"
+      ]
+    },
+    {
+      "id": "calculo-diferencial",
+      "title": "Cálculo Diferencial",
+      "description": "Domina las derivadas: límites, definiciones, reglas y aplicaciones del cálculo diferencial",
+      "icon": "fas fa-chart-line",
+      "courseIds": [
+        "reglas-basicas-derivacion",
+        "regla-producto",
+        "regla-cociente",
+        "regla-cadena",
+        "derivacion-implicita",
+        "recta-tangente",
+        "recta-normal",
+        "derivadas-trigonometricas",
+        "derivadas-exponenciales",
+        "derivadas-logaritmicas",
+        "derivacion-logaritmica-avanzada",
+        "tasas-cambio-relacionadas",
+        "monotonia-funciones",
+        "puntos-maximos-minimos-inflexion",
+        "criterio-segunda-derivada",
+        "derivadas-orden-superior",
+        "ecuaciones-asintotas",
+        "intervalos-concavidad-convexidad",
+        "intersecciones-ejes",
+        "dominio-maximo-funcion",
+        "funcion-compuesta",
+        "funcion-polinomial"
+      ]
+    },
+    {
+      "id": "calculo-avanzado",
+      "title": "Cálculo Avanzado",
+      "description": "Temas avanzados: series, cálculo vectorial, geometría analítica y derivadas parciales",
+      "icon": "fas fa-cube",
+      "courseIds": [
+        "calculo-avanzado",
+        "series-numericas"
+      ]
+    },
+    {
+      "id": "contabilidad",
+      "title": "Contabilidad",
+      "description": "Fundamentos de contabilidad financiera y estados financieros",
+      "icon": "fas fa-calculator",
+      "courseIds": [
+        "contabilidad-basica"
+      ]
+    },
+    {
+      "id": "algebra-lineal",
+      "title": "Álgebra Lineal",
+      "description": "Matrices, sistemas de ecuaciones, espacios vectoriales y transformaciones lineales",
+      "icon": "fas fa-th",
+      "courseIds": [
+        "sistemas-ecuaciones-lineales",
+        "matrices-determinantes",
+        "geometria-vectorial",
+        "espacios-vectoriales",
+        "transformaciones-lineales-algebra",
+        "valores-vectores-propios",
+        "conicas-cuadricas"
+      ]
+    }
+  ]
+}

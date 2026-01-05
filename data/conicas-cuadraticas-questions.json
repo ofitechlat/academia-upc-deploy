@@ -1,0 +1,174 @@
+{
+    "conicas-cuadraticas": [
+        {
+            "id": "cc-t1-mi1",
+            "topic": "formas-cuadraticas",
+            "question": "Encuentra la matriz asociada a la forma cuadrática $Q(x,y) = x^2 + 4xy + y^2$.",
+            "type": "matrix-input",
+            "matrix": {
+                "rows": 2,
+                "cols": 2,
+                "correctAnswer": [
+                    [
+                        1,
+                        2
+                    ],
+                    [
+                        2,
+                        1
+                    ]
+                ]
+            },
+            "difficulty": "medio",
+            "hints": [
+                "El término cruzado 4xy se distribuye: 2xy + 2yx",
+                "La matriz debe ser simétrica"
+            ],
+            "explanation": "La forma cuadrática se escribe como $\\vec{x}^T A \\vec{x}$ donde:\\n\\n$$Q(x,y) = \\begin{bmatrix} x & y \\end{bmatrix} \\begin{bmatrix} a & b \\\\ b & c \\end{bmatrix} \\begin{bmatrix} x \\\\ y \\end{bmatrix} = ax^2 + 2bxy + cy^2$$\\n\\nComparando: $a=1, 2b=4 \\Rightarrow b=2, c=1$\\n\\n$$A = \\begin{bmatrix} 1 & 2 \\\\ 2 & 1 \\end{bmatrix}$$"
+        },
+        {
+            "id": "cc-t2-cat1",
+            "topic": "clasificacion-conicas",
+            "question": "Clasifica cada ecuación según el tipo de cónica.",
+            "type": "categorize",
+            "items": [
+                "$x^2 + y^2 = 25$",
+                "$x^2 - y^2 = 1$",
+                " $x^2 = 4y$",
+                "$4x^2 + 9y^2 = 36$"
+            ],
+            "categories": {
+                "circulo": "Círculo",
+                "elipse": "Elipse",
+                "hiperbola": "Hipérbola",
+                "parabola": "Parábola"
+            },
+            "correctCategories": {
+                "$x^2 + y^2 = 25$": "circulo",
+                "$x^2 - y^2 = 1$": "hiperbola",
+                "$x^2 = 4y$": "parabola",
+                "$4x^2 + 9y^2 = 36$": "elipse"
+            },
+            "difficulty": "medio",
+            "hints": [
+                "Círculo: coeficientes de x² e y² iguales",
+                "Elipse: ambos positivos pero diferentes",
+                "Hipérbola: signos opuestos",
+                "Parábola: solo una variable al cuadrado"
+            ],
+            "explanation": "**$x^2 + y^2 = 25$:** Coeficientes iguales → **Círculo**\\n**$x^2 - y^2 = 1$:** Signos opuestos → **Hipérbola**\\n**$x^2 = 4y$:** Solo x² → **Parábola**\\n**$4x^2 + 9y^2 = 36$:** Ambos +, diferentes → **Elipse**"
+        },
+        {
+            "id": "cc-t2-dd1",
+            "topic": "clasificacion-conicas",
+            "question": "Clasifica las afirmaciones sobre cónicas.",
+            "type": "drag-drop",
+            "items": [
+                "Toda cónica puede escribirse en forma estándar mediante rotación",
+                "El término xy indica que los ejes están rotados",
+                "Una parábola siempre tiene dos focos",
+                "La excentricidad de un círculo es 0"
+            ],
+            "categories": [
+                "Verdadero",
+                "Falso"
+            ],
+            "correctMapping": [
+                0,
+                0,
+                1,
+                0
+            ],
+            "difficulty": "medio",
+            "hints": [
+                "La diagonalización ortogonal elimina el término xy",
+                "Parábola tiene 1 foco, elipse e hipérbola tienen 2"
+            ],
+            "explanation": "**Rotación → forma estándar: VERDADERO**\\n**xy → rotación: VERDADERO** (término mixto)\\n**Parábola 2 focos: FALSO** (tiene 1 foco)\\n**Círculo e=0: VERDADERO** (excentricidad)"
+        },
+        {
+            "id": "cc-t3-or1",
+            "topic": "forma-canonica",
+            "question": "Ordena los pasos para llevar una cónica a forma canónica.",
+            "type": "ordering",
+            "items": [
+                "Identificar la matriz asociada a la forma cuadrática",
+                "Calcular autovalores λ₁, λ₂",
+                "Encontrar autovectores (definen nuevos ejes)",
+                "Rotar los ejes según los autovectores",
+                "Escribir ecuación en forma estándar con nuevas variables"
+            ],
+            "correctOrder": [
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "difficulty": "avanzado",
+            "hints": [
+                "Es un proceso de diagonalización ortogonal",
+                "Los autovectores dan la dirección de los nuevos ejes"
+            ],
+            "explanation": "Para **forma canónica de una cónica:**\\n1. Matriz de la forma cuadrática\\n2. Autovalores (determinan tipo de cónica)\\n3. Autovectores (nuevos ejes)\\n4. Rotación\\n5. Ecuación canónica"
+        },
+        {
+            "id": "cc-t4-n1",
+            "topic": "rotacion-ejes",
+            "question": "Si los autovalores de la matriz asociada a una cónica son λ₁=4 y λ₂=9, ¿cuál es el coeficiente de x'² en la forma canónica?",
+            "type": "numeric",
+            "answer": 4,
+            "tolerance": 0.01,
+            "difficulty": "medio",
+            "hints": [
+                "Los autovalores se convierten en los coeficientes de las variables al cuadrado",
+                "El primer autovalor corresponde a x'²"
+            ],
+            "explanation": "En la **forma diagonal**, la ecuación se vuelve:\\n$$\\lambda_1 (x')^2 + \\lambda_2 (y')^2 = k$$\\n\\nPor tanto, el coeficiente de $(x')^2$ es $\\lambda_1 = 4$."
+        },
+        {
+            "id": "cc-t2-mn1",
+            "topic": "clasificacion-conicas",
+            "question": "Completa la ecuación estándar de la elipse $9x^2 + 16y^2 = 144$ dividiéndola por 144.",
+            "type": "multiple-numeric",
+            "fields": [
+                {
+                    "label": "Denominador bajo x²:",
+                    "answer": 16,
+                    "tolerance": 0.01
+                },
+                {
+                    "label": "Denominador bajo y²:",
+                    "answer": 9,
+                    "tolerance": 0.01
+                }
+            ],
+            "difficulty": "medio",
+            "hints": [
+                "Divide ambos lados por 144",
+                "$\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$"
+            ],
+            "explanation": "Dividiendo por 144:\\n$$\\frac{9x^2}{144} + \\frac{16y^2}{144} = 1$$\\n$$\\frac{x^2}{16} + \\frac{y^2}{9} = 1$$\\n\\nDenominadores: **16** y **9**"
+        },
+        {
+            "id": "cc-t3-mc1",
+            "topic": "forma-canonica",
+            "question": "¿Qué información NO se puede obtener directamente de los autovalores de la matriz asociada a una cónica?",
+            "type": "multiple-choice",
+            "shuffle": true,
+            "options": [
+                "El tipo de cónica (elipse, hipérbola, parábola)",
+                "La orientación de los ejes",
+                "Si la cónica está centrada en el origen",
+                "Los coeficientes en la forma canónica"
+            ],
+            "correct": 2,
+            "difficulty": "avanzado",
+            "hints": [
+                "Los autovalores solo afectan la parte cuadrática",
+                "Los términos lineales determinan el centro"
+            ],
+            "explanation": "Los **autovalores** determinan:\\n- Tipo de cónica (signos)\\n- Coeficientes canónicos\\n- Orientación (via autovectores)\\n\\nPero NO determinan el **centro** (eso depende de los términos lineales en la ecuación original)."
+        }
+    ]
+}

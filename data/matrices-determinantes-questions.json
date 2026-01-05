@@ -1,0 +1,180 @@
+{
+    "matrices-determinantes": [
+        {
+            "id": "md-t1-dd1",
+            "topic": "propiedades-matrices",
+            "question": "Arrastra la respuesta correcta para cada afirmación sobre propiedades de matrices.",
+            "type": "drag-drop",
+            "items": [
+                "El rango de una matriz 3×5 puede ser 4",
+                "El rango de una matriz y su transpuesta son iguales",
+                "La suma de dos matrices invertibles es siempre invertible",
+                "El producto de dos matrices invertibles es siempre invertible"
+            ],
+            "categories": [
+                "Verdadero",
+                "Falso"
+            ],
+            "correctMapping": [
+                1,
+                0,
+                1,
+                0
+            ],
+            "difficulty": "facil",
+            "hints": [
+                "El rango máximo es min(filas, columnas)",
+                "Para suma, busca un contraejemplo con I y -I"
+            ],
+            "explanation": "**Rango 3×5=4: FALSO** (máx = 3)\\n**Rango = Rango transpuesta: VERDADERO**\\n**Suma invertibles: FALSO** (I + (-I) = 0)\\n**Producto invertibles: VERDADERO** (teorema)"
+        },
+        {
+            "id": "md-t1-fb1",
+            "topic": "propiedades-matrices",
+            "question": "Completa la afirmación sobre invertibilidad.",
+            "type": "fill-blank",
+            "blanks": [
+                "distinto de cero",
+                "singular"
+            ],
+            "distractors": [
+                "igual a cero",
+                "invertible",
+                "nula",
+                "diagonal"
+            ],
+            "template": "Una matriz es invertible si y solo si su determinante es _____. Si el determinante es cero, la matriz se llama _____.",
+            "difficulty": "facil",
+            "hints": [
+                "¿Qué condición debe cumplir det(A) para que exista A⁻¹?",
+                "Matrices con det=0 se llaman singulares o no invertibles"
+            ],
+            "explanation": "**Teorema fundamental:** Una matriz cuadrada $A$ es **invertible** $\\Leftrightarrow$ $\\det(A) \\neq 0$. Las matrices con $\\det(A) = 0$ se llaman **singulares** o no invertibles."
+        },
+        {
+            "id": "md-t1-cat1",
+            "topic": "propiedades-matrices",
+            "question": "Clasifica cada matriz según su rango.",
+            "type": "categorize",
+            "items": [
+                "$\\begin{bmatrix} 1 & 2 \\\\ 2 & 4 \\end{bmatrix}$",
+                "$\\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix}$",
+                "$\\begin{bmatrix} 0 & 0 \\\\ 0 & 0 \\end{bmatrix}$"
+            ],
+            "categories": {
+                "rango-0": "Rango 0",
+                "rango-1": "Rango 1",
+                "rango-2": "Rango 2"
+            },
+            "correctCategories": {
+                "$\\begin{bmatrix} 1 & 2 \\\\ 2 & 4 \\end{bmatrix}$": "rango-1",
+                "$\\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix}$": "rango-2",
+                "$\\begin{bmatrix} 0 & 0 \\\\ 0 & 0 \\end{bmatrix}$": "rango-0"
+            },
+            "difficulty": "medio",
+            "hints": [
+                "Cuenta filas linealmente independientes",
+                "La segunda fila de la primera matriz es 2× la primera"
+            ],
+            "explanation": "**Primera matriz:** Fila 2 = 2×Fila 1, solo 1 fila independiente → Rango 1\\n**Segunda matriz:** Identidad, 2 filas independientes → Rango 2\\n**Tercera matriz:** Matriz nula → Rango 0"
+        },
+        {
+            "id": "md-t2-n1",
+            "topic": "determinantes",
+            "question": "Calcula $\\det(4I_4)$ donde $I_4$ es la matriz identidad de orden 4.",
+            "type": "numeric",
+            "answer": 256,
+            "tolerance": 0.01,
+            "difficulty": "facil",
+            "hints": [
+                "Usa la propiedad $\\det(kA) = k^n \\det(A)$ para matrices $n \\times n$",
+                "$\\det(I_4) = 1$"
+            ],
+            "explanation": "$$\\det(4I_4) = 4^4 \\cdot \\det(I_4) = 4^4 \\cdot 1 = 256$$\\n\\n**Propiedad general:** $\\det(kA) = k^n \\det(A)$ para matrices $n \\times n$."
+        },
+        {
+            "id": "md-t2-n2",
+            "topic": "determinantes",
+            "question": "Para una matriz $A$ de orden 5 con $\\det(A) = 3$, calcula $\\det(2A)$.",
+            "type": "numeric",
+            "answer": 96,
+            "tolerance": 0.01,
+            "difficulty": "medio",
+            "hints": [
+                "$\\det(2A) = 2^5 \\det(A)$",
+                "$2^5 = 32$"
+            ],
+            "explanation": "$$\\det(2A) = 2^5 \\cdot \\det(A) = 32 \\cdot 3 = 96$$"
+        },
+        {
+            "id": "md-t2-mc1",
+            "topic": "determinantes",
+            "question": "**Cuadrado Mágico de Durero**\\n\\n$$A = \\begin{bmatrix} 8 & 1 & 6 \\\\ 3 & 5 & 7 \\\\ 4 & 9 & 2 \\end{bmatrix}$$\\n\\n¿Cuál es $\\det(A)$?",
+            "type": "multiple-choice",
+            "shuffle": true,
+            "options": [
+                "0",
+                "15",
+                "360",
+                "-15",
+                "1"
+            ],
+            "correct": 0,
+            "difficulty": "avanzado",
+            "hints": [
+                "En un cuadrado mágico, todas las filas suman lo mismo",
+                "Si puedes expresar una fila como combinación de otras, det=0"
+            ],
+            "explanation": "En un cuadrado mágico, todas las filas suman 15. Esto significa que las filas son **linealmente dependientes**: si sumamos todas las filas, obtenemos $[15, 15, 15]$, pero cada fila individual también suma 15. Por tanto, existe una combinación lineal no trivial de las filas que da cero, así que $\\det(A) = 0$."
+        },
+        {
+            "id": "md-t3-mi1",
+            "topic": "matriz-inversa",
+            "question": "Encuentra la matriz inversa de $A = \\begin{bmatrix} 2 & 0 \\\\ 0 & 3 \\end{bmatrix}$ (matriz diagonal).",
+            "type": "matrix-input",
+            "matrix": {
+                "rows": 2,
+                "cols": 2,
+                "correctAnswer": [
+                    [
+                        0.5,
+                        0
+                    ],
+                    [
+                        0,
+                        0.333333
+                    ]
+                ]
+            ],
+            "difficulty": "medio",
+            "hints": [
+                "Para matriz diagonal, invierte cada elemento de la diagonal",
+                "$A^{-1}$ también es diagonal con elementos $1/a_{ii}$"
+            ],
+            "explanation": "Para una matriz diagonal, la inversa es otra matriz diagonal con los recíprocos:\\n\\n$$A^{-1} = \\begin{bmatrix} 1/2 & 0 \\\\ 0 & 1/3 \\end{bmatrix} = \\begin{bmatrix} 0.5 & 0 \\\\ 0 & 0.\\overline{3} \\end{bmatrix}$$"
+        },
+        {
+            "id": "md-t4-fb2",
+            "topic": "propiedades-matrices",
+            "question": "Los vectores $(1,9,2)$, $(8,0,-1)$, $(2,2,a)$ son linealmente independientes cuando $a \\neq$ _____.",
+            "type": "fill-blank",
+            "blanks": [
+                "0"
+            ],
+            "distractors": [
+                "1",
+                "2",
+                "-1",
+                "9",
+                "8"
+            ],
+            "template": "a ≠ _____",
+            "difficulty": "avanzado",
+            "hints": [
+                "Calcula el determinante de la matriz formada por los vectores",
+                "Los vectores son l.i. cuando det ≠ 0"
+            ],
+            "explanation": "Formamos $A = \\begin{bmatrix} 1 & 8 & 2 \\\\ 9 & 0 & 2 \\\\ 2 & -1 & a \\end{bmatrix}$ y calculamos $\\det(A)$ en términos de $a$. Después de desarrollar, encontramos que $\\det(A) = k \\cdot a$ para algún $k \\neq 0$, así que $\\det(A) = 0$ cuando $a = 0$. Por tanto, son l.i. cuando $a \\neq 0$."
+        }
+    ]
+}

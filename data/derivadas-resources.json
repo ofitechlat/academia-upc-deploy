@@ -1,0 +1,234 @@
+{
+  "derivadas": {
+    "introduccion-concepto": [
+      {
+        "title": "Introducción a las derivadas",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-diff/dc-intro-diff/v/calculus-derivatives-1",
+        "type": "video",
+        "description": "Video introductorio que explica el concepto básico de derivada"
+      },
+      {
+        "title": "Derivada como pendiente de recta tangente",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-diff/dc-intro-diff/v/calculus-derivatives-2-5",
+        "type": "video",
+        "description": "Interpretación geométrica de la derivada"
+      },
+      {
+        "title": "Definición formal de derivada",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-diff/dc-intro-diff/a/formal-definition-of-derivative",
+        "type": "article",
+        "description": "Explicación detallada de la definición usando límites"
+      },
+      {
+        "title": "Práctica: Conceptos básicos",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-diff/dc-intro-diff/e/derivative-intuition",
+        "type": "practice",
+        "description": "Ejercicios para entender intuitivamente las derivadas"
+      }
+    ],
+    "regla-potencia": [
+      {
+        "title": "La regla de la potencia",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-diff/dc-basic-rules/v/power-rule",
+        "type": "video",
+        "description": "Cómo derivar funciones con exponentes"
+      },
+      {
+        "title": "Regla de la potencia: ejemplos",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-diff/dc-basic-rules/v/power-rule-negative-and-fractional-exponents",
+        "type": "video",
+        "description": "Aplicación con exponentes negativos y fraccionarios"
+      },
+      {
+        "title": "Práctica: Regla de la potencia",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-diff/dc-basic-rules/e/power_rule",
+        "type": "practice",
+        "description": "Ejercicios para dominar la regla de la potencia"
+      }
+    ],
+    "reglas-basicas": [
+      {
+        "title": "Derivadas de funciones trigonométricas",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-diff/dc-trig-diff/v/derivatives-of-sin-x-and-cos-x",
+        "type": "video",
+        "description": "Derivadas de seno, coseno y otras funciones trigonométricas"
+      },
+      {
+        "title": "Derivada de e^x y ln(x)",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-diff/dc-exp-log-diff/v/derivative-of-e-x",
+        "type": "video",
+        "description": "Derivadas de funciones exponenciales y logarítmicas"
+      },
+      {
+        "title": "Tabla de derivadas comunes",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-diff/dc-basic-rules/a/basic-differentiation-review",
+        "type": "reference",
+        "description": "Referencia rápida de derivadas básicas"
+      }
+    ],
+    "regla-producto": [
+      {
+        "title": "La regla del producto",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-diff/dc-advanced-rules/v/product-rule",
+        "type": "video",
+        "description": "Cómo derivar el producto de dos funciones"
+      },
+      {
+        "title": "Ejemplos de regla del producto",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-diff/dc-advanced-rules/v/applying-the-product-rule",
+        "type": "video",
+        "description": "Ejercicios resueltos paso a paso"
+      },
+      {
+        "title": "Práctica: Regla del producto",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-diff/dc-advanced-rules/e/product-rule",
+        "type": "practice",
+        "description": "Ejercicios para practicar la regla del producto"
+      }
+    ],
+    "regla-cociente": [
+      {
+        "title": "La regla del cociente",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-diff/dc-advanced-rules/v/quotient-rule",
+        "type": "video",
+        "description": "Cómo derivar el cociente de dos funciones"
+      },
+      {
+        "title": "Ejemplos de regla del cociente",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-diff/dc-advanced-rules/v/quotient-rule-example",
+        "type": "video",
+        "description": "Aplicación práctica de la regla del cociente"
+      },
+      {
+        "title": "Práctica: Regla del cociente",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-diff/dc-advanced-rules/e/quotient-rule",
+        "type": "practice",
+        "description": "Ejercicios para dominar la regla del cociente"
+      }
+    ],
+    "regla-cadena": [
+      {
+        "title": "La regla de la cadena",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-diff/dc-advanced-rules/v/chain-rule-introduction",
+        "type": "video",
+        "description": "Introducción a la regla de la cadena"
+      },
+      {
+        "title": "Regla de la cadena: ejemplos",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-diff/dc-advanced-rules/v/chain-rule-examples",
+        "type": "video",
+        "description": "Ejemplos detallados de funciones compuestas"
+      },
+      {
+        "title": "Derivación implícita",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-diff/dc-implicit-diff/v/implicit-differentiation-1",
+        "type": "video",
+        "description": "Aplicación avanzada de la regla de la cadena"
+      },
+      {
+        "title": "Práctica: Regla de la cadena",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-diff/dc-advanced-rules/e/chain-rule",
+        "type": "practice",
+        "description": "Ejercicios de funciones compuestas"
+      }
+    ],
+    "aplicaciones-pendiente": [
+      {
+        "title": "Rectas tangentes y normales",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-applications/dc-tangent-normal/v/equation-of-a-tangent-line",
+        "type": "video",
+        "description": "Encontrar ecuaciones de rectas tangentes"
+      },
+      {
+        "title": "Velocidad y aceleración",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-applications/dc-motion/v/position-velocity-and-acceleration",
+        "type": "video",
+        "description": "Aplicaciones en problemas de movimiento"
+      },
+      {
+        "title": "Práctica: Rectas tangentes",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-applications/dc-tangent-normal/e/tangent-lines",
+        "type": "practice",
+        "description": "Ejercicios de rectas tangentes"
+      }
+    ],
+    "aplicaciones-maximos-minimos": [
+      {
+        "title": "Máximos y mínimos locales",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-applications/dc-max-min/v/finding-relative-extrema",
+        "type": "video",
+        "description": "Encontrar puntos críticos y extremos"
+      },
+      {
+        "title": "Criterio de la segunda derivada",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-applications/dc-max-min/v/second-derivative-test",
+        "type": "video",
+        "description": "Clasificar puntos críticos"
+      },
+      {
+        "title": "Gráficas y derivadas",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-applications/dc-graphs/v/graphing-with-calculus",
+        "type": "video",
+        "description": "Usar derivadas para graficar funciones"
+      },
+      {
+        "title": "Práctica: Extremos",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-applications/dc-max-min/e/relative-maxima-and-minima",
+        "type": "practice",
+        "description": "Ejercicios de máximos y mínimos"
+      }
+    ],
+    "aplicaciones-optimizacion": [
+      {
+        "title": "Problemas de optimización",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-applications/dc-optimization/v/optimization-introduction",
+        "type": "video",
+        "description": "Introducción a problemas de optimización"
+      },
+      {
+        "title": "Optimización: área máxima",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-applications/dc-optimization/v/optimization-fence-problem",
+        "type": "video",
+        "description": "Problema clásico del cercado"
+      },
+      {
+        "title": "Optimización: volumen mínimo",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-applications/dc-optimization/v/optimization-package-volume",
+        "type": "video",
+        "description": "Problemas de minimización de materiales"
+      },
+      {
+        "title": "Práctica: Optimización",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-applications/dc-optimization/e/optimization",
+        "type": "practice",
+        "description": "Ejercicios variados de optimización"
+      }
+    ],
+    "problemas-relacionados": [
+      {
+        "title": "Razones de cambio relacionadas",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-applications/dc-related-rates/v/related-rates-introduction",
+        "type": "video",
+        "description": "Introducción a razones de cambio relacionadas"
+      },
+      {
+        "title": "Problema de la escalera",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-applications/dc-related-rates/v/related-rates-ladder-problem",
+        "type": "video",
+        "description": "Problema clásico de la escalera deslizante"
+      },
+      {
+        "title": "Problemas con globos",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-applications/dc-related-rates/v/related-rates-balloon",
+        "type": "video",
+        "description": "Razones de cambio en volúmenes"
+      },
+      {
+        "title": "Práctica: Razones relacionadas",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-applications/dc-related-rates/e/related-rates",
+        "type": "practice",
+        "description": "Ejercicios de razones de cambio relacionadas"
+      }
+    ]
+  }
+}

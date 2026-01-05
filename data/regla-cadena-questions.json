@@ -1,0 +1,1031 @@
+﻿{
+  "regla-cadena": [
+    {
+      "id": "rc-001",
+      "topic": "composicion-funciones",
+      "question": "Si $f(x) = x^2$ y $g(x) = 3x + 1$, ¿cuál es $(f \\circ g)(x)$?",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$(3x + 1)^2 = 9x^2 + 6x + 1$",
+        "$3x^2 + 1$",
+        "$x^2 + 3x + 1$",
+        "$(x^2)^3 + 1$"
+      ],
+      "correct": 0,
+      "difficulty": "facil",
+      "hints": [
+        "Composición significa f(g(x)): evalúa f en g(x)",
+        "Sustituye g(x) = 3x + 1 en lugar de x en f",
+        "f(g(x)) = (3x + 1)²"
+      ],
+      "stepByStep": [
+        "### 📚 **Composición de funciones**",
+        "",
+        "**Notación:** $(f \\circ g)(x) = f(g(x))$",
+        "",
+        "**Dadas:**",
+        "- $f(x) = x^2$",
+        "- $g(x) = 3x + 1$",
+        "",
+        "### 🔄 **Paso 1: Evaluar f en g(x)**",
+        "",
+        "$$f(g(x)) = f(3x + 1)$$",
+        "",
+        "**Sustituimos** $3x + 1$ en lugar de $x$ en $f$:",
+        "$$f(3x + 1) = (3x + 1)^2$$",
+        "",
+        "### 📊 **Paso 2: Expandir (opcional)**",
+        "$$f(g(x)) = (3x + 1)^2 = 9x^2 + 6x + 1$$",
+        "",
+        "### ✅ **Respuesta**",
+        "$(f \\circ g)(x) = (3x + 1)^2 = 9x^2 + 6x + 1$"
+      ],
+      "explanation": "Composición: f(g(x)) = f(3x+1) = (3x+1)²"
+    },
+    {
+      "id": "rc-002",
+      "topic": "composicion-funciones",
+      "question": "Identifica la función EXTERNA e INTERNA en $h(x) = \\sin(x^2)$",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "Externa: $\\sin(u)$, Interna: $u = x^2$",
+        "Externa: $x^2$, Interna: $\\sin(x)$",
+        "Externa: $\\sin(x)$, Interna: $x^2$",
+        "No hay composición"
+      ],
+      "correct": 0,
+      "difficulty": "facil",
+      "hints": [
+        "¿Qué operación se aplica PRIMERO? (interna)",
+        "¿Qué operación se aplica DESPUÉS? (externa)",
+        "Primero: elevar al cuadrado, Después: aplicar seno"
+      ],
+      "stepByStep": [
+        "### ðŸ” **Identificación de composición**",
+        "",
+        "**Función:** $h(x) = \\sin(x^2)$",
+        "",
+        "### 📖 **Orden de evaluación:**",
+        "",
+        "1. **Primero** (INTERNA): calcular $x^2$",
+        "2. **Después** (EXTERNA): aplicar $\\sin$ al resultado",
+        "",
+        "### 🎯 **Descomposición**",
+        "",
+        "Si llamamos $u = x^2$ (función interna):",
+        "$$h(x) = \\sin(u)$$ (función externa)",
+        "",
+        "### ✅ **Respuesta**",
+        "- **Externa:** $f(u) = \\sin(u)$",
+        "- **Interna:** $g(x) = x^2$",
+        "",
+        "Entonces: $h(x) = f(g(x)) = \\sin(x^2)$"
+      ],
+      "explanation": "Externa: sin(u), Interna: u = x². Se aplica x² primero, luego sin."
+    },
+    {
+      "id": "rc-003",
+      "topic": "composicion-funciones",
+      "question": "Completa: Para $y = (2x + 1)^5$, la función interna es _____ y la externa es _____",
+      "type": "fill-blank",
+      "blanks": ["$u = 2x + 1$", "$u^5$"],
+      "distractors": ["$x^5$", "$2x$", "$5u^4$", "$(2x)^5$", "$u + 1$", "$2u$"],
+      "template": "Para $y = (2x + 1)^5$, la función interna es _____ y la externa es _____",
+      "difficulty": "facil",
+      "hints": [
+        "¿Qué expresión está dentro del paréntesis?",
+        "¿Qué operación se aplica al resultado?",
+        "Interna: lo que está dentro, Externa: elevar a la 5"
+      ],
+      "stepByStep": [
+        "### ðŸ” **Descomposición de $(2x + 1)^5$**",
+        "",
+        "**Paso 1:** Identificar lo que está \"dentro\"",
+        "- La expresión dentro del paréntesis: $2x + 1$",
+        "- Esta es la **función interna**: $u = 2x + 1$",
+        "",
+        "**Paso 2:** Identificar la operación \"externa\"",
+        "- Se eleva a la quinta potencia",
+        "- Esta es la **función externa**: $f(u) = u^5$",
+        "",
+        "### 🔄 **Verificación**",
+        "$$y = f(g(x)) = [g(x)]^5 = (2x + 1)^5$$ âœ“",
+        "",
+        "### ✅ **Respuesta**",
+        "- Interna: $u = 2x + 1$",
+        "- Externa: $u^5$"
+      ],
+      "explanation": "Interna: u = 2x+1 (lo de dentro), Externa: uâµ (operación aplicada)"
+    },
+    {
+      "id": "rc-004",
+      "topic": "introduccion-cadena",
+      "question": "Si $h(x) = f(g(x))$, ¿cuál es la fórmula de la regla de la cadena para $h'(x)$?",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$h'(x) = f'(g(x)) \\cdot g'(x)$",
+        "$h'(x) = f'(x) \\cdot g'(x)$",
+        "$h'(x) = f(g'(x))$",
+        "$h'(x) = f'(g(x)) + g'(x)$"
+      ],
+      "correct": 0,
+      "difficulty": "facil",
+      "hints": [
+        "Deriva la función EXTERNA evaluada en la INTERNA",
+        "Luego MULTIPLICA por la derivada de la INTERNA",
+        "Fórmula: f'(g(x))Â·g'(x)"
+      ],
+      "stepByStep": [
+        "### 📚 **Regla de la Cadena - Fórmula**",
+        "",
+        "**Si:** $h(x) = f(g(x))$ (composición)",
+        "",
+        "**Entonces:**",
+        "$$h'(x) = f'(g(x)) \\cdot g'(x)$$",
+        "",
+        "### 🎯 **En palabras:**",
+        "",
+        "\"**Derivada de la externa** (evaluada en la interna) **por** derivada de la interna\"",
+        "",
+        "### 📖 **Pasos:**",
+        "1. Deriva la función externa $f$",
+        "2. Evalúa en la función interna $g(x)$",
+        "3. Multiplica por la derivada de la interna $g'(x)$",
+        "",
+        "### ðŸ’¡ **Notación alternativa (Leibniz)**",
+        "$$\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx}$$",
+        "",
+        "### ✅ **Respuesta**",
+        "$h'(x) = f'(g(x)) \\cdot g'(x)$"
+      ],
+      "explanation": "Regla de la cadena: h'(x) = f'(g(x))Â·g'(x)"
+    },
+    {
+      "id": "rc-005",
+      "topic": "introduccion-cadena",
+      "question": "Deriva: $y = (x^2 + 1)^3$",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$6x(x^2 + 1)^2$",
+        "$3(x^2 + 1)^2$",
+        "$3x^2(x^2 + 1)^2$",
+        "$(x^2 + 1)^3$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Externa: uÂ³, Interna: u = x² + 1",
+        "Deriva externa: 3u²",
+        "Deriva interna: 2x, luego multiplica"
+      ],
+      "stepByStep": [
+        "### ðŸ“ **Identificación**",
+        "",
+        "**Función:** $y = (x^2 + 1)^3$",
+        "",
+        "- **Externa:** $f(u) = u^3$ → $f'(u) = 3u^2$",
+        "- **Interna:** $g(x) = x^2 + 1$ → $g'(x) = 2x$",
+        "",
+        "### ðŸ§® **Regla de la cadena**",
+        "",
+        "$$\\frac{dy}{dx} = f'(g(x)) \\cdot g'(x)$$",
+        "$$\\frac{dy}{dx} = 3(x^2 + 1)^2 \\cdot 2x$$",
+        "",
+        "### 📊 **Simplificamos**",
+        "$$\\frac{dy}{dx} = 6x(x^2 + 1)^2$$",
+        "",
+        "### ✅ **Respuesta**",
+        "$y' = 6x(x^2 + 1)^2$"
+      ],
+      "explanation": "y' = 3(x²+1)² Â· 2x = 6x(x²+1)²"
+    },
+    {
+      "id": "rc-006",
+      "topic": "demostracion-cadena",
+      "question": "Ordena los pasos de la intuición geométrica de la regla de la cadena",
+      "type": "ordering",
+      "items": [
+        "Un cambio en $x$ causa un cambio en $u = g(x)$",
+        "El cambio en $u$ se relaciona con $x$ mediante $\\frac{du}{dx} = g'(x)$",
+        "El cambio en $u$ causa un cambio en $y = f(u)$",
+        "El cambio en $y$ se relaciona con $u$ mediante $\\frac{dy}{du} = f'(u)$",
+        "El cambio total en $y$ respecto a $x$ es: $\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx}$"
+      ],
+      "correctOrder": [0, 1, 2, 3, 4],
+      "difficulty": "medio",
+      "hints": [
+        "Sigue la cadena: x → u → y",
+        "Primero x cambia, luego u cambia, finalmente y cambia",
+        "Las tasas se multiplican"
+      ],
+      "stepByStep": [
+        "### ðŸ”— **Intuición geométrica de la cadena**",
+        "",
+        "**Situación:** $y = f(u)$ y $u = g(x)$",
+        "",
+        "### 📊 **Secuencia de cambios:**",
+        "",
+        "**1.** Un cambio pequeño $\\Delta x$ en $x$",
+        "",
+        "**2.** Causa un cambio en $u$: $\\Delta u \\approx g'(x) \\cdot \\Delta x$",
+        "",
+        "**3.** Este cambio en $u$ causa un cambio en $y$",
+        "",
+        "**4.** Cambio en $y$: $\\Delta y \\approx f'(u) \\cdot \\Delta u$",
+        "",
+        "**5.** Combinando:",
+        "$$\\Delta y \\approx f'(u) \\cdot [g'(x) \\cdot \\Delta x]$$",
+        "$$\\frac{\\Delta y}{\\Delta x} \\approx f'(u) \\cdot g'(x)$$",
+        "",
+        "### ✅ **En el límite:**",
+        "$$\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx}$$"
+      ],
+      "explanation": "Los cambios se propagan: x → u → y, y las tasas se multiplican"
+    },
+    {
+      "id": "rc-007",
+      "topic": "cadena-polinomios",
+      "question": "¿Cuál es la derivada de $f(x) = (3x - 2)^4$?",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$12(3x - 2)^3$",
+        "$4(3x - 2)^3$",
+        "$3(3x - 2)^3$",
+        "$4(3x - 2)^4$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Externa: uâ´, Interna: u = 3x - 2",
+        "f'(u) = 4uÂ³, g'(x) = 3",
+        "Multiplica: 4uÂ³ Â· 3 = 12uÂ³"
+      ],
+      "stepByStep": [
+        "### ðŸ“ **Función:** $f(x) = (3x - 2)^4$",
+        "",
+        "**Identificación:**",
+        "- Externa: $u^4$ → derivada: $4u^3$",
+        "- Interna: $u = 3x - 2$ → derivada: $3$",
+        "",
+        "### ðŸ§® **Regla de la cadena**",
+        "",
+        "$$f'(x) = 4(3x - 2)^3 \\cdot 3$$",
+        "",
+        "### 📊 **Simplificamos**",
+        "$$f'(x) = 12(3x - 2)^3$$",
+        "",
+        "### ✅ **Respuesta**",
+        "$f'(x) = 12(3x - 2)^3$"
+      ],
+      "explanation": "f'(x) = 4(3x-2)Â³ Â· 3 = 12(3x-2)Â³"
+    },
+    {
+      "id": "rc-008",
+      "topic": "cadena-polinomios",
+      "question": "Deriva: $g(x) = (x^2 - 3x + 2)^5$",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$5(x^2 - 3x + 2)^4(2x - 3)$",
+        "$5(x^2 - 3x + 2)^4$",
+        "$(2x - 3)^5$",
+        "$10x(x^2 - 3x + 2)^4$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Externa: uâµ → 5uâ´",
+        "Interna: x² - 3x + 2 → 2x - 3",
+        "Multiplica ambas derivadas"
+      ],
+      "stepByStep": [
+        "### ðŸ“ **Función:** $g(x) = (x^2 - 3x + 2)^5$",
+        "",
+        "**Identificación:**",
+        "- Externa: $f(u) = u^5$ → $f'(u) = 5u^4$",
+        "- Interna: $u = x^2 - 3x + 2$ → $u' = 2x - 3$",
+        "",
+        "### ðŸ§® **Aplicamos cadena**",
+        "",
+        "$$g'(x) = f'(u) \\cdot u'$$",
+        "$$g'(x) = 5(x^2 - 3x + 2)^4 \\cdot (2x - 3)$$",
+        "",
+        "### ✅ **Respuesta**",
+        "$g'(x) = 5(x^2 - 3x + 2)^4(2x - 3)$",
+        "",
+        "**Nota:** Usualmente NO se expande el resultado."
+      ],
+      "explanation": "g'(x) = 5(x²-3x+2)â´ Â· (2x-3)"
+    },
+    {
+      "id": "rc-009",
+      "topic": "cadena-trigonometricas",
+      "question": "¿Cuál es la derivada de $h(x) = \\sin(3x)$?",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$3\\cos(3x)$",
+        "$\\cos(3x)$",
+        "$\\sin(3x)$",
+        "$3\\sin(3x)$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Externa: sin(u) → cos(u)",
+        "Interna: u = 3x → 3",
+        "Multiplica: cos(3x) Â· 3"
+      ],
+      "stepByStep": [
+        "### ðŸ“ **Función:** $h(x) = \\sin(3x)$",
+        "",
+        "**Identificación:**",
+        "- Externa: $\\sin(u)$ → derivada: $\\cos(u)$",
+        "- Interna: $u = 3x$ → derivada: $3$",
+        "",
+        "### ðŸ§® **Regla de la cadena**",
+        "",
+        "$$h'(x) = \\cos(3x) \\cdot 3$$",
+        "$$h'(x) = 3\\cos(3x)$$",
+        "",
+        "### ✅ **Respuesta**",
+        "$h'(x) = 3\\cos(3x)$",
+        "",
+        "**Patrón general:**",
+        "$$\\frac{d}{dx}[\\sin(kx)] = k\\cos(kx)$$"
+      ],
+      "explanation": "h'(x) = cos(3x) Â· 3 = 3cos(3x)"
+    },
+    {
+      "id": "rc-010",
+      "topic": "cadena-trigonometricas",
+      "question": "Deriva: $y = \\cos(x^2)$",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$-2x\\sin(x^2)$",
+        "$-\\sin(x^2)$",
+        "$2x\\cos(x^2)$",
+        "$-2x\\cos(x^2)$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Externa: cos(u) → -sin(u)",
+        "Interna: u = x² → 2x",
+        "Cuidado con el signo negativo"
+      ],
+      "stepByStep": [
+        "### ðŸ“ **Función:** $y = \\cos(x^2)$",
+        "",
+        "**Identificación:**",
+        "- Externa: $\\cos(u)$ → derivada: $-\\sin(u)$",
+        "- Interna: $u = x^2$ → derivada: $2x$",
+        "",
+        "### ðŸ§® **Regla de la cadena**",
+        "",
+        "$$\\frac{dy}{dx} = -\\sin(x^2) \\cdot 2x$$",
+        "",
+        "### 📊 **Ordenamos**",
+        "$$\\frac{dy}{dx} = -2x\\sin(x^2)$$",
+        "",
+        "### ✅ **Respuesta**",
+        "$y' = -2x\\sin(x^2)$"
+      ],
+      "explanation": "y' = -sin(x²) Â· 2x = -2xÂ·sin(x²)"
+    },
+    {
+      "id": "rc-011",
+      "topic": "cadena-trigonometricas",
+      "question": "Arrastra cada FUNCIÓN hacia su DERIVADA",
+      "description": "Funciones trigonométricas compuestas y sus derivadas.",
+      "type": "drag-drop",
+      "items": [
+        "$\\sin(2x)$",
+        "$\\cos(x^2)$",
+        "$\\sin^2(x)$",
+        "$\\tan(3x)$"
+      ],
+      "categories": [
+        "$2\\cos(2x)$",
+        "$-2x\\sin(x^2)$",
+        "$2\\sin(x)\\cos(x)$",
+        "$3\\sec^2(3x)$"
+      ],
+      "correctMapping": [0, 1, 2, 3],
+      "difficulty": "avanzado",
+      "hints": [
+        "Recuerda: d/dx[sin(u)] = cos(u)Â·u'",
+        "Para sin²(x): usa (sin x)² como u²",
+        "d/dx[tan(u)] = sec²(u)Â·u'"
+      ],
+      "stepByStep": [
+        "### ðŸ” **Derivadas con cadena**",
+        "",
+        "**1. sin(2x):**",
+        "- Externa: sin(u) → cos(u)",
+        "- Interna: 2x → 2",
+        "- Resultado: $2\\cos(2x)$",
+        "",
+        "**2. cos(x²):**",
+        "- Externa: cos(u) → -sin(u)",
+        "- Interna: x² → 2x",
+        "- Resultado: $-2x\\sin(x^2)$",
+        "",
+        "**3. sin²(x) = [sin(x)]²:**",
+        "- Externa: u² → 2u",
+        "- Interna: sin(x) → cos(x)",
+        "- Resultado: $2\\sin(x)\\cos(x)$",
+        "",
+        "**4. tan(3x):**",
+        "- Externa: tan(u) → sec²(u)",
+        "- Interna: 3x → 3",
+        "- Resultado: $3\\sec^2(3x)$"
+      ],
+      "explanation": "Todas usan regla de la cadena: derivada externa por derivada interna"
+    },
+    {
+      "id": "rc-012",
+      "topic": "cadena-exponenciales",
+      "question": "¿Cuál es la derivada de $f(x) = e^{2x}$?",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$2e^{2x}$",
+        "$e^{2x}$",
+        "$2e^x$",
+        "$e^{2x} + 2$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Externa: e^u → e^u",
+        "Interna: u = 2x → 2",
+        "Resultado: e^(2x) Â· 2"
+      ],
+      "stepByStep": [
+        "### ðŸ“ **Función exponencial:** $f(x) = e^{2x}$",
+        "",
+        "**Identificación:**",
+        "- Externa: $e^u$ → derivada: $e^u$",
+        "- Interna: $u = 2x$ → derivada: $2$",
+        "",
+        "### ðŸ§® **Regla de la cadena**",
+        "",
+        "$$f'(x) = e^{2x} \\cdot 2$$",
+        "$$f'(x) = 2e^{2x}$$",
+        "",
+        "### ðŸ’¡ **Patrón general**",
+        "$$\\frac{d}{dx}[e^{kx}] = ke^{kx}$$",
+        "",
+        "### ✅ **Respuesta**",
+        "$f'(x) = 2e^{2x}$"
+      ],
+      "explanation": "f'(x) = e^(2x) Â· 2 = 2e^(2x)"
+    },
+    {
+      "id": "rc-013",
+      "topic": "cadena-exponenciales",
+      "question": "Deriva: $g(x) = e^{x^2}$",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$2xe^{x^2}$",
+        "$e^{x^2}$",
+        "$x^2e^{x^2}$",
+        "$2e^{x^2}$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Externa: e^u → e^u",
+        "Interna: u = x² → 2x",
+        "Multiplica: e^(x²) Â· 2x"
+      ],
+      "stepByStep": [
+        "### ðŸ“ **Función:** $g(x) = e^{x^2}$",
+        "",
+        "**Identificación:**",
+        "- Externa: $e^u$ → derivada: $e^u$",
+        "- Interna: $u = x^2$ → derivada: $2x$",
+        "",
+        "### ðŸ§® **Regla de la cadena**",
+        "",
+        "$$g'(x) = e^{x^2} \\cdot 2x$$",
+        "$$g'(x) = 2xe^{x^2}$$",
+        "",
+        "### ✅ **Respuesta**",
+        "$g'(x) = 2xe^{x^2}$"
+      ],
+      "explanation": "g'(x) = e^(x²) Â· 2x = 2xe^(x²)"
+    },
+    {
+      "id": "rc-014",
+      "topic": "cadena-exponenciales",
+      "question": "¿Cuál es la derivada de $h(x) = \\ln(3x)$?",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$\\frac{1}{x}$",
+        "$\\frac{3}{x}$",
+        "$\\frac{1}{3x}$",
+        "$\\ln(3)$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Externa: ln(u) → 1/u",
+        "Interna: u = 3x → 3",
+        "Resultado: (1/3x) Â· 3 = 1/x"
+      ],
+      "stepByStep": [
+        "### ðŸ“ **Función logarítmica:** $h(x) = \\ln(3x)$",
+        "",
+        "**Identificación:**",
+        "- Externa: $\\ln(u)$ → derivada: $\\frac{1}{u}$",
+        "- Interna: $u = 3x$ → derivada: $3$",
+        "",
+        "### ðŸ§® **Regla de la cadena**",
+        "",
+        "$$h'(x) = \\frac{1}{3x} \\cdot 3$$",
+        "",
+        "### 📊 **Simplificamos**",
+        "$$h'(x) = \\frac{3}{3x} = \\frac{1}{x}$$",
+        "",
+        "### ðŸ’¡ **Nota importante**",
+        "$$\\ln(3x) = \\ln(3) + \\ln(x)$$",
+        "$$\\frac{d}{dx}[\\ln(3x)] = 0 + \\frac{1}{x} = \\frac{1}{x}$$",
+        "",
+        "### ✅ **Respuesta**",
+        "$h'(x) = \\frac{1}{x}$"
+      ],
+      "explanation": "h'(x) = (1/3x) Â· 3 = 1/x"
+    },
+    {
+      "id": "rc-015",
+      "topic": "cadena-exponenciales",
+      "question": "Deriva: $y = \\ln(x^2 + 1)$",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$\\frac{2x}{x^2 + 1}$",
+        "$\\frac{1}{x^2 + 1}$",
+        "$\\frac{2x}{x^2}$",
+        "$2x$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Externa: ln(u) → 1/u",
+        "Interna: u = x² + 1 → 2x",
+        "Resultado: [1/(x²+1)] Â· 2x"
+      ],
+      "stepByStep": [
+        "### ðŸ“ **Función:** $y = \\ln(x^2 + 1)$",
+        "",
+        "**Identificación:**",
+        "- Externa: $\\ln(u)$ → derivada: $\\frac{1}{u}$",
+        "- Interna: $u = x^2 + 1$ → derivada: $2x$",
+        "",
+        "### ðŸ§® **Regla de la cadena**",
+        "",
+        "$$\\frac{dy}{dx} = \\frac{1}{x^2 + 1} \\cdot 2x$$",
+        "",
+        "### 📊 **Resultado final**",
+        "$$\\frac{dy}{dx} = \\frac{2x}{x^2 + 1}$$",
+        "",
+        "### ✅ **Respuesta**",
+        "$y' = \\frac{2x}{x^2 + 1}$"
+      ],
+      "explanation": "y' = [1/(x²+1)] Â· 2x = 2x/(x²+1)"
+    },
+    {
+      "id": "rc-016",
+      "topic": "cadenas-multiples",
+      "question": "Deriva: $f(x) = \\sin(e^x)$",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$e^x\\cos(e^x)$",
+        "$\\cos(e^x)$",
+        "$e^x\\sin(e^x)$",
+        "$\\cos(x)e^x$"
+      ],
+      "correct": 0,
+      "difficulty": "avanzado",
+      "hints": [
+        "Externa: sin(u) → cos(u)",
+        "Interna: u = e^x → e^x",
+        "Multiplica: cos(e^x) Â· e^x"
+      ],
+      "stepByStep": [
+        "### ðŸ“ **Composición doble:** $f(x) = \\sin(e^x)$",
+        "",
+        "**Identificación:**",
+        "- Externa: $\\sin(u)$ → derivada: $\\cos(u)$",
+        "- Interna: $u = e^x$ → derivada: $e^x$",
+        "",
+        "### ðŸ§® **Regla de la cadena**",
+        "",
+        "$$f'(x) = \\cos(e^x) \\cdot e^x$$",
+        "",
+        "### 📊 **Reordenamos**",
+        "$$f'(x) = e^x\\cos(e^x)$$",
+        "",
+        "### ✅ **Respuesta**",
+        "$f'(x) = e^x\\cos(e^x)$"
+      ],
+      "explanation": "f'(x) = cos(e^x) Â· e^x = e^xÂ·cos(e^x)"
+    },
+    {
+      "id": "rc-017",
+      "topic": "cadenas-multiples",
+      "question": "¿Cuál es la derivada de $g(x) = e^{\\sin(x)}$?",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$\\cos(x)e^{\\sin(x)}$",
+        "$e^{\\sin(x)}$",
+        "$\\sin(x)e^{\\cos(x)}$",
+        "$e^{\\cos(x)}$"
+      ],
+      "correct": 0,
+      "difficulty": "avanzado",
+      "hints": [
+        "Externa: e^u → e^u",
+        "Interna: u = sin(x) → cos(x)",
+        "Resultado: e^(sin(x)) Â· cos(x)"
+      ],
+      "stepByStep": [
+        "### ðŸ“ **Función:** $g(x) = e^{\\sin(x)}$",
+        "",
+        "**Identificación:**",
+        "- Externa: $e^u$ → derivada: $e^u$",
+        "- Interna: $u = \\sin(x)$ → derivada: $\\cos(x)$",
+        "",
+        "### ðŸ§® **Regla de la cadena**",
+        "",
+        "$$g'(x) = e^{\\sin(x)} \\cdot \\cos(x)$$",
+        "$$g'(x) = \\cos(x)e^{\\sin(x)}$$",
+        "",
+        "### ✅ **Respuesta**",
+        "$g'(x) = \\cos(x)e^{\\sin(x)}$"
+      ],
+      "explanation": "g'(x) = e^(sin(x)) Â· cos(x) = cos(x)Â·e^(sin(x))"
+    },
+    {
+      "id": "rc-018",
+      "topic": "cadenas-multiples",
+      "question": "Deriva: $h(x) = \\sqrt{x^2 + 1} = (x^2 + 1)^{1/2}$",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$\\frac{x}{\\sqrt{x^2 + 1}}$",
+        "$\\frac{1}{2\\sqrt{x^2 + 1}}$",
+        "$\\frac{2x}{\\sqrt{x^2 + 1}}$",
+        "$\\sqrt{2x}$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Reescribe como (x² + 1)^(1/2)",
+        "Externa: u^(1/2) → (1/2)u^(-1/2)",
+        "Interna: x² + 1 → 2x"
+      ],
+      "stepByStep": [
+        "### ðŸ“ **Función:** $h(x) = (x^2 + 1)^{1/2}$",
+        "",
+        "**Identificación:**",
+        "- Externa: $u^{1/2}$ → derivada: $\\frac{1}{2}u^{-1/2}$",
+        "- Interna: $u = x^2 + 1$ → derivada: $2x$",
+        "",
+        "### ðŸ§® **Regla de la cadena**",
+        "",
+        "$$h'(x) = \\frac{1}{2}(x^2 + 1)^{-1/2} \\cdot 2x$$",
+        "",
+        "### 📊 **Simplificamos**",
+        "$$h'(x) = \\frac{2x}{2(x^2 + 1)^{1/2}}$$",
+        "$$h'(x) = \\frac{x}{\\sqrt{x^2 + 1}}$$",
+        "",
+        "### ✅ **Respuesta**",
+        "$h'(x) = \\frac{x}{\\sqrt{x^2 + 1}}$"
+      ],
+      "explanation": "h'(x) = (1/2)(x²+1)^(-1/2) Â· 2x = x/âˆš(x²+1)"
+    },
+    {
+      "id": "rc-019",
+      "topic": "cadenas-multiples",
+      "question": "Completa: Para derivar $y = \\sin^3(2x) = [\\sin(2x)]^3$, aplicamos la cadena _____ veces",
+      "type": "fill-blank",
+      "blanks": ["$2$"],
+      "distractors": ["$1$", "$3$", "$4$", "$0$", "$6$"],
+      "template": "Para derivar $y = \\sin^3(2x) = [\\sin(2x)]^3$, aplicamos la cadena _____ veces",
+      "difficulty": "avanzado",
+      "hints": [
+        "Hay 3 capas: [ ]Â³, sin( ), 2x",
+        "Primera cadena: uÂ³ donde u = sin(2x)",
+        "Segunda cadena: sin(v) donde v = 2x"
+      ],
+      "stepByStep": [
+        "### ðŸ”— **Cadena múltiple:** $y = [\\sin(2x)]^3$",
+        "",
+        "**Capas de composición:**",
+        "1. Capa externa: $( \\ )^3$",
+        "2. Capa media: $\\sin( \\ )$",
+        "3. Capa interna: $2x$",
+        "",
+        "### ðŸ§® **Primera aplicación de cadena**",
+        "$$y = u^3$$ donde $u = \\sin(2x)$",
+        "$$\\frac{dy}{du} = 3u^2 = 3[\\sin(2x)]^2$$",
+        "",
+        "### ðŸ§® **Segunda aplicación de cadena**",
+        "$$u = \\sin(v)$$ donde $v = 2x$",
+        "$$\\frac{du}{dv} = \\cos(v) = \\cos(2x)$$",
+        "$$\\frac{dv}{dx} = 2$$",
+        "",
+        "### 🔄 **Combinamos**",
+        "$$\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dv} \\cdot \\frac{dv}{dx}$$",
+        "$$\\frac{dy}{dx} = 3\\sin^2(2x) \\cdot \\cos(2x) \\cdot 2$$",
+        "$$\\frac{dy}{dx} = 6\\sin^2(2x)\\cos(2x)$$",
+        "",
+        "### ✅ **Respuesta**",
+        "Se aplica la cadena **2 veces** (una por cada composición)"
+      ],
+      "explanation": "Hay 2 composiciones: [ ]Â³ âˆ˜ sin( ) âˆ˜ 2x, por lo tanto 2 aplicaciones de la cadena"
+    },
+    {
+      "id": "rc-020",
+      "topic": "aplicaciones-cadena",
+      "question": "Deriva: $f(x) = e^{-x^2}$ (función gaussiana)",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$-2xe^{-x^2}$",
+        "$e^{-x^2}$",
+        "$-2e^{-x^2}$",
+        "$-x^2e^{-x^2}$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Externa: e^u → e^u",
+        "Interna: u = -x² → -2x",
+        "Resultado: e^(-x²) Â· (-2x)"
+      ],
+      "stepByStep": [
+        "### 📊 **Función gaussiana:** $f(x) = e^{-x^2}$",
+        "",
+        "**Identificación:**",
+        "- Externa: $e^u$ → derivada: $e^u$",
+        "- Interna: $u = -x^2$ → derivada: $-2x$",
+        "",
+        "### ðŸ§® **Regla de la cadena**",
+        "",
+        "$$f'(x) = e^{-x^2} \\cdot (-2x)$$",
+        "$$f'(x) = -2xe^{-x^2}$$",
+        "",
+        "### ðŸ’¡ **Aplicación**",
+        "Esta es la **curva de campana** (distribución normal)",
+        "",
+        "### ✅ **Respuesta**",
+        "$f'(x) = -2xe^{-x^2}$"
+      ],
+      "explanation": "f'(x) = e^(-x²) Â· (-2x) = -2xe^(-x²)"
+    },
+    {
+      "id": "rc-021",
+      "topic": "aplicaciones-cadena",
+      "question": "Si $h(x) = f(g(x))$, $g(2) = 5$, $g'(2) = 3$, $f'(5) = 4$, ¿cuál es $h'(2)$?",
+      "type": "numeric",
+      "correct": 12,
+      "tolerance": 0.1,
+      "difficulty": "avanzado",
+      "hints": [
+        "Usa la regla de la cadena: h'(x) = f'(g(x))Â·g'(x)",
+        "h'(2) = f'(g(2))Â·g'(2)",
+        "Sustituye: f'(5)Â·3"
+      ],
+      "stepByStep": [
+        "### 🎯 **Problema con valores dados**",
+        "",
+        "**Datos:**",
+        "- $h(x) = f(g(x))$",
+        "- $g(2) = 5$",
+        "- $g'(2) = 3$",
+        "- $f'(5) = 4$",
+        "",
+        "### ðŸ§® **Regla de la cadena**",
+        "",
+        "$$h'(x) = f'(g(x)) \\cdot g'(x)$$",
+        "",
+        "**En $x = 2$:**",
+        "$$h'(2) = f'(g(2)) \\cdot g'(2)$$",
+        "",
+        "### ðŸ”¢ **Sustituimos**",
+        "",
+        "- $g(2) = 5$, entonces $f'(g(2)) = f'(5) = 4$",
+        "- $g'(2) = 3$",
+        "",
+        "$$h'(2) = 4 \\cdot 3 = 12$$",
+        "",
+        "### ✅ **Respuesta**",
+        "$h'(2) = 12$"
+      ],
+      "explanation": "h'(2) = f'(g(2))Â·g'(2) = f'(5)Â·3 = 4Â·3 = 12"
+    },
+    {
+      "id": "rc-022",
+      "topic": "aplicaciones-cadena",
+      "question": "La población de bacterias es $P(t) = 1000e^{0.3t}$. ¿Cuál es la tasa de crecimiento $P'(t)$?",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$300e^{0.3t}$",
+        "$1000e^{0.3t}$",
+        "$0.3e^{0.3t}$",
+        "$3000e^{0.3t}$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "P(t) = 1000Â·e^(0.3t)",
+        "Deriva: 1000 Â· d/dt[e^(0.3t)]",
+        "Usa cadena: e^(0.3t) → 0.3e^(0.3t)"
+      ],
+      "stepByStep": [
+        "### ðŸ¦  **Aplicación: Crecimiento bacteriano**",
+        "",
+        "**Población:** $P(t) = 1000e^{0.3t}$",
+        "",
+        "### ðŸ§® **Derivamos**",
+        "",
+        "$$P'(t) = 1000 \\cdot \\frac{d}{dt}[e^{0.3t}]$$",
+        "",
+        "**Regla de la cadena:**",
+        "$$\\frac{d}{dt}[e^{0.3t}] = e^{0.3t} \\cdot 0.3$$",
+        "",
+        "### 📊 **Resultado**",
+        "$$P'(t) = 1000 \\cdot 0.3e^{0.3t}$$",
+        "$$P'(t) = 300e^{0.3t}$$",
+        "",
+        "### ✅ **Respuesta**",
+        "$P'(t) = 300e^{0.3t}$ bacterias/hora"
+      ],
+      "explanation": "P'(t) = 1000 Â· 0.3e^(0.3t) = 300e^(0.3t)"
+    },
+    {
+      "id": "rc-023",
+      "topic": "aplicaciones-cadena",
+      "question": "Clasifica según el NÚMERO de veces que se aplica la regla de la cadena",
+      "description": "Organiza funciones según cuántas composiciones tienen.",
+      "type": "categorize",
+      "items": [
+        "$f(x) = (x^2 + 1)^3$",
+        "$g(x) = \\sin(e^x)$",
+        "$h(x) = [(2x + 1)^2]^3$",
+        "$k(x) = e^{\\sin(x^2)}$"
+      ],
+      "categories": {
+        "una-vez": "Cadena simple (1 composición)",
+        "dos-veces": "Cadena doble (2 composiciones)",
+        "tres-veces": "Cadena triple (3+ composiciones)"
+      },
+      "correctCategories": {
+        "$f(x) = (x^2 + 1)^3$": "una-vez",
+        "$g(x) = \\sin(e^x)$": "una-vez",
+        "$h(x) = [(2x + 1)^2]^3$": "dos-veces",
+        "$k(x) = e^{\\sin(x^2)}$": "dos-veces"
+      },
+      "difficulty": "avanzado",
+      "hints": [
+        "Cuenta las capas: externa → media → interna",
+        "(x²+1)Â³: [ ]Â³ con (x²+1) = 1 cadena",
+        "sin(e^x): sin( ) con e^x = 1 cadena",
+        "[(2x+1)²]Â³: [ ]Â³, [ ]², (2x+1) = 2 cadenas"
+      ],
+      "stepByStep": [
+        "### ðŸ” **Análisis de composiciones**",
+        "",
+        "**1. f(x) = (x²+1)Â³:**",
+        "- Capas: [ ]Â³ â† (x²+1)",
+        "- **1 composición** (cadena simple)",
+        "",
+        "**2. g(x) = sin(e^x):**",
+        "- Capas: sin( ) â† e^x",
+        "- **1 composición** (cadena simple)",
+        "",
+        "**3. h(x) = [(2x+1)²]Â³:**",
+        "- Capas: [ ]Â³ â† [ ]² â† (2x+1)",
+        "- **2 composiciones** (cadena doble)",
+        "",
+        "**4. k(x) = e^(sin(x²)):**",
+        "- Capas: e^( ) â† sin( ) â† x²",
+        "- **2 composiciones** (cadena doble)",
+        "",
+        "### ✅ **Principio**",
+        "Cuenta cuántas \"capas\" de funciones hay menos 1"
+      ],
+      "explanation": "Cuenta las composiciones: fâˆ˜g = 1 cadena, fâˆ˜gâˆ˜h = 2 cadenas"
+    },
+    {
+      "id": "rc-024",
+      "topic": "aplicaciones-cadena",
+      "question": "Deriva la función de densidad logística: $f(x) = \\frac{1}{1 + e^{-x}}$",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$\\frac{e^{-x}}{(1 + e^{-x})^2}$",
+        "$\\frac{1}{(1 + e^{-x})^2}$",
+        "$\\frac{-e^{-x}}{1 + e^{-x}}$",
+        "$e^{-x}$"
+      ],
+      "correct": 0,
+      "difficulty": "avanzado",
+      "hints": [
+        "Usa regla del cociente: (u/v)' = (u'v - uv')/v²",
+        "u = 1, v = 1 + e^(-x)",
+        "Para v': usa cadena en e^(-x)"
+      ],
+      "stepByStep": [
+        "### 📊 **Función logística:** $f(x) = \\frac{1}{1 + e^{-x}}$",
+        "",
+        "### ðŸ§® **Regla del cociente**",
+        "",
+        "- $u = 1$ → $u' = 0$",
+        "- $v = 1 + e^{-x}$ → $v' = e^{-x} \\cdot (-1) = -e^{-x}$",
+        "",
+        "$$f'(x) = \\frac{(0)(1 + e^{-x}) - (1)(-e^{-x})}{(1 + e^{-x})^2}$$",
+        "",
+        "### 📊 **Simplificamos numerador**",
+        "$$f'(x) = \\frac{0 + e^{-x}}{(1 + e^{-x})^2}$$",
+        "$$f'(x) = \\frac{e^{-x}}{(1 + e^{-x})^2}$$",
+        "",
+        "### ðŸ’¡ **Aplicación**",
+        "Esta es la derivada de la **función sigmoide** (machine learning)",
+        "",
+        "### ✅ **Respuesta**",
+        "$f'(x) = \\frac{e^{-x}}{(1 + e^{-x})^2}$"
+      ],
+      "explanation": "f'(x) = [0Â·(1+e^(-x)) - 1Â·(-e^(-x))]/(1+e^(-x))² = e^(-x)/(1+e^(-x))²"
+    },
+    {
+      "id": "rc-025",
+      "topic": "aplicaciones-cadena",
+      "question": "¿Cuál función requiere combinar regla del producto Y regla de la cadena?",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$f(x) = x^2\\sin(3x)$",
+        "$g(x) = \\sin(3x)$",
+        "$h(x) = (x^2)^3$",
+        "$k(x) = x^2 + \\sin(3x)$"
+      ],
+      "correct": 0,
+      "difficulty": "avanzado",
+      "hints": [
+        "¿Dónde hay un PRODUCTO de funciones?",
+        "¿Dónde una de esas funciones es COMPUESTA?",
+        "x²Â·sin(3x): producto donde sin(3x) necesita cadena"
+      ],
+      "stepByStep": [
+        "### ðŸ” **Análisis de cada función**",
+        "",
+        "**A. f(x) = x²Â·sin(3x):**",
+        "- Es un PRODUCTO: x² Â· sin(3x)",
+        "- sin(3x) es COMPUESTA → necesita cadena",
+        "- ✅ Requiere producto Y cadena",
+        "",
+        "**B. g(x) = sin(3x):**",
+        "- Solo composición",
+        "- âŒ Solo cadena",
+        "",
+        "**C. h(x) = (x²)Â³ = xâ¶:**",
+        "- Se simplifica",
+        "- âŒ Solo regla de potencia",
+        "",
+        "**D. k(x) = x² + sin(3x):**",
+        "- Es suma, no producto",
+        "- âŒ No usa regla del producto",
+        "",
+        "### ðŸ§® **Derivando f(x) = x²Â·sin(3x)**",
+        "",
+        "**Producto:** $(uv)' = u'v + uv'$",
+        "- $u = x^2$ → $u' = 2x$",
+        "- $v = \\sin(3x)$ → $v' = 3\\cos(3x)$ (cadena)",
+        "",
+        "$$f'(x) = 2x\\sin(3x) + x^2 \\cdot 3\\cos(3x)$$",
+        "$$f'(x) = 2x\\sin(3x) + 3x^2\\cos(3x)$$",
+        "",
+        "### ✅ **Respuesta**",
+        "$f(x) = x^2\\sin(3x)$ usa producto y cadena"
+      ],
+      "explanation": "f(x) = x²Â·sin(3x) es un producto donde sin(3x) necesita cadena"
+    }
+  ]
+}
+

@@ -1,0 +1,170 @@
+{
+  "recta-tangente": {
+    "ecuacion-tangente": [
+      {
+        "title": "📚 Ecuación de la Recta Tangente - Khan Academy",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-1a/v/equation-of-a-tangent-line",
+        "type": "video",
+        "description": "Video explicativo sobre cómo encontrar la ecuación de una recta tangente usando punto y pendiente. Incluye ejemplos paso a paso."
+      },
+      {
+        "title": "✍️ Ejercicios Resueltos: Ecuación de la Tangente",
+        "url": "https://www.mathsisfun.com/calculus/tangent-line-equation.html",
+        "type": "practice",
+        "description": "Ejercicios interactivos para practicar el cálculo de ecuaciones de rectas tangentes. Desde ejemplos básicos hasta aplicaciones avanzadas."
+      },
+      {
+        "title": "📖 Forma Punto-Pendiente para Tangentes",
+        "url": "https://tutorial.math.lamar.edu/classes/calci/tangentlines.aspx",
+        "type": "article",
+        "description": "Tutorial detallado de Paul's Online Math Notes sobre la forma punto-pendiente y su aplicación en rectas tangentes."
+      },
+      {
+        "title": "🎓 Recta Tangente - Definición y Ejemplos",
+        "url": "https://www.symbolab.com/solver/tangent-line-calculator",
+        "type": "reference",
+        "description": "Calculadora de rectas tangentes con explicación paso a paso. Útil para verificar tus soluciones y entender el proceso."
+      }
+    ],
+    "tangentes-horizontales-verticales": [
+      {
+        "title": "📺 Tangentes Horizontales - Máximos y Mínimos",
+        "url": "https://www.youtube.com/watch?v=example-horizontal",
+        "type": "video",
+        "description": "Video sobre cómo identificar tangentes horizontales resolviendo f'(x) = 0. Conexión con puntos críticos y optimización."
+      },
+      {
+        "title": "🔍 Tangentes Verticales y Cúspides",
+        "url": "https://www.youtube.com/watch?v=example-vertical",
+        "type": "video",
+        "description": "Explicación de tangentes verticales donde la derivada no existe. Incluye ejemplos con raíces cúbicas y valores absolutos."
+      },
+      {
+        "title": "📊 Análisis de Pendientes: Horizontal vs Vertical",
+        "url": "https://www.geogebra.org/m/tangent-lines",
+        "type": "practice",
+        "description": "Aplicación interactiva de GeoGebra para visualizar tangentes horizontales y verticales en diferentes funciones."
+      },
+      {
+        "title": "📝 Puntos Críticos y Tangentes Horizontales",
+        "url": "https://tutorial.math.lamar.edu/classes/calci/criticalpoints.aspx",
+        "type": "article",
+        "description": "Artículo completo sobre la relación entre tangentes horizontales, puntos críticos, y análisis de funciones."
+      },
+      {
+        "title": "🎯 Ejercicios: Encontrar Tangentes Horizontales",
+        "url": "https://www.mathway.com/examples/calculus/applications-of-differentiation",
+        "type": "practice",
+        "description": "Ejercicios variados para practicar la búsqueda de tangentes horizontales y verticales en diferentes tipos de funciones."
+      }
+    ],
+    "aproximacion-lineal": [
+      {
+        "title": "🎥 Aproximación Lineal - Concepto Visual",
+        "url": "https://www.youtube.com/watch?v=example-linear-approx",
+        "type": "video",
+        "description": "Video de 3Blue1Brown sobre aproximación lineal. Visualización geométrica de cómo la tangente aproxima la curva."
+      },
+      {
+        "title": "📚 Linearización de Funciones",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-1b/v/linear-approximation",
+        "type": "video",
+        "description": "Khan Academy explica el concepto de linearización L(x) = f(a) + f'(a)(x - a) con múltiples ejemplos prácticos."
+      },
+      {
+        "title": "✍️ Ejercicios: Aproximar Valores con Tangentes",
+        "url": "https://www.wolframalpha.com/examples/mathematics/calculus-and-analysis/approximation",
+        "type": "practice",
+        "description": "Práctica interactiva de aproximaciones lineales para estimar raíces cuadradas, senos, cosenos y más."
+      },
+      {
+        "title": "📖 Teoría: Error de Aproximación Lineal",
+        "url": "https://tutorial.math.lamar.edu/classes/calci/linearapproximations.aspx",
+        "type": "article",
+        "description": "Análisis del error en aproximaciones lineales y cuándo es válido usar la tangente como aproximación."
+      },
+      {
+        "title": "🔬 Aplicaciones en Física: Aproximación Lineal",
+        "url": "https://physics.info/approximation/",
+        "type": "article",
+        "description": "Uso de aproximaciones lineales en física: péndulo simple, caída libre, y sistemas de resorte."
+      }
+    ],
+    "diferencial": [
+      {
+        "title": "📺 Diferenciales dx y dy - Introducción",
+        "url": "https://www.youtube.com/watch?v=example-differentials",
+        "type": "video",
+        "description": "Video introductorio sobre diferenciales. Explica la relación dy = f'(x)·dx y su interpretación geométrica."
+      },
+      {
+        "title": "📊 Visualización: Δy vs dy",
+        "url": "https://www.geogebra.org/m/differentials",
+        "type": "practice",
+        "description": "Aplicación GeoGebra para ver la diferencia entre Δy (cambio en la curva) y dy (cambio en la tangente)."
+      },
+      {
+        "title": "📖 Diferencial como Aproximación",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-1c/v/differentials",
+        "type": "video",
+        "description": "Khan Academy: cómo usar diferenciales para estimar cambios pequeños en funciones."
+      },
+      {
+        "title": "✍️ Práctica: Calcular Diferenciales",
+        "url": "https://www.mathway.com/examples/calculus/differentials",
+        "type": "practice",
+        "description": "Ejercicios para calcular dy dado f(x), x, y dx. Incluye verificación paso a paso."
+      },
+      {
+        "title": "🎯 Diferenciales en Ingeniería",
+        "url": "https://www.engineeringtoolbox.com/differentials-d_1234.html",
+        "type": "article",
+        "description": "Aplicaciones de diferenciales en ingeniería: propagación de errores, análisis de tolerancias, y diseño."
+      },
+      {
+        "title": "📚 Notación de Leibniz y Diferenciales",
+        "url": "https://mathworld.wolfram.com/Differential.html",
+        "type": "reference",
+        "description": "Referencia de Wolfram sobre la notación de Leibniz dy/dx y el significado de diferenciales."
+      }
+    ],
+    "aplicaciones-geometricas": [
+      {
+        "title": "🎥 Tangentes Paralelas y Perpendiculares",
+        "url": "https://www.youtube.com/watch?v=example-parallel-tangent",
+        "type": "video",
+        "description": "Video sobre cómo encontrar puntos donde la tangente es paralela o perpendicular a una recta dada."
+      },
+      {
+        "title": "📐 Tangentes que Pasan por un Punto",
+        "url": "https://www.youtube.com/watch?v=example-tangent-through-point",
+        "type": "video",
+        "description": "Problema avanzado: encontrar todas las tangentes a una curva que pasan por un punto exterior."
+      },
+      {
+        "title": "✍️ Ejercicios: Aplicaciones Geométricas",
+        "url": "https://www.mathway.com/examples/calculus/applications-of-differentiation/tangent-lines",
+        "type": "practice",
+        "description": "Colección de problemas sobre tangentes: paralelas, perpendiculares, ángulos, intersecciones."
+      },
+      {
+        "title": "📊 GeoGebra: Explorar Tangentes Interactivamente",
+        "url": "https://www.geogebra.org/m/tangent-exploration",
+        "type": "practice",
+        "description": "Herramienta interactiva para explorar propiedades geométricas de tangentes a diferentes curvas."
+      },
+      {
+        "title": "📖 Ángulo entre Curvas",
+        "url": "https://tutorial.math.lamar.edu/classes/calci/tangentlines.aspx#AngleBetween",
+        "type": "article",
+        "description": "Cómo calcular el ángulo entre dos curvas usando sus tangentes en el punto de intersección."
+      },
+      {
+        "title": "🎓 Problemas Resueltos: Geometría y Tangentes",
+        "url": "https://www.analyzemath.com/calculus/tangent_problems.html",
+        "type": "practice",
+        "description": "50+ problemas resueltos sobre aplicaciones geométricas de rectas tangentes."
+      }
+    ]
+  }
+}

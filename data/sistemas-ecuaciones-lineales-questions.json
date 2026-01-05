@@ -1,0 +1,513 @@
+{
+    "sistemas-ecuaciones-lineales": [
+        {
+            "id": "sel-001",
+            "topic": "introduccion-sistemas",
+            "question": "Resolver el sistema con una solución única: \n$$\\begin{cases} 3x - 2y = 4 \\\\ 5x + 2y = 12 \\end{cases}$$",
+            "type": "multiple-choice",
+            "shuffle": true,
+            "options": [
+                "x = 2, y = 1",
+                "x = 1, y = 2",
+                "x = 2, y = -1",
+                "x = 3, y = 1"
+            ],
+            "correct": 0,
+            "difficulty": "facil",
+            "explanation": "Sumando ambas ecuaciones: $8x = 16 \\Rightarrow x=2$. Sustituyendo: $3(2)-2y=4 \\Rightarrow 6-4=2y \\Rightarrow y=1$.",
+            "stepByStep": [
+                "1. Sumamos las ecuaciones para eliminar $y$: $(3x+5x) + (-2y+2y) = 4+12$",
+                "2. Obtenemos $8x = 16$, por lo tanto $x = 2$.",
+                "3. Sustituimos $x$ en la primera ecuación: $3(2) - 2y = 4$.",
+                "4. $6 - 2y = 4 \\Rightarrow -2y = -2 \\Rightarrow y = 1$."
+            ]
+        },
+        {
+            "id": "sel-002",
+            "topic": "introduccion-sistemas",
+            "question": "Resolver el sistema con infinitas soluciones: \n$$\\begin{cases} x - y = 7 \\\\ 2x - 2y = 14 \\end{cases}$$",
+            "type": "multiple-choice",
+            "shuffle": true,
+            "options": [
+                "Infinitas soluciones: $y = x - 7$",
+                "Solución única: $x=7, y=0$",
+                "No tiene solución",
+                "Infinitas soluciones: $y = x + 7$"
+            ],
+            "correct": 0,
+            "difficulty": "facil",
+            "explanation": "La segunda ecuación es el doble de la primera ($2(x-y)=2(7)$), por lo que son rectas coincidentes.",
+            "stepByStep": [
+                "1. Dividimos la segunda ecuación por 2: $x - y = 7$.",
+                "2. Obtenemos la misma ecuación que la primera.",
+                "3. Despejamos $y$: $y = x - 7$.",
+                "4. Cualquier par $(x, x-7)$ es solución."
+            ]
+        },
+        {
+            "id": "sel-003",
+            "topic": "introduccion-sistemas",
+            "question": "Resolver el sistema sin solución: \n$$\\begin{cases} x - y = 7 \\\\ 2x - 2y = 13 \\end{cases}$$",
+            "type": "multiple-choice",
+            "shuffle": true,
+            "options": [
+                "Inconsistente (No tiene solución)",
+                "Infinitas soluciones",
+                "Solución única: $x=7, y=0$",
+                "Solución única: $x=13/2, y=0$"
+            ],
+            "correct": 0,
+            "difficulty": "facil",
+            "explanation": "Las rectas son paralelas distintas. $2x-2y$ no puede ser 14 y 13 simultáneamente.",
+            "stepByStep": [
+                "1. Multiplicamos la primera ecuación por 2: $2x - 2y = 14$.",
+                "2. Comparamos con la segunda: $2x - 2y = 13$.",
+                "3. Obtenemos la contradicción $14 = 13$.",
+                "4. El sistema es inconsistente."
+            ]
+        },
+        {
+            "id": "sel-004",
+            "topic": "eliminacion-gaussiana",
+            "question": "Resolver mediante Gauss-Jordan el sistema: \n$$\\begin{cases} 2x_1 + 4x_2 + 6x_3 = 18 \\\\ 4x_1 + 5x_2 + 6x_3 = 24 \\\\ 3x_1 + x_2 - 2x_3 = 4 \\end{cases}$$",
+            "type": "multiple-choice",
+            "shuffle": true,
+            "options": [
+                "$x_1 = 4, x_2 = -2, x_3 = 3$",
+                "$x_1 = 2, x_2 = 1, x_3 = 2$",
+                "$x_1 = 3, x_2 = -1, x_3 = 4$",
+                "$x_1 = 4, x_2 = 2, x_3 = -3$"
+            ],
+            "correct": 0,
+            "difficulty": "intermedio",
+            "explanation": "Aplicando operaciones fila se llega a la matriz identidad aumentada con la solución.",
+            "stepByStep": [
+                "1. Matriz aumentada: $\\begin{bmatrix} 2 & 4 & 6 & | & 18 \\\\ 4 & 5 & 6 & | & 24 \\\\ 3 & 1 & -2 & | & 4 \\end{bmatrix}$",
+                "2. Reduciendo: $F_1/2 \\to [1, 2, 3 | 9]$.",
+                "3. $F_2 - 4F_1$ y $F_3 - 3F_1$.",
+                "4. Al resolver el sistema triangular resultante, obtenemos $x_1=4, x_2=-2, x_3=3$."
+            ]
+        },
+        {
+            "id": "sel-005",
+            "topic": "gauss-jordan-avanzado",
+            "question": "Resolver el sistema de 4 variables: \n$$\\begin{cases} x_1 + 3x_2 - 5x_3 + x_4 = 4 \\\\ 2x_1 + 5x_2 - 2x_3 + 4x_4 = 6 \\end{cases}$$",
+            "type": "multiple-choice",
+            "shuffle": true,
+            "options": [
+                "$x_1 = -2 - 19x_3 - 7x_4, \\; x_2 = 2 + 8x_3 + 2x_4$",
+                "$x_1 = 4 + 5x_3 - x_4, \\; x_2 = 6 + 2x_3 - 4x_4$",
+                "$x_1 = -2 + 19x_3 + 7x_4, \\; x_2 = 2 - 8x_3 - 2x_4$",
+                "Solución única: $x_1=1, x_2=1, x_3=0, x_4=0$"
+            ],
+            "correct": 0,
+            "difficulty": "dificil",
+            "explanation": "El sistema tiene 2 ecuaciones y 4 incógnitas, por lo que la solución depende de 2 parámetros libres ($x_3, x_4$).",
+            "stepByStep": [
+                "1. Matriz aumentada: $\\begin{bmatrix} 1 & 3 & -5 & 1 & | & 4 \\\\ 2 & 5 & -2 & 4 & | & 6 \\end{bmatrix}$",
+                "2. $F_2 \\to F_2 - 2F_1$: $\\begin{bmatrix} 1 & 3 & -5 & 1 & | & 4 \\\\ 0 & -1 & 8 & 2 & | & -2 \\end{bmatrix}$",
+                "3. De $F_2$: $-x_2 + 8x_3 + 2x_4 = -2 \\Rightarrow x_2 = 2 + 8x_3 + 2x_4$.",
+                "4. Sustituyendo en $F_1$: $x_1 + 3(2+8x_3+2x_4) - 5x_3 + x_4 = 4$.",
+                "5. $x_1 = 4 - 6 - 24x_3 - 6x_4 + 5x_3 - x_4 = -2 - 19x_3 - 7x_4$."
+            ]
+        },
+        {
+            "id": "sel-006",
+            "topic": "introduccion-sistemas",
+            "question": "Resolver el sistema por método de sustitución: \n$$\\begin{cases} x - y = -1 \\\\ 3x + y = 9 \\end{cases}$$",
+            "type": "multiple-choice",
+            "shuffle": true,
+            "options": [
+                "$x = 2, y = 3$",
+                "$x = 1, y = 2$",
+                "$x = 3, y = 2$",
+                "$x = 2, y = 1$"
+            ],
+            "correct": 0,
+            "difficulty": "facil",
+            "explanation": "Despejamos $y$ de la primera ecuación y sustituimos en la segunda.",
+            "stepByStep": [
+                "1. De $x - y = -1$, despejamos $y = x + 1$.",
+                "2. Sustituimos en la segunda ecuación: $3x + (x + 1) = 9$.",
+                "3. $4x = 8 \\Rightarrow x = 2$.",
+                "4. $y = 2 + 1 = 3$."
+            ]
+        },
+        {
+            "id": "sel-007",
+            "topic": "gauss-jordan-avanzado",
+            "question": "Resolver el sistema: \n$$\\begin{cases} x + 2y + 3z = 9 \\\\ 2x - y + z = 8 \\\\ 3x - z = 3 \\end{cases}$$",
+            "type": "multiple-choice",
+            "shuffle": true,
+            "options": [
+                "$x=2, y=-1, z=3$",
+                "$x=1, y=2, z=4$",
+                "$x=2, y=3, z=-1$",
+                "Inconsistente"
+            ],
+            "correct": 0,
+            "difficulty": "intermedio",
+            "explanation": "Usando Gauss-Jordan se reduce la matriz ampliada.",
+            "stepByStep": [
+                "1. Matriz ampliada: $\\begin{bmatrix} 1 & 2 & 3 & | & 9 \\\\ 2 & -1 & 1 & | & 8 \\\\ 3 & 0 & -1 & | & 3 \\end{bmatrix}$",
+                "2. $F_2 - 2F_1$ y $F_3 - 3F_1$.",
+                "3. Reduciendo llegamos a $x=2, y=-1, z=3$."
+            ]
+        },
+        {
+            "id": "sel-008",
+            "topic": "gauss-jordan-avanzado",
+            "question": "Analizar la solución del sistema según el parámetro $p$: \n$$\\begin{cases} px_1 + 2x_2 + 3x_3 = 2 \\\\ px_1 + px_2 + (p+1)x_3 = p \\\\ px_1 + px_2 + (2p-2)x_3 = 2p-2 \\end{cases}$$",
+            "type": "multiple-choice",
+            "shuffle": true,
+            "options": [
+                "Infinitas: $p=2$; Única: $p \\neq 0, 2, 3$; No sol: $p=0, 3$",
+                "Infinitas: $p=1$; Única: $p \\neq 1$; No sol: $p=2$",
+                "Siempre solución única",
+                "Infinitas: $p=3$; Única: $p \\neq 3$"
+            ],
+            "correct": 0,
+            "difficulty": "avanzado",
+            "explanation": "Calculando el determinante del sistema y analizando los puntos críticos.",
+            "stepByStep": [
+                "1. Determinante $\\Delta$ depende de $p$.",
+                "2. Si $\\Delta \\neq 0$ ($p \\neq 0, 2, 3$), solución única.",
+                "3. Si $p=2$, sistema compatible indeterminado (infinitas).",
+                "4. Si $p=0$ o $p=3$, sistema inconsistente."
+            ]
+        },
+        {
+            "id": "sel-009",
+            "topic": "introduccion-sistemas",
+            "question": "Determinar $p$ y $b$ para que el vector $(b, 8, b+7)$ sea solución del sistema: \n$$\\begin{cases} x + 3py - z = 17 \\\\ -3x + py - 7z = 9 \\end{cases}$$",
+            "type": "multiple-choice",
+            "shuffle": true,
+            "options": [
+                "$p = 1, b = -5$",
+                "$p = 2, b = 1$",
+                "$p = -1, b = 5$",
+                "$p = 0, b = 7$"
+            ],
+            "correct": 0,
+            "difficulty": "dificil",
+            "explanation": "Sustituimos el vector solución en las ecuaciones y resolvemos para $p$ y $b$.",
+            "stepByStep": [
+                "1. Sustituir $x=b, y=8, z=b+7$.",
+                "2. Ec 1: $b + 24p - (b+7) = 17 \\Rightarrow 24p - 7 = 17 \\Rightarrow 24p = 24 \\Rightarrow p=1$.",
+                "3. Ec 2: $-3b + 8p - 7(b+7) = 9$. Con $p=1$: $-3b + 8 - 7b - 49 = 9$.",
+                "4. $-10b - 41 = 9 \\Rightarrow -10b = 50 \\Rightarrow b = -5$."
+            ]
+        },
+        {
+            "id": "sel-010",
+            "topic": "gauss-jordan-avanzado",
+            "question": "Considere el sistema: $x_1 + 2x_2 + 4x_3 + 4x_4 = -2$, $x_1 + 3x_2 + 6x_3 + 5x_4 = -3$, $px_1 + px_2 + 2px_3 + (p^2+4p)x_4 = 1$. Determine los valores de $p$ para los cuales el sistema tiene infinitas soluciones dependiendo de un parámetro (1 grado de libertad).",
+            "type": "multiple-choice",
+            "shuffle": true,
+            "options": [
+                "$p \\in \\mathbb{R} - \\{0, -1\\}$",
+                "$p = -1$",
+                "$p = 0$",
+                "$p \\in \\mathbb{R} - \\{0\\}$"
+            ],
+            "correct": 0,
+            "difficulty": "avanzado",
+            "explanation": "El rango determina el número de variables libres. Para 4 incógnitas, necesitamos Rango=3 para tener 1 parámetro libre. Analizamos cuando los pivotes se anulan.",
+            "stepByStep": [
+                "1. Escribimos la matriz aumentada: $\\begin{pmatrix} 1 & 2 & 4 & 4 & | & -2 \\\\ 1 & 3 & 6 & 5 & | & -3 \\\\ p & p & 2p & p^2+4p & | & 1 \\end{pmatrix}$.",
+                "2. Operaciones fila: $F_2 - F_1 \\to \\begin{pmatrix} 0 & 1 & 2 & 1 & | & -1 \\end{pmatrix}$.",
+                "3. Operación $F_3 - pF_1$ genera la fila $\\begin{pmatrix} 0 & -p & -2p & p^2 & | & 1+2p \\end{pmatrix}$.",
+                "4. Operación $F_3 + pF_2$ elimina la segunda columna. La Fila 3 queda: $\\begin{pmatrix} 0 & 0 & 0 & p(p+1) & | & p+1 \\end{pmatrix}$.",
+                "5. Análisis de Casos:",
+                "   - Si $p=0$: La fila es $0=1$ (Inconsistente).",
+                "   - Si $p=-1$: La fila es $0=0$ (Fila nula, Rango=2 $\\Rightarrow$ 2 parámetros).",
+                "   - Si $p \\neq 0$ y $p \\neq -1$: El pivote $p(p+1)$ es no nulo, lo que da Rango=3 $\\Rightarrow$ 1 parámetro (Solución correcta)."
+            ]
+        },
+        {
+            "id": "sel-011",
+            "topic": "gauss-jordan-avanzado",
+            "question": "Dada la matriz aumentada: $\\begin{pmatrix} 1 & 0 & 0 & 2 & | & 0 \\\\ 0 & a-2 & 0 & 0 & | & 0 \\\\ 0 & b+1 & c & 0 & | & 0 \\\\ 0 & 0 & c & 0 & | & 0 \\end{pmatrix}$, determine los valores de $a, b, c$ para que el rango sea 1.",
+            "type": "multiple-choice",
+            "shuffle": true,
+            "options": [
+                "$a=2, b=-1, c=0$",
+                "$a=2, b \\neq -1, c=0$",
+                "$a \\neq 2, b=-1, c=0$",
+                "$a=2, b=-1, c \\neq 0$"
+            ],
+            "correct": 0,
+            "difficulty": "dificil",
+            "explanation": "El rango es el número de filas no nulas en la forma escalonada. Para Rango 1, solo la primera fila debe ser no nula.",
+            "stepByStep": [
+                "1. La Fila 1 $\\begin{pmatrix} 1 & 0 & 0 & 2 & | & 0 \\end{pmatrix}$ ya es no nula. Por lo tanto, las filas 2, 3 y 4 deben ser COMPLETAMENTE nulas.",
+                "2. Analizamos Fila 4: $\\begin{pmatrix} 0 & 0 & c & 0 & | & 0 \\end{pmatrix}$. Para ser nula, $c$ debe ser 0.",
+                "3. Analizamos Fila 2: $\\begin{pmatrix} 0 & a-2 & 0 & 0 & | & 0 \\end{pmatrix}$. Para ser nula, $a-2=0 \\Rightarrow a=2$.",
+                "4. Analizamos Fila 3 (con $c=0$): $\\begin{pmatrix} 0 & b+1 & 0 & 0 & | & 0 \\end{pmatrix}$. Para ser nula, $b+1=0 \\Rightarrow b=-1$.",
+                "5. Conclusión: $a=2, b=-1, c=0$."
+            ]
+        },
+        {
+            "id": "sel-012",
+            "topic": "gauss-jordan-avanzado",
+            "question": "Considere el sistema: $x+y+z=1$, $2x+py+2z=-2$, $4x+2py+4z=m$. Determine para cuáles valores de $p$ y $m$ el sistema tiene infinitas soluciones dependiendo de un parámetro.",
+            "type": "multiple-choice",
+            "shuffle": true,
+            "options": [
+                "$p \\neq 2$ y $m = -4$",
+                "$p = 2$ y $m = -4$",
+                "$p \\neq 2$ y $m \\neq -4$",
+                "$p = 2$ y $m = 4$"
+            ],
+            "correct": 0,
+            "difficulty": "avanzado",
+            "explanation": "Se debe garantizar que el sistema sea consistente (m) y que tenga el rango correcto (p) para generar variables libres.",
+            "stepByStep": [
+                "1. Matriz: $\\begin{pmatrix} 1 & 1 & 1 & | & 1 \\\\ 2 & p & 2 & | & -2 \\\\ 4 & 2p & 4 & | & m \\end{pmatrix}$.",
+                "2. Reducción $F_2 - 2F_1$: $\\begin{pmatrix} 0 & p-2 & 0 & | & -4 \\end{pmatrix}$.",
+                "3. Reducción $F_3 - 4F_1$: $\\begin{pmatrix} 0 & 2p-4 & 0 & | & m-4 \\end{pmatrix}$.",
+                "4. Eliminación final ($F_3 - 2F_2$): La Fila 3 queda $\\begin{pmatrix} 0 & 0 & 0 & | & m+4 \\end{pmatrix}$.",
+                "5. Condición de Consistencia: La última fila exige $0 = m+4$, por lo tanto $m=-4$.",
+                "6. Condición de Rango: Para tener soluciones infinitas con 3 incógnitas y 1 parámetro, el rango debe ser 2.",
+                "7. Analizamos Fila 2: $\\begin{pmatrix} 0 & p-2 & 0 & | & -4 \\end{pmatrix}$.",
+                "8. Si $p=2$, la fila sería $\\begin{pmatrix} 0 & 0 & 0 & | & -4 \\end{pmatrix}$, lo cual es Inconsistente ($0=-4$).",
+                "9. Por lo tanto, para evitar inconsistencia en la Fila 2, requerimos $p \\neq 2$."
+            ]
+        },
+        {
+            "id": "sel-013",
+            "topic": "sistemas-interactivos",
+            "question": "Operaciones Elementales Interactivas",
+            "description": "Dada la matriz aumentada: $$\\begin{pmatrix} 1 & 2 & -1 & | & 4 \\\\ 2 & 3 & 1 & | & 3 \\end{pmatrix}$$ Realice la operación $F_2 \\leftarrow F_2 - 2F_1$. Ingrese los valores de la nueva Fila 2.",
+            "type": "matrix-input",
+            "difficulty": "facil",
+            "matrix": {
+                "rows": 1,
+                "cols": 4,
+                "label": "Fila 2 (Nueva):",
+                "placeholders": [
+                    [
+                        "x",
+                        "y",
+                        "z",
+                        "const"
+                    ]
+                ],
+                "correct": [
+                    [
+                        0,
+                        -1,
+                        3,
+                        -5
+                    ]
+                ]
+            },
+            "explanation": "$F_2 = (2, 3, 1, 3)$. $2F_1 = (2, 4, -2, 8)$. Restando: $(2-2, 3-4, 1-(-2), 3-8)$.",
+            "hints": [
+                "Multiplique la Fila 1 por 2 y réstela de la Fila 2."
+            ]
+        },
+        {
+            "id": "sel-t1-dd1",
+            "topic": "sistemas-homogeneos",
+            "question": "Arrastra la respuesta correcta a cada afirmación sobre sistemas homogéneos.",
+            "type": "drag-drop",
+            "items": [
+                "Un sistema homogéneo siempre tiene al menos una solución",
+                "Un sistema homogéneo puede no tener solución",
+                "La solución trivial siempre satisface un sistema homogéneo"
+            ],
+            "categories": [
+                "Verdadero",
+                "Falso"
+            ],
+            "correctMapping": [
+                0,
+                1,
+                0
+            ],
+            "difficulty": "facil",
+            "hints": [
+                "Piensa en la solución trivial (todas las variables = 0)",
+                "¿Qué pasa cuando sustituyes x₁=x₂=...=xₙ=0 en Ax=0?"
+            ],
+            "explanation": "**Afirmación 1: VERDADERO** - Todo sistema homogéneo tiene la solución trivial x⃗=0⃗.\\n\\n**Afirmación 2: FALSO** - Un sistema homogéneo **siempre** tiene solución (al menos la trivial).\\n\\n**Afirmación 3: VERDADERO** - A·0⃗ = 0⃗ siempre se cumple."
+        },
+        {
+            "id": "sel-t1-dd2",
+            "topic": "sistemas-homogeneos",
+            "question": "Clasifica cada afirmación sobre sistemas de ecuaciones.",
+            "type": "drag-drop",
+            "items": [
+                "Un sistema 5×7 puede tener solución única",
+                "Un sistema 5×7 puede tener infinitas soluciones",
+                "Un sistema 3×3 invertible tiene solución única"
+            ],
+            "categories": [
+                "Verdadero",
+                "Falso"
+            ],
+            "correctMapping": [
+                1,
+                0,
+                0
+            ],
+            "difficulty": "medio",
+            "hints": [
+                "Compara filas vs columnas",
+                "Más incógnitas que ecuaciones → ¿cuántas soluciones?"
+            ],
+            "explanation": "**5×7 solución única: FALSO** - Más incógnitas (7) que ecuaciones (5), si es consistente tiene infinitas soluciones.\\n\\n**5×7 infinitas: VERDADERO** - Al menos 2 variables libres.\\n\\n**3×3 invertible única: VERDADERO** - det(A)≠0 garantiza solución única."
+        },
+        {
+            "id": "sel-t2-or1",
+            "topic": "metodo-gauss-jordan",
+            "question": "Ordena los pasos correctos para resolver un sistema usando Gauss-Jordan.",
+            "type": "ordering",
+            "items": [
+                "Escribir la matriz aumentada [A|b]",
+                "Hacer ceros debajo del pivote usando operaciones elementales",
+                "Hacer ceros arriba del pivote (forma escalonada reducida)",
+                "Leer las soluciones directamente de la matriz final"
+            ],
+            "correctOrder": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "difficulty": "medio",
+            "hints": [
+                "Primero forma escalonada, luego reducida",
+                "El proceso va de arriba hacia abajo, luego de abajo hacia arriba"
+            ],
+            "explanation": "El **Método de Gauss-Jordan** consta de:\\n1. Formar matriz aumentada\\n2. Eliminación hacia adelante (forma escalonada)\\n3. Eliminación hacia atrás (forma reducida)\\n4. Leer soluciones"
+        },
+        {
+            "id": "sel-t2-tn1",
+            "topic": "metodo-gauss-jordan",
+            "question": "Completa la tabla con los pivotes de cada fila después de aplicar Gauss-Jordan a la matriz:\\n\\n$$\\begin{bmatrix} 2 & 4 & -2 \\\\ 0 & 3 & 6 \\\\ 0 & 0 & 5 \\end{bmatrix}$$",
+            "type": "table-numeric",
+            "table": {
+                "headers": [
+                    "Pivote"
+                ],
+                "rows": [
+                    {
+                        "label": "Fila 1",
+                        "values": [
+                            {
+                                "answer": 1,
+                                "tolerance": 0.01
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Fila 2",
+                        "values": [
+                            {
+                                "answer": 1,
+                                "tolerance": 0.01
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Fila 3",
+                        "values": [
+                            {
+                                "answer": 1,
+                                "tolerance": 0.01
+                            }
+                        ]
+                    }
+                ]
+            },
+            "difficulty": "medio",
+            "hints": [
+                "En forma escalonada reducida, todos los pivotes son 1",
+                "Divide cada fila por su elemento diagonal"
+            ],
+            "explanation": "En la forma escalonada **reducida**, todos los pivotes (elementos diagonales principales) deben ser **1**. Dividimos:\\n- Fila 1: 2 → 1\\n- Fila 2: 3 → 1\\n- Fila 3: 5 → 1"
+        },
+        {
+            "id": "sel-t3-mn1",
+            "topic": "regla-cramer",
+            "question": "Usa la Regla de Cramer para resolver:\\n\\n$$\\begin{cases} 2x + y = 5 \\\\ x - y = 1 \\end{cases}$$\\n\\nIngresa los valores de las incógnitas:",
+            "type": "multiple-numeric",
+            "fields": [
+                {
+                    "label": "$x =$",
+                    "answer": 2,
+                    "tolerance": 0.01
+                },
+                {
+                    "label": "$y =$",
+                    "answer": 1,
+                    "tolerance": 0.01
+                }
+            ],
+            "difficulty": "medio",
+            "hints": [
+                "Calcula det(A) primero",
+                "Usa $x = \\frac{\\det(A_x)}{\\det(A)}$ donde $A_x$ reemplaza la columna de x por b"
+            ],
+            "explanation": "**Paso 1:** $\\det(A) = \\begin{vmatrix} 2 & 1 \\\\ 1 & -1 \\end{vmatrix} = -2 - 1 = -3$\\n\\n**Paso 2:** $\\det(A_x) = \\begin{vmatrix} 5 & 1 \\\\ 1 & -1 \\end{vmatrix} = -5 - 1 = -6$\\n\\n**Paso 3:** $x = \\frac{-6}{-3} = 2$\\n\\nSimilarmente: $y = \\frac{\\det(A_y)}{\\det(A)} = \\frac{-3}{-3} = 1$"
+        },
+        {
+            "id": "sel-t4-mn2",
+            "topic": "aplicaciones-sistemas",
+            "question": "**Contexto: Química Molecular**\\n\\nEn una molécula tetraédrica, las cargas $x, y, z, w$ satisfacen:\\n\\n$$\\begin{cases} x + y + z = 8 \\\\ x + y + w = 6 \\\\ x + z + w = 4 \\end{cases}$$\\n\\nEncuentra los valores de las cargas (asumiendo $w=-1$):",
+            "type": "multiple-numeric",
+            "fields": [
+                {
+                    "label": "$x =$",
+                    "answer": 4,
+                    "tolerance": 0.01
+                },
+                {
+                    "label": "$y =$",
+                    "answer": 3,
+                    "tolerance": 0.01
+                },
+                {
+                    "label": "$z =$",
+                    "answer": 1,
+                    "tolerance": 0.01
+                }
+            ],
+            "difficulty": "avanzado",
+            "hints": [
+                "Resta ecuaciones para encontrar relaciones entre variables",
+                "De (1)-(2): z - w = 2",
+                "De (1)-(3): y - w = 4"
+            ],
+            "explanation": "Dado $w = -1$:\\n\\nDe (1)-(2): $z - w = 2$ → $z = -1 + 2 = 1$\\n\\nDe (1)-(3): $y - w = 4$ → $y = -1 + 4 = 3$\\n\\nDe (1): $x + 3 + 1 = 8$ → $x = 4$\\n\\n**Verificación:** $4+3+1=8$ ✓, $4+3+(-1)=6$ ✓, $4+1+(-1)=4$ ✓"
+        },
+        {
+            "id": "sel-t4-or2",
+            "topic": "aplicaciones-sistemas",
+            "question": "Ordena los pasos para resolver un sistema con parámetros.",
+            "type": "ordering",
+            "items": [
+                "Plantear el sistema con el parámetro (ej: a, k, p)",
+                "Aplicar Gauss-Jordan manteniendo el parámetro simbólico",
+                "Identificar valores críticos del parámetro (donde hay división por cero)",
+                "Analizar casos: cuando el parámetro es crítico vs no crítico",
+                "Dar solución general en términos del parámetro"
+            ],
+            "correctOrder": [
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "difficulty": "avanzado",
+            "hints": [
+                "Primero mantén el parámetro como símbolo",
+                "Identifica cuándo aparecen divisiones por expresiones con el parámetro"
+            ],
+            "explanation": "Para sistemas paramétricos:\\n1. Plantear con símbolo\\n2. Reducir algebraicamente\\n3. Encontrar valores críticos (det=0, divisor=0)\\n4. Analizar cada caso\\n5. Expresar solución general"
+        }
+    ]
+}

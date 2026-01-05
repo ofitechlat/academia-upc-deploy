@@ -1,0 +1,180 @@
+{
+  "tecnica-logaritmica": [
+    {
+      "title": "Introducción a Derivación Logarítmica",
+      "url": "https://www.youtube.com/watch?v=example1",
+      "type": "video",
+      "description": "Explicación de cuándo y por qué usar derivación logarítmica. Ventajas sobre métodos tradicionales."
+    },
+    {
+      "title": "Procedimiento de Derivación Logarítmica",
+      "url": "https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-9/v/logarithmic-differentiation",
+      "type": "video",
+      "description": "Los 4 pasos: aplicar ln, simplificar, derivar implícitamente, despejar dy/dx."
+    },
+    {
+      "title": "Propiedades de Logaritmos para Derivación",
+      "url": "https://www.mathsisfun.com/algebra/logarithms-properties.html",
+      "type": "article",
+      "description": "Repaso de ln(ab), ln(a/b), ln(a^n) aplicadas a derivación."
+    },
+    {
+      "title": "Ejercicios: Técnica Logarítmica Básica",
+      "url": "https://www.symbolab.com/solver/logarithmic-differentiation-calculator",
+      "type": "practice",
+      "description": "Practicar el procedimiento con funciones simples antes de casos complejos."
+    },
+    {
+      "title": "Tutorial Interactivo: Derivación Logarítmica",
+      "url": "https://www.geogebra.org/m/example1",
+      "type": "practice",
+      "description": "Paso a paso interactivo con verificación automática."
+    }
+  ],
+  "exponentes-variables": [
+    {
+      "title": "Derivar x^x: Caso Fundamental",
+      "url": "https://www.youtube.com/watch?v=example2",
+      "type": "video",
+      "description": "Derivación de x^x paso a paso. Por qué regla de potencia no funciona."
+    },
+    {
+      "title": "Funciones del tipo f(x)^g(x)",
+      "url": "https://www.youtube.com/watch?v=example3",
+      "type": "video",
+      "description": "Técnica general para base y exponente variables: ln(y) = g(x)·ln(f(x))."
+    },
+    {
+      "title": "Derivada de x^(sin(x))",
+      "url": "https://tutorial.math.lamar.edu/classes/calci/LogDiff.aspx",
+      "type": "article",
+      "description": "Ejemplo completo con exponente trigonométrico variable."
+    },
+    {
+      "title": "Derivada de (sin(x))^x",
+      "url": "https://www.youtube.com/watch?v=example4",
+      "type": "video",
+      "description": "Base trigonométrica con exponente x. Cómo manejar d/dx[ln(sin(x))]."
+    },
+    {
+      "title": "Ejercicios: Exponentes Variables",
+      "url": "https://www.wolframalpha.com/input?i=derivative+calculator",
+      "type": "practice",
+      "description": "Practicar x^x, x^(e^x), (tan(x))^x y variaciones."
+    },
+    {
+      "title": "Análisis Gráfico de x^x",
+      "url": "https://www.desmos.com/calculator",
+      "type": "practice",
+      "description": "Visualizar x^x, su derivada, y punto crítico en x = 1/e."
+    }
+  ],
+  "productos-complejos": [
+    {
+      "title": "Productos Múltiples con Logarítmica",
+      "url": "https://www.youtube.com/watch?v=example5",
+      "type": "video",
+      "description": "Simplificar x²(x+1)³(x-2)⁴ usando ln: producto → suma."
+    },
+    {
+      "title": "Cocientes Complejos con Raíces",
+      "url": "https://www.youtube.com/watch?v=example6",
+      "type": "video",
+      "description": "Derivar fracciones con radicales en numerador/denominador."
+    },
+    {
+      "title": "Comparación: Producto vs Logarítmica",
+      "url": "https://www.youtube.com/watch?v=example7",
+      "type": "article",
+      "description": "Mismo problema resuelto con ambos métodos. Ver ventaja de logarítmica."
+    },
+    {
+      "title": "Productos con Raíces Múltiples",
+      "url": "https://www.youtube.com/watch?v=example8",
+      "type": "video",
+      "description": "Derivar √x · ³√(x+1) · ⁴√(x-1) con derivación logarítmica."
+    },
+    {
+      "title": "Ejercicios: Productos y Cocientes",
+      "url": "https://www.integral-calculator.com/",
+      "type": "practice",
+      "description": "10 problemas de productos/cocientes complejos."
+    }
+  ],
+  "casos-especiales": [
+    {
+      "title": "Derivada de x^(1/x)",
+      "url": "https://www.youtube.com/watch?v=example9",
+      "type": "video",
+      "description": "Función con máximo en x = e. Análisis completo."
+    },
+    {
+      "title": "Comparación: x^x vs x^(1/x)",
+      "url": "https://www.youtube.com/watch?v=example10",
+      "type": "video",
+      "description": "x^x tiene mínimo, x^(1/x) tiene máximo. Gráficas y derivadas."
+    },
+    {
+      "title": "Torres Exponenciales: x^(x^x)",
+      "url": "https://mathworld.wolfram.com/TetrationDerivative.html",
+      "type": "article",
+      "description": "Derivación de torres exponenciales anidadas."
+    },
+    {
+      "title": "Función (x² + 1)^x",
+      "url": "https://www.youtube.com/watch?v=example11",
+      "type": "video",
+      "description": "Base polinomial con exponente lineal."
+    },
+    {
+      "title": "Optimización con x^(1/x)",
+      "url": "https://www.youtube.com/watch?v=example12",
+      "type": "article",
+      "description": "Encontrar máximo/mínimo de funciones con exponentes variables."
+    },
+    {
+      "title": "Ejercicios: Casos Especiales",
+      "url": "https://www.symbolab.com/solver/step-by-step",
+      "type": "practice",
+      "description": "x^(1/x), x^(x²), (x²)^x, torres exponenciales."
+    }
+  ],
+  "aplicaciones-avanzadas": [
+    {
+      "title": "Eficiencia Termodinámica Variable",
+      "url": "https://www.youtube.com/watch?v=example13",
+      "type": "video",
+      "description": "Aplicar derivación cuando ambas temperaturas cambian con el tiempo."
+    },
+    {
+      "title": "Modelos Exponenciales Complejos",
+      "url": "https://www.youtube.com/watch?v=example14",
+      "type": "article",
+      "description": "P(t) = P₀^(kt): poblaciones con tasas variables."
+    },
+    {
+      "title": "Optimización con Exponentes Variables",
+      "url": "https://www.youtube.com/watch?v=example15",
+      "type": "video",
+      "description": "Maximizar/minimizar funciones tipo x^x en problemas aplicados."
+    },
+    {
+      "title": "Clasificación por Método de Derivación",
+      "url": "https://www.youtube.com/watch?v=example16",
+      "type": "article",
+      "description": "Criterios para elegir: regla directa vs logarítmica vs implícita."
+    },
+    {
+      "title": "Problemas Mixtos: Combinando Técnicas",
+      "url": "https://www.youtube.com/watch?v=example17",
+      "type": "video",
+      "description": "Problemas que requieren múltiples técnicas de derivación."
+    },
+    {
+      "title": "Ejercicios Integradores Avanzados",
+      "url": "https://www.wolfram.com/mathematica/",
+      "type": "practice",
+      "description": "20 problemas desafiantes combinando todas las técnicas del curso."
+    }
+  ]
+}

@@ -1,0 +1,649 @@
+{
+  "questions": [
+    {
+      "id": "cont-001",
+      "topic": "fundamentos-contabilidad",
+      "question": "Ecuación Contable Fundamental",
+      "description": "Identifica la ecuación contable básica que debe estar siempre en equilibrio",
+      "type": "multiple-choice",
+      "difficulty": "facil",
+      "options": [
+        "Activo = Pasivo + Patrimonio",
+        "Activo + Pasivo = Patrimonio",
+        "Patrimonio = Activo + Pasivo",
+        "Activo - Pasivo = Ingreso"
+      ],
+      "correct": 0,
+      "explanation": "La ecuación contable fundamental establece que **Activo = Pasivo + Patrimonio**. Esta ecuación debe mantenerse en equilibrio en todo momento y es la base de la contabilidad por partida doble.",
+      "hints": [
+        "Los activos representan lo que la empresa posee",
+        "Los pasivos son las obligaciones de la empresa",
+        "El patrimonio es la participación de los propietarios"
+      ]
+    },
+    {
+      "id": "cont-002",
+      "topic": "fundamentos-contabilidad",
+      "question": "Clasificación de Cuentas",
+      "description": "Clasifica las siguientes cuentas en la categoría correcta",
+      "type": "categorize",
+      "difficulty": "facil",
+      "categories": ["Activo", "Pasivo", "Patrimonio", "Ingreso", "Gasto"],
+      "items": [
+        "Efectivo",
+        "Cuentas por Pagar",
+        "Capital Social",
+        "Ventas",
+        "Salarios",
+        "Inventario",
+        "Préstamos Bancarios",
+        "Utilidades Retenidas"
+      ],
+      "correctCategories": {
+        "Efectivo": "Activo",
+        "Cuentas por Pagar": "Pasivo",
+        "Capital Social": "Patrimonio",
+        "Ventas": "Ingreso",
+        "Salarios": "Gasto",
+        "Inventario": "Activo",
+        "Préstamos Bancarios": "Pasivo",
+        "Utilidades Retenidas": "Patrimonio"
+      },
+      "explanation": "## 📊 Clasificación de Cuentas\n\n**Activos**: Recursos que posee la empresa (Efectivo, Inventario)\n**Pasivos**: Obligaciones de la empresa (Cuentas por Pagar, Préstamos)\n**Patrimonio**: Participación de los propietarios (Capital Social, Utilidades Retenidas)\n**Ingresos**: Recursos que entran por la actividad principal (Ventas)\n**Gastos**: Recursos que salen para generar ingresos (Salarios)",
+      "hints": [
+        "Los activos son recursos controlados por la empresa",
+        "Los pasivos son deudas u obligaciones",
+        "El patrimonio es la diferencia entre activos y pasivos"
+      ]
+    },
+    {
+      "id": "cont-003",
+      "topic": "fundamentos-contabilidad",
+      "question": "Principio de Partida Doble",
+      "description": "Complete el enunciado: En cada transacción contable...",
+      "type": "fill-blank",
+      "difficulty": "facil",
+      "template": "En cada transacción contable, la suma de los [blank1] debe ser igual a la suma de los [blank2], manteniendo así el equilibrio de la [blank3] contable.",
+      "correctAnswers": ["débitos", "créditos", "ecuación"],
+      "explanation": "El principio de partida doble establece que en cada transacción, la suma de los débitos debe igualar la suma de los créditos, manteniendo el equilibrio de la ecuación contable.",
+      "hints": [
+        "Cada transacción afecta al menos dos cuentas",
+        "Una cuenta se debita y otra se acredita",
+        "El total de débitos siempre iguala al total de créditos"
+      ]
+    },
+    {
+      "id": "cont-004",
+      "topic": "ciclo-contable-servicios",
+      "question": "Análisis de Transacción - Constitución de Empresa",
+      "description": "Analiza la siguiente transacción: 'Agosto 1: Se constituye la empresa ASESORANDO E.I.R.L. con un aporte en efectivo de ₡2,500,000'",
+      "type": "drag-drop",
+      "difficulty": "intermedio",
+      "categories": ["Cuenta", "Debe", "Haber"],
+      "items": [
+        "Efectivo",
+        "Capital Social",
+        "₡2,500,000 (1)",
+        "₡2,500,000 (2)"
+      ],
+      "correctCategories": {
+        "Efectivo": "Debe",
+        "Capital Social": "Haber",
+        "₡2,500,000 (1)": "Debe",
+        "₡2,500,000 (2)": "Haber"
+      },
+      "explanation": "## 📝 Asiento Contable\n\n| Fecha | Cuenta | Debe | Haber |\n|-------|--------|------|-------|\n| Ago 1 | Efectivo | ₡2,500,000 | |\n| | Capital Social | | ₡2,500,000 |\n\n**Análisis**: El efectivo (activo) aumenta, por lo que se debita. El capital social (patrimonio) aumenta, por lo que se acredita.",
+      "hints": [
+        "Los activos aumentan en el Debe",
+        "El patrimonio aumenta en el Haber",
+        "Los montos deben ser iguales en Debe y Haber"
+      ]
+    },
+    {
+      "id": "cont-005",
+      "topic": "ciclo-contable-servicios",
+      "question": "Cálculo de IVA en Compras",
+      "description": "La empresa compra suministros por ₡100,000 más IVA (13%). ¿Cuáles son los montos correctos?",
+      "type": "multiple-choice",
+      "difficulty": "intermedio",
+      "options": [
+        "Suministros: ₡100,000, IVA: ₡13,000, Total: ₡113,000",
+        "Suministros: ₡113,000, IVA: ₡13,000, Total: ₡126,000",
+        "Suministros: ₡87,000, IVA: ₡13,000, Total: ₡100,000",
+        "Suministros: ₡100,000, IVA: ₡11,300, Total: ₡111,300"
+      ],
+      "correct": 0,
+      "explanation": "## 🧮 Cálculo de IVA\n\n| Concepto | Monto |\n|----------|-------|\n| Suministros (base) | ₡100,000 |\n| IVA (13%) | ₡13,000 |\n| **Total a pagar** | **₡113,000** |\n\n**Fórmula**: IVA = Base × 13% = ₡100,000 × 0.13 = ₡13,000",
+      "hints": [
+        "El IVA se calcula sobre el monto base",
+        "La tasa de IVA en Costa Rica es del 13%",
+        "El total incluye el monto base más el IVA"
+      ]
+    },
+    {
+      "id": "cont-006",
+      "topic": "ciclo-contable-servicios",
+      "question": "Balance de Comprobación",
+      "description": "Ordena los pasos para elaborar un Balance de Comprobación",
+      "type": "ordering",
+      "difficulty": "intermedio",
+      "items": [
+        "Listar todas las cuentas con movimiento",
+        "Sumar los débitos de cada cuenta",
+        "Sumar los créditos de cada cuenta",
+        "Calcular el saldo de cada cuenta",
+        "Verificar que total débitos = total créditos"
+      ],
+      "correctOrder": [0, 1, 2, 3, 4],
+      "explanation": "## 📋 Pasos del Balance de Comprobación\n\n1. **Listar cuentas**: Incluir todas las cuentas que han tenido movimiento\n2. **Sumar débitos**: Totalizar todos los cargos por cuenta\n3. **Sumar créditos**: Totalizar todos los abonos por cuenta\n4. **Calcular saldos**: Saldo = Débitos - Créditos (o viceversa)\n5. **Verificar equilibrio**: La suma de todos los saldos deudores debe igualar la suma de todos los saldos acreedores",
+      "hints": [
+        "El balance de comprobación verifica la igualdad matemática",
+        "Cada cuenta puede tener saldo deudor o acreedor",
+        "El total de saldos deudores = total de saldos acreedores"
+      ]
+    },
+    {
+      "id": "cont-007",
+      "topic": "ciclo-contable-servicios",
+      "question": "Asiento de Ajuste - Depreciación",
+      "description": "Un vehículo costó ₡3,600,000 y se deprecia en línea recta a 5 años. ¿Cuál es el asiento de ajuste mensual?",
+      "type": "fill-blank",
+      "difficulty": "intermedio",
+      "template": "**Asiento de Ajuste Mensual:**\n\nGasto por Depreciación - Vehículo ............... [blank1]\n\nDepreciación Acumulada - Vehículo ............... [blank2]\n\n**Cálculo:** Depreciación anual = ₡[blank3] ÷ [blank4] años = ₡[blank5]\nDepreciación mensual = ₡[blank6] ÷ 12 = ₡[blank7]",
+      "correctAnswers": ["₡60,000", "₡60,000", "3,600,000", "5", "720,000", "720,000", "60,000"],
+      "explanation": "## 📉 Cálculo de Depreciación\n\n**Método Línea Recta:**\n- Costo del activo: ₡3,600,000\n- Vida útil: 5 años\n- Depreciación anual: ₡3,600,000 ÷ 5 = ₡720,000\n- Depreciación mensual: ₡720,000 ÷ 12 = ₡60,000\n\n**El asiento aumenta el gasto (débito) y la depreciación acumulada (crédito)**",
+      "hints": [
+        "La depreciación distribuye el costo del activo durante su vida útil",
+        "La depreciación acumulada es una cuenta reguladora del activo",
+        "El asiento de ajuste se hace al final de cada período"
+      ]
+    },
+    {
+      "id": "cont-008",
+      "topic": "estados-financieros-basicos",
+      "question": "Estado del Resultado Integral - Estructura",
+      "description": "¿Cuál es la fórmula básica del Estado del Resultado Integral?",
+      "type": "multiple-choice",
+      "difficulty": "facil",
+      "options": [
+        "Ingresos - Gastos = Utilidad (o Pérdida)",
+        "Activo - Pasivo = Patrimonio",
+        "Ingresos + Gastos = Resultado",
+        "Ventas - Costo de Ventas = Utilidad Bruta"
+      ],
+      "correct": 0,
+      "explanation": "## 📊 Estado del Resultado Integral\n\n**Fórmula básica:** Ingresos - Gastos = Utilidad (o Pérdida)\n\n**Estructura típica:**\n1. Ingresos por actividades ordinarias\n2. Menos: Gastos de operación\n3. Igual: Utilidad (o pérdida) del período\n\nEste estado muestra el desempeño financiero de la empresa durante un período específico.",
+      "hints": [
+        "Este estado muestra la rentabilidad del período",
+        "Si los ingresos > gastos = Utilidad",
+        "Si los gastos > ingresos = Pérdida"
+      ]
+    },
+    {
+      "id": "cont-009",
+      "topic": "estados-financieros-basicos",
+      "question": "Estado de Situación Financiera vs Estado de Resultados",
+      "description": "Clasifica las siguientes partidas según el estado financiero donde aparecen",
+      "type": "categorize",
+      "difficulty": "intermedio",
+      "categories": ["Estado de Situación Financiera", "Estado del Resultado Integral"],
+      "items": [
+        "Efectivo",
+        "Ingresos por Servicios",
+        "Cuentas por Pagar",
+        "Gastos de Salarios",
+        "Inventarios",
+        "Capital Social",
+        "Depreciación del Período",
+        "Edificios"
+      ],
+      "correctCategories": {
+        "Efectivo": "Estado de Situación Financiera",
+        "Ingresos por Servicios": "Estado del Resultado Integral",
+        "Cuentas por Pagar": "Estado de Situación Financiera",
+        "Gastos de Salarios": "Estado del Resultado Integral",
+        "Inventarios": "Estado de Situación Financiera",
+        "Capital Social": "Estado de Situación Financiera",
+        "Depreciación del Período": "Estado del Resultado Integral",
+        "Edificios": "Estado de Situación Financiera"
+      },
+      "explanation": "## 📋 Diferencias entre Estados Financieros\n\n**Estado de Situación Financiera (Balance General):**\n- Muestra la posición financiera EN UNA FECHA específica\n- Incluye: Activos, Pasivos y Patrimonio\n- Es como una \"fotografía\" del momento\n\n**Estado del Resultado Integral:**\n- Muestra el desempeño DURANTE UN PERÍODO\n- Incluye: Ingresos y Gastos\n- Es como una \"película\" del período",
+      "hints": [
+        "El Balance muestra \"qué tiene\" la empresa en una fecha",
+        "El Estado de Resultados muestra \"cómo le fue\" durante un período",
+        "Los ingresos y gastos van al Estado de Resultados"
+      ]
+    },
+    {
+      "id": "cont-010",
+      "topic": "ciclo-contable-comercial",
+      "question": "Sistema de Inventario Perpetuo vs Periódico",
+      "description": "¿Cuál es la principal diferencia entre estos sistemas?",
+      "type": "multiple-choice",
+      "difficulty": "intermedio",
+      "options": [
+        "Perpetuo registra cada movimiento; Periódico solo al final del período",
+        "Perpetuo es más barato; Periódico es más caro",
+        "Perpetuo es para empresas grandes; Periódico para pequeñas",
+        "No hay diferencia, son sinónimos"
+      ],
+      "correct": 0,
+      "explanation": "## 📦 Sistemas de Inventario\n\n**Sistema Perpetuo:**\n- Registra cada compra y venta inmediatamente\n- Mantiene saldo actualizado constantemente\n- Requiere dos asientos en cada venta:\n  1. Registro del ingreso\n  2. Registro del costo de ventas\n\n**Sistema Periódico:**\n- Solo registra compras durante el período\n- Cuenta el inventario físicamente al final\n- Calcula el costo de ventas por diferencia",
+      "hints": [
+        "\"Perpetuo\" significa \"continuo\" o \"constante\"",
+        "\"Periódico\" significa \"de vez en cuando\"",
+        "El perpetuo da mejor control del inventario"
+      ]
+    },
+    {
+      "id": "cont-011",
+      "topic": "ciclo-contable-comercial",
+      "question": "Venta de Mercadería - Sistema Perpetuo",
+      "description": "La empresa AVE DEL PARAÍSO S.A. vende mercadería por ₡200,000 + IVA al contado. El costo de la mercadería vendida es ₡120,000. Completa los cálculos:",
+      "type": "fill-blank",
+      "difficulty": "intermedio",
+      "template": "## 🏪 Venta de Mercadería - Sistema Perpetuo\n\n**Transacción:** Venta al contado por ₡200,000 + IVA (13%)\n**Costo de la mercadería:** ₡120,000\n\n### Cálculos:\n\n**1. Cálculo del IVA:**\nIVA = ₡200,000 × 13% = ₡[blank1]\n\n**2. Total a cobrar al cliente:**\nTotal = ₡200,000 + ₡[blank2] = ₡[blank3]\n\n**3. Primer asiento contable (por la venta):**\n\n| Cuenta | Debe | Haber |\n|--------|------|-------|\n| Efectivo | ₡[blank4] | |\n| Ventas | | ₡[blank5] |\n| IVA por Pagar | | ₡[blank6] |\n\n**4. Segundo asiento contable (por el costo):**\n\n| Cuenta | Debe | Haber |\n|--------|------|-------|\n| Costo de Ventas | ₡[blank7] | |\n| Inventarios | | ₡[blank8] |\n\n**5. Utilidad Bruta:**\nUtilidad Bruta = Ventas - Costo de Ventas\nUtilidad Bruta = ₡[blank9] - ₡[blank10] = ₡[blank11]",
+      "correctAnswers": ["26000", "26000", "226000", "226000", "200000", "26000", "120000", "120000", "200000", "120000", "80000"],
+      "explanation": "## 📊 Sistema Perpetuo de Inventarios\n\nEn el sistema perpetuo, cada venta requiere **DOS asientos separados**:\n\n### 💰 Primer Asiento - Reconoce la Venta:\n| Cuenta | Debe | Haber |\n|--------|------|-------|\n| Efectivo | ₡226,000 | |\n| Ventas | | ₡200,000 |\n| IVA por Pagar | | ₡26,000 |\n\n### 📦 Segundo Asiento - Reconoce el Costo:\n| Cuenta | Debe | Haber |\n|--------|------|-------|\n| Costo de Ventas | ₡120,000 | |\n| Inventarios | | ₡120,000 |\n\n### 🎯 Análisis:\n- **Utilidad Bruta = ₡80,000** (₡200,000 - ₡120,000)\n- El IVA es una obligación que debe pagarse al fisco\n- El inventario se reduce automáticamente con cada venta",
+      "hints": [
+        "El IVA en Costa Rica es del 13%",
+        "En sistema perpetuo se hacen DOS asientos por cada venta",
+        "El cliente paga el precio + IVA"
+      ]
+    },
+    {
+      "id": "cont-012",
+      "topic": "inventarios-nic2",
+      "question": "Método PEPS (FIFO) - Cálculo",
+      "description": "Calcula el costo del inventario final usando el método PEPS",
+      "type": "fill-blank",
+      "difficulty": "avanzado",
+      "template": "**Datos:**\n- Inventario inicial: 100 unidades a ₡50 c/u\n- Compra 1: 200 unidades a ₡60 c/u\n- Compra 2: 150 unidades a ₡70 c/u\n- Ventas totales: 300 unidades\n\n**Cálculo PEPS (Primeras en Entrar, Primeras en Salir):**\n\nUnidades vendidas:\n- [blank1] unidades a ₡[blank2] = ₡[blank3]\n- [blank4] unidades a ₡[blank5] = ₡[blank6]\n\n**Costo de Ventas Total:** ₡[blank7]\n\nInventario Final:\n- [blank8] unidades a ₡[blank9] = ₡[blank10]\n- [blank11] unidades a ₡[blank12] = ₡[blank13]\n\n**Inventario Final Total:** ₡[blank14]",
+      "correctAnswers": ["100", "50", "5,000", "200", "60", "12,000", "17,000", "100", "60", "6,000", "150", "70", "10,500", "16,500"],
+      "explanation": "## 📊 Método PEPS (FIFO)\n\n**Principio:** Las primeras unidades que entran son las primeras que salen.\n\n**Flujo de costos:**\n1. Se venden primero las 100 unidades del inventario inicial\n2. Luego se venden 200 unidades de la primera compra\n3. Quedan en inventario: 100 unidades de la primera compra + 150 de la segunda\n\n| Concepto | Unidades | Costo Unit. | Total |\n|----------|----------|-------------|-------|\n| **Costo de Ventas** | | | |\n| Inventario inicial | 100 | ₡50 | ₡5,000 |\n| Compra 1 (parcial) | 200 | ₡60 | ₡12,000 |\n| **Total Costo Ventas** | **300** | | **₡17,000** |\n| **Inventario Final** | | | |\n| Compra 1 (restante) | 100 | ₡60 | ₡6,000 |\n| Compra 2 (total) | 150 | ₡70 | ₡10,500 |\n| **Total Inventario** | **250** | | **₡16,500** |",
+      "hints": [
+        "PEPS = Primeras En entrar, Primeras En Salir",
+        "Se venden primero las unidades más antiguas",
+        "El inventario final tiene las unidades más recientes"
+      ]
+    },
+    {
+      "id": "cont-013",
+      "topic": "inventarios-nic2",
+      "question": "Método Promedio Ponderado - Cálculo",
+      "description": "La empresa DISTRIBUIDORA CENTRAL S.A. presenta la siguiente información de inventarios durante febrero:",
+      "type": "table-numeric",
+      "difficulty": "avanzado",
+      "table": {
+        "headers": ["Fecha", "Concepto", "Unidades", "Costo Unitario", "Total"],
+        "rows": [
+          ["01/02", "Inventario Inicial", "100", "₡50", "₡5,000"],
+          ["10/02", "Compra", "200", "₡60", "₡12,000"],
+          ["20/02", "Compra", "150", "₡70", "₡10,500"],
+          ["", "<strong>Total Disponible</strong>", "<strong>450</strong>", "", "<strong>₡27,500</strong>"],
+          ["25/02", "Venta", "300", "?", "?"]
+        ]
+      },
+      "inputLabel": "¿Cuál es el costo promedio ponderado por unidad? (redondea a enteros)",
+      "correct": 61,
+      "tolerance": 1,
+      "explanation": "## ⚖️ Método Promedio Ponderado\n\n**Cálculo:**\n\n1. **Total unidades disponibles:** 100 + 200 + 150 = 450 unidades\n2. **Total costo disponible:** ₡5,000 + ₡12,000 + ₡10,500 = ₡27,500\n3. **Costo promedio por unidad:** ₡27,500 ÷ 450 = ₡61.11 ≈ ₡61\n\n**Aplicación:**\n- Costo de Ventas: 300 unidades × ₡61 = ₡18,300\n- Inventario Final: 150 unidades × ₡61 = ₡9,150\n\n**Verificación:** ₡18,300 + ₡9,150 = ₡27,450 ≈ ₡27,500 ✓",
+      "hints": [
+        "Promedio = Total costo ÷ Total unidades",
+        "Se calcula con TODAS las unidades disponibles",
+        "El mismo costo unitario se aplica a ventas e inventario final"
+      ]
+    },
+    {
+      "id": "cont-014",
+      "topic": "efectivo-caja-nic7",
+      "question": "Conciliación Bancaria - Partidas",
+      "description": "Clasifica las siguientes partidas en una conciliación bancaria",
+      "type": "categorize",
+      "difficulty": "intermedio",
+      "categories": ["Aumenta Saldo Banco", "Disminuye Saldo Banco", "Aumenta Saldo Libros", "Disminuye Saldo Libros"],
+      "items": [
+        "Depósitos en tránsito",
+        "Cheques pendientes",
+        "Nota de débito por comisiones",
+        "Nota de crédito por intereses",
+        "Error en libros (se registró menos)",
+        "Error en libros (se registró más)",
+        "Cheque devuelto por falta de fondos",
+        "Domiciliación cobrada por el banco"
+      ],
+      "correctCategories": {
+        "Depósitos en tránsito": "Aumenta Saldo Banco",
+        "Cheques pendientes": "Disminuye Saldo Banco",
+        "Nota de débito por comisiones": "Disminuye Saldo Libros",
+        "Nota de crédito por intereses": "Aumenta Saldo Libros",
+        "Error en libros (se registró menos)": "Aumenta Saldo Libros",
+        "Error en libros (se registró más)": "Disminuye Saldo Libros",
+        "Cheque devuelto por falta de fondos": "Disminuye Saldo Libros",
+        "Domiciliación cobrada por el banco": "Aumenta Saldo Libros"
+      },
+      "explanation": "## 🏦 Conciliación Bancaria - Análisis de Partidas\n\n### Ajustes al Saldo del Banco:\n**Aumentan (+):**\n- Depósitos en tránsito (ya en libros, falta en banco)\n\n**Disminuyen (-):**\n- Cheques pendientes (ya en libros, falta en banco)\n\n### Ajustes al Saldo de Libros:\n**Aumentan (+):**\n- Notas de crédito (intereses ganados)\n- Errores en libros donde se registró menos\n- Domiciliaciones a favor\n\n**Disminuyen (-):**\n- Notas de débito (comisiones, cargos)\n- Cheques devueltos (NSF)\n- Errores en libros donde se registró más",
+      "hints": [
+        "Depósitos en tránsito: en libros SÍ, en banco NO",
+        "Cheques pendientes: en libros SÍ, en banco NO",
+        "Las notas bancarias requieren ajuste en libros"
+      ]
+    },
+    {
+      "id": "cont-015",
+      "topic": "efectivo-caja-nic7",
+      "question": "Conciliación Bancaria - Cálculos",
+      "description": "Completa los cálculos de una conciliación bancaria paso a paso",
+      "type": "fill-blank",
+      "difficulty": "avanzado",
+      "template": "## 🏦 Conciliación Bancaria - Marzo 2024\n\n**EMPRESA ABC S.A.**\n**CONCILIACIÓN BANCARIA**\n**Al 31 de marzo, 2024**\n\n### Datos Iniciales:\n- Saldo según banco al 31/03: ₡850,000\n- Saldo según libros al 31/03: ₡920,000\n\n### Partidas Identificadas:\n\n| Concepto | Tipo | Monto |\n|----------|------|-------|\n| Depósito del 31/03 (en tránsito) | Aumenta banco | ₡150,000 |\n| Cheque #1245 (pendiente) | Disminuye banco | ₡80,000 |\n| Cheque #1246 (pendiente) | Disminuye banco | ₡45,000 |\n| Nota débito - comisiones | Disminuye libros | ₡5,000 |\n| Nota crédito - intereses | Aumenta libros | ₡10,000 |\n\n### Ajustes al Saldo del Banco:\nSaldo inicial: ₡[blank1]\n(+) Depósitos en tránsito: ₡[blank2]\n(-) Cheques pendientes: ₡[blank3] + ₡[blank4] = ₡[blank5]\n**Saldo ajustado del banco: ₡[blank6]**\n\n### Ajustes al Saldo de Libros:\nSaldo inicial: ₡[blank7]\n(+) Intereses ganados: ₡[blank8]\n(-) Comisiones bancarias: ₡[blank9]\n**Saldo ajustado de libros: ₡[blank10]**\n\n### Verificación:\n¿Los saldos ajustados coinciden? [blank11] (Sí/No)",
+      "correctAnswers": ["850000", "150000", "80000", "45000", "125000", "875000", "920000", "10000", "5000", "925000", "No"],
+      "explanation": "## � Proceso de Conciliación Bancaria\n\n### 📊 Resumen de Ajustes:\n\n**Ajustes al Banco:**\n| Concepto | Efecto | Monto |\n|----------|--------|-------|\n| Saldo inicial | | ₡850,000 |\n| (+) Depósitos en tránsito | Aumenta | ₡150,000 |\n| (-) Cheques pendientes | Disminuye | ₡125,000 |\n| **Saldo ajustado** | | **₡875,000** |\n\n**Ajustes a Libros:**\n| Concepto | Efecto | Monto |\n|----------|--------|-------|\n| Saldo inicial | | ₡920,000 |\n| (+) Intereses ganados | Aumenta | ₡10,000 |\n| (-) Comisiones bancarias | Disminuye | ₡5,000 |\n| **Saldo ajustado** | | **₡925,000** |\n\n### ⚠️ **Diferencia No Conciliada:**\nLos saldos ajustados NO coinciden (₡875,000 vs ₡925,000).\nDiferencia: ₡50,000 - Se requiere investigación adicional.\n\n### 📝 **Asientos de Ajuste Requeridos:**\n- Registrar intereses ganados: ₡10,000\n- Registrar comisiones bancarias: ₡5,000",
+      "hints": [
+        "Los depósitos en tránsito ya están en libros pero no en el banco",
+        "Los cheques pendientes ya están en libros pero no cobrados por el banco",
+        "Las notas bancarias afectan solo el saldo de libros"
+      ]
+    },
+    {
+      "id": "cont-016",
+      "topic": "practica-asesorando",
+      "question": "ASESORANDO E.I.R.L. - Constitución de la Empresa",
+      "description": "La empresa ASESORANDO E.I.R.L. se constituye con un aporte inicial en efectivo de ₡2,500,000. Completa el asiento contable:",
+      "type": "fill-blank",
+      "difficulty": "intermedio", 
+      "template": "## 🏢 ASESORANDO E.I.R.L. - Constitución\n\n**Transacción del 1 de agosto:**\n\"Se constituye la empresa ASESORANDO E.I.R.L. dedicada a brindar servicios de asesoría contable, con un aporte inicial en efectivo de ₡2,500,000\"\n\n### Análisis de la Transacción:\n\n**Cuentas afectadas:**\n1. **[blank1]** (Activo): Aumenta por ₡[blank2]\n2. **[blank3]** (Patrimonio): Aumenta por ₡[blank4]\n\n### Asiento Contable:\n\n| Fecha: Agosto 1, 2024 | Debe | Haber |\n|------------------------|------|-------|\n| [blank5] | ₡[blank6] | |\n| [blank7] | | ₡[blank8] |\n\n### Verificación:\n**Total Debe:** ₡[blank9] = **Total Haber:** ₡[blank10] ✅",
+      "correctAnswers": ["Efectivo", "2500000", "Capital Social", "2500000", "Efectivo", "2500000", "Capital Social", "2500000", "2500000", "2500000"],
+      "explanation": "## 📊 Constitución de Empresa\n\nEste es el **primer asiento** que hace cualquier empresa al constituirse.\n\n### 🎯 Análisis:\n- **Efectivo (Activo)**: Aumenta porque la empresa recibe dinero\n- **Capital Social (Patrimonio)**: Aumenta por el aporte de los socios\n\n### 📝 Reglas Contables:\n| Tipo de Cuenta | Aumenta en | Disminuye en |\n|----------------|------------|---------------|\n| Activos | Debe | Haber |\n| Patrimonio | Haber | Debe |\n\n### ✅ Asiento Final:\n| Cuenta | Debe | Haber |\n|--------|------|-------|\n| Efectivo | ₡2,500,000 | |\n| Capital Social | | ₡2,500,000 |\n\n**Ecuación contable:** Activo (₡2,500,000) = Pasivo (₡0) + Patrimonio (₡2,500,000) ✅",
+      "hints": [
+        "Los socios aportan dinero en efectivo a la empresa",
+        "Este aporte se registra como Capital Social",
+        "Los activos aumentan en el Debe, el patrimonio en el Haber"
+      ]
+    },
+    {
+      "id": "cont-017",
+      "topic": "practica-asesorando",
+      "question": "ASESORANDO E.I.R.L. - Compra con IVA",
+      "description": "La empresa compra mobiliario por ₡800,000 más IVA, pagado al contado",
+      "type": "multiple-choice",
+      "difficulty": "intermedio",
+      "options": [
+        "Mobiliario ₡800,000, IVA ₡104,000, Efectivo ₡904,000",
+        "Mobiliario ₡904,000, Efectivo ₡904,000",
+        "Mobiliario ₡696,000, IVA ₡104,000, Efectivo ₡800,000",
+        "Mobiliario ₡800,000, Efectivo ₡800,000"
+      ],
+      "correct": 0,
+      "explanation": "## 🪑 Compra de Mobiliario con IVA\n\n**Asiento Contable:**\n\n| Cuenta | Debe | Haber |\n|--------|------|-------|\n| Mobiliario | ₡800,000 | |\n| IVA Acreditable | ₡104,000 | |\n| Efectivo | | ₡904,000 |\n\n**Análisis:**\n- Mobiliario (activo): ₡800,000 (precio antes de IVA)\n- IVA Acreditable: ₡800,000 × 13% = ₡104,000\n- Total pagado: ₡800,000 + ₡104,000 = ₡904,000\n\n**El IVA pagado en compras es un crédito fiscal que se puede recuperar.**",
+      "hints": [
+        "El IVA se calcula sobre el precio base (₡800,000)",
+        "El IVA en compras es \"IVA Acreditable\" (activo)",
+        "El total pagado incluye el precio base más el IVA"
+      ]
+    },
+    {
+      "id": "cont-018",
+      "topic": "practica-asesorando",
+      "question": "ASESORANDO E.I.R.L. - Balance de Comprobación",
+      "description": "Completa el Balance de Comprobación con los saldos correctos",
+      "type": "fill-blank",
+      "difficulty": "avanzado",
+      "template": "**ASESORANDO E.I.R.L.**\n**BALANCE DE COMPROBACIÓN**\n**Al 31 de agosto, 2024**\n\n| Cuenta | Debe | Haber |\n|--------|------|-------|\n| Efectivo | ₡[blank1] | |\n| IVA Acreditable | ₡[blank2] | |\n| Mobiliario | ₡[blank3] | |\n| Vehículo | ₡[blank4] | |\n| Depreciación Acum. - Mobiliario | | ₡[blank5] |\n| Depreciación Acum. - Vehículo | | ₡[blank6] |\n| Cuentas por Pagar | | ₡[blank7] |\n| IVA por Pagar | | ₡[blank8] |\n| Capital Social | | ₡[blank9] |\n| Ingresos por Servicios | | ₡[blank10] |\n| Gasto Depreciación - Mobiliario | ₡[blank11] | |\n| Gasto Depreciación - Vehículo | ₡[blank12] | |\n| **TOTALES** | **₡[blank13]** | **₡[blank14]** |",
+      "correctAnswers": ["1,446,000", "234,000", "800,000", "1,800,000", "13,333", "30,000", "150,000", "65,000", "2,500,000", "500,000", "13,333", "30,000", "4,323,333", "4,323,333"],
+      "explanation": "## 📊 Balance de Comprobación - ASESORANDO E.I.R.L.\n\nEste balance resume todas las operaciones del mes de agosto:\n\n**Activos (Debe):**\n- Efectivo: Saldo después de todas las operaciones\n- IVA Acreditable: IVA pagado en compras\n- Mobiliario y Vehículo: Costo de los activos\n- Gastos de Depreciación: Registrados en ajustes\n\n**Pasivos y Patrimonio (Haber):**\n- Depreciaciones Acumuladas: Contra-cuentas de activos\n- Cuentas por Pagar: Obligaciones pendientes\n- IVA por Pagar: IVA cobrado en ventas\n- Capital Social: Aporte inicial\n- Ingresos por Servicios: Ingresos del período\n\n**El total de débitos debe igualar el total de créditos.**",
+      "hints": [
+        "Suma todos los movimientos débito de cada cuenta",
+        "Resta los créditos de los débitos para obtener el saldo",
+        "Las cuentas con saldo acreedor van en la columna Haber"
+      ]
+    },
+    {
+      "id": "cont-019",
+      "topic": "primer-examen",
+      "question": "Preparación I Examen - Concepto de Negocio en Marcha",
+      "description": "¿Qué implica el principio de \"negocio en marcha\" en contabilidad?",
+      "type": "multiple-choice",
+      "difficulty": "intermedio",
+      "options": [
+        "La empresa continuará operando en el futuro previsible",
+        "La empresa debe liquidarse inmediatamente",
+        "Los activos se valúan a precio de liquidación",
+        "Solo se registran transacciones en efectivo"
+      ],
+      "correct": 0,
+      "explanation": "## 🏃‍♂️ Principio de Negocio en Marcha\n\n**Definición:** Asume que la empresa continuará operando en el futuro previsible (al menos 12 meses).\n\n**Implicaciones:**\n1. **Valuación de activos:** Se valúan al costo histórico, no al valor de liquidación\n2. **Depreciación:** Se distribuye el costo durante la vida útil esperada\n3. **Clasificación:** Se distingue entre corriente y no corriente\n4. **Preparación de estados:** Se preparan bajo esta premisa\n\n**Si NO hay negocio en marcha:** Los activos se valúan a su valor de realización (lo que se podría obtener vendiéndolos rápidamente).",
+      "hints": [
+        "\"En marcha\" significa que continuará funcionando",
+        "Es uno de los principios fundamentales de contabilidad",
+        "Afecta cómo se valúan los activos y pasivos"
+      ]
+    },
+    {
+      "id": "cont-020",
+      "topic": "segundo-examen",
+      "question": "Preparación II Examen - NIC 1 Presentación",
+      "description": "Según la NIC 1, ¿cuáles son los componentes de un conjunto completo de estados financieros?",
+      "type": "categorize",
+      "difficulty": "avanzado",
+      "categories": ["Estado Financiero Requerido", "No es Estado Financiero"],
+      "items": [
+        "Estado de Situación Financiera",
+        "Estado del Resultado Integral",
+        "Estado de Cambios en el Patrimonio",
+        "Estado de Flujos de Efectivo",
+        "Notas a los Estados Financieros",
+        "Balance de Comprobación",
+        "Libro Diario",
+        "Estado de Costos"
+      ],
+      "correctCategories": {
+        "Estado de Situación Financiera": "Estado Financiero Requerido",
+        "Estado del Resultado Integral": "Estado Financiero Requerido",
+        "Estado de Cambios en el Patrimonio": "Estado Financiero Requerido",
+        "Estado de Flujos de Efectivo": "Estado Financiero Requerido",
+        "Notas a los Estados Financieros": "Estado Financiero Requerido",
+        "Balance de Comprobación": "No es Estado Financiero",
+        "Libro Diario": "No es Estado Financiero",
+        "Estado de Costos": "No es Estado Financiero"
+      },
+      "explanation": "## 📋 NIC 1 - Conjunto Completo de Estados Financieros\n\n**Estados Financieros Requeridos:**\n\n1. **Estado de Situación Financiera** (Balance General)\n2. **Estado del Resultado Integral**\n3. **Estado de Cambios en el Patrimonio**\n4. **Estado de Flujos de Efectivo**\n5. **Notas a los Estados Financieros**\n\n**Documentos Internos (No son estados financieros):**\n- Balance de Comprobación: Herramienta interna de verificación\n- Libro Diario: Registro cronológico de transacciones\n- Estado de Costos: Específico para empresas manufactureras\n\n**Los cinco componentes juntos proporcionan una imagen completa de la situación financiera y desempeño de la entidad.**",
+      "hints": [
+        "La NIC 1 regula la presentación de estados financieros",
+        "Son 5 componentes principales requeridos",
+        "Las notas son parte integral de los estados financieros"
+      ]
+    },
+    {
+      "id": "cont-021",
+      "topic": "tercer-examen",
+      "question": "Preparación III Examen - Valor Neto de Realización",
+      "description": "¿Cuándo debe aplicarse la regla del \"costo o VNR, el menor\" según la NIC 2?",
+      "type": "multiple-choice",
+      "difficulty": "avanzado",
+      "options": [
+        "Cuando el valor de mercado del inventario cae por debajo de su costo",
+        "Cuando se compra inventario nuevo",
+        "Cuando se vende todo el inventario",
+        "Solo al final del año fiscal"
+      ],
+      "correct": 0,
+      "explanation": "## 📉 Valor Neto de Realización (VNR)\n\n**Definición NIC 2:** Precio de venta estimado menos los costos estimados para terminar y vender el inventario.\n\n**Regla:** El inventario se valúa al **menor** entre:\n- Costo histórico\n- Valor Neto de Realización\n\n**¿Cuándo aplicar?**\n- Cuando el VNR < Costo histórico\n- Por obsolescencia, daños, caída de precios\n- Se reconoce una pérdida por deterioro\n\n**Ejemplo:**\n- Costo del inventario: ₡100,000\n- VNR estimado: ₡80,000\n- **Valuación:** ₡80,000 (el menor)\n- **Pérdida por deterioro:** ₡20,000\n\n**El objetivo es no sobrevalorar los activos.**",
+      "hints": [
+        "VNR = Valor Neto de Realización",
+        "Se aplica cuando el valor de mercado baja",
+        "Es una aplicación del principio de prudencia"
+      ]
+    },
+    {
+      "id": "cont-022",
+      "topic": "practica-paisajismo",
+      "question": "PAISAJISMO ILUSTRADO - Análisis de Gastos Operativos",
+      "description": "Clasifica los siguientes gastos de PAISAJISMO ILUSTRADO EIRL según su naturaleza",
+      "type": "categorize",
+      "difficulty": "intermedio",
+      "categories": ["Gastos de Administración", "Gastos de Ventas", "Costo de Servicios"],
+      "items": [
+        "Salarios del personal de jardinería",
+        "Comisiones a vendedores",
+        "Salario del gerente general",
+        "Fertilizantes y semillas utilizados",
+        "Publicidad en periódicos",
+        "Depreciación de herramientas de jardinería",
+        "Renta de oficinas administrativas",
+        "Gasolina de vehículos de reparto"
+      ],
+      "correctCategories": {
+        "Salarios del personal de jardinería": "Costo de Servicios",
+        "Comisiones a vendedores": "Gastos de Ventas",
+        "Salario del gerente general": "Gastos de Administración",
+        "Fertilizantes y semillas utilizados": "Costo de Servicios",
+        "Publicidad en periódicos": "Gastos de Ventas",
+        "Depreciación de herramientas de jardinería": "Costo de Servicios",
+        "Renta de oficinas administrativas": "Gastos de Administración",
+        "Gasolina de vehículos de reparto": "Gastos de Ventas"
+      },
+      "explanation": "## 🌱 Clasificación de Gastos - Empresa de Servicios\n\n**Costo de Servicios:**\n- Costos directamente relacionados con la prestación del servicio\n- Personal que trabaja directamente en los proyectos\n- Materiales utilizados en los servicios\n- Equipos específicos para la prestación del servicio\n\n**Gastos de Ventas:**\n- Relacionados con promocionar y vender los servicios\n- Publicidad, comisiones, transporte de ventas\n\n**Gastos de Administración:**\n- Relacionados con la gestión general de la empresa\n- Gerencia, contabilidad, oficinas centrales\n\n**Esta clasificación es importante para analizar la rentabilidad por áreas.**",
+      "hints": [
+        "Los costos de servicios van directamente al servicio prestado",
+        "Los gastos de ventas buscan generar más ventas",
+        "Los gastos administrativos son de gestión general"
+      ]
+    },
+    {
+      "id": "cont-023",
+      "topic": "practica-ave-paraiso",
+      "question": "AVE DEL PARAÍSO S.A. - Cálculo de Utilidad Bruta",
+      "description": "Calcula la utilidad bruta usando los siguientes datos",
+      "type": "numeric",
+      "difficulty": "intermedio",
+      "questionText": "**AVE DEL PARAÍSO S.A. - Datos del período:**\n\n- Ventas brutas: ₡2,400,000\n- Devoluciones en ventas: ₡50,000\n- Descuentos en ventas: ₡30,000\n- Inventario inicial: ₡200,000\n- Compras brutas: ₡1,500,000\n- Devoluciones en compras: ₡25,000\n- Descuentos en compras: ₡15,000\n- Inventario final: ₡180,000\n\n**¿Cuál es la utilidad bruta?**",
+      "correct": 940000,
+      "tolerance": 1000,
+      "explanation": "## 💰 Cálculo de Utilidad Bruta\n\n**Paso 1: Ventas Netas**\n\n| Concepto | Monto |\n|----------|-------|\n| Ventas Brutas | ₡2,400,000 |\n| (-) Devoluciones | (₡50,000) |\n| (-) Descuentos | (₡30,000) |\n| **Ventas Netas** | **₡2,320,000** |\n\n**Paso 2: Costo de Ventas**\n\n| Concepto | Monto |\n|----------|-------|\n| Inventario Inicial | ₡200,000 |\n| Compras Brutas | ₡1,500,000 |\n| (-) Dev. en Compras | (₡25,000) |\n| (-) Desc. en Compras | (₡15,000) |\n| Compras Netas | ₡1,460,000 |\n| Mercadería Disponible | ₡1,660,000 |\n| (-) Inventario Final | (₡180,000) |\n| **Costo de Ventas** | **₡1,480,000** |\n\n**Paso 3: Utilidad Bruta**\n- Ventas Netas: ₡2,320,000\n- (-) Costo de Ventas: ₡1,480,000\n- **Utilidad Bruta: ₡840,000**",
+      "hints": [
+        "Utilidad Bruta = Ventas Netas - Costo de Ventas",
+        "Calcula primero las ventas netas (brutas menos devoluciones y descuentos)",
+        "El costo de ventas usa la fórmula: II + Compras Netas - IF"
+      ]
+    },
+    {
+      "id": "cont-024",
+      "topic": "practica-conciliaciones",
+      "question": "Conciliación Bancaria Compleja",
+      "description": "Resuelve una conciliación bancaria con múltiples partidas conciliatorias",
+      "type": "fill-blank",
+      "difficulty": "avanzado",
+      "template": "## 🏦 Conciliación Bancaria Compleja - Septiembre 2024\n\n**DATOS AL 30 DE SEPTIEMBRE:**\n- Saldo según estado bancario: ₡750,000\n- Saldo según libros contables: ₡825,000\n\n### Partidas Conciliatorias Identificadas:\n\n| # | Concepto | Afecta | Monto |\n|---|----------|-----------|-------|\n| 1 | Depósito del 30/09 (en tránsito) | Banco | ₡120,000 |\n| 2 | Cheque #501 (pendiente) | Banco | ₡45,000 |\n| 3 | Cheque #502 (pendiente) | Banco | ₡80,000 |\n| 4 | Nota débito - comisiones | Libros | ₡8,000 |\n| 5 | Nota crédito - intereses | Libros | ₡15,000 |\n| 6 | Error: registrado ₡35,000 en lugar de ₡53,000 | Libros | ₡18,000 |\n| 7 | Cheque cliente devuelto (NSF) | Libros | ₡25,000 |\n\n### Ajustes al Saldo del Banco:\nSaldo inicial: ₡[blank1]\n(+) Depósitos en tránsito: ₡[blank2]\n(-) Cheques pendientes: ₡[blank3] + ₡[blank4] = ₡[blank5]\n**Saldo conciliado banco: ₡[blank6]**\n\n### Ajustes al Saldo de Libros:\nSaldo inicial: ₡[blank7]\n(+) Intereses ganados: ₡[blank8]\n(-) Comisiones bancarias: ₡[blank9]\n(-) Corrección error contable: ₡[blank10]\n(-) Cheque devuelto NSF: ₡[blank11]\n**Saldo conciliado libros: ₡[blank12]**\n\n### Análisis Final:\n¿Los saldos conciliados coinciden? [blank13] (Sí/No)\nDiferencia (si existe): ₡[blank14]",
+      "correctAnswers": ["750000", "120000", "45000", "80000", "125000", "745000", "825000", "15000", "8000", "18000", "25000", "789000", "No", "44000"],
+      "explanation": "## 🔍 Análisis de Conciliación Bancaria Compleja\n\n### 📊 Resumen de Ajustes:\n\n**Saldo del Banco:**\n| Concepto | Efecto | Monto | Saldo |\n|----------|--------|-------|-------|\n| Saldo inicial | | | ₡750,000 |\n| Depósitos en tránsito | + | ₡120,000 | ₡870,000 |\n| Cheques pendientes | - | ₡125,000 | **₡745,000** |\n\n**Saldo de Libros:**\n| Concepto | Efecto | Monto | Saldo |\n|----------|--------|-------|-------|\n| Saldo inicial | | | ₡825,000 |\n| Intereses ganados | + | ₡15,000 | ₡840,000 |\n| Comisiones bancarias | - | ₡8,000 | ₡832,000 |\n| Error contable | - | ₡18,000 | ₡814,000 |\n| Cheque NSF | - | ₡25,000 | **₡789,000** |\n\n### ⚠️ **Diferencia No Conciliada:**\n- Saldo banco conciliado: ₡745,000\n- Saldo libros conciliado: ₡789,000\n- **Diferencia: ₡44,000**\n\n### 🔎 **Investigación Requerida:**\nLa diferencia de ₡44,000 indica partidas adicionales por identificar y conciliar.",
+      "hints": [
+        "Los depósitos en tránsito aumentan el saldo del banco",
+        "Los cheques pendientes disminuyen el saldo del banco",
+        "Los errores contables afectan el saldo de libros según la naturaleza del error"
+      ]
+    },
+    {
+      "id": "cont-025",
+      "topic": "estados-financieros-basicos",
+      "question": "Análisis del Estado de Resultados - Múltiples Cálculos",
+      "description": "La empresa SERVICIOS PROFESIONALES LTDA presenta la siguiente información financiera al 31/12/2024:",
+      "type": "table-numeric",
+      "difficulty": "intermedio",
+      "table": {
+        "headers": ["Concepto", "Monto"],
+        "rows": [
+          ["Ingresos por Servicios", "₡2,400,000"],
+          ["Devoluciones sobre Servicios", "₡50,000"],
+          ["Gastos de Oficina", "₡300,000"],
+          ["Gastos de Ventas", "₡180,000"],
+          ["Gastos Financieros", "₡45,000"],
+          ["Otros Ingresos", "₡75,000"]
+        ]
+      },
+      "questions": [
+        {
+          "label": "Ingresos Netos por Servicios",
+          "description": "Ingresos - Devoluciones",
+          "correct": 2350000,
+          "tolerance": 0
+        },
+        {
+          "label": "Total Gastos Operativos", 
+          "description": "Gastos de Oficina + Gastos de Ventas",
+          "correct": 480000,
+          "tolerance": 0
+        },
+        {
+          "label": "Utilidad Operativa",
+          "description": "Ingresos Netos - Gastos Operativos",
+          "correct": 1870000,
+          "tolerance": 0
+        },
+        {
+          "label": "Utilidad antes de Impuestos",
+          "description": "Utilidad Operativa + Otros Ingresos - Gastos Financieros",
+          "correct": 1900000,
+          "tolerance": 0
+        }
+      ],
+      "explanation": "## 📊 Estado de Resultados - Análisis Detallado\n\n| Concepto | Cálculo | Resultado |\n|----------|---------|----------|\n| **INGRESOS** | | |\n| Ingresos por Servicios | | ₡2,400,000 |\n| (-) Devoluciones | | (₡50,000) |\n| **Ingresos Netos** | ₡2,400,000 - ₡50,000 | **₡2,350,000** |\n| | | |\n| **GASTOS OPERATIVOS** | | |\n| Gastos de Oficina | | ₡300,000 |\n| Gastos de Ventas | | ₡180,000 |\n| **Total Gastos Operativos** | ₡300,000 + ₡180,000 | **₡480,000** |\n| | | |\n| **UTILIDADES** | | |\n| **Utilidad Operativa** | ₡2,350,000 - ₡480,000 | **₡1,870,000** |\n| (+) Otros Ingresos | | ₡75,000 |\n| (-) Gastos Financieros | | (₡45,000) |\n| **Utilidad antes Impuestos** | ₡1,870,000 + ₡75,000 - ₡45,000 | **₡1,900,000** |\n\n**Estructura del Estado de Resultados:**\n1. Ingresos Brutos - Devoluciones = Ingresos Netos\n2. Ingresos Netos - Gastos Operativos = Utilidad Operativa\n3. Utilidad Operativa ± Otros ingresos/gastos = Utilidad antes de Impuestos",
+      "hints": [
+        "Los ingresos netos se calculan restando devoluciones",
+        "Los gastos operativos incluyen gastos de oficina y ventas",
+        "La utilidad operativa es antes de otros ingresos/gastos",
+        "Los gastos financieros se restan al final"
+      ]
+    },
+    {
+      "id": "cont-026",
+      "topic": "efectivo-caja-nic7",
+      "question": "Conciliación Bancaria - Múltiples Ajustes",
+      "description": "La empresa COMERCIAL PACÍFICO S.A. debe preparar su conciliación bancaria al 31/03/2024:",
+      "type": "table-numeric",
+      "difficulty": "avanzado",
+      "table": {
+        "headers": ["Concepto", "Monto"],
+        "rows": [
+          ["<strong>SALDOS INICIALES</strong>", ""],
+          ["Saldo según libros", "₡850,000"],
+          ["Saldo según banco", "₡920,000"],
+          ["", ""],
+          ["<strong>PARTIDAS IDENTIFICADAS</strong>", ""],
+          ["Depósito en tránsito", "₡180,000"],
+          ["Cheques pendientes de cobro", "₡250,000"],
+          ["Nota de débito bancaria (comisiones)", "₡15,000"],
+          ["Nota de crédito bancaria (intereses)", "₡8,000"],
+          ["Error en libros (se registró ₡45,000 por ₡54,000)", "₡9,000"]
+        ]
+      },
+      "questions": [
+        {
+          "label": "Saldo Ajustado según Libros",
+          "description": "Saldo libros + intereses - comisiones + corrección error",
+          "correct": 852000,
+          "tolerance": 0
+        },
+        {
+          "label": "Saldo Ajustado según Banco",
+          "description": "Saldo banco + depósitos tránsito - cheques pendientes",
+          "correct": 850000,
+          "tolerance": 0
+        },
+        {
+          "label": "Diferencia entre Saldos Ajustados",
+          "description": "Diferencia = Saldo Libros - Saldo Banco (debe ser CERO)",
+          "correct": 2000,
+          "tolerance": 0
+        }
+      ],
+      "explanation": "## 🏦 Conciliación Bancaria - Método Saldos Ajustados\n\n| **AJUSTES AL SALDO SEGÚN LIBROS** | **Monto** |\n|-----------------------------------|----------|\n| Saldo según libros | ₡850,000 |\n| (+) Nota crédito (intereses) | ₡8,000 |\n| (-) Nota débito (comisiones) | (₡15,000) |\n| (+) Corrección error libros | ₡9,000 |\n| **SALDO AJUSTADO LIBROS** | **₡852,000** |\n\n| **AJUSTES AL SALDO SEGÚN BANCO** | **Monto** |\n|----------------------------------|----------|\n| Saldo según banco | ₡920,000 |\n| (+) Depósitos en tránsito | ₡180,000 |\n| (-) Cheques pendientes | (₡250,000) |\n| **SALDO AJUSTADO BANCO** | **₡850,000** |\n\n**⚠️ DIFERENCIA IDENTIFICADA:** ₡852,000 - ₡850,000 = **₡2,000**\n\n**🔍 INVESTIGACIÓN NECESARIA:**\nLa diferencia de ₡2,000 indica que hay partidas adicionales por identificar o errores en los ajustes realizados.",
+      "hints": [
+        "Los depósitos en tránsito se suman al saldo del banco",
+        "Los cheques pendientes se restan del saldo del banco", 
+        "Las notas de crédito aumentan el saldo de libros",
+        "Las notas de débito disminuyen el saldo de libros"
+      ]
+    }
+  ]
+}

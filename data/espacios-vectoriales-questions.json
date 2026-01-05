@@ -1,0 +1,166 @@
+{
+    "espacios-vectoriales": [
+        {
+            "id": "ev-t1-dd1",
+            "topic": "subespacios",
+            "question": "Clasifica cada afirmación sobre subespacios vectoriales.",
+            "type": "drag-drop",
+            "items": [
+                "Un subespacio puede ser vacío",
+                "Un subespacio siempre contiene el vector nulo",
+                "{0} es un subespacio válido",
+                "Un plano que no pasa por el origen es un subespacio"
+            ],
+            "categories": [
+                "Verdadero",
+                "Falso"
+            ],
+            "correctMapping": [
+                1,
+                0,
+                0,
+                1
+            ],
+            "difficulty": "facil",
+            "hints": [
+                "¿Qué vector debe estar siempre en un subespacio?",
+                "Revisa la definición de subespacio"
+            ],
+            "explanation": "**Vacío: FALSO** (debe contener 0⃗)\\n**Contiene 0⃗: VERDADERO** (por definición)\\n**{0} válido: VERDADERO** (subespacio trivial)\\n**Plano sin origen: FALSO** (no contiene 0⃗)"
+        },
+        {
+            "id": "ev-t2-dd2",
+            "topic": "bases-dimension",
+            "question": "Clasifica las afirmaciones sobre bases y generadores.",
+            "type": "drag-drop",
+            "items": [
+                "Toda base es un conjunto generador",
+                "Todo generador es una base",
+                "Una base debe ser linealmente independiente",
+                "Un generador puede tener vectores redundantes"
+            ],
+            "categories": [
+                "Verdadero",
+                "Falso"
+            ],
+            "correctMapping": [
+                0,
+                1,
+                0,
+                0
+            ],
+            "difficulty": "medio",
+            "hints": [
+                "Base = l.i. + genera",
+                "Generador solo requiere generar, no l.i."
+            ],
+            "explanation": "**Base → generador: VERDADERO** (por def.)\\n**Generador → base: FALSO** (puede ser l.d.)\\n**Base l.i.: VERDADERO** (requisito)\\n**Generador redundante: VERDADERO** (puede tener extras)"
+        },
+        {
+            "id": "ev-t3-cat1",
+            "topic": "ortogonalidad",
+            "question": "Clasifica cada par de vectores según su relación de ortogonalidad.",
+            "type": "categorize",
+            "items": [
+                "$\\vec{u}=(1,0), \\vec{v}=(0,1)$",
+                "$\\vec{u}=(1,1), \\vec{v}=(1,-1)$",
+                "$\\vec{u}=(2,3), \\vec{v}=(3,2)$"
+            ],
+            "categories": {
+                "ortogonales": "Ortogonales (⊥)",
+                "no-ortogonales": "No ortogonales"
+            },
+            "correctCategories": {
+                "$\\vec{u}=(1,0), \\vec{v}=(0,1)$": "ortogonales",
+                "$\\vec{u}=(1,1), \\vec{v}=(1,-1)$": "ortogonales",
+                "$\\vec{u}=(2,3), \\vec{v}=(3,2)$": "no-ortogonales"
+            },
+            "difficulty": "medio",
+            "hints": [
+                "Calcula el producto punto: $\\vec{u} \\cdot \\vec{v}$",
+                "Son ortogonales si $\\vec{u} \\cdot \\vec{v} = 0$"
+            ],
+            "explanation": "**(1,0)·(0,1)=0** → Ortogonales\\n**(1,1)·(1,-1)=1-1=0** → Ortogonales\\n**(2,3)·(3,2)=6+6=12≠0** → No ortogonales"
+        },
+        {
+            "id": "ev-t4-n1",
+            "topic": "proyecciones",
+            "question": "Calcula la longitud de la proyección del vector $\\vec{u}=(3,4)$ sobre $\\vec{v}=(1,0)$.",
+            "type": "numeric",
+            "answer": 3,
+            "tolerance": 0.01,
+            "difficulty": "medio",
+            "hints": [
+                "La proyección es $\\text{proy}_{\\vec{v}}\\vec{u} = \\frac{\\vec{u} \\cdot \\vec{v}}{||\\vec{v}||^2} \\vec{v}$",
+                "O simplemente: longitud = $\\frac{|\\vec{u} \\cdot \\vec{v}|}{||\\vec{v}||}$"
+            ],
+            "explanation": "$$\\text{longitud} = \\frac{|(3,4) \\cdot (1,0)|}{||(1,0)||} = \\frac{|3|}{1} = 3$$"
+        },
+        {
+            "id": "ev-t4-or1",
+            "topic": "proyecciones",
+            "question": "Ordena los pasos del proceso de Gram-Schmidt.",
+            "type": "ordering",
+            "items": [
+                "Tomar el primer vector $\\vec{v}_1 = \\vec{u}_1$",
+                "Proyectar $\\vec{u}_2$ sobre $\\vec{v}_1$ y restar para obtener $\\vec{v}_2$",
+                "Proyectar $\\vec{u}_3$ sobre $\\vec{v}_1$ y $\\vec{v}_2$, restar ambas proyecciones",
+                "Normalizar todos los vectores para obtener base ortonormal"
+            ],
+            "correctOrder": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "difficulty": "avanzado",
+            "hints": [
+                "Gram-Schmidt ortogonaliza paso a paso",
+                "Cada nuevo vector se hace ortogonal a todos los anteriores"
+            ],
+            "explanation": "El **proceso de Gram-Schmidt** ortogonaliza vectores secuencialmente:\\n1. Mantener el primero\\n2. Ortogonalizar el segundo respecto al primero\\n3. Ortogonalizar el tercero respecto a los dos anteriores\\n4. Normalizar (opcional, para ortonormal)"
+        },
+        {
+            "id": "ev-t2-mc1",
+            "topic": "bases-dimension",
+            "question": "¿Cuál es la dimensión del espacio $\\mathbb{R}^3$?",
+            "type": "multiple-choice",
+            "shuffle": true,
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "∞"
+            ],
+            "correct": 2,
+            "difficulty": "facil",
+            "hints": [
+                "La dimensión es el número de vectores en una base"
+            ],
+            "explanation": "La dimensión de $\\mathbb{R}^3$ es **3**, ya que una base estándar es $\\{(1,0,0), (0,1,0), (0,0,1)\\}$, que tiene 3 vectores."
+        },
+        {
+            "id": "ev-t3-fb1",
+            "topic": "ortogonalidad",
+            "question": "La intersección entre un espacio $W$ y su complemento ortogonal $W^\\perp$ siempre contiene al menos el vector _____.",
+            "type": "fill-blank",
+            "blanks": [
+                "nulo",
+                "cero"
+            ],
+            "distractors": [
+                "unitario",
+                "base",
+                "ortogonal",
+                "normal"
+            ],
+            "template": "vector _____",
+            "difficulty": "medio",
+            "hints": [
+                "¿Qué vector es ortogonal a todos, incluido sí mismo?"
+            ],
+            "explanation": "El **vector nulo** $\\vec{0}$ es ortogonal a cualquier vector (incluido sí mismo), por tanto está en $W \\cap W^\\perp$. De hecho, $W \\cap W^ \\perp = \\{\\vec{0}\\}$ cuando $W$ es un subespacio propio."
+        }
+    ]
+}

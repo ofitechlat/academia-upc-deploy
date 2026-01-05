@@ -1,0 +1,50 @@
+{
+  "puntos-maximos-minimos-inflexion": [
+    {
+      "title": "Guía Completa: Extremos y Puntos de Inflexión",
+      "type": "text",
+      "content": "# Extremos de Funciones y Puntos de Inflexión\n\n## Conceptos Fundamentales\n\n### Puntos Críticos\n\n**Definición:**\nUn punto c ∈ ℝ es un punto crítico de f si:\n1. f'(c) = 0, o\n2. f'(c) no existe\n\n**Teorema de Fermat:**\nSi f tiene un extremo relativo en c y f'(c) existe, entonces f'(c) = 0.\n\n### Extremos Relativos (Locales)\n\n**Máximo Relativo:**\nf tiene un máximo relativo en c si existe δ > 0 tal que\nf(c) ≥ f(x) para todo x en (c-δ, c+δ)\n\n**Mínimo Relativo:**\nf tiene un mínimo relativo en c si existe δ > 0 tal que\nf(c) ≤ f(x) para todo x en (c-δ, c+δ)\n\n### Extremos Absolutos (Globales)\n\n**Máximo Absoluto:**\nf tiene un máximo absoluto en c si\nf(c) ≥ f(x) para todo x en el dominio de f\n\n**Mínimo Absoluto:**\nf tiene un mínimo absoluto en c si\nf(c) ≤ f(x) para todo x en el dominio de f\n\n## Criterios para Determinar Extremos\n\n### Criterio de la Primera Derivada\n\nSea c un punto crítico de f:\n\n- Si f' cambia de positiva a negativa al pasar por c, entonces f tiene un máximo relativo en c.\n- Si f' cambia de negativa a positiva al pasar por c, entonces f tiene un mínimo relativo en c.\n- Si f' no cambia de signo al pasar por c, entonces f no tiene extremo relativo en c.\n\n### Criterio de la Segunda Derivada\n\nSea c un punto crítico tal que f'(c) = 0:\n\n- Si f''(c) > 0, entonces f tiene un mínimo relativo en c.\n- Si f''(c) < 0, entonces f tiene un máximo relativo en c.\n- Si f''(c) = 0, el criterio no es concluyente.\n\n## Puntos de Inflexión\n\n### Definición\n\nUn punto (c, f(c)) es un punto de inflexión si la concavidad de f cambia en c.\n\n### Condición Necesaria\n\nSi (c, f(c)) es un punto de inflexión y f'' es continua en c, entonces f''(c) = 0.\n\n### Condición Suficiente\n\nSi f''(c) = 0 y f'' cambia de signo al pasar por c, entonces (c, f(c)) es un punto de inflexión.\n\n### Concavidad\n\n- **Cóncava hacia arriba (convexa):** f''(x) > 0\n- **Cóncava hacia abajo (cóncava):** f''(x) < 0\n\n## Procedimientos Sistemáticos\n\n### Para Encontrar Extremos Relativos\n\n1. **Calcular f'(x)**\n2. **Encontrar puntos críticos** resolviendo f'(x) = 0 y donde f'(x) no existe\n3. **Aplicar criterio de la primera o segunda derivada**\n4. **Clasificar cada punto crítico**\n5. **Calcular los valores extremos** f(c)\n\n### Para Encontrar Extremos Absolutos en [a, b]\n\n1. **Verificar continuidad** de f en [a, b]\n2. **Encontrar puntos críticos** en (a, b)\n3. **Evaluar f** en puntos críticos y en los extremos a y b\n4. **Comparar valores** para identificar máximos y mínimos absolutos\n\n### Para Encontrar Puntos de Inflexión\n\n1. **Calcular f''(x)**\n2. **Encontrar puntos donde f''(x) = 0** o no existe\n3. **Determinar intervalos** usando estos puntos\n4. **Analizar el signo de f''(x)** en cada intervalo\n5. **Identificar cambios de signo** de f''(x)\n6. **Calcular coordenadas** completas de los puntos de inflexión\n\n## Ejemplos Detallados\n\n### Ejemplo 1: Extremos de Función Polinomial\n\nAnalizar los extremos de f(x) = x³ - 6x² + 9x + 1\n\n**Solución:**\n\n1. f'(x) = 3x² - 12x + 9 = 3(x² - 4x + 3) = 3(x-1)(x-3)\n2. Puntos críticos: x = 1, x = 3\n3. f''(x) = 6x - 12\n4. f''(1) = -6 < 0 ⇒ Máximo relativo en x = 1\n5. f''(3) = 6 > 0 ⇒ Mínimo relativo en x = 3\n6. f(1) = 5, f(3) = 1\n\nResultado: Máximo en (1, 5), Mínimo en (3, 1)\n\n### Ejemplo 2: Puntos de Inflexión\n\nEncontrar puntos de inflexión de f(x) = x³ - 3x²\n\n**Solución:**\n\n1. f'(x) = 3x² - 6x\n2. f''(x) = 6x - 6 = 6(x - 1)\n3. f''(x) = 0 ⇒ x = 1\n4. Análisis de signos:\n   - x < 1: f''(x) < 0 (cóncava hacia abajo)\n   - x > 1: f''(x) > 0 (cóncava hacia arriba)\n5. Hay cambio de concavidad en x = 1\n6. f(1) = 1³ - 3·1² = -2\n\nResultado: Punto de inflexión en (1, -2)\n\n## Casos Especiales\n\n### Funciones con Derivadas que no Existen\n\n**Ejemplo:** f(x) = |x|\n- f'(0) no existe\n- x = 0 es un mínimo relativo y absoluto\n\n### Puntos de Silla\n\n**Ejemplo:** f(x) = x³\n- f'(0) = 0, f''(0) = 0\n- x = 0 es un punto de silla (ni máximo ni mínimo)\n\n### Puntos de Inflexión con Tangente Horizontal\n\n**Ejemplo:** f(x) = x³\n- f'(0) = 0, f''(0) = 0\n- x = 0 es punto de inflexión con tangente horizontal\n\n## Aplicaciones Prácticas\n\n### Optimización\n\nLos extremos relativos y absolutos son fundamentales en problemas de optimización:\n- Maximizar ganancias\n- Minimizar costos\n- Optimizar recursos\n- Encontrar dimensiones óptimas\n\n### Análisis de Funciones\n\nEl estudio de extremos y puntos de inflexión permite:\n- Comprender el comportamiento global de la función\n- Identificar puntos de cambio de tendencia\n- Determinar intervalos de crecimiento y decrecimiento\n- Analizar la curvatura de la gráfica\n\n## Errores Comunes\n\n1. **Confundir extremo relativo con absoluto**\n   - Relativo: comparación local\n   - Absoluto: comparación global\n\n2. **Olvidar puntos donde f' no existe**\n   - También son puntos críticos\n   - Pueden ser extremos\n\n3. **Asumir que f''(c) = 0 implica punto de inflexión**\n   - Se requiere cambio de concavidad\n   - Ejemplo: f(x) = x⁴, f''(0) = 0 pero no hay punto de inflexión\n\n4. **No verificar el dominio de la función**\n   - El análisis debe restringirse al dominio\n   - Los extremos absolutos pueden no existir en dominios no acotados\n\n## Tabla de Referencia Rápida\n\n| Función | Puntos Críticos | Extremos Relativos | Puntos de Inflexión |\n|---------|-----------------|-------------------|-------------------|\n| f(x) = x² | x = 0 | Mínimo en (0, 0) | Ninguno |\n| f(x) = -x² | x = 0 | Máximo en (0, 0) | Ninguno |\n| f(x) = x³ | x = 0 | Ninguno (punto de silla) | (0, 0) |\n| f(x) = x³ - 3x | x = ±1 | Máximo en (-1, 2), Mínimo en (1, -2) | (0, 0) |\n| f(x) = x⁴ | x = 0 | Mínimo en (0, 0) | Ninguno |\n| f(x) = x⁴ - 2x² | x = 0, ±1 | Máximos en (-1, -1) y (1, -1) | (0, 0), (±√(1/3), -2/9) |"
+    },
+    {
+      "title": "Video: Criterio de la Primera Derivada",
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=OHh_5m1tq3g",
+      "description": "Explicación detallada del criterio de la primera derivada para encontrar máximos y mínimos relativos."
+    },
+    {
+      "title": "Video: Criterio de la Segunda Derivada",
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=N2UkP1WXI_o",
+      "description": "Demostración y aplicación del criterio de la segunda derivada para clasificar puntos críticos."
+    },
+    {
+      "title": "Video: Puntos de Inflexión",
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=ORHtw3a4VNc",
+      "description": "Explicación visual de los puntos de inflexión y cómo determinarlos usando la segunda derivada."
+    },
+    {
+      "title": "Calculadora Interactiva de Extremos",
+      "type": "interactive",
+      "url": "https://www.geogebra.org/m/mXh5T5R7",
+      "description": "Explora visualmente los extremos y puntos de inflexión de diferentes funciones."
+    },
+    {
+      "title": "Ejercicios Propuestos",
+      "type": "text",
+      "content": "# Ejercicios de Extremos y Puntos de Inflexión\n\n## Nivel Básico\n\n1. Encuentra los puntos críticos de:\n   a) f(x) = x² - 4x + 3\n   b) f(x) = -2x² + 8x - 5\n   c) f(x) = x³ - 3x\n\n2. Clasifica los puntos críticos usando el criterio de la segunda derivada:\n   a) f(x) = x² - 6x + 8\n   b) f(x) = -x² + 4x - 3\n\n## Nivel Intermedio\n\n3. Encuentra los extremos relativos de:\n   a) f(x) = x³ - 6x² + 9x + 1\n   b) f(x) = 2x³ - 9x² + 12x - 3\n   c) f(x) = x·e^(-x)\n\n4. Determina los puntos de inflexión de:\n   a) f(x) = x³ - 3x² + 2\n   b) f(x) = x⁴ - 4x³\n   c) f(x) = x + 1/x\n\n5. Encuentra los extremos absolutos en los intervalos indicados:\n   a) f(x) = x³ - 3x en [-2, 2]\n   b) f(x) = x⁴ - 2x² en [0, 2]\n\n## Nivel Avanzado\n\n6. Analiza completamente la función:\n   a) f(x) = x³ - 3x² - 9x + 5\n   b) f(x) = x·e^(x²)\n   c) f(x) = ln(x² + 1) - x\n\n7. Encuentra todos los extremos y puntos de inflexión de:\n   a) f(x) = x⁵ - 5x³\n   b) f(x) = x/(x² + 1)\n   c) f(x) = e^(-x²)\n\n8. Problema de aplicación:\n   Un rectángulo tiene su base sobre el eje x y sus vértices superiores sobre la parábola y = 12 - x². ¿Cuáles son las dimensiones del rectángulo de área máxima?\n\n## Soluciones\n\n### Nivel Básico\n\n1. a) x = 2\n   b) x = 2\n   c) x = ±1\n\n2. a) Mínimo en x = 3\n   b) Máximo en x = 2\n\n### Nivel Intermedio\n\n3. a) Máximo en (1, 5), Mínimo en (3, 1)\n   b) Máximo en (1, 2), Mínimo en (2, 1)\n   c) Máximo en (1, 1/e)\n\n4. a) (1, 0)\n   b) (0, 0), (2, -16)\n   c) Ninguno (no hay cambio de concavidad)\n\n5. a) Máximo en (-1, 2), Mínimo en (1, -2)\n   b) Mínimo en (1, -1), Máximo en (0, 0) y (2, 0)\n\n### Nivel Avanzado\n\n6. a) Máximo en (-1, 10), Mínimo en (3, -22), Punto de inflexión en (1, -6)\n   b) Mínimo en (0, 0), Puntos de inflexión en (±1/√2, e^(-1/2)/√2)\n   c) Máximo en (0, 0), Punto de inflexión en (±1/√3, ln(4/3) - 1/√3)\n\n7. a) Máximos en (-√3, 6√3) y (0, 0), Mínimo en (√3, -6√3), Puntos de inflexión en (-1, 4) y (1, -4)\n   b) Máximo en (1/√3, √3/2), Mínimo en (-1/√3, -√3/2), Puntos de inflexión en (0, 0) y (±√3, ±√3/4)\n   c) Máximo en (0, 1), Puntos de inflexión en (±1/√2, e^(-1/2))\n\n8. Base = 4√3, Altura = 6, Área máxima = 24√3"
+    },
+    {
+      "title": "Infografía: Extremos y Puntos de Inflexión",
+      "type": "image",
+      "url": "https://i.imgur.com/example2.png",
+      "description": "Resumen visual de los criterios para determinar extremos y puntos de inflexión con ejemplos gráficos."
+    },
+    {
+      "title": "Simulador Interactivo: Optimización",
+      "type": "interactive",
+      "url": "https://www.desmos.com/calculator/extremos-optimizacion",
+      "description": "Explora problemas de optimización interactuando con funciones y visualizando extremos en tiempo real."
+    }
+  ]
+}

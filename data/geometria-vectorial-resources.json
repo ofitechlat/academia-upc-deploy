@@ -1,0 +1,20 @@
+{
+    "geometria-vectorial": {
+        "rectas-planos-r3": [
+            {
+                "title": "📺 Ecuación del Plano en el Espacio",
+                "url": "https://es.khanacademy.org/math/multivariable-calculus/thinking-about-multivariable-function/x2f8bb11595b61c86:planes/v/equation-of-a-plane-in-3d",
+                "type": "video",
+                "description": "Aprende a encontrar la ecuación de un plano dados tres puntos o un punto y un vector normal."
+            }
+        ],
+        "hiperplanos-rn": [
+            {
+                "title": "📖 Hiperplanos y Geometría n-dimensional",
+                "url": "https://es.wikipedia.org/wiki/Hiperplano",
+                "type": "article",
+                "description": "Concepto general interactivo sobre hiperplanos en dimensiones superiores."
+            }
+        ]
+    }
+}

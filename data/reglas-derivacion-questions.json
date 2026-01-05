@@ -1,0 +1,566 @@
+{
+  "reglas-derivacion": [
+    {
+      "id": "der-001",
+      "topic": "reglas-basicas",
+      "question": "¿Cuál es la derivada de f(x) = 5x³?",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "15x²",
+        "5x²",
+        "15x³",
+        "5x⁴"
+      ],
+      "correct": 0,
+      "difficulty": "facil",
+      "hints": [
+        "Usa la regla de la potencia: (xⁿ)' = n·xⁿ⁻¹",
+        "El coeficiente constante se mantiene: (cf)' = c·f'",
+        "Multiplica el exponente por el coeficiente y resta 1 al exponente"
+      ],
+      "stepByStep": [
+        "### 📐 **Regla de la Potencia**",
+        "",
+        "**Fórmula:** $(x^n)' = n \\cdot x^{n-1}$",
+        "",
+        "**Paso 1:** Identificar la función",
+        "- $f(x) = 5x^3$",
+        "- Coeficiente: $c = 5$",
+        "- Exponente: $n = 3$",
+        "",
+        "**Paso 2:** Aplicar la regla",
+        "- $f'(x) = 5 \\cdot 3 \\cdot x^{3-1}$",
+        "- $f'(x) = 15x^2$",
+        "",
+        "### ✅ **Respuesta**",
+        "$f'(x) = 15x^2$"
+      ],
+      "explanation": "Aplicando la regla de la potencia (xⁿ)' = n·xⁿ⁻¹ y la regla del múltiplo constante (cf)' = c·f', obtenemos: f'(x) = 5·3·x² = 15x²"
+    },
+    {
+      "id": "der-002",
+      "topic": "reglas-basicas",
+      "question": "¿Cuál es la derivada de una constante?",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "0",
+        "1",
+        "La misma constante",
+        "Infinito"
+      ],
+      "correct": 0,
+      "difficulty": "facil",
+      "hints": [
+        "Una constante no cambia, por lo tanto su tasa de cambio es...",
+        "Piensa en la gráfica de y = 5, ¿cuál es su pendiente?"
+      ],
+      "stepByStep": [
+        "### 📐 **Derivada de una Constante**",
+        "",
+        "**Regla:** $(c)' = 0$",
+        "",
+        "**Explicación:**",
+        "- Una constante no varía",
+        "- Su tasa de cambio es cero",
+        "- La pendiente de una línea horizontal es 0",
+        "",
+        "**Ejemplos:**",
+        "- $(5)' = 0$",
+        "- $(\\pi)' = 0$",
+        "- $(e)' = 0$"
+      ],
+      "explanation": "La derivada de cualquier constante es siempre 0, ya que una constante no cambia y su tasa de cambio instantánea es cero."
+    },
+    {
+      "id": "der-003",
+      "topic": "regla-producto",
+      "question": "Deriva f(x) = x²·sin(x) usando la regla del producto",
+      "type": "code-editor",
+      "difficulty": "medio",
+      "problemText": "Aplica la regla del producto: (f·g)' = f'·g + f·g'\n\nDonde:\n- f(x) = x²\n- g(x) = sin(x)\n\nEscribe la derivada completa y simplificada.",
+      "initialCode": "// Identifica las funciones\n// f(x) = x²\n// g(x) = sin(x)\n\n// Calcula f'(x) y g'(x)\n\n// Aplica la regla del producto\n// (f·g)' = f'·g + f·g'\n\n// Respuesta: ",
+      "expectedOutput": "2x·sin(x) + x²·cos(x)",
+      "hints": [
+        "Primero encuentra f'(x) = (x²)' = 2x",
+        "Luego encuentra g'(x) = (sin(x))' = cos(x)",
+        "Aplica: f'·g + f·g' = 2x·sin(x) + x²·cos(x)"
+      ],
+      "testCases": [
+        {
+          "input": "",
+          "expectedOutput": "2x·sin(x) + x²·cos(x)"
+        }
+      ],
+      "stepByStep": [
+        "### 📐 **Regla del Producto**",
+        "",
+        "**Fórmula:** $(f \\cdot g)' = f' \\cdot g + f \\cdot g'$",
+        "",
+        "**Paso 1:** Identificar las funciones",
+        "- $f(x) = x^2$",
+        "- $g(x) = \\sin(x)$",
+        "",
+        "**Paso 2:** Derivar cada función",
+        "- $f'(x) = 2x$",
+        "- $g'(x) = \\cos(x)$",
+        "",
+        "**Paso 3:** Aplicar la regla",
+        "$(x^2 \\cdot \\sin(x))' = 2x \\cdot \\sin(x) + x^2 \\cdot \\cos(x)$",
+        "",
+        "### ✅ **Respuesta**",
+        "$2x\\sin(x) + x^2\\cos(x)$"
+      ]
+    },
+    {
+      "id": "der-004",
+      "topic": "regla-cociente",
+      "question": "¿Cuál es la fórmula de la regla del cociente?",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "(f/g)' = (f'·g - f·g') / g²",
+        "(f/g)' = (f'·g + f·g') / g²",
+        "(f/g)' = (f·g' - f'·g) / g²",
+        "(f/g)' = f'/g'"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "El numerador tiene una resta",
+        "El denominador es g al cuadrado",
+        "El orden es: (derivada del numerador × denominador) - (numerador × derivada del denominador)"
+      ],
+      "stepByStep": [
+        "### 📐 **Regla del Cociente**",
+        "",
+        "**Fórmula:** $\\left(\\frac{f}{g}\\right)' = \\frac{f' \\cdot g - f \\cdot g'}{g^2}$",
+        "",
+        "**Mnemotecnia:** \"Lo de arriba derivado por lo de abajo, menos lo de arriba por lo de abajo derivado, todo sobre lo de abajo al cuadrado\"",
+        "",
+        "**Ejemplo:**",
+        "$\\left(\\frac{x}{x+1}\\right)' = \\frac{1 \\cdot (x+1) - x \\cdot 1}{(x+1)^2} = \\frac{1}{(x+1)^2}$"
+      ],
+      "explanation": "La regla del cociente establece que (f/g)' = (f'·g - f·g')/g². Es importante recordar el orden: primero la derivada del numerador por el denominador, menos el numerador por la derivada del denominador."
+    },
+    {
+      "id": "der-005",
+      "topic": "regla-cadena",
+      "question": "Deriva f(x) = (x⁵ - 4x³ + 2x³)⁶",
+      "type": "numeric",
+      "difficulty": "medio",
+      "problemText": "Aplica la regla de la cadena para derivar:\n\nf(x) = (x⁵ - 4x³ + 2x³)⁶\n\nSi evaluamos f'(0), ¿cuál es el coeficiente de x⁴ en la expresión general de f'(x)?",
+      "correct": 30,
+      "tolerance": 0,
+      "hints": [
+        "Usa la regla de la cadena: [f(u)]' = n·[f(u)]ⁿ⁻¹·u'",
+        "Identifica u = x⁵ - 4x³ + 2x³",
+        "Deriva u: u' = 5x⁴ - 12x² + 2"
+      ],
+      "stepByStep": [
+        "### 📐 **Regla de la Cadena**",
+        "",
+        "**Fórmula:** $[f(u)]' = f'(u) \\cdot u'$",
+        "",
+        "**Paso 1:** Identificar la función compuesta",
+        "- $u = x^5 - 4x^3 + 2x^3$",
+        "- $f(x) = u^6$",
+        "",
+        "**Paso 2:** Derivar la función externa",
+        "- $f'(u) = 6u^5$",
+        "",
+        "**Paso 3:** Derivar la función interna",
+        "- $u' = 5x^4 - 12x^2 + 2$",
+        "",
+        "**Paso 4:** Multiplicar",
+        "$f'(x) = 6u^5 \\cdot (5x^4 - 12x^2 + 2)$",
+        "$f'(x) = 6(x^5 - 4x^3 + 2x^3)^5 \\cdot (5x^4 - 12x^2 + 2)$"
+      ],
+      "explanation": "Usando la regla de la cadena con u = x⁵ - 4x³ + 2x³, obtenemos f'(x) = 6u⁵·u' = 6(x⁵ - 4x³ + 2x³)⁵·(5x⁴ - 12x² + 2)"
+    },
+    {
+      "id": "der-006",
+      "topic": "regla-cadena",
+      "question": "Ordena los pasos para derivar f(x) = √(2x² - 2x + 1)/x usando regla de la cadena y cociente",
+      "type": "ordering",
+      "difficulty": "dificil",
+      "items": [
+        "Identificar que es un cociente donde el numerador contiene una raíz",
+        "Reescribir la raíz como potencia: u^(1/2) donde u = 2x² - 2x + 1",
+        "Aplicar la regla del cociente: (f/g)' = (f'·g - f·g')/g²",
+        "Derivar el numerador usando regla de la cadena: (1/2)·u^(-1/2)·(4x - 2)",
+        "Simplificar la expresión final"
+      ],
+      "correctOrder": [0, 1, 2, 3, 4],
+      "hints": [
+        "Primero identifica la estructura completa",
+        "Convierte raíces a potencias antes de derivar",
+        "La regla del cociente se aplica al final"
+      ],
+      "stepByStep": [
+        "### 📐 **Combinación de Reglas**",
+        "",
+        "**Función:** $f(x) = \\frac{\\sqrt{2x^2 - 2x + 1}}{x}$",
+        "",
+        "**Paso 1:** Reescribir",
+        "$f(x) = \\frac{(2x^2 - 2x + 1)^{1/2}}{x}$",
+        "",
+        "**Paso 2:** Aplicar regla del cociente",
+        "$f'(x) = \\frac{[u^{1/2}]' \\cdot x - u^{1/2} \\cdot 1}{x^2}$",
+        "",
+        "**Paso 3:** Derivar el numerador con cadena",
+        "$[u^{1/2}]' = \\frac{1}{2}u^{-1/2} \\cdot (4x - 2)$",
+        "",
+        "**Paso 4:** Simplificar",
+        "$f'(x) = \\frac{x(4x-2)}{2\\sqrt{u}} - \\frac{\\sqrt{u}}{x^2}$"
+      ],
+      "explanation": "Este problema requiere aplicar tanto la regla del cociente como la regla de la cadena. Primero identificamos la estructura, luego aplicamos las reglas en el orden correcto."
+    },
+    {
+      "id": "der-007",
+      "topic": "recta-tangente",
+      "question": "Encuentra la ecuación de la recta tangente a y = x² + 1 en el punto (2, 5)",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "y - 5 = 4(x - 2)",
+        "y - 5 = 2(x - 2)",
+        "y = 4x + 5",
+        "y - 2 = 4(x - 5)"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "La ecuación punto-pendiente es: y - y₀ = m(x - x₀)",
+        "La pendiente m es f'(2)",
+        "Primero calcula f'(x) = 2x, luego f'(2) = 4"
+      ],
+      "stepByStep": [
+        "### 📐 **Recta Tangente**",
+        "",
+        "**Fórmula:** $y - f(a) = f'(a)(x - a)$",
+        "",
+        "**Paso 1:** Calcular la derivada",
+        "- $f(x) = x^2 + 1$",
+        "- $f'(x) = 2x$",
+        "",
+        "**Paso 2:** Evaluar en x = 2",
+        "- $f'(2) = 2(2) = 4$",
+        "- Punto: $(2, 5)$",
+        "",
+        "**Paso 3:** Escribir la ecuación",
+        "$y - 5 = 4(x - 2)$",
+        "",
+        "### ✅ **Respuesta**",
+        "La ecuación de la recta tangente es $y - 5 = 4(x - 2)$"
+      ],
+      "explanation": "Para encontrar la recta tangente, necesitamos el punto (2, 5) y la pendiente f'(2) = 4. Usando la forma punto-pendiente: y - 5 = 4(x - 2)"
+    },
+    {
+      "id": "der-008",
+      "topic": "derivacion-implicita",
+      "question": "Encuentra dy/dx si x³ + x²y + y² = 0",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "dy/dx = -(3x² + 2xy)/(x² + 2y)",
+        "dy/dx = (3x² + 2xy)/(x² + 2y)",
+        "dy/dx = -(3x² + y)/(x + 2y)",
+        "dy/dx = -3x²/2y"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Deriva ambos lados respecto a x",
+        "Recuerda que y es función de x, usa la regla de la cadena",
+        "Agrupa todos los términos con dy/dx a un lado"
+      ],
+      "stepByStep": [
+        "### 📐 **Derivación Implícita**",
+        "",
+        "**Ecuación:** $x^3 + x^2y + y^2 = 0$",
+        "",
+        "**Paso 1:** Derivar ambos lados respecto a x",
+        "$3x^2 + 2xy + x^2y' + 2yy' = 0$",
+        "",
+        "**Paso 2:** Agrupar términos con y'",
+        "$x^2y' + 2yy' = -3x^2 - 2xy$",
+        "",
+        "**Paso 3:** Factorizar y'",
+        "$y'(x^2 + 2y) = -3x^2 - 2xy$",
+        "",
+        "**Paso 4:** Despejar y'",
+        "$y' = \\frac{-3x^2 - 2xy}{x^2 + 2y}$",
+        "",
+        "### ✅ **Respuesta**",
+        "$\\frac{dy}{dx} = -\\frac{3x^2 + 2xy}{x^2 + 2y}$"
+      ],
+      "explanation": "Derivando implícitamente: 3x² + 2xy + x²y' + 2yy' = 0. Agrupando: y'(x² + 2y) = -3x² - 2xy. Por lo tanto: y' = -(3x² + 2xy)/(x² + 2y)"
+    },
+    {
+      "id": "der-009",
+      "topic": "recta-normal",
+      "question": "La recta normal a x² + y² = 1 en cualquier punto P(a,b):",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "Siempre pasa por el origen",
+        "Es paralela al eje x",
+        "Es paralela al eje y",
+        "Nunca pasa por el origen"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "La recta normal es perpendicular a la tangente",
+        "Usa derivación implícita para encontrar y'",
+        "La pendiente de la normal es -1/y' = y/x"
+      ],
+      "stepByStep": [
+        "### 📐 **Recta Normal**",
+        "",
+        "**Curva:** $x^2 + y^2 = 1$",
+        "",
+        "**Paso 1:** Derivar implícitamente",
+        "$2x + 2yy' = 0$",
+        "$y' = -\\frac{x}{y}$",
+        "",
+        "**Paso 2:** Pendiente de la normal",
+        "$m_{normal} = -\\frac{1}{y'} = \\frac{y}{x}$",
+        "",
+        "**Paso 3:** Ecuación de la normal en P(a,b)",
+        "$y - b = \\frac{b}{a}(x - a)$",
+        "",
+        "**Paso 4:** Simplificar",
+        "$y = \\frac{b}{a}x$",
+        "",
+        "### ✅ **Conclusión**",
+        "La recta siempre pasa por el origen (0,0)"
+      ],
+      "explanation": "Derivando implícitamente x² + y² = 1, obtenemos y' = -x/y. La pendiente de la normal es y/x. La ecuación de la normal en P(a,b) es y - b = (b/a)(x - a), que simplifica a y = (b/a)x, que claramente pasa por el origen."
+    },
+    {
+      "id": "der-010",
+      "topic": "funciones-trigonometricas",
+      "question": "Empareja cada función trigonométrica con su derivada",
+      "type": "drag-drop",
+      "pairs": [
+        { "left": "sen(x)", "right": "cos(x)" },
+        { "left": "cos(x)", "right": "-sen(x)" },
+        { "left": "tan(x)", "right": "sec²(x)" },
+        { "left": "sec(x)", "right": "sec(x)·tan(x)" },
+        { "left": "csc(x)", "right": "-csc(x)·cot(x)" },
+        { "left": "cot(x)", "right": "-csc²(x)" }
+      ],
+      "difficulty": "medio",
+      "hints": [
+        "Las derivadas de seno y coseno son las más básicas",
+        "Las derivadas de las demás funciones se derivan de estas dos",
+        "Nota los signos negativos en coseno, cosecante y cotangente"
+      ],
+      "stepByStep": [
+        "### 📐 **Derivadas Trigonométricas**",
+        "",
+        "**Derivadas Básicas:**",
+        "1. $(\\sin x)' = \\cos x$",
+        "2. $(\\cos x)' = -\\sin x$",
+        "3. $(\\tan x)' = \\sec^2 x$",
+        "",
+        "**Derivadas de las Recíprocas:**",
+        "4. $(\\sec x)' = \\sec x \\tan x$",
+        "5. $(\\csc x)' = -\\csc x \\cot x$",
+        "6. $(\\cot x)' = -\\csc^2 x$",
+        "",
+        "**Mnemotecnia:** Las funciones \"co-\" tienen signo negativo"
+      ],
+      "explanation": "Las derivadas trigonométricas básicas son: (sen x)' = cos x, (cos x)' = -sen x, (tan x)' = sec²x. Las demás se derivan usando la regla del cociente."
+    },
+    {
+      "id": "der-011",
+      "topic": "funciones-exponenciales",
+      "question": "¿Cuál es la derivada de f(x) = e^(-2x + x²)?",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "(2x - 2)·e^(-2x + x²)",
+        "e^(-2x + x²)",
+        "(-2 + 2x)·e^(-2x + x²)",
+        "(2x + 2)·e^(-2x + x²)"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Usa la regla de la cadena: (e^u)' = e^u·u'",
+        "Identifica u = -2x + x²",
+        "Deriva u: u' = -2 + 2x = 2x - 2"
+      ],
+      "stepByStep": [
+        "### 📐 **Derivada Exponencial**",
+        "",
+        "**Fórmula:** $(e^u)' = e^u \\cdot u'$",
+        "",
+        "**Paso 1:** Identificar u",
+        "- $u = -2x + x^2$",
+        "",
+        "**Paso 2:** Derivar u",
+        "- $u' = -2 + 2x = 2x - 2$",
+        "",
+        "**Paso 3:** Aplicar la regla",
+        "$f'(x) = e^{-2x+x^2} \\cdot (2x - 2)$",
+        "$f'(x) = (2x - 2)e^{-2x+x^2}$",
+        "",
+        "### ✅ **Respuesta**",
+        "$(2x - 2)e^{-2x+x^2}$"
+      ],
+      "explanation": "Usando la regla de la cadena para exponenciales: (e^u)' = e^u·u'. Con u = -2x + x², obtenemos u' = 2x - 2, por lo tanto f'(x) = (2x - 2)·e^(-2x + x²)"
+    },
+    {
+      "id": "der-012",
+      "topic": "funciones-logaritmicas",
+      "question": "Deriva f(x) = ln(3 - 2x³)",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "-6x²/(3 - 2x³)",
+        "6x²/(3 - 2x³)",
+        "-6x²",
+        "1/(3 - 2x³)"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Usa la regla: (ln u)' = u'/u",
+        "Identifica u = 3 - 2x³",
+        "Deriva u: u' = -6x²"
+      ],
+      "stepByStep": [
+        "### 📐 **Derivada Logarítmica**",
+        "",
+        "**Fórmula:** $(\\ln u)' = \\frac{u'}{u}$",
+        "",
+        "**Paso 1:** Identificar u",
+        "- $u = 3 - 2x^3$",
+        "",
+        "**Paso 2:** Derivar u",
+        "- $u' = -6x^2$",
+        "",
+        "**Paso 3:** Aplicar la fórmula",
+        "$f'(x) = \\frac{-6x^2}{3 - 2x^3}$",
+        "",
+        "### ✅ **Respuesta**",
+        "$\\frac{-6x^2}{3 - 2x^3}$"
+      ],
+      "explanation": "Para derivar logaritmos, usamos (ln u)' = u'/u. Con u = 3 - 2x³ y u' = -6x², obtenemos f'(x) = -6x²/(3 - 2x³)"
+    },
+    {
+      "id": "der-013",
+      "topic": "derivacion-logaritmica",
+      "question": "Ordena los pasos para derivar y = x^√x usando derivación logarítmica",
+      "type": "ordering",
+      "difficulty": "dificil",
+      "items": [
+        "Tomar logaritmo natural: ln(y) = ln(x^√x)",
+        "Aplicar propiedades de logaritmos: ln(y) = √x·ln(x)",
+        "Derivar implícitamente ambos lados respecto a x",
+        "Obtener: y'/y = ln(x)/(2√x) + 1/√x",
+        "Despejar y' y sustituir y = x^√x"
+      ],
+      "correctOrder": [0, 1, 2, 3, 4],
+      "hints": [
+        "Primero toma logaritmos naturales",
+        "Usa propiedades de logaritmos para simplificar",
+        "Deriva implícitamente",
+        "Despeja y' al final"
+      ],
+      "stepByStep": [
+        "### 📐 **Derivación Logarítmica**",
+        "",
+        "**Función:** $y = x^{\\sqrt{x}}$",
+        "",
+        "**Paso 1:** Tomar logaritmos",
+        "$\\ln y = \\ln(x^{\\sqrt{x}}) = \\sqrt{x} \\ln x$",
+        "",
+        "**Paso 2:** Derivar implícitamente",
+        "$\\frac{y'}{y} = \\frac{1}{2\\sqrt{x}}\\ln x + \\sqrt{x} \\cdot \\frac{1}{x}$",
+        "",
+        "**Paso 3:** Simplificar",
+        "$\\frac{y'}{y} = \\frac{\\ln x}{2\\sqrt{x}} + \\frac{1}{\\sqrt{x}}$",
+        "",
+        "**Paso 4:** Despejar y'",
+        "$y' = x^{\\sqrt{x}}\\left(\\frac{\\ln x}{2\\sqrt{x}} + \\frac{1}{\\sqrt{x}}\\right)$"
+      ],
+      "explanation": "La derivación logarítmica es útil cuando tenemos una variable en el exponente. Tomamos ln de ambos lados, aplicamos propiedades de logaritmos, derivamos implícitamente y finalmente despejamos y'."
+    },
+    {
+      "id": "der-014",
+      "topic": "derivacion-logaritmica",
+      "question": "Deriva y = [(x+2)²]/[(x+1)³(x+3)⁴] usando derivación logarítmica",
+      "type": "code-editor",
+      "difficulty": "dificil",
+      "problemText": "Usa derivación logarítmica para derivar esta función racional compleja.\n\nPasos:\n1. Toma ln de ambos lados\n2. Aplica propiedades de logaritmos\n3. Deriva implícitamente\n4. Despeja y'",
+      "initialCode": "// Paso 1: ln(y) = ln[(x+2)²/((x+1)³(x+3)⁴)]\n\n// Paso 2: Aplicar propiedades\n// ln(y) = 2ln(x+2) - 3ln(x+1) - 4ln(x+3)\n\n// Paso 3: Derivar\n// y'/y = ...\n\n// Paso 4: Despejar y'\n// y' = y * [...]",
+      "expectedOutput": "y' = [(x+2)²/(x+1)³(x+3)⁴] * [2/(x+2) - 3/(x+1) - 4/(x+3)]",
+      "hints": [
+        "Usa ln(a/b) = ln(a) - ln(b)",
+        "Usa ln(aⁿ) = n·ln(a)",
+        "La derivada de ln(x+a) es 1/(x+a)"
+      ],
+      "testCases": [
+        {
+          "input": "",
+          "expectedOutput": "y' = [(x+2)²/(x+1)³(x+3)⁴] * [2/(x+2) - 3/(x+1) - 4/(x+3)]"
+        }
+      ],
+      "stepByStep": [
+        "### 📐 **Derivación Logarítmica Compleja**",
+        "",
+        "**Función:** $y = \\frac{(x+2)^2}{(x+1)^3(x+3)^4}$",
+        "",
+        "**Paso 1:** Tomar logaritmos",
+        "$\\ln y = \\ln(x+2)^2 - \\ln(x+1)^3 - \\ln(x+3)^4$",
+        "",
+        "**Paso 2:** Aplicar propiedades",
+        "$\\ln y = 2\\ln(x+2) - 3\\ln(x+1) - 4\\ln(x+3)$",
+        "",
+        "**Paso 3:** Derivar",
+        "$\\frac{y'}{y} = \\frac{2}{x+2} - \\frac{3}{x+1} - \\frac{4}{x+3}$",
+        "",
+        "**Paso 4:** Despejar y'",
+        "$y' = \\frac{(x+2)^2}{(x+1)^3(x+3)^4}\\left[\\frac{2}{x+2} - \\frac{3}{x+1} - \\frac{4}{x+3}\\right]$"
+      ]
+    },
+    {
+      "id": "der-015",
+      "topic": "tasas-cambio-relacionadas",
+      "question": "Un recipiente cónico invertido (R=30cm, H=50cm) se llena con agua a 2 L/min. ¿A qué velocidad sube el nivel después de 5 minutos?",
+      "type": "numeric",
+      "difficulty": "dificil",
+      "problemText": "Datos:\n- Radio de la base: R = 30 cm\n- Altura: H = 50 cm\n- Tasa de llenado: dV/dt = 2 L/min = 2000 cm³/min\n- Tiempo: t = 5 minutos\n\nEncuentra dh/dt cuando t = 5 minutos (aproxima al entero más cercano en cm/min)",
+      "correct": 2,
+      "tolerance": 0.5,
+      "hints": [
+        "Volumen del cono: V = (1/3)πr²h",
+        "Usa semejanza de triángulos: r/h = 30/50 = 3/5",
+        "Deriva V respecto al tiempo",
+        "Después de 5 min hay 10000 cm³ de agua"
+      ],
+      "stepByStep": [
+        "### 📐 **Tasas de Cambio Relacionadas**",
+        "",
+        "**Datos:**",
+        "- $R = 30$ cm, $H = 50$ cm",
+        "- $\\frac{dV}{dt} = 2000$ cm³/min",
+        "",
+        "**Paso 1:** Relación entre r y h",
+        "$\\frac{r}{h} = \\frac{30}{50} = \\frac{3}{5}$ → $r = \\frac{3h}{5}$",
+        "",
+        "**Paso 2:** Volumen en términos de h",
+        "$V = \\frac{1}{3}\\pi r^2 h = \\frac{1}{3}\\pi\\left(\\frac{3h}{5}\\right)^2 h = \\frac{3\\pi}{25}h^3$",
+        "",
+        "**Paso 3:** Derivar respecto al tiempo",
+        "$\\frac{dV}{dt} = \\frac{9\\pi}{25}h^2\\frac{dh}{dt}$",
+        "",
+        "**Paso 4:** Después de 5 min",
+        "- $V = 10000$ cm³",
+        "- $h = \\sqrt[3]{\\frac{25 \\cdot 10000}{3\\pi}} \\approx 30$ cm",
+        "",
+        "**Paso 5:** Calcular dh/dt",
+        "$\\frac{dh}{dt} = \\frac{25}{9\\pi h^2}\\frac{dV}{dt} \\approx 2$ cm/min"
+      ],
+      "explanation": "Usando semejanza de triángulos y relacionando las tasas de cambio mediante la regla de la cadena, encontramos que el nivel sube aproximadamente a 2 cm/min después de 5 minutos."
+    }
+  ]
+}

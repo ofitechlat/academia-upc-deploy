@@ -1,0 +1,409 @@
+{
+  "monotonia-funciones": [
+    {
+      "id": "mon-001",
+      "topic": "crecimiento-decrecimiento",
+      "question": "¿Cuál es la definición de función creciente en un intervalo?",
+      "type": "multiple-choice",
+      "options": [
+        "Para todo x₁ < x₂ en el intervalo, f(x₁) ≤ f(x₂)",
+        "Para todo x₁ < x₂ en el intervalo, f(x₁) ≥ f(x₂)",
+        "Para todo x₁ ≠ x₂ en el intervalo, f(x₁) = f(x₂)",
+        "La función siempre es positiva en el intervalo"
+      ],
+      "correct": 0,
+      "difficulty": "facil",
+      "hints": [
+        "Piensa en cómo se comporta la función cuando x aumenta",
+        "Una función creciente 'sube' cuando x aumenta",
+        "Formalmente: si x₁ < x₂, entonces f(x₁) ≤ f(x₂)"
+      ],
+      "stepByStep": [
+        "📐 **Función Creciente**",
+        "",
+        "**Definición formal:**",
+        "Una función f es creciente en un intervalo I si para todo x₁, x₂ ∈ I con x₁ < x₂, se cumple que f(x₁) ≤ f(x₂).",
+        "",
+        "**Interpretación geométrica:**",
+        "• Cuando x aumenta, f(x) también aumenta o se mantiene constante",
+        "• La gráfica 'sube' de izquierda a derecha",
+        "• La pendiente de la tangente es no negativa",
+        "",
+        "**Ejemplos:**",
+        "• f(x) = x² es creciente en [0, ∞)",
+        "• f(x) = eˣ es creciente en ℝ",
+        "• f(x) = ln(x) es creciente en (0, ∞)"
+      ],
+      "explanation": "Una función es creciente en un intervalo si cuando x aumenta, el valor de f(x) también aumenta o se mantiene constante. Formalmente: para todo x₁ < x₂, f(x₁) ≤ f(x₂)."
+    },
+    {
+      "id": "mon-002",
+      "topic": "crecimiento-decrecimiento",
+      "question": "¿Cuál es la condición necesaria para que una función sea creciente usando derivadas?",
+      "type": "multiple-choice",
+      "options": [
+        "f'(x) ≥ 0 en el intervalo",
+        "f'(x) ≤ 0 en el intervalo",
+        "f'(x) = 0 en el intervalo",
+        "f'(x) no existe en el intervalo"
+      ],
+      "correct": 0,
+      "difficulty": "facil",
+      "hints": [
+        "Piensa en la relación entre derivada y pendiente",
+        "Una función creciente tiene pendiente positiva o cero",
+        "La derivada representa la tasa de cambio instantánea"
+      ],
+      "stepByStep": [
+        "📐 **Criterio de Monotonía con Derivadas**",
+        "",
+        "**Teorema:**",
+        "Si f'(x) ≥ 0 para todo x en un intervalo I, entonces f es creciente en I.",
+        "",
+        "**Demostración intuitiva:**",
+        "• f'(x) representa la pendiente de la tangente",
+        "• Si f'(x) ≥ 0, la pendiente es positiva o cero",
+        "• Por lo tanto, la función 'sube' o se mantiene constante",
+        "",
+        "**Importante:**",
+        "• La condición es suficiente pero no necesaria",
+        "• Una función puede ser creciente incluso si f'(x) = 0 en puntos aislados",
+        "• Ejemplo: f(x) = x³ es creciente pero f'(0) = 0"
+      ],
+      "explanation": "El criterio de monotonía establece que si f'(x) ≥ 0 en todo un intervalo, entonces la función es creciente en ese intervalo. Esto se debe a que la derivada representa la tasa de cambio instantánea."
+    },
+    {
+      "id": "mon-003",
+      "topic": "crecimiento-decrecimiento",
+      "question": "Determina los intervalos de monotonía de f(x) = x³ - 3x² + 2",
+      "type": "multiple-choice",
+      "options": [
+        "Creciente en (-∞, 0] ∪ [2, ∞), Decreciente en [0, 2]",
+        "Decreciente en (-∞, 0] ∪ [2, ∞), Creciente en [0, 2]",
+        "Creciente en todo ℝ",
+        "Decreciente en todo ℝ"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Primero calcula la derivada f'(x)",
+        "Luego encuentra los puntos críticos donde f'(x) = 0",
+        "Analiza el signo de f'(x) en los intervalos determinados"
+      ],
+      "stepByStep": [
+        "📐 **Análisis de Monotonía**",
+        "",
+        "**Paso 1:** Calcular la derivada",
+        "f(x) = x³ - 3x² + 2",
+        "f'(x) = 3x² - 6x = 3x(x - 2)",
+        "",
+        "**Paso 2:** Encontrar puntos críticos",
+        "f'(x) = 0 ⇒ 3x(x - 2) = 0",
+        "x₁ = 0, x₂ = 2",
+        "",
+        "**Paso 3:** Analizar signo de f'(x)",
+        "• Para x < 0: f'(x) > 0 (positivo)",
+        "• Para 0 < x < 2: f'(x) < 0 (negativo)",
+        "• Para x > 2: f'(x) > 0 (positivo)",
+        "",
+        "**Paso 4:** Determinar monotonía",
+        "• Creciente donde f'(x) > 0: (-∞, 0) ∪ (2, ∞)",
+        "• Decreciente donde f'(x) < 0: (0, 2)",
+        "• En los puntos críticos: f'(0) = f'(2) = 0"
+      ],
+      "explanation": "Calculamos f'(x) = 3x² - 6x = 3x(x-2). Los puntos críticos son x=0 y x=2. Analizando el signo: f'(x) > 0 para x < 0 y x > 2 (creciente), y f'(x) < 0 para 0 < x < 2 (decreciente)."
+    },
+    {
+      "id": "mon-004",
+      "topic": "crecimiento-decrecimiento",
+      "question": "¿Cuál es la diferencia entre función estrictamente creciente y creciente?",
+      "type": "multiple-choice",
+      "options": [
+        "Estrictamente creciente: f(x₁) < f(x₂); Creciente: f(x₁) ≤ f(x₂)",
+        "Estrictamente creciente: f(x₁) ≤ f(x₂); Creciente: f(x₁) < f(x₂)",
+        "Estrictamente creciente tiene derivada positiva; Creciente tiene derivada no negativa",
+        "No hay diferencia, son términos sinónimos"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Fíjate en la diferencia entre ≤ y <",
+        "La palabra 'estrictamente' indica una condición más fuerte",
+        "Piensa si la función puede mantenerse constante en algún intervalo"
+      ],
+      "stepByStep": [
+        "📐 **Creciente vs Estrictamente Creciente**",
+        "",
+        "**Función Creciente:**",
+        "Para todo x₁ < x₂ en el intervalo, f(x₁) ≤ f(x₂)",
+        "• Puede haber tramos horizontales",
+        "• La derivada puede ser cero en intervalos",
+        "",
+        "**Función Estrictamente Creciente:**",
+        "Para todo x₁ < x₂ en el intervalo, f(x₁) < f(x₂)",
+        "• No puede haber tramos horizontales",
+        "• La derivada solo puede ser cero en puntos aislados",
+        "",
+        "**Ejemplos:**",
+        "• f(x) = x² es creciente en [0, ∞)",
+        "• f(x) = x² es estrictamente creciente en (0, ∞)",
+        "• f(x) = constante es creciente pero no estrictamente creciente"
+      ],
+      "explanation": "La diferencia está en la desigualdad: creciente usa ≤ (permite igualdad), mientras que estrictamente creciente usa < (no permite igualdad). Una función constante es creciente pero no estrictamente creciente."
+    },
+    {
+      "id": "mon-005",
+      "topic": "crecimiento-decrecimiento",
+      "question": "Encuentra los intervalos donde f(x) = (x-1)²(x+2) es creciente",
+      "type": "code-editor",
+      "difficulty": "dificil",
+      "problemText": "Analiza la monotonía de la función f(x) = (x-1)²(x+2)\n\nPasos:\n1. Calcula la derivada usando regla del producto\n2. Factoriza la derivada completamente\n3. Encuentra los puntos críticos\n4. Analiza el signo de la derivada\n5. Determina los intervalos de crecimiento",
+      "initialCode": "// f(x) = (x-1)²(x+2)\n\n// Paso 1: Calcular derivada usando regla del producto\n// f'(x) = [(x-1)²]'·(x+2) + (x-1)²·[(x+2)]'\n\n// Paso 2: Simplificar y factorizar\n\n// Paso 3: Encontrar puntos críticos (f'(x) = 0)\n\n// Paso 4: Analizar signo de f'(x)\n\n// Paso 5: Intervalos donde f es creciente:",
+      "expectedOutput": "f es creciente en (-∞, -1/3] ∪ [1, ∞)",
+      "hints": [
+        "Usa regla del producto: (uv)' = u'v + uv'",
+        "Recuerda que [(x-1)²]' = 2(x-1)",
+        "Factoriza completamente: f'(x) = (x-1)(3x+1)(x+2)",
+        "Los puntos críticos son x = -2, x = -1/3, x = 1"
+      ],
+      "testCases": [
+        {
+          "input": "",
+          "expectedOutput": "f es creciente en (-∞, -1/3] ∪ [1, ∞)"
+        }
+      ],
+      "stepByStep": [
+        "📐 **Análisis de Monotonía Completo**",
+        "",
+        "**Paso 1:** Calcular la derivada",
+        "f(x) = (x-1)²(x+2)",
+        "f'(x) = 2(x-1)(x+2) + (x-1)²(1)",
+        "f'(x) = (x-1)[2(x+2) + (x-1)]",
+        "",
+        "**Paso 2:** Simplificar",
+        "f'(x) = (x-1)[2x + 4 + x - 1]",
+        "f'(x) = (x-1)(3x + 3)",
+        "f'(x) = 3(x-1)(x + 1)",
+        "",
+        "**Paso 3:** Puntos críticos",
+        "f'(x) = 0 ⇒ x = 1, x = -1",
+        "",
+        "**Paso 4:** Análisis de signos",
+        "• x < -1: f'(x) < 0 (decreciente)",
+        "• -1 < x < 1: f'(x) > 0 (creciente)",
+        "• x > 1: f'(x) > 0 (creciente)",
+        "",
+        "**Paso 5:** Conclusión",
+        "f es creciente en [-1, 1] ∪ [1, ∞) = [-1, ∞)"
+      ]
+    },
+    {
+      "id": "mon-006",
+      "topic": "crecimiento-decrecimiento",
+      "question": "Ordena los pasos para determinar la monotonía de una función usando derivadas",
+      "type": "ordering",
+      "difficulty": "facil",
+      "items": [
+        "Calcular la derivada f'(x) de la función",
+        "Encontrar los puntos críticos resolviendo f'(x) = 0",
+        "Determinar los intervalos usando los puntos críticos",
+        "Analizar el signo de f'(x) en cada intervalo",
+        "Concluir dónde la función es creciente o decreciente"
+      ],
+      "correctOrder": [0, 1, 2, 3, 4],
+      "hints": [
+        "Primero necesitas la derivada para analizar la tasa de cambio",
+        "Los puntos críticos dividen el dominio en intervalos",
+        "El signo de la derivada determina la monotonía"
+      ],
+      "stepByStep": [
+        "📐 **Proceso de Análisis de Monotonía**",
+        "",
+        "**Paso 1:** Calcular la derivada",
+        "• f'(x) representa la tasa de cambio instantánea",
+        "• Es la herramienta principal para analizar monotonía",
+        "",
+        "**Paso 2:** Encontrar puntos críticos",
+        "• Resolver f'(x) = 0",
+        "• Estos puntos pueden cambiar el comportamiento de la función",
+        "",
+        "**Paso 3:** Determinar intervalos",
+        "• Los puntos críticos dividen el dominio",
+        "• En cada intervalo f'(x) mantiene su signo",
+        "",
+        "**Paso 4:** Analizar signo de f'(x)",
+        "• f'(x) > 0 ⇒ función creciente",
+        "• f'(x) < 0 ⇒ función decreciente",
+        "• f'(x) = 0 ⇒ punto crítico",
+        "",
+        "**Paso 5:** Concluir monotonía",
+        "• Unir los resultados en una descripción completa"
+      ],
+      "explanation": "El proceso sistemático para analizar monotonía comienza calculando la derivada, luego encontrando puntos críticos, determinando intervalos, analizando signos y finalmente concluyendo sobre la monotonía."
+    },
+    {
+      "id": "mon-007",
+      "topic": "crecimiento-decrecimiento",
+      "question": "Si f'(x) = (x-2)(x+1)², ¿dónde es f decreciente?",
+      "type": "multiple-choice",
+      "options": [
+        "En (-∞, 2)",
+        "En (2, ∞)",
+        "En (-∞, -1) ∪ (-1, 2)",
+        "En (-1, ∞)"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Analiza el signo de cada factor de f'(x)",
+        "Recuerda que (x+1)² siempre es no negativo",
+        "La función es decreciente donde f'(x) < 0"
+      ],
+      "stepByStep": [
+        "📐 **Análisis de Signo de Derivada**",
+        "",
+        "**Derivada:** f'(x) = (x-2)(x+1)²",
+        "",
+        "**Análisis de factores:**",
+        "• (x-2): negativo para x < 2, positivo para x > 2",
+        "• (x+1)²: siempre ≥ 0, es 0 solo en x = -1",
+        "",
+        "**Signo de f'(x):**",
+        "• Para x < 2: (x-2) < 0, (x+1)² > 0 ⇒ f'(x) < 0",
+        "• Para x = 2: f'(2) = 0",
+        "• Para x > 2: (x-2) > 0, (x+1)² > 0 ⇒ f'(x) > 0",
+        "",
+        "**Conclusión:**",
+        "f'(x) < 0 para x < 2 ⇒ f es decreciente en (-∞, 2)",
+        "f'(x) > 0 para x > 2 ⇒ f es creciente en (2, ∞)",
+        "f'(2) = 0 ⇒ x = 2 es un punto crítico"
+      ],
+      "explanation": "Como (x+1)² siempre es no negativo, el signo de f'(x) está determinado por (x-2). Para x < 2, (x-2) < 0, por lo que f'(x) < 0 y la función es decreciente en (-∞, 2)."
+    },
+    {
+      "id": "mon-008",
+      "topic": "crecimiento-decrecimiento",
+      "question": "¿Qué puede decirse de una función cuya derivada es siempre positiva?",
+      "type": "multiple-choice",
+      "options": [
+        "Es estrictamente creciente en todo su dominio",
+        "Es constante en todo su dominio",
+        "Es decreciente en todo su dominio",
+        "Tiene un máximo en su dominio"
+      ],
+      "correct": 0,
+      "difficulty": "facil",
+      "hints": [
+        "Recuerda la relación entre el signo de la derivada y la monotonía",
+        "Si f'(x) > 0, la tasa de cambio es siempre positiva",
+        "Piensa qué significa que la función siempre esté 'subiendo'"
+      ],
+      "stepByStep": [
+        "📐 **Derivada Siempre Positiva**",
+        "",
+        "**Teorema:**",
+        "Si f'(x) > 0 para todo x en el dominio de f, entonces f es estrictamente creciente en todo su dominio.",
+        "",
+        "**Implicaciones:**",
+        "• La función nunca tiene tramos horizontales",
+        "• No tiene máximos ni mínimos relativos",
+        "• Es inyectiva (uno a uno)",
+        "• Tiene inversa",
+        "",
+        "**Ejemplos:**",
+        "• f(x) = eˣ, f'(x) = eˣ > 0 ∀x",
+        "• f(x) = x³ + x, f'(x) = 3x² + 1 > 0 ∀x",
+        "• f(x) = arctan(x), f'(x) = 1/(1+x²) > 0 ∀x",
+        "",
+        "**Importante:**",
+        "La condición f'(x) > 0 es suficiente pero no necesaria para que f sea estrictamente creciente."
+      ],
+      "explanation": "Si la derivada es siempre positiva, la función siempre está aumentando, por lo que es estrictamente creciente en todo su dominio. Esto significa que nunca tiene tramos horizontales ni extremos relativos."
+    },
+    {
+      "id": "mon-009",
+      "topic": "crecimiento-decrecimiento",
+      "question": "Empareja cada función con su comportamiento monótono",
+      "type": "drag-drop",
+      "pairs": [
+        { "left": "f(x) = -x² + 4x - 3", "right": "Creciente en (-∞, 2], Decreciente en [2, ∞)" },
+        { "left": "f(x) = x³ - 3x", "right": "Creciente en (-∞, -1] ∪ [1, ∞), Decreciente en [-1, 1]" },
+        { "left": "f(x) = e^(-x)", "right": "Decreciente en todo ℝ" },
+        { "left": "f(x) = ln(x)", "right": "Creciente en (0, ∞)" },
+        { "left": "f(x) = x⁴ - 2x²", "right": "Decreciente en (-∞, -1] ∪ [0, 1], Creciente en [-1, 0] ∪ [1, ∞)" }
+      ],
+      "difficulty": "dificil",
+      "hints": [
+        "Calcula la derivada de cada función",
+        "Encuentra los puntos críticos resolviendo f'(x) = 0",
+        "Analiza el signo de la derivada en cada intervalo"
+      ],
+      "stepByStep": [
+        "📐 **Análisis de Monotonía de Funciones Típicas**",
+        "",
+        "**1. f(x) = -x² + 4x - 3**",
+        "f'(x) = -2x + 4 = -2(x - 2)",
+        "f'(x) > 0 para x < 2, f'(x) < 0 para x > 2",
+        "",
+        "**2. f(x) = x³ - 3x**",
+        "f'(x) = 3x² - 3 = 3(x² - 1) = 3(x-1)(x+1)",
+        "Puntos críticos: x = -1, x = 1",
+        "",
+        "**3. f(x) = e^(-x)**",
+        "f'(x) = -e^(-x) < 0 ∀x",
+        "",
+        "**4. f(x) = ln(x)**",
+        "f'(x) = 1/x > 0 para x > 0",
+        "",
+        "**5. f(x) = x⁴ - 2x²**",
+        "f'(x) = 4x³ - 4x = 4x(x² - 1) = 4x(x-1)(x+1)",
+        "Puntos críticos: x = -1, x = 0, x = 1"
+      ],
+      "explanation": "Cada función tiene un comportamiento monótono diferente determinado por el signo de su derivada. Las funciones cuadráticas tienen un solo punto crítico, las cúbicas pueden tener hasta dos, y las de grado cuatro pueden tener hasta tres puntos críticos."
+    },
+    {
+      "id": "mon-010",
+      "topic": "crecimiento-decrecimiento",
+      "question": "Si f es creciente en [a, b] y g es decreciente en [a, b], ¿qué puede decirse de h(x) = f(x) + g(x)?",
+      "type": "multiple-choice",
+      "options": [
+        "No se puede determinar sin más información",
+        "h es creciente en [a, b]",
+        "h es decreciente en [a, b]",
+        "h es constante en [a, b]"
+      ],
+      "correct": 0,
+      "difficulty": "dificil",
+      "hints": [
+        "Piensa en las derivadas: h'(x) = f'(x) + g'(x)",
+        "f'(x) ≥ 0 y g'(x) ≤ 0",
+        "La suma de un número no negativo y uno no negativo puede ser positiva, negativa o cero"
+      ],
+      "stepByStep": [
+        "📐 **Combinación de Funciones Monótonas**",
+        "",
+        "**Datos:**",
+        "• f es creciente en [a, b] ⇒ f'(x) ≥ 0",
+        "• g es decreciente en [a, b] ⇒ g'(x) ≤ 0",
+        "",
+        "**Derivada de h:**",
+        "h(x) = f(x) + g(x)",
+        "h'(x) = f'(x) + g'(x)",
+        "",
+        "**Análisis:**",
+        "• f'(x) ≥ 0, g'(x) ≤ 0",
+        "• h'(x) = (no negativo) + (no positivo)",
+        "• El resultado puede ser positivo, negativo o cero",
+        "",
+        "**Ejemplos:**",
+        "1. f(x) = x, g(x) = -2x ⇒ h(x) = -x (decreciente)",
+        "2. f(x) = 2x, g(x) = -x ⇒ h(x) = x (creciente)",
+        "3. f(x) = x, g(x) = -x ⇒ h(x) = 0 (constante)",
+        "",
+        "**Conclusión:**",
+        "No se puede determinar el comportamiento de h sin información específica sobre las magnitudes de f'(x) y g'(x)."
+      ],
+      "explanation": "Aunque sabemos que f'(x) ≥ 0 y g'(x) ≤ 0, la suma h'(x) = f'(x) + g'(x) puede ser positiva, negativa o cero dependiendo de las magnitudes relativas. Sin más información, no podemos determinar la monotonía de h."
+    }
+  ]
+}

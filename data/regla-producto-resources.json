@@ -1,0 +1,148 @@
+{
+  "regla-producto": {
+    "introduccion-producto": [
+      {
+        "title": "Introducción a la Regla del Producto",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-2/v/product-rule",
+        "type": "video",
+        "description": "Explicación visual de la regla del producto con ejemplos básicos"
+      },
+      {
+        "title": "¿Por qué la Regla del Producto?",
+        "url": "https://www.mathsisfun.com/calculus/derivatives-rules.html#product",
+        "type": "article",
+        "description": "Intuición y explicación de por qué funciona la regla del producto"
+      },
+      {
+        "title": "Práctica: Identificar cuándo usar la regla",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-2/e/product-rule-intro",
+        "type": "practice",
+        "description": "Ejercicios para reconocer cuándo aplicar la regla del producto"
+      }
+    ],
+    "demostracion-formula": [
+      {
+        "title": "Demostración de la Regla del Producto",
+        "url": "https://www.youtube.com/watch?v=9onxJIsz0GQ",
+        "type": "video",
+        "description": "Demostración formal usando la definición de derivada"
+      },
+      {
+        "title": "Geometría de la Regla del Producto",
+        "url": "https://tutorial.math.lamar.edu/classes/calci/ProductQuotientRule.aspx",
+        "type": "article",
+        "description": "Interpretación geométrica con rectángulos que cambian"
+      },
+      {
+        "title": "Prueba Formal - Paul's Notes",
+        "url": "https://tutorial.math.lamar.edu/classes/calci/ProductQuotientRule.aspx#Proof",
+        "type": "reference",
+        "description": "Demostración paso a paso con todos los detalles algebraicos"
+      }
+    ],
+    "producto-polinomios": [
+      {
+        "title": "Producto de Polinomios",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-2/v/more-product-rule-examples",
+        "type": "video",
+        "description": "Ejemplos con productos de funciones polinomiales"
+      },
+      {
+        "title": "Estrategias: Simplificar vs Regla del Producto",
+        "url": "https://www.mathsisfun.com/calculus/derivatives-product-rule.html",
+        "type": "article",
+        "description": "Cuándo conviene simplificar antes y cuándo usar la regla directamente"
+      },
+      {
+        "title": "Práctica: Productos de Polinomios",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-2/e/product-rule",
+        "type": "practice",
+        "description": "Ejercicios progresivos con polinomios"
+      },
+      {
+        "title": "Diferencia de Cuadrados y Productos",
+        "url": "https://www.analyzemath.com/calculus/Differentiation/product_rule.html",
+        "type": "article",
+        "description": "Casos especiales donde simplificar es más eficiente"
+      }
+    ],
+    "producto-trigonometricas": [
+      {
+        "title": "Regla del Producto con Funciones Trigonométricas",
+        "url": "https://www.youtube.com/watch?v=QDc1qmBVJcU",
+        "type": "video",
+        "description": "Ejemplos detallados: x·sin(x), x²·cos(x), etc."
+      },
+      {
+        "title": "Tabla de Derivadas Trigonométricas",
+        "url": "https://www.mathsisfun.com/calculus/derivatives-rules.html#trig",
+        "type": "reference",
+        "description": "Referencia rápida de derivadas de funciones trigonométricas"
+      },
+      {
+        "title": "Práctica: Producto con Trig",
+        "url": "https://www.analyzemath.com/calculus/Differentiation/trig_derivatives.html",
+        "type": "practice",
+        "description": "Ejercicios combinando regla del producto y derivadas trigonométricas"
+      }
+    ],
+    "producto-exponenciales": [
+      {
+        "title": "Regla del Producto con Exponenciales",
+        "url": "https://www.youtube.com/watch?v=h9nDHsNaJUc",
+        "type": "video",
+        "description": "Derivación de productos que incluyen e^x"
+      },
+      {
+        "title": "Propiedades de la Función Exponencial",
+        "url": "https://tutorial.math.lamar.edu/classes/calci/DiffExpLogFcns.aspx",
+        "type": "article",
+        "description": "Por qué e^x es su propia derivada y aplicaciones"
+      },
+      {
+        "title": "Práctica: Productos con e^x",
+        "url": "https://www.symbolab.com/practice/derivatives-practice",
+        "type": "practice",
+        "description": "Ejercicios mixtos con funciones exponenciales"
+      },
+      {
+        "title": "Aplicaciones en Crecimiento Exponencial",
+        "url": "https://www.mathsisfun.com/calculus/exponential-growth.html",
+        "type": "article",
+        "description": "Modelos de población y crecimiento usando e^x"
+      }
+    ],
+    "casos-combinados": [
+      {
+        "title": "Regla del Producto: Casos Avanzados",
+        "url": "https://www.youtube.com/watch?v=rnBa2Nqr2YY",
+        "type": "video",
+        "description": "Productos complejos y regla extendida para tres funciones"
+      },
+      {
+        "title": "Producto de Tres o Más Funciones",
+        "url": "https://tutorial.math.lamar.edu/classes/calci/ProductQuotientRule.aspx#Extended",
+        "type": "article",
+        "description": "Extensión de la regla del producto a múltiples funciones"
+      },
+      {
+        "title": "100 Problemas de Regla del Producto",
+        "url": "https://www.analyzemath.com/calculus/Differentiation/product_rule_problems.html",
+        "type": "practice",
+        "description": "Colección extensa de ejercicios con soluciones"
+      },
+      {
+        "title": "Estrategias de Resolución",
+        "url": "https://www.mathsisfun.com/calculus/derivatives-rules.html",
+        "type": "reference",
+        "description": "Guía completa de cuándo usar qué regla de derivación"
+      },
+      {
+        "title": "Aplicaciones en Física e Ingeniería",
+        "url": "https://tutorial.math.lamar.edu/classes/calci/DerivativeApps.aspx",
+        "type": "article",
+        "description": "Problemas aplicados de velocidad, aceleración, crecimiento"
+      }
+    ]
+  }
+}

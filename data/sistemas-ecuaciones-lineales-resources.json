@@ -1,0 +1,39 @@
+{
+    "sistemas-ecuaciones-lineales": [
+        {
+            "topic": "sistemas-homogeneos",
+            "title": "Video: Sistemas Homogéneos",
+            "type": "video",
+            "url": "https://www.youtube.com/watch?v=example1",
+            "description": "Explicación visual de qué son los sistemas homogéneos y por qué siempre tienen al menos la solución trivial",
+            "duration": "12 min",
+            "difficulty": "principiante"
+        },
+        {
+            "topic": "metodo-gauss-jordan",
+            "title": "Video: Método de Gauss-Jordan Paso a Paso",
+            "type": "video",
+            "url": "https://www.youtube.com/watch?v=example2",
+            "description": "Tutorial completo del método de Gauss-Jordan para resolver sistemas de ecuaciones lineales",
+            "duration": "18 min",
+            "difficulty": "principiante"
+        },
+        {
+            "topic": "regla-cramer",
+            "title": "Artículo: La Regla de Cramer",
+            "type": "article",
+            "url": "https://es.khanacademy.org/math/linear-algebra/matrix-transformations/inverse-of-matrices/v/cramers-rule",
+            "description": "Explicación teórica y aplicación práctica de la regla de Cramer en sistemas lineales",
+            "difficulty": "intermedio"
+        },
+        {
+            "topic": "aplicaciones-sistemas",
+            "title": "Video: Aplicaciones en Química y Medicina",
+            "type": "video",
+            "url": "https://www.youtube.com/watch?v=example3",
+            "description": "Casos prácticos de sistemas lineales en química molecular y tomografía médica",
+            "duration": "15 min",
+            "difficulty": "avanzado"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "valores-vectores-propios": {
+        "calculo-valores-propios": [
+            {
+                "title": "📺 Introducción a Valores y Vectores Propios",
+                "url": "https://es.khanacademy.org/math/linear-algebra/alternate-bases/eigen-everything/v/linear-algebra-introduction-to-eigenvalues-and-eigenvectors",
+                "type": "video",
+                "description": "Entiende intuitivamente el concepto: vectores que no cambian de dirección bajo una transformación."
+            }
+        ]
+    }
+}

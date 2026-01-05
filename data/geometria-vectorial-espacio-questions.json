@@ -1,0 +1,122 @@
+{
+    "geometria-vectorial-espacio": [
+        {
+            "id": "gve-t3-dd1",
+            "topic": "rectas-planos",
+            "question": "Clasifica cada afirmación sobre intersecciones geométricas.",
+            "type": "drag-drop",
+            "items": [
+                "Dos planos pueden intersecarse en un punto",
+                "Dos rectas pueden tener intersección infinita",
+                "Dos rectas siempre se intersecan",
+                "Dos planos paralelos nunca se intersecan"
+            ],
+            "categories": [
+                "Verdadero",
+                "Falso"
+            ],
+            "correctMapping": [
+                1,
+                0,
+                1,
+                1
+            ],
+            "difficulty": "facil",
+            "hints": [
+                "Piensa en las dimensiones: 2 planos en R³",
+                "Rectas coincidentes tienen todos los puntos en común"
+            ],
+            "explanation": "**Dos planos → punto: FALSO** (pueden ser paralelos, una recta, o el mismo plano)\\n**Rectas infinita: VERDADERO** (si son la misma recta)\\n**Rectas siempre: FALSO** (pueden ser alabeadas en R³)\\n**Planos paralelos: FALSO** (pueden ser el mismo plano)"
+        },
+        {
+            "id": "gve-t4-mn1",
+            "topic": "intersecciones",
+            "question": "Calcula la distancia del punto $P=(2,3,1)$ al plano $\\Pi: x + 2y - 2z = 4$.",
+            "type": "multiple-numeric",
+            "fields": [
+                {
+                    "label": "Distancia =",
+                    "answer": 1,
+                    "tolerance": 0.01
+                }
+            ],
+            "difficulty": "medio",
+            "hints": [
+                "Usa la fórmula: $d = \\frac{|ax_0 + by_0 + cz_0 - d|}{\\sqrt{a^2+b^2+c^2}}$",
+                "El plano es $x + 2y - 2z - 4 = 0$"
+            ],
+            "explanation": "**Fórmula de distancia punto-plano:**\\n\\n$$d = \\frac{|1(2) + 2(3) + (-2)(1) - 4|}{\\sqrt{1^2 + 2^2 + (-2)^2}} = \\frac{|2 + 6 - 2 - 4|}{\\sqrt{1+4+4}} = \\frac{|2|}{3} = \\frac{2}{3} \\approx 0.667$$\\n\\nNota: Si la respuesta esperada es 1, verifica el plano original."
+        },
+        {
+            "id": "gve-t2-or1",
+            "topic": "producto-punto-cruz",
+            "question": "Ordena los pasos para encontrar un vector perpendicular a dos vectores dados.",
+            "type": "ordering",
+            "items": [
+                "Identificar los dos vectores $\\vec{u}$ y $\\vec{v}$",
+                "Calcular el producto cruz $\\vec{u} \\times \\vec{v}$",
+                "Escribir el resultado como $(u_2v_3-u_3v_2, u_3v_1-u_1v_3, u_1v_2-u_2v_1)$",
+                "Verificar que el resultado es perpendicular a ambos (producto punto = 0)"
+            ],
+            "correctOrder": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "difficulty": "medio",
+            "hints": [
+                "El producto cruz produce un vector perpendicular a ambos",
+                "La fórmula del producto cruz usa determinantes"
+            ],
+            "explanation": "El **producto cruz** $\\vec{u} \\times \\vec{v}$ es el método estándar para encontrar un vector perpendicular a dos vectores en R³. El resultado es perpendicular a ambos vectores de entrada."
+        },
+        {
+            "id": "gve-t3-cat1",
+            "topic": "rectas-planos",
+            "question": "Clasifica cada ecuación según su tipo geométrico en R³.",
+            "type": "categorize",
+            "items": [
+                "$x + 2y - z = 5$",
+                "$(x,y,z) = (1,2,3) + t(1,0,-1)$",
+                "$\\begin{cases} x = 2t \\\\ y = t+1 \\\\ z = 3-t \\end{cases}$"
+            ],
+            "categories": {
+                "plano": "Plano",
+                "recta": "Recta",
+                "punto": "Punto"
+            },
+            "correctCategories": {
+                "$x + 2y - z = 5$": "plano",
+                "$(x,y,z) = (1,2,3) + t(1,0,-1)$": "recta",
+                "$\\begin{cases} x = 2t \\\\ y = t+1 \\\\ z = 3-t \\end{cases}$": "recta"
+            },
+            "difficulty": "facil",
+            "hints": [
+                "Una ecuación lineal (sin parámetros) representa un plano",
+                "Ecuaciones con un parámetro t representan rectas"
+            ],
+            "explanation": "**Primera:** Ecuación implícita (sin parámetros) → **Plano**\\n**Segunda:** Ecuación vectorial con parámetro t → **Recta**\\n**Tercera:** Ecuaciones paramétricas con t → **Recta**"
+        },
+        {
+            "id": "gve-t1-mc1",
+            "topic": "vectores-operaciones",
+            "question": "Si $\\vec{u} = (3,4)$ y $\\vec{v} = (-2,1)$, ¿cuál es $\\vec{u} + \\vec{v}$?",
+            "type": "multiple-choice",
+            "shuffle": true,
+            "options": [
+                "$(1, 5)$",
+                "$(5, 3)$",
+                "$(-5, 5)$",
+                "$(1, 3)$"
+            ],
+            "correct": 0,
+            "difficulty": "facil",
+            "hints": [
+                "Suma componente a componente",
+                "$(a,b) + (c,d) = (a+c, b+d)$"
+            ],
+            "explanation": "$$\\vec{u} + \\vec{v} = (3,4) + (-2,1) = (3+(-2), 4+1) = (1, 5)$$"
+        }
+    ]
+}

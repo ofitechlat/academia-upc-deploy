@@ -1,0 +1,20 @@
+{
+    "transformaciones-lineales-algebra": {
+        "definicion-transformacion": [
+            {
+                "title": "📺 Transformaciones Lineales: Introducción",
+                "url": "https://es.khanacademy.org/math/linear-algebra/matrix-transformations/linear-transformations/v/linear-transformations",
+                "type": "video",
+                "description": "Concepto de transformación y condiciones de linealidad (aditividad y homogeneidad)."
+            }
+        ],
+        "nucleo-imagen": [
+            {
+                "title": "✍️ Núcleo e Imagen de una Transformación",
+                "url": "https://es.khanacademy.org/math/linear-algebra/matrix-transformations/linear-transformations/v/kernel-and-range-of-linear-transformation",
+                "type": "video",
+                "description": "Cómo encontrar el kernel (espacio nulo) y la imagen de una transformación lineal."
+            }
+        ]
+    }
+}

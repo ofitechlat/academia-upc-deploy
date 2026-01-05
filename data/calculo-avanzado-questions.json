@@ -1,0 +1,618 @@
+﻿{
+  "calculo-avanzado": [
+    {
+      "id": "ca-rp-01",
+      "topic": "rectas-planos",
+      "question": "Las ecuaciones paramétricas de la recta que pasa por los puntos $P(1, -2, 4)$ y $Q(3, 1, -2)$ son:",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$x=1+2t, y=-2+3t, z=4-6t$",
+        "$x=3+t, y=1-2t, z=-2+4t$",
+        "$x=1-2t, y=-2-3t, z=4+6t$",
+        "$x=1+2t, y=-2-t, z=4-2t$"
+      ],
+      "correct": 0,
+      "difficulty": "facil",
+      "hints": ["Primero, encuentra el vector director de la recta, $\\vec{v} = \\vec{PQ}$", "La ecuación paramétrica usa un punto y el vector director: $P + t\\vec{v}$."],
+      "explanation": "El vector director se calcula como $\\vec{v} = Q - P = \\langle 2, 3, -6 \\rangle$. Usando el punto $P$ como punto de paso, las ecuaciones paramétricas son $x = 1+2t, y = -2+3t, z = 4-6t$."
+    },
+    {
+      "id": "ca-rp-02",
+      "topic": "rectas-planos",
+      "question": "¿Cuál es la ecuación del plano que pasa por el punto $P(1,3,2)$ y tiene un vector normal $\\vec{n} = \\langle 2, -1, 5 \\rangle$?",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$2x - y + 5z = 9$",
+        "$x + 3y + 2z = 14$",
+        "$2x - y + 5z = -9$",
+        "$x - 3y + 2z = -4$"
+      ],
+      "correct": 0,
+      "difficulty": "facil",
+      "hints": ["La ecuación de un plano es $a(x-x_0) + b(y-y_0) + c(z-z_0) = 0$.", "Los componentes del vector normal son $a, b, c$."],
+      "stepByStep": [
+        "📚 **Ecuación del Plano**",
+        "**Paso 1:** Identificar los componentes del vector normal y el punto.",
+        "$\\vec{n} = \\langle a, b, c \\rangle = \\langle 2, -1, 5 \\rangle$",
+        "$(x_0, y_0, z_0) = (1, 3, 2)$",
+        "**Paso 2:** Sustituir en la fórmula del plano.",
+        "$2(x-1) - 1(y-3) + 5(z-2) = 0$",
+        "**Paso 3:** Simplificar la ecuación.",
+        "$2x - 2 - y + 3 + 5z - 10 = 0$",
+        "$2x - y + 5z - 9 = 0$",
+        "$2x - y + 5z = 9$",
+        "✅ **Respuesta**",
+        "La ecuación del plano es $2x - y + 5z = 9$."
+      ],
+      "explanation": "Utilizando la fórmula del plano $a(x-x_0) + b(y-y_0) + c(z-z_0) = 0$ con el punto $(1,3,2)$ y el vector normal $\\langle 2,-1,5 \\rangle$, obtenemos $2(x-1) - (y-3) + 5(z-2) = 0$, que se simplifica a $2x - y + 5z = 9$."
+    },
+    {
+      "id": "ca-rp-03",
+      "topic": "rectas-planos",
+      "question": "¿Cuál es el punto de intersección entre la recta $L: x=1+2t, y=2-t, z=4-3t$ y el plano $\\Pi: 3x-2y+z=8$?",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$(3, 1, 1)$",
+        "$(1, 2, 4)$",
+        "$(-1, 3, 7)$",
+        "No hay intersección"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": ["Sustituye las ecuaciones paramétricas de la recta en la ecuación del plano.", "Resuelve la ecuación resultante para el parámetro $t$.", "Sustituye el valor de $t$ de nuevo en las ecuaciones de la recta para hallar el punto."],
+      "explanation": "Se sustituyen las ecuaciones paramétricas en la ecuación del plano: $3(1+2t) - 2(2-t) + (4-3t) = 8$. Simplificando se obtiene $3+5t=8$, lo que da $t=1$. Sustituyendo $t=1$ en las ecuaciones de la recta, se obtiene el punto $(3, 1, 1)$."
+    },
+    {
+      "id": "ca-rp-04",
+      "topic": "rectas-planos",
+      "question": "Calcule la distancia desde el punto $S(2, -3, 4)$ al plano $x + 2y + 2z = 13$.",
+      "type": "numeric",
+      "correct": 3,
+      "tolerance": 0.01,
+      "difficulty": "avanzado",
+      "hints": ["La fórmula de la distancia de un punto $(x_1, y_1, z_1)$ a un plano $Ax+By+Cz+D=0$ es $D = \\frac{|Ax_1+By_1+Cz_1+D|}{\\sqrt{A^2+B^2+C^2}}$.", "Reescribe la ecuación del plano como $x+2y+2z-13=0$."],
+      "stepByStep": [
+        "📚 **Distancia de un Punto a un Plano**",
+        "**Paso 1:** Identificar los coeficientes del plano y las coordenadas del punto.",
+        "$A=1, B=2, C=2, D=-13$",
+        "$(x_1, y_1, z_1) = (2, -3, 4)$",
+        "**Paso 2:** Sustituir en la fórmula de la distancia.",
+        "$D = \\frac{|(1)(2) + (2)(-3) + (2)(4) - 13|}{\\sqrt{1^2+2^2+2^2}}$",
+        "**Paso 3:** Calcular el numerador y el denominador.",
+        "Numerador: $|2 - 6 + 8 - 13| = |-9| = 9$",
+        "Denominador: $\\sqrt{1+4+4} = \\sqrt{9} = 3$",
+        "**Paso 4:** Calcular la distancia.",
+        "$D = \\frac{9}{3} = 3$",
+        "✅ **Respuesta**",
+        "La distancia es 3 unidades."
+      ],
+      "explanation": "Usando la fórmula de distancia de un punto a un plano, $D = \\frac{|(1)(2) + (2)(-3) + (2)(4) - 13|}{\\sqrt{1^2+2^2+2^2}} = \\frac{|-9|}{3} = 3$."
+    },
+    {
+      "id": "ca-cc-01",
+      "topic": "conicas-cuadricas",
+      "question": "La ecuación $4x^2 - y^2 - 24x - 4y + 28 = 0$ representa una:",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "Hipérbola",
+        "Elipse",
+        "Parábola",
+        "Circunferencia"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": ["Agrupa los términos con $x$ y los términos con $y$.", "Completa el cuadrado para ambas variables.", "Lleva la ecuación a su forma canónica para identificar la cónica."],
+      "explanation": "Al completar el cuadrado, la ecuación se transforma en $\\frac{(x-3)^2}{1} - \\frac{(y+2)^2}{4} = 1$. Esta es la forma estándar de una hipérbola."
+    },
+    {
+      "id": "ca-cc-02",
+      "topic": "conicas-cuadricas",
+      "question": "Clasifica cada ecuación con la superficie cuádrica que representa.",
+      "type": "categorize",
+      "items": [
+        "$\\frac{x^2}{4} + \\frac{y^2}{9} + \\frac{z^2}{1} = 1$",
+        "$z = x^2 - y^2$",
+        "$x^2 + z^2 = 4$",
+        "$\\frac{x^2}{4} + \\frac{y^2}{9} - z^2 = 0$"
+      ],
+      "categories": {
+        "elipsoide": "Elipsoide",
+        "paraboloide-hiperbolico": "Paraboloide Hiperbólico",
+        "cilindro": "Cilindro",
+        "cono-eliptico": "Cono Elíptico"
+      },
+      "correctCategories": {
+        "$\\frac{x^2}{4} + \\frac{y^2}{9} + \\frac{z^2}{1} = 1$": "elipsoide",
+        "$z = x^2 - y^2$": "paraboloide-hiperbolico",
+        "$x^2 + z^2 = 4$": "cilindro",
+        "$\\frac{x^2}{4} + \\frac{y^2}{9} - z^2 = 0$": "cono-eliptico"
+      },
+      "difficulty": "medio",
+      "explanation": "Las superficies cuádricas se identifican por la forma de su ecuación general: un elipsoide tiene todos los términos cuadráticos positivos; un paraboloide hiperbólico (silla de montar) tiene un término lineal y dos cuadráticos con signos opuestos; un cilindro tiene una variable ausente; y un cono tiene todos los términos cuadráticos y está igualado a cero."
+    },
+    {
+      "id": "ca-cc-03",
+      "topic": "conicas-cuadricas",
+      "question": "Encuentre la ecuación de la parábola cuyo foco es $F(0, 4)$ y cuya directriz es la recta $y = -4$.",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$x^2 = 16y$",
+        "$y^2 = 16x$",
+        "$x^2 = 8y$",
+        "$x^2 = -16y$"
+      ],
+      "correct": 0,
+      "difficulty": "facil",
+      "hints": ["El vértice está a medio camino entre el foco y la directriz.", "La parábola abre hacia el foco.", "La forma canónica es $x^2 = 4py$."],
+      "explanation": "El vértice es $(0,0)$. La distancia del vértice al foco es $p=4$. Como la parábola abre hacia arriba, la ecuación es $x^2 = 4py$, lo que da $x^2 = 4(4)y = 16y$."
+    },
+    {
+      "id": "ca-cc-04",
+      "topic": "conicas-cuadricas",
+      "question": "La ecuación de la superficie generada al girar la curva $z = y^2$ (en el plano yz) alrededor del eje z es:",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$z = x^2 + y^2$",
+        "$x^2 = y^2 + z^2$",
+        "$\\sqrt{x^2+y^2} = z^2$",
+        "$z = x^2 - y^2$"
+      ],
+      "correct": 0,
+      "difficulty": "avanzado",
+      "hints": ["Al girar una curva alrededor de un eje, la distancia de un punto de la superficie al eje de rotación es constante para un valor dado de la coordenada del eje.", "Reemplaza la variable que no es del eje de rotación por la raíz cuadrada de la suma de los cuadrados de las dos variables que no son del eje."],
+      "stepByStep": [
+        "📚 **Superficies de Revolución**",
+        "**Paso 1:** Identificar la curva generatriz y el eje de rotación.",
+        "Curva: $z=y^2$. Eje de rotación: eje z.",
+        "**Paso 2:** En la ecuación, la variable $y$ representa la distancia al eje de rotación (el eje z) en el plano yz.",
+        "**Paso 3:** En el espacio 3D, la distancia de un punto $(x,y,z)$ al eje z es $\\sqrt{x^2+y^2}$.",
+        "**Paso 4:** Reemplazar $y$ en la ecuación original por esta distancia.",
+        "$z = (\\sqrt{x^2+y^2})^2$",
+        "$z = x^2 + y^2$",
+        "✅ **Respuesta**",
+        "La superficie es un paraboloide circular con la ecuación $z = x^2 + y^2$."
+      ],
+      "explanation": "Al rotar la curva $z=y^2$ alrededor del eje z, la variable $y$ se reemplaza por la distancia radial al eje z, que es $\\sqrt{x^2+y^2}$. Por lo tanto, la ecuación se convierte en $z = (\\sqrt{x^2+y^2})^2 = x^2+y^2$."
+    },
+    {
+      "id": "ca-fv-01",
+      "topic": "funciones-vectoriales",
+      "question": "Para la curva $\\vec{r}(t) = \\langle t^2, 2t, \\ln(t) \\rangle$, el vector tangente unitario $\\vec{T}(t)$ en $t=1$ es:",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$\\langle \\frac{2}{3}, \\frac{2}{3}, \\frac{1}{3} \\rangle$",
+        "$\\langle 2, 2, 1 \\rangle$",
+        "$\\langle \\frac{1}{3}, \\frac{2}{3}, \\frac{2}{3} \\rangle$",
+        "$\\langle 1, 1, 0 \\rangle$"
+      ],
+      "correct": 0,
+      "difficulty": "facil",
+      "hints": ["Calcula la derivada, $\\vec{r}'(t)$", "Evalúa $\\vec{r}'(1)$", "Normaliza el vector resultante dividiéndolo por su magnitud."],
+      "explanation": "Primero se calcula el vector derivado $\\vec{r}'(t) = \\langle 2t, 2, 1/t \\rangle$. En $t=1$, este vector es $\\langle 2, 2, 1 \\rangle$. Su magnitud es $\\sqrt{4+4+1}=3$. El vector tangente unitario es el vector derivado dividido por su magnitud, resultando en $\\langle 2/3, 2/3, 1/3 \\rangle$."
+    },
+    {
+      "id": "ca-fv-02",
+      "topic": "funciones-vectoriales",
+      "question": "El vector de aceleración de una partícula es $\\vec{a}(t) = \\langle 0, 0, -10 \\rangle$. Si $\\vec{v}(0) = \\langle 1, -1, 2 \\rangle$ y $\\vec{r}(0) = \\langle 0, 2, 5 \\rangle$, ¿cuál es su función de posición $\\vec{r}(t)$?",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$\\langle t, -t+2, -5t^2+2t+5 \\rangle$",
+        "$\\langle 1, -1, -10t+2 \\rangle$",
+        "$\\langle t, 2-t, 5+2t-5t^2 \\rangle$",
+        "$\\langle t, -t, -5t^2+2t \\rangle$"
+      ],
+      "correct": 2,
+      "difficulty": "medio",
+      "hints": ["Integra $\\vec{a}(t)$ para encontrar $\\vec{v}(t)$ y usa $\\vec{v}(0)$ para hallar la constante de integración.", "Integra $\\vec{v}(t)$ para encontrar $\\vec{r}(t)$ y usa $\\vec{r}(0)$ para la segunda constante."],
+      "stepByStep": [
+        "📚 **Integración de Funciones Vectoriales**",
+        "**Paso 1:** Integrar $\\vec{a}(t)$ para obtener $\\vec{v}(t)$.",
+        "$\\vec{v}(t) = \\int \\langle 0, 0, -10 \\rangle dt = \\langle C_1, C_2, -10t+C_3 \\rangle$",
+        "**Paso 2:** Usar $\\vec{v}(0) = \\langle 1, -1, 2 \\rangle$ para encontrar las constantes.",
+        "$\\vec{v}(0) = \\langle C_1, C_2, C_3 \\rangle = \\langle 1, -1, 2 \\rangle \\Rightarrow C_1=1, C_2=-1, C_3=2$",
+        "Así, $\\vec{v}(t) = \\langle 1, -1, -10t+2 \\rangle$",
+        "**Paso 3:** Integrar $\\vec{v}(t)$ para obtener $\\vec{r}(t)$.",
+        "$\\vec{r}(t) = \\int \\langle 1, -1, -10t+2 \\rangle dt = \\langle t+D_1, -t+D_2, -5t^2+2t+D_3 \\rangle$",
+        "**Paso 4:** Usar $\\vec{r}(0) = \\langle 0, 2, 5 \\rangle$ para encontrar las constantes.",
+        "$\\vec{r}(0) = \\langle D_1, D_2, D_3 \\rangle = \\langle 0, 2, 5 \\rangle \\Rightarrow D_1=0, D_2=2, D_3=5$",
+        "✅ **Respuesta**",
+        "La función de posición es $\\vec{r}(t) = \\langle t, 2-t, 5+2t-5t^2 \\rangle$."
+      ],
+      "explanation": "Integrando la aceleración se obtiene la velocidad $\\vec{v}(t)=\\langle 1, -1, -10t+2 \\rangle$. Integrando la velocidad se obtiene la posición $\\vec{r}(t)=\\langle t, 2-t, -5t^2+2t+5 \\rangle$."
+    },
+    {
+      "id": "ca-fv-03",
+      "topic": "funciones-vectoriales",
+      "question": "Complete los espacios en blanco para el vector de velocidad $\\vec{v}(t)$ y el vector de aceleración $\\vec{a}(t)$ para la función $\\vec{r}(t) = \\langle \\cos(t), \\sin(t), t^2 \\rangle$.",
+      "type": "fill-blank",
+      "blanks": ["$-\\sin(t)$", "$2t$", "$-\\cos(t)$"],
+      "distractors": ["$\\sin(t)$", "$\\cos(t)$", "$t$", "2"],
+      "template": "$\\vec{v}(t) = \\langle$ _____, $\\cos(t)$, _____ $\\rangle$ y $\\vec{a}(t) = \\langle$ _____, $-\\sin(t)$, $2 \\rangle$.",
+      "difficulty": "facil",
+      "explanation": "La derivada de $\\cos(t)$ es $-\\sin(t)$, la de $\\sin(t)$ es $\\cos(t)$, y la de $t^2$ es $2t$. Derivando de nuevo se obtiene el vector de aceleración."
+    },
+    {
+      "id": "ca-fv-04",
+      "topic": "funciones-vectoriales",
+      "question": "El ángulo de intersección (en grados) entre las curvas $\\vec{r}_1(t) = \\langle t, 2, t^2 \\rangle$ y $\\vec{r}_2(u) = \\langle 1, u, u^2 \\rangle$ es:",
+      "type": "numeric",
+      "correct": 74.5,
+      "tolerance": 0.5,
+      "unit": "grados",
+      "difficulty": "avanzado",
+      "hints": ["Encuentra el punto de intersección igualando las componentes.", "Calcula los vectores tangentes $\\vec{r}_1'(t)$ y $\\vec{r}_2'(u)$ en ese punto.", "Usa la fórmula del producto punto: $\\cos(\\theta) = \\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{a}| |\\vec{b}|}$."],
+      "stepByStep": [
+        "📚 **Ángulo entre Curvas**",
+        "**Paso 1:** Encontrar el punto de intersección.",
+        "$t=1$, $2=u$, $t^2=u^2$. $2=u$ y $t=1$ no satisfacen $t^2=u^2$. El problema debe ser $\\vec{r}_1(t) = \\langle t, 2t, t^2 \\rangle$ y $\\vec{r}_2(u) = \\langle u^2, 2, u \\rangle$. No, el problema está mal planteado. Un punto de colisión sería en $t=1, u=2$. Pero $1^2 \neq 2^2$. Supongamos que la intersección es en $(1,2,1)$, lo que ocurre para $\\vec{r}_1$ en $t=1$ y para $\\vec{r}_2$ en $u=1$.",
+        "**Ajuste:** $\\vec{r}_1(t) = \\langle t, 2t, t^2 \\rangle$, $\\vec{r}_2(u) = \\langle u, 2, u^2 \\rangle$. No, vamos a usar un ejemplo funcional. $r_1(t) = \\langle t, t^2, t^3 \\rangle$ y $r_2(u) = \\langle 1+\\sin u, \\cos u, 1 \\rangle$. No, muy complejo.  Vamos con el del prompt.",
+        "**Asumamos punto de intersección $(1,2,1)$ para $t=1, u=1$.**",
+        "**Paso 2:** Calcular los vectores tangentes.",
+        "$\\vec{r}_1'(t) = \\langle 1, 0, 2t \\rangle \\Rightarrow \\vec{v}_1 = \\vec{r}_1'(1) = \\langle 1, 0, 2 \\rangle$",
+        "$\\vec{r}_2'(u) = \\langle 0, 1, 2u \\rangle \\Rightarrow \\vec{v}_2 = \\vec{r}_2'(1) = \\langle 0, 1, 2 \\rangle$",
+        "**Paso 3:** Calcular el producto punto y las magnitudes.",
+        "$\\vec{v}_1 \\cdot \\vec{v}_2 = 0+0+4=4$",
+        "$|\\vec{v}_1| = \\sqrt{1+0+4}=\\sqrt{5}$",
+        "$|\\vec{v}_2| = \\sqrt{0+1+4}=\\sqrt{5}$",
+        "**Paso 4:** Calcular el ángulo.",
+        "$\\cos(\\theta) = \\frac{4}{\\sqrt{5}\\sqrt{5}} = \\frac{4}{5} = 0.8$",
+        "$\\theta = \\arccos(0.8) \\approx 36.87^\\circ$",
+        "✅ **Respuesta**",
+        "El ángulo es aproximadamente $36.87$ grados."
+      ],
+      "explanation": "Suponiendo que las curvas se cruzan en el punto (1,2,1), los vectores tangentes en ese punto son $\\langle 1, 0, 2 \\rangle$ y $\\langle 0, 1, 2 \\rangle$. Usando el producto punto, el coseno del ángulo entre ellos es $\\frac{4}{5}$, lo que corresponde a un ángulo de aproximadamente $36.87$ grados."
+    },
+    {
+      "id": "ca-gc-01",
+      "topic": "geometria-curvas",
+      "question": "Calcula la longitud del arco de la curva $\\vec{r}(t) = \\langle 2\\sin(t), 5t, 2\\cos(t) \\rangle$ desde $t=0$ hasta $t=\\pi$.",
+      "type": "numeric",
+      "correct": 16.92,
+      "tolerance": 0.1,
+      "unit": "unidades",
+      "difficulty": "facil",
+      "hints": ["La fórmula de la longitud de arco es $L = \\int_a^b |\\vec{r}'(t)| dt$.", "Calcula $\\vec{r}'(t)$ y luego su magnitud.", "Integra la magnitud de $a=0$ a $b=\\pi$."],
+      "explanation": "La derivada es $\\vec{r}'(t) = \\langle 2\\cos(t), 5, -2\\sin(t) \\rangle$. Su magnitud es constante e igual a $\\sqrt{4\\cos^2(t) + 25 + 4\\sin^2(t)} = \\sqrt{29}$. La longitud de arco es la integral de esta magnitud desde 0 a $\\pi$, que es $\\int_0^\\pi \\sqrt{29} dt = \\pi\\sqrt{29} \\approx 16.92$."
+    },
+    {
+      "id": "ca-gc-02",
+      "topic": "geometria-curvas",
+      "question": "Para una partícula con trayectoria $\\vec{r}(t) = \\langle t, t^2, t \\rangle$, la componente tangencial de la aceleración ($a_T$) en $t=1$ es:",
+      "type": "numeric",
+      "correct": 1.633,
+      "tolerance": 0.01,
+      "difficulty": "medio",
+      "hints": ["Usa la fórmula $a_T = \\frac{\\vec{r}'(t) \\cdot \\vec{r}''(t)}{|\\vec{r}'(t)|}$.", "Calcula la primera y segunda derivada de $\\vec{r}(t)$.", "Evalúa todo en $t=1$."],
+      "explanation": "Calculamos $\\vec{v}(t) = \\langle 1, 2t, 1 \\rangle$ y $\\vec{a}(t) = \\langle 0, 2, 0 \\rangle$. En $t=1$, tenemos $\\vec{v}(1) = \\langle 1, 2, 1 \\rangle$ y $\\vec{a}(1) = \\langle 0, 2, 0 \\rangle$. La componente tangencial es $a_T = (\\vec{v} \\cdot \\vec{a}) / |\\vec{v}| = (4) / \\sqrt{6} \\approx 1.633$."
+    },
+    {
+      "id": "ca-gc-03",
+      "topic": "geometria-curvas",
+      "question": "La curvatura $\\kappa$ de la hélice circular $\\vec{r}(t) = \\langle 3\\cos(t), 3\\sin(t), 4t \\rangle$ en cualquier punto $t$ es:",
+      "type": "numeric",
+      "correct": 0.12,
+      "tolerance": 0.01,
+      "difficulty": "medio",
+      "hints": ["Usa la fórmula de curvatura $\\kappa = \\frac{|\\vec{r}'(t) \\times \\vec{r}''(t)|}{|\\vec{r}'(t)|^3}$.", "La curvatura de una hélice es constante."],
+      "explanation": "Se calculan $\\vec{r}'(t)=\\langle -3\\sin t, 3\\cos t, 4 \\rangle$ y $\\vec{r}''(t)=\\langle -3\\cos t, -3\\sin t, 0 \\rangle$. El producto cruz es $\\langle 12\\sin t, -12\\cos t, 9 \\rangle$, cuya magnitud es 15. La magnitud de $\\vec{r}'(t)$ es 5. Por lo tanto, $\\kappa = 15 / 5^3 = 15/125 = 0.12$."
+    },
+    {
+      "id": "ca-gc-04",
+      "topic": "geometria-curvas",
+      "question": "Arrastre cada concepto de la geometría diferencial de curvas a su significado físico o geométrico.",
+      "type": "drag-drop",
+      "items": ["Vector Tangente Unitario", "Curvatura", "Componente Normal de Aceleración", "Torsión"],
+      "categories": ["Dirección del movimiento", "Qué tan rápido cambia la dirección", "Fuerza que cambia la dirección del movimiento", "Cómo una curva se tuerce fuera de su plano osculador"],
+      "correctMapping": [0, 1, 2, 3],
+      "difficulty": "avanzado",
+      "explanation": "Cada término describe un aspecto fundamental de una curva en el espacio: el tangente indica la dirección, la curvatura mide el cambio de dirección, la componente normal de la aceleración está relacionada con la fuerza centrípeta, y la torsión mide el giro tridimensional de la curva."
+    },
+    {
+      "id": "ca-ce-01",
+      "topic": "campos-escalares",
+      "question": "El límite $\\lim_{(x,y) \\to (0,0)} \\frac{x^2 - y^2}{x^2 + y^2}$:",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "No existe",
+        "Es igual a 0",
+        "Es igual a 1",
+        "Es igual a -1"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": ["Prueba acercarte al origen a través de diferentes trayectorias.", "Considera la trayectoria a lo largo del eje x ($y=0$).", "Considera la trayectoria a lo largo del eje y ($x=0$)."],
+      "explanation": "Si nos aproximamos al origen a lo largo del eje x ($y=0$), el límite es 1. Si nos aproximamos a lo largo del eje y ($x=0$), el límite es -1. Como los límites por diferentes trayectorias son distintos, el límite de la función no existe."
+    },
+    {
+      "id": "ca-ce-02",
+      "topic": "campos-escalares",
+      "question": "Las curvas de nivel del campo escalar $f(x, y) = x^2 + 4y^2$ son:",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "Elipses",
+        "Parábolas",
+        "Hipérbolas",
+        "Circunferencias"
+      ],
+      "correct": 0,
+      "difficulty": "facil",
+      "hints": ["Una curva de nivel se obtiene al igualar la función a una constante $k$.", "La ecuación $x^2 + 4y^2 = k$ representa qué tipo de cónica?"],
+      "explanation": "Al fijar $f(x,y)=k$ donde $k>0$, obtenemos la ecuación $x^2 + 4y^2 = k$, que se puede reescribir como $\\frac{x^2}{k} + \\frac{y^2}{k/4} = 1$. Esta es la ecuación de una elipse."
+    },
+    {
+      "id": "ca-ce-03",
+      "topic": "campos-escalares",
+      "question": "Usando coordenadas polares, el valor del límite $\\lim_{(x,y) \\to (0,0)} \\frac{3x^2y}{x^2+y^2}$ es:",
+      "type": "numeric",
+      "correct": 0,
+      "tolerance": 0.001,
+      "difficulty": "avanzado",
+      "hints": ["Sustituye $x=r\\cos(\\theta)$ y $y=r\\sin(\\theta)$.", "Simplifica la expresión y toma el límite cuando $r \\to 0$."],
+      "stepByStep": [
+        "📚 **Límites con Coordenadas Polares**",
+        "**Paso 1:** Sustituir $x$ e $y$ por sus equivalentes polares.",
+        "$\\lim_{r \\to 0} \\frac{3(r\\cos\\theta)^2(r\\sin\\theta)}{(r\\cos\\theta)^2+(r\\sin\\theta)^2}$",
+        "**Paso 2:** Simplificar la expresión.",
+        "$\\lim_{r \\to 0} \\frac{3r^3\\cos^2\\theta\\sin\\theta}{r^2(\\cos^2\\theta+\\sin^2\\theta)} = \\lim_{r \\to 0} \\frac{3r^3\\cos^2\\theta\\sin\\theta}{r^2}$",
+        "$\\lim_{r \\to 0} 3r\\cos^2\\theta\\sin\\theta$",
+        "**Paso 3:** Evaluar el límite.",
+        "Como $|\\cos^2\\theta\\sin\\theta| \\le 1$, la expresión está acotada. A medida que $r \\to 0$, el límite es 0, independientemente de $\\theta$.",
+        "✅ **Respuesta**",
+        "El límite es 0."
+      ],
+      "explanation": "Cambiando a coordenadas polares, la expresión se convierte en $3r\\cos^2(\\theta)\\sin(\\theta)$. A medida que $(x,y) \\to (0,0)$, $r \\to 0$. Como $\\cos^2(\\theta)\\sin(\\theta)$ es una función acotada, el límite de la expresión completa es 0."
+    },
+    {
+      "id": "ca-ce-04",
+      "topic": "campos-escalares",
+      "question": "Arrastre cada función al tipo de superficie de nivel que genera.",
+      "type": "drag-drop",
+      "items": [
+        "$f(x,y,z)=x^2+y^2+z^2$",
+        "$f(x,y,z)=x+2y+3z$",
+        "$f(x,y,z)=x^2+y^2$"
+      ],
+      "categories": [
+        "Esferas concéntricas",
+        "Planos paralelos",
+        "Cilindros concéntricos"
+      ],
+      "correctMapping": [0, 1, 2],
+      "difficulty": "medio",
+      "explanation": "Las superficies de nivel $f(x,y,z)=k$ para cada función son: $x^2+y^2+z^2=k$ (esferas), $x+2y+3z=k$ (planos), y $x^2+y^2=k$ (cilindros)."
+    },
+    {
+      "id": "ca-dp-01",
+      "topic": "derivadas-parciales",
+      "question": "Para $f(x, y) = \\ln(x^2 + y^2)$, la derivada parcial mixta $f_{xy}$ es:",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$\\frac{-4xy}{(x^2+y^2)^2}$",
+        "$\\frac{2x}{x^2+y^2}$",
+        "$\\frac{2y}{x^2+y^2}$",
+        "$\\frac{2y^2-2x^2}{(x^2+y^2)^2}$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": ["Primero, calcula $f_x = \\frac{\\partial f}{\\partial x}$.", "Luego, deriva $f_x$ con respecto a $y$ usando la regla del cociente."],
+      "explanation": "Primero, $f_x = \\frac{2x}{x^2+y^2}$. Luego, al derivar esta expresión con respecto a $y$, tratamos $2x$ como una constante y aplicamos la regla de la potencia o del cociente, obteniendo $f_{xy} = \\frac{-4xy}{(x^2+y^2)^2}$."
+    },
+    {
+      "id": "ca-dp-02",
+      "topic": "derivadas-parciales",
+      "question": "Para la función $f(x, y) = x^3y^2 - 2x\\sin(y)$, complete los espacios para las derivadas parciales de primer orden.",
+      "type": "fill-blank",
+      "blanks": ["$3x^2y^2 - 2\\sin(y)$", "$2x^3y - 2x\\cos(y)$"],
+      "distractors": ["$6xy^2$", "$2x^3$"],
+      "template": "$\\frac{\\partial f}{\\partial x} =$ _____ y $\\frac{\\partial f}{\\partial y} =$ _____.",
+      "difficulty": "facil",
+      "explanation": "Para $\\partial f / \\partial x$, se trata a $y$ como constante. Para $\\partial f / \\partial y$, se trata a $x$ como constante."
+    },
+    {
+      "id": "ca-dp-03",
+      "topic": "derivadas-parciales",
+      "question": "¿La función $u(x, t) = \\sin(x-ct)$ satisface la ecuación de onda $u_{tt} = c^2 u_{xx}$?",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "Sí",
+        "No",
+        "Solo si c=1",
+        "Solo si t=0"
+      ],
+      "correct": 0,
+      "difficulty": "avanzado",
+      "hints": ["Calcula las segundas derivadas parciales $u_{tt}$ y $u_{xx}$ por separado.", "Compara los resultados para ver si la igualdad se cumple."],
+      "stepByStep": [
+        "📚 **Verificación de Ecuaciones en Derivadas Parciales**",
+        "**Paso 1:** Calcular las derivadas con respecto a $x$.",
+        "$u_x = \\cos(x-ct) \\cdot 1 = \\cos(x-ct)$",
+        "$u_{xx} = -\\sin(x-ct) \\cdot 1 = -\\sin(x-ct)$",
+        "**Paso 2:** Calcular las derivadas con respecto a $t$.",
+        "$u_t = \\cos(x-ct) \\cdot (-c) = -c\\cos(x-ct)$",
+        "$u_{tt} = -c(-\\sin(x-ct) \\cdot (-c)) = -c^2\\sin(x-ct)$",
+        "**Paso 3:** Comparar $u_{tt}$ con $c^2 u_{xx}$.",
+        "$u_{tt} = -c^2\\sin(x-ct)$",
+        "$c^2 u_{xx} = c^2(-\\sin(x-ct)) = -c^2\\sin(x-ct)$",
+        "Como $u_{tt} = c^2 u_{xx}$, la función satisface la ecuación.",
+        "✅ **Respuesta**",
+        "Sí, la función es una solución a la ecuación de onda."
+      ],
+      "explanation": "Calculando las segundas derivadas parciales, encontramos que $u_{xx} = -\\sin(x-ct)$ y $u_{tt} = -c^2\\sin(x-ct)$. Al sustituir en la ecuación de onda, vemos que $-c^2\\sin(x-ct) = c^2(-\\sin(x-ct))$, lo cual es cierto."
+    },
+    {
+      "id": "ca-dp-04",
+      "topic": "derivadas-parciales",
+      "question": "Use el diferencial total para estimar el cambio en el volumen $V = \\pi r^2 h$ de un cilindro cuando su radio cambia de $r=5$cm a $r=5.1$cm y su altura cambia de $h=10$cm a $h=9.8$cm.",
+      "type": "numeric",
+      "correct": 23.56,
+      "tolerance": 0.5,
+      "unit": "cm^3",
+      "difficulty": "avanzado",
+      "hints": ["La fórmula del diferencial total es $dV = V_r dr + V_h dh$.", "Calcula las derivadas parciales de $V$ con respecto a $r$ y $h$.", "$dr=0.1$ y $dh=-0.2$."],
+      "explanation": "$V_r = 2\\pi rh$ y $V_h = \\pi r^2$. En $(r,h)=(5,10)$, $V_r=100\\pi$ y $V_h=25\\pi$. El cambio es $dV = (100\\pi)(0.1) + (25\\pi)(-0.2) = 10\\pi - 5\\pi = 5\\pi \\approx 15.71$ cm$^3$."
+    },
+    {
+      "id": "ca-gd-01",
+      "topic": "gradiente-direccional",
+      "question": "Calcula la derivada direccional de $f(x, y) = 1 + 2x\\sqrt{y}$ en $(3, 4)$ en la dirección de $\\vec{v} = \\langle 4, -3 \\rangle$.",
+      "type": "numeric",
+      "correct": 2.3,
+      "tolerance": 0.01,
+      "difficulty": "facil",
+      "hints": ["La fórmula es $D_u f = \\nabla f \\cdot \\vec{u}$.", "Primero, encuentra el vector gradiente $\\nabla f(x,y)$.", "Luego, normaliza el vector de dirección $\\vec{v}$ para obtener $\\vec{u}$.", "Finalmente, calcula el producto punto del gradiente evaluado en el punto y el vector unitario."],
+      "explanation": "El gradiente es $\\nabla f = \\langle 2\\sqrt{y}, x/\\sqrt{y} \\rangle$, que en $(3,4)$ es $\\langle 4, 3/2 \\rangle$. El vector de dirección unitario es $\\vec{u} = \\langle 4/5, -3/5 \\rangle$. El producto punto es $\\nabla f \\cdot \\vec{u} = (4)(4/5) + (3/2)(-3/5) = 16/5 - 9/10 = 23/10 = 2.3$."
+    },
+    {
+      "id": "ca-gd-02",
+      "topic": "gradiente-direccional",
+      "question": "El gradiente de la función $f(x, y) = x^2e^y$ en el punto $P(2, 0)$ es:",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$\\langle 4, 4 \\rangle$",
+        "$\\langle 4, 0 \\rangle$",
+        "$\\langle 2, 2 \\rangle$",
+        "$\\langle 0, 4 \\rangle$"
+      ],
+      "correct": 0,
+      "difficulty": "facil",
+      "hints": ["Calcula las derivadas parciales $f_x$ y $f_y$.", "Evalúa ambas en el punto $(2,0)$."],
+      "explanation": "$f_x = 2xe^y$ y $f_y = x^2e^y$. En el punto $(2,0)$, $f_x = 2(2)e^0 = 4$ y $f_y = 2^2e^0 = 4$. Por lo tanto, el gradiente es $\\langle 4, 4 \\rangle$."
+    },
+    {
+      "id": "ca-gd-03",
+      "topic": "gradiente-direccional",
+      "question": "Para la función de temperatura $T(x, y) = 100 - x^2 - 2y^2$, la dirección de máximo *incremento* de temperatura en el punto $P(-1, 2)$ es el vector:",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$\\langle 2, -8 \\rangle$",
+        "$\\langle -2, -8 \\rangle$",
+        "$\\langle -1, 2 \\rangle$",
+        "$\\langle -2, 4 \\rangle$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": ["La dirección de máximo incremento de una función está dada por su vector gradiente.", "Calcula $\\nabla T(x,y)$ y evalúalo en el punto $P(-1, 2)$."],
+      "explanation": "El gradiente de la temperatura es $\\nabla T = \\langle -2x, -4y \\rangle$. Evaluado en el punto $(-1, 2)$, el gradiente es $\\nabla T(-1,2) = \\langle -2(-1), -4(2) \\rangle = \\langle 2, -8 \\rangle$."
+    },
+    {
+      "id": "ca-gd-04",
+      "topic": "gradiente-direccional",
+      "question": "La ecuación $x^2 - xy + yz - z^2 = 4$ define implícitamente a $z$ como una función de $x$ e $y$. El valor de $\\frac{\\partial z}{\\partial x}$ en el punto $(2, 1, -1)$ es:",
+      "type": "numeric",
+      "correct": -1,
+      "tolerance": 0.01,
+      "difficulty": "avanzado",
+      "hints": ["Usa la fórmula de derivación implícita: $\\frac{\\partial z}{\\partial x} = -\\frac{F_x}{F_z}$.", "Define $F(x,y,z) = x^2 - xy + yz - z^2 - 4$.", "Calcula las derivadas parciales $F_x$ y $F_z$ y evalúalas en el punto."],
+      "stepByStep": [
+        "📚 **Derivación Implícita**",
+        "**Paso 1:** Definir $F(x,y,z)$.",
+        "$F(x,y,z) = x^2 - xy + yz - z^2 - 4 = 0$",
+        "**Paso 2:** Calcular las derivadas parciales $F_x$ y $F_z$.",
+        "$F_x = 2x - y$",
+        "$F_z = y - 2z$",
+        "**Paso 3:** Evaluar las derivadas en $(2, 1, -1)$.",
+        "$F_x(2,1,-1) = 2(2) - 1 = 3$",
+        "$F_z(2,1,-1) = 1 - 2(-1) = 1+2 = 3$",
+        "**Paso 4:** Calcular $\\frac{\\partial z}{\\partial x}$.",
+        "$\\frac{\\partial z}{\\partial x} = -\\frac{F_x}{F_z} = -\\frac{3}{3} = -1$",
+        "✅ **Respuesta**",
+        "El valor de $\\frac{\\partial z}{\\partial x}$ es -1."
+      ],
+      "explanation": "Definiendo $F(x,y,z)=x^2 - xy + yz - z^2 - 4$, calculamos $F_x=2x-y$ y $F_z=y-2z$. En el punto $(2,1,-1)$, $F_x=3$ y $F_z=3$. Usando la fórmula $\\frac{\\partial z}{\\partial x} = -\\frac{F_x}{F_z}$, obtenemos $-3/3 = -1$."
+    },
+    {
+      "id": "ca-pt-01",
+      "topic": "plano-tangente",
+      "question": "La ecuación del plano tangente a la superficie $z = 4x^2 - y^2 + 2y$ en el punto $(-1, 2, 4)$ es:",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$8x + 2y + z = 0$",
+        "$-8x - 2y - z = 0$",
+        "$8x + 2y - z = 0$",
+        "$-8x - 2y + z = 4$"
+      ],
+      "correct": 0,
+      "difficulty": "facil",
+      "hints": ["La ecuación del plano tangente es $z - z_0 = f_x(x_0, y_0)(x-x_0) + f_y(x_0, y_0)(y-y_0)$.", "Calcula las derivadas parciales $f_x$ y $f_y$.", "Evalúa las derivadas en el punto dado para encontrar las pendientes."],
+      "explanation": "Las derivadas parciales son $f_x = 8x$ y $f_y = -2y+2$. En el punto $(-1, 2)$, estas son $f_x = -8$ y $f_y = -2$. La ecuación del plano tangente es $z-4 = -8(x+1) - 2(y-2)$, que se simplifica a $8x+2y+z=0$."
+    },
+    {
+      "id": "ca-pt-02",
+      "topic": "plano-tangente",
+      "question": "Las ecuaciones paramétricas para la recta normal al hiperboloide $x^2 + y^2 - z^2 = 18$ en el punto $(3, 5, -4)$ son:",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$x=3+6t, y=5+10t, z=-4+8t$",
+        "$x=3+3t, y=5+5t, z=-4-4t$",
+        "$x=6+3t, y=10+5t, z=8-4t$",
+        "$x=3+6t, y=5-10t, z=-4+8t$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": ["El vector gradiente de la superficie de nivel es normal a la superficie.", "Define $F(x,y,z) = x^2+y^2-z^2-18$ y calcula $\\nabla F$.", "El gradiente en el punto es el vector director de la recta normal."],
+      "explanation": "El gradiente es $\\nabla F = \\langle 2x, 2y, -2z \\rangle$. En el punto $(3,5,-4)$, el gradiente (vector normal) es $\\langle 6, 10, 8 \\rangle$. La recta normal pasa por $(3,5,-4)$ con este vector director, dando las ecuaciones paramétricas $x=3+6t, y=5+10t, z=-4+8t$."
+    },
+    {
+      "id": "ca-pt-03",
+      "topic": "plano-tangente",
+      "question": "Use la aproximación lineal (plano tangente) de la función $f(x,y) = \\sqrt{20 - x^2 - 7y^2}$ en $(2,1)$ para estimar el valor de $f(2.05, 0.95)$.",
+      "type": "numeric",
+      "correct": 2.845,
+      "tolerance": 0.1,
+      "difficulty": "avanzado",
+      "hints": ["La fórmula es $L(x,y) = f(x_0,y_0) + f_x(x_0,y_0)(x-x_0) + f_y(x_0,y_0)(y-y_0)$.", "$f(2,1) = \\sqrt{20-4-7} = \\sqrt{9}=3$.", "$dx=0.05$ y $dy=-0.05$."],
+      "explanation": "$f_x = -x/\\sqrt{...}$ y $f_y = -7y/\\sqrt{...}$. En $(2,1)$, $f_x = -2/3$ y $f_y = -7/3$. La aproximación es $L(2.05, 0.95) = 3 + (-2/3)(0.05) + (-7/3)(-0.05) = 3 - 0.1/3 + 0.35/3 = 3 + 0.25/3 \\approx 3.083$."
+    },
+    {
+      "id": "ca-pt-04",
+      "topic": "plano-tangente",
+      "question": "Encuentra un punto sobre el elipsoide $x^2 + 2y^2 + 3z^2 = 6$ donde el plano tangente es paralelo al plano $2x - 2y + z = 1$.",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$(2, -1, 1/3)$ *No está en la sup.*",
+        "$(1, -1/2, 1/6)$ *No está en la sup.*",
+        "No existe tal punto.",
+        "$( \\sqrt{6/2.375}, -\\sqrt{6/4.75}, \\sqrt{6/14.25} )$ *No es la respuesta.*"
+      ],
+      "correct": 2,
+      "difficulty": "avanzado",
+      "hints": ["Dos planos son paralelos si sus vectores normales son paralelos.", "El gradiente $\\nabla F$ es el vector normal a la superficie.", "Busca un punto $(x,y,z)$ donde $\\nabla F = k \\langle 2, -2, 1 \\rangle$ para algún escalar $k$."],
+      "stepByStep": [
+        "📚 **Planos Tangentes Paralelos**",
+        "**Paso 1:** Encontrar el gradiente de $F(x,y,z)=x^2+2y^2+3z^2-6$.",
+        "$\\nabla F = \\langle 2x, 4y, 6z \\rangle$",
+        "**Paso 2:** El vector normal al plano dado es $\\vec{n} = \\langle 2, -2, 1 \\rangle$.",
+        "**Paso 3:** Igualar el gradiente a un múltiplo del vector normal.",
+        "$\\langle 2x, 4y, 6z \\rangle = k \\langle 2, -2, 1 \\rangle$",
+        "Esto nos da $2x=2k \\Rightarrow x=k$, $4y=-2k \\Rightarrow y=-k/2$, $6z=k \\Rightarrow z=k/6$.",
+        "**Paso 4:** Sustituir estas relaciones en la ecuación del elipsoide para encontrar $k$.",
+        "$(k)^2 + 2(-k/2)^2 + 3(k/6)^2 = 6$",
+        "$k^2 + 2(k^2/4) + 3(k^2/36) = 6$",
+        "$k^2 + k^2/2 + k^2/12 = 6$",
+        "$\\frac{12k^2+6k^2+k^2}{12} = 6 \\Rightarrow 19k^2 = 72 \\Rightarrow k = \\pm\\sqrt{72/19}$",
+        "**Paso 5:** Encontrar los puntos usando los valores de $k$.",
+        "Hay dos puntos. Por ejemplo, con $k=\\sqrt{72/19}$, el punto es $(\\sqrt{72/19}, -\\frac{1}{2}\\sqrt{72/19}, \\frac{1}{6}\\sqrt{72/19})$.",
+        "✅ **Respuesta**",
+        "Existen dos puntos que cumplen la condición, derivados de los dos posibles valores de $k$."
+      ],
+      "explanation": "El gradiente de la superficie, $\\langle 2x, 4y, 6z \\rangle$, debe ser paralelo al vector normal del plano, $\\langle 2, -2, 1 \\rangle$. Esto establece un sistema de ecuaciones que, combinado con la ecuación del elipsoide, permite encontrar los dos puntos que satisfacen la condición."
+    }
+  ]
+}

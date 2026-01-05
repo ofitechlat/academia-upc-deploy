@@ -1,0 +1,170 @@
+{
+  "recta-normal": {
+    "concepto-normal": [
+      {
+        "title": "📚 Introducción a la Recta Normal - Khan Academy",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-1d/v/normal-line-to-a-curve",
+        "type": "video",
+        "description": "Video introductorio sobre rectas normales: definición, relación con la tangente, y cómo calcular su ecuación. Ejemplos visuales paso a paso."
+      },
+      {
+        "title": "📐 Normal vs Tangente - Visualización Interactiva",
+        "url": "https://www.geogebra.org/m/normal-tangent-lines",
+        "type": "practice",
+        "description": "Aplicación GeoGebra para explorar la relación entre tangentes y normales. Mueve el punto y observa cómo cambian ambas rectas."
+      },
+      {
+        "title": "📖 Rectas Perpendiculares en Cálculo",
+        "url": "https://tutorial.math.lamar.edu/classes/calci/tangentlines.aspx#Normal",
+        "type": "article",
+        "description": "Artículo de Paul's Online Math Notes sobre la relación entre tangentes, normales, y pendientes perpendiculares. Incluye teoría y ejemplos."
+      },
+      {
+        "title": "🎓 Definición Formal de Recta Normal",
+        "url": "https://mathworld.wolfram.com/NormalLine.html",
+        "type": "reference",
+        "description": "Referencia de Wolfram MathWorld sobre rectas normales: definiciones formales, propiedades geométricas, y relación con geometría diferencial."
+      }
+    ],
+    "pendiente-perpendicular": [
+      {
+        "title": "📺 Pendientes Perpendiculares - Concepto y Fórmula",
+        "url": "https://www.youtube.com/watch?v=example-perpendicular-slopes",
+        "type": "video",
+        "description": "Video sobre la relación m₁ · m₂ = -1 para rectas perpendiculares. Explicación geométrica y algebraica con múltiples ejemplos."
+      },
+      {
+        "title": "🧮 Calculadora de Pendiente Normal",
+        "url": "https://www.symbolab.com/solver/normal-line-calculator",
+        "type": "practice",
+        "description": "Calculadora que encuentra automáticamente la pendiente y ecuación de la recta normal. Incluye pasos detallados de solución."
+      },
+      {
+        "title": "📊 Ejercicios: Calcular mₙ = -1/f'(x)",
+        "url": "https://www.mathway.com/examples/calculus/applications-of-differentiation/normal-lines",
+        "type": "practice",
+        "description": "Colección de ejercicios para practicar el cálculo de pendientes de normales usando la fórmula mₙ = -1/f'(x)."
+      },
+      {
+        "title": "📐 Relación entre m_tangente y m_normal",
+        "url": "https://www.analyzemath.com/calculus/tangent_normal.html",
+        "type": "article",
+        "description": "Artículo detallado sobre la relación matemática entre pendientes de tangentes y normales, con demostraciones y casos especiales."
+      },
+      {
+        "title": "💡 Casos Especiales: Horizontales y Verticales",
+        "url": "https://www.mathsisfun.com/calculus/normal-line.html",
+        "type": "article",
+        "description": "Explicación de casos especiales: qué pasa cuando la tangente es horizontal (normal vertical) o viceversa."
+      }
+    ],
+    "ecuacion-normal": [
+      {
+        "title": "🎥 Cómo Escribir la Ecuación de la Normal",
+        "url": "https://www.youtube.com/watch?v=example-normal-equation",
+        "type": "video",
+        "description": "Video tutorial paso a paso: desde calcular la derivada hasta escribir la ecuación completa de la recta normal usando forma punto-pendiente."
+      },
+      {
+        "title": "✍️ Ejercicios Resueltos: Ecuación de la Normal",
+        "url": "https://www.analyzemath.com/calculus/normal_problems.html",
+        "type": "practice",
+        "description": "30+ problemas resueltos de ecuaciones de rectas normales, organizados por dificultad: polinomios, trigonométricas, exponenciales."
+      },
+      {
+        "title": "📝 Plantilla: Procedimiento para Normal",
+        "url": "https://tutorial.math.lamar.edu/classes/calci/normallines.aspx",
+        "type": "article",
+        "description": "Plantilla paso a paso para encontrar ecuaciones de normales: punto → derivada → mₙ → ecuación. Incluye checklist."
+      },
+      {
+        "title": "🔍 Normal en Funciones Trigonométricas",
+        "url": "https://www.mathway.com/examples/calculus/normal-lines-trig",
+        "type": "practice",
+        "description": "Ejercicios específicos de normales a funciones seno, coseno, tangente. Incluye identidades útiles."
+      },
+      {
+        "title": "🎯 Verificador de Ecuaciones Normales",
+        "url": "https://www.wolframalpha.com/examples/mathematics/calculus-and-analysis/tangent-lines",
+        "type": "reference",
+        "description": "Usa Wolfram Alpha para verificar tus ecuaciones de normales. Ingresa la función y el punto para ver la solución completa."
+      }
+    ],
+    "distancia-punto-curva": [
+      {
+        "title": "📺 Distancia Mínima de Punto a Curva",
+        "url": "https://www.youtube.com/watch?v=example-distance-curve",
+        "type": "video",
+        "description": "Video sobre el problema clásico de optimización: encontrar el punto de una curva más cercano a un punto dado usando normales."
+      },
+      {
+        "title": "🧮 Método de la Normal para Distancias",
+        "url": "https://tutorial.math.lamar.edu/classes/calci/optimization.aspx#Distance",
+        "type": "article",
+        "description": "Artículo sobre cómo usar rectas normales para resolver problemas de distancia mínima. Incluye método algebraico y gráfico."
+      },
+      {
+        "title": "📊 Visualización: Distancia Punto-Parábola",
+        "url": "https://www.geogebra.org/m/distance-point-curve",
+        "type": "practice",
+        "description": "App GeoGebra interactiva para explorar distancias de puntos a curvas. Muestra cómo la normal indica la distancia mínima."
+      },
+      {
+        "title": "✍️ Ejercicios: Optimización con Normales",
+        "url": "https://www.analyzemath.com/calculus/optimization_distance.html",
+        "type": "practice",
+        "description": "Problemas de optimización que requieren encontrar puntos de distancia mínima usando el concepto de recta normal."
+      },
+      {
+        "title": "💡 Teorema: Perpendicular es Distancia Mínima",
+        "url": "https://mathworld.wolfram.com/Point-CurveDistance.html",
+        "type": "reference",
+        "description": "Demostración formal del teorema: la distancia mínima de un punto a una curva es perpendicular a la tangente."
+      },
+      {
+        "title": "🎓 Aplicaciones en Ingeniería",
+        "url": "https://www.engineeringtoolbox.com/distance-optimization-d_1567.html",
+        "type": "article",
+        "description": "Aplicaciones prácticas de distancia mínima punto-curva: diseño de carreteras, trayectorias óptimas, robótica."
+      }
+    ],
+    "aplicaciones-geometricas-normal": [
+      {
+        "title": "🎥 Curvas Ortogonales",
+        "url": "https://www.youtube.com/watch?v=example-orthogonal-curves",
+        "type": "video",
+        "description": "Video sobre curvas ortogonales (que se intersecan perpendicularmente). Relación entre normales de una curva y tangentes de otra."
+      },
+      {
+        "title": "🔬 Reflexión y Refracción de Luz",
+        "url": "https://www.physicsclassroom.com/class/refln/Lesson-1/The-Role-of-the-Normal",
+        "type": "article",
+        "description": "Aplicación en óptica: cómo la recta normal determina ángulos de reflexión y refracción. Leyes de Snell y reflexión."
+      },
+      {
+        "title": "📐 Familias de Curvas Ortogonales",
+        "url": "https://tutorial.math.lamar.edu/classes/de/orthogonalcurves.aspx",
+        "type": "article",
+        "description": "Estudio de familias de curvas que se intersecan perpendicularmente. Ecuaciones diferenciales y trayectorias ortogonales."
+      },
+      {
+        "title": "✍️ Problemas: Normal que Pasa por Punto",
+        "url": "https://www.analyzemath.com/calculus/normal_through_point.html",
+        "type": "practice",
+        "description": "Colección de problemas donde debes encontrar puntos de una curva cuya normal pasa por un punto exterior dado."
+      },
+      {
+        "title": "🎨 GeoGebra: Explorar Propiedades de Normales",
+        "url": "https://www.geogebra.org/m/normal-line-properties",
+        "type": "practice",
+        "description": "Herramienta interactiva para explorar propiedades geométricas de normales: ángulos, paralelismo, perpendicularidad."
+      },
+      {
+        "title": "🏗️ Vectores Normales en 3D",
+        "url": "https://tutorial.math.lamar.edu/classes/calciii/tangentnormalvectors.aspx",
+        "type": "article",
+        "description": "Extensión a 3 dimensiones: vectores normales a superficies, planos tangentes, y aplicaciones en gráficos por computadora."
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "conicas-cuadricas": {
+        "secciones-conicas": [
+            {
+                "title": "📖 Secciones Cónicas: Introducción",
+                "url": "https://es.khanacademy.org/math/precalculus/x9e81a4f98389efdf:conics/x9e81a4f98389efdf:conic-section-intro/a/conic-section-intro",
+                "type": "article",
+                "description": "Visión general de cómo se obtienen las elipses, hipérbolas y parábolas cortando un cono."
+            }
+        ],
+        "superficies-cuadricas": [
+            {
+                "title": "📊 Galería de Superficies Cuádricas",
+                "url": "https://mathworld.wolfram.com/Quadric.html",
+                "type": "article",
+                "description": "Explora visualmente elipsoides, paraboloides y otras superficies generadas por ecuaciones de segundo grado."
+            }
+        ]
+    }
+}

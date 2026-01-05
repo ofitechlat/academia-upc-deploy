@@ -1,0 +1,133 @@
+{
+    "conicas-cuadricas": [
+        {
+            "id": "con-001",
+            "topic": "secciones-conicas",
+            "question": "Identificar la cónica dada por la ecuación $5x^2 - 4xy + 8y^2 = 36$.",
+            "type": "multiple-choice",
+            "shuffle": true,
+            "options": [
+                "Elipse rotada",
+                "Hipérbola rotada",
+                "Parábola rotada",
+                "Circunferencia desplazada"
+            ],
+            "correct": 0,
+            "difficulty": "intermedio",
+            "explanation": "El discriminante $B^2 - 4AC = (-4)^2 - 4(5)(8) = 16 - 160 < 0$, por lo que es una elipse.",
+            "stepByStep": [
+                "1. Calculamos el discriminante $B^2 - 4AC$.",
+                "2. $16 - 160 = -144$.",
+                "3. Al ser negativo y tener determinante distinto de cero, es una elipse.",
+                "4. El término $xy$ indica que está rotada."
+            ]
+        },
+        {
+            "id": "con-002",
+            "topic": "secciones-conicas",
+            "question": "Calcular la ecuación canónica y el ángulo de rotación de la cónica $2x^2 - 3xy - 2y^2 + 10 = 0$.",
+            "type": "multiple-choice",
+            "shuffle": true,
+            "options": [
+                "Hipérbola, rotación de $\\arccos(1/\\sqrt{10})$",
+                "Elipse, rotación de $45^\\circ$",
+                "Parábola, rotación de $30^\\circ$",
+                "Hipérbola, rotación de $90^\\circ$"
+            ],
+            "correct": 0,
+            "difficulty": "dificil",
+            "explanation": "Se diagonaliza la matriz de la forma cuadrática para eliminar el término $xy$.",
+            "stepByStep": [
+                "1. Matriz $A = \\begin{pmatrix} 2 & -3/2 \\\\ -3/2 & -2 \\end{pmatrix}$.",
+                "2. Valores propios $\\lambda$ y vectores propios dan los ejes principales.",
+                "3. La ecuación canónica resulta en una hipérbola (signos opuestos en $\\lambda$).",
+                "4. El ángulo se obtiene de los vectores propios."
+            ]
+        },
+        {
+            "id": "con-003",
+            "topic": "superficies-cuadricas",
+            "question": "Identificar la superficie $2x^2 + 2y^2 + 2z^2 + 2xz + 2xy + 2yz = 3$.",
+            "type": "multiple-choice",
+            "shuffle": true,
+            "options": [
+                "Elipsoide",
+                "Hiperboloide de una hoja",
+                "Hiperboloide de dos hojas",
+                "Paraboloide elíptico"
+            ],
+            "correct": 0,
+            "difficulty": "avanzado",
+            "explanation": "Todos los valores propios de la matriz asociada son positivos, indicando un elipsoide.",
+            "stepByStep": [
+                "1. Matriz asociada $A$ llena de 2 en diagonal y 1 fuera (o escalada).",
+                "2. Calculando valores propios, todos resultan positivos.",
+                "3. La ecuación canónica es de la forma $\\frac{z_1^2}{a^2} + \\frac{z_2^2}{b^2} + \\frac{z_3^2}{c^2} = 1$."
+            ]
+        },
+        {
+            "id": "con-004",
+            "topic": "secciones-conicas",
+            "question": "Identificar la sección cónica: $5x^2 - 2xy + 5y^2 = 4$.",
+            "type": "multiple-choice",
+            "shuffle": true,
+            "options": [
+                "Elipse",
+                "Hipérbola",
+                "Parábola",
+                "Par de rectas"
+            ],
+            "correct": 0,
+            "difficulty": "intermedio",
+            "explanation": "El discriminante es negativo $(-2)^2 - 4(5)(5) = 4 - 100 < 0$.",
+            "stepByStep": [
+                "1. Calculamos $B^2 - 4AC$.",
+                "2. $4 - 100 = -96$.",
+                "3. Como $B \\neq 0$ y $A=C$, es una elipse rotada. Sus ejes principales están a 45 grados."
+            ]
+        },
+        {
+            "id": "con-005",
+            "topic": "secciones-conicas",
+            "question": "Calcular la ecuación canónica de la cónica $2x^2 + 4xy + 5y^2 - \\frac{28}{\\sqrt{5}}x - \\frac{46}{\\sqrt{5}}y = 11$.",
+            "type": "multiple-choice",
+            "shuffle": true,
+            "options": [
+                "Elipse: $\\frac{(z_1-2)^2}{6} + \\frac{(z_2+1)^2}{36} = 1$ (escalada)",
+                "Hipérbola equilátera",
+                "Parábola con vértice en $(2, 1)$",
+                "Círculo de radio 6"
+            ],
+            "correct": 0,
+            "difficulty": "dificil",
+            "explanation": "Se aplica rotación para eliminar $xy$ y luego completación de cuadrados.",
+            "stepByStep": [
+                "1. Diagonalizar la parte cuadrática. Valores propios de $\\begin{pmatrix} 2 & 2 \\\\ 2 & 5 \\end{pmatrix}$.",
+                "2. Sustituir coordenadas rotadas $(x,y) \\to (z_1, z_2)$.",
+                "3. Completar cuadrados para hallar el centro $(h,k)$.",
+                "4. Resultado es una elipse desplazada y rotada."
+            ]
+        },
+        {
+            "id": "con-006",
+            "topic": "superficies-cuadricas",
+            "question": "Calcule la ecuación canónica e indique cuál superficie es $2x^2 + 2y^2 + 2z^2 + 2xz + 2xy + 2yz = 3$.",
+            "type": "multiple-choice",
+            "shuffle": true,
+            "options": [
+                "Elipsoide: $\\frac{z_1^2}{4/3} + \\frac{z_2^2}{3} + \\frac{z_3^2}{3} = 1$",
+                "Hiperboloide de una hoja",
+                "Cono elíptico",
+                "Esfera de radio $\\sqrt{3}$"
+            ],
+            "correct": 0,
+            "difficulty": "avanzado",
+            "explanation": "Se diagonaliza la forma cuadrática $X^T A X = 3$.",
+            "stepByStep": [
+                "1. Matriz $A$ tiene 2 en diagonal y 1 fuera.",
+                "2. Autovalores: $\\lambda_1$ simple y $\\lambda_2$ doble.",
+                "3. Todos positivos $\\Rightarrow$ elipsoide."
+            ]
+        }
+    ]
+}

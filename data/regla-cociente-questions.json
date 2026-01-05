@@ -1,0 +1,822 @@
+{
+  "regla-cociente": [
+    {
+      "id": "rc-001",
+      "topic": "introduccion-cociente",
+      "question": "Si $f(x) = \\frac{u(x)}{v(x)}$, ¿cuál es la fórmula correcta para $f'(x)$?",
+      "type": "multiple-choice",
+      "options": [
+        "$f'(x) = \\frac{u'(x)v(x) - u(x)v'(x)}{[v(x)]^2}$",
+        "$f'(x) = \\frac{u'(x)}{v'(x)}$",
+        "$f'(x) = \\frac{u'(x)v(x) + u(x)v'(x)}{[v(x)]^2}$",
+        "$f'(x) = u'(x)v(x) - u(x)v'(x)$"
+      ],
+      "correct": 0,
+      "difficulty": "facil",
+      "hints": [
+        "La regla del cociente tiene un SIGNO NEGATIVO en el numerador",
+        "El denominador es v² (el denominador original al cuadrado)",
+        "Fórmula: (u/v)' = (u'v - uv')/v²"
+      ],
+      "stepByStep": [
+        "📚 **Regla del Cociente**",
+        "",
+        "**Fórmula fundamental:**",
+        "$$\\frac{d}{dx}\\left[\\frac{u(x)}{v(x)}\\right] = \\frac{u'(x)v(x) - u(x)v'(x)}{[v(x)]^2}$$",
+        "",
+        "**En notación corta:**",
+        "$$\\left(\\frac{u}{v}\\right)' = \\frac{u'v - uv'}{v^2}$$",
+        "",
+        "💡 **Regla mnemotécnica**",
+        "",
+        "\"**Lo de abajo** por la derivada de **lo de arriba**, MENOS **lo de arriba** por la derivada de **lo de abajo**, TODO sobre **lo de abajo al cuadrado**\"",
+        "",
+        "O más corto: \"**bajo-derivada-alto** MENOS **alto-derivada-bajo**, sobre **bajo-cuadrado**\"",
+        "",
+        "✅ **Respuesta correcta**",
+        "$f'(x) = \\frac{u'v - uv'}{v^2}$"
+      ],
+      "explanation": "La regla del cociente: (u/v)' = (u'v - uv')/v². Nota el signo negativo."
+    },
+    {
+      "id": "rc-002",
+      "topic": "introduccion-cociente",
+      "question": "¿Cuál es el error más común al aplicar la regla del cociente?",
+      "type": "multiple-choice",
+      "options": [
+        "Olvidar el signo negativo en el numerador",
+        "Olvidar elevar v al cuadrado",
+        "Invertir el orden de u y v",
+        "Todos los anteriores son errores comunes"
+      ],
+      "correct": 3,
+      "difficulty": "facil",
+      "hints": [
+        "Todos estos errores son muy frecuentes",
+        "El signo negativo es crucial: u'v - uv' (no +)",
+        "El denominador debe ser v², no v"
+      ],
+      "stepByStep": [
+        "⚠️ **Errores comunes**",
+        "",
+        "**Error #1: Signo incorrecto**",
+        "- ❌ Incorrecto: $(u'v + uv')/v^2$",
+        "- ✅ Correcto: $(u'v - uv')/v^2$",
+        "",
+        "**Error #2: Olvidar elevar al cuadrado**",
+        "- ❌ Incorrecto: $(u'v - uv')/v$",
+        "- ✅ Correcto: $(u'v - uv')/v^2$",
+        "",
+        "**Error #3: Invertir u y v**",
+        "- ❌ Incorrecto: $(v'u - vu')/u^2$",
+        "- ✅ Correcto: $(u'v - uv')/v^2$",
+        "",
+        "💡 **Consejo**",
+        "Usa la regla mnemotécnica: \"bajo-derivada-alto menos alto-derivada-bajo, sobre bajo-cuadrado\"",
+        "",
+        "✅ **Respuesta**",
+        "Todos estos son errores muy comunes. ¡Ten cuidado!"
+      ],
+      "explanation": "Los tres errores son muy comunes: olvidar el signo negativo, no elevar v al cuadrado, e invertir el orden."
+    },
+    {
+      "id": "rc-003",
+      "topic": "demostracion-cociente",
+      "question": "Ordena los pasos para demostrar la regla del cociente",
+      "type": "ordering",
+      "items": [
+        "Escribir $f(x) = \\frac{u(x)}{v(x)}$ como $f(x) = u(x) \\cdot [v(x)]^{-1}$",
+        "Aplicar la regla del producto: $(uv^{-1})' = u'v^{-1} + u(v^{-1})'$",
+        "Derivar $v^{-1}$ usando regla de la cadena: $(v^{-1})' = -v^{-2} \\cdot v'$",
+        "Sustituir y simplificar",
+        "Obtener la fórmula final: $\\frac{u'v - uv'}{v^2}$"
+      ],
+      "correctOrder": [0, 1, 2, 3, 4],
+      "difficulty": "avanzado",
+      "hints": [
+        "La demostración usa la regla del producto y la regla de la cadena",
+        "Clave: reescribir 1/v como v^(-1)",
+        "Derivar v^(-1) da -v^(-2)·v'"
+      ],
+      "stepByStep": [
+        "📐 **Demostración de la regla del cociente**",
+        "",
+        "**Paso 1:** Reescribimos el cociente",
+        "$$f(x) = \\frac{u(x)}{v(x)} = u(x) \\cdot [v(x)]^{-1}$$",
+        "",
+        "**Paso 2:** Aplicamos regla del producto",
+        "$$f'(x) = u'(x) \\cdot [v(x)]^{-1} + u(x) \\cdot \\frac{d}{dx}[v(x)]^{-1}$$",
+        "",
+        "**Paso 3:** Derivamos $v^{-1}$ con regla de la cadena",
+        "$$\\frac{d}{dx}[v(x)]^{-1} = -1 \\cdot [v(x)]^{-2} \\cdot v'(x) = -\\frac{v'(x)}{[v(x)]^2}$$",
+        "",
+        "**Paso 4:** Sustituimos",
+        "$$f'(x) = \\frac{u'(x)}{v(x)} + u(x) \\cdot \\left(-\\frac{v'(x)}{[v(x)]^2}\\right)$$",
+        "",
+        "**Paso 5:** Simplificamos con denominador común",
+        "$$f'(x) = \\frac{u'(x)v(x) - u(x)v'(x)}{[v(x)]^2}$$",
+        "",
+        "✅ **Resultado**",
+        "$$\\left(\\frac{u}{v}\\right)' = \\frac{u'v - uv'}{v^2}$$"
+      ],
+      "explanation": "La demostración usa la regla del producto aplicada a u·v^(-1)."
+    },
+    {
+      "id": "rc-004",
+      "topic": "cociente-polinomios",
+      "question": "Deriva: $f(x) = \\frac{x^2}{x}$",
+      "type": "multiple-choice",
+      "options": [
+        "$1$ (simplifica primero a $x$)",
+        "$\\frac{2x \\cdot x - x^2 \\cdot 1}{x^2} = 1$",
+        "$2x$",
+        "$\\frac{x^2}{1}$"
+      ],
+      "correct": 0,
+      "difficulty": "facil",
+      "hints": [
+        "¿Es más fácil simplificar primero?",
+        "x²/x = x",
+        "d/dx[x] = 1"
+      ],
+      "stepByStep": [
+        "🧮 **Método eficiente: Simplificar primero**",
+        "",
+        "**Función:** $f(x) = \\frac{x^2}{x}$",
+        "",
+        "**Simplificamos:**",
+        "$$f(x) = \\frac{x^2}{x} = x^{2-1} = x$$",
+        "",
+        "**Derivamos:**",
+        "$$f'(x) = 1$$",
+        "",
+        "🔄 **Verificación con regla del cociente**",
+        "",
+        "* $1 = x^2$ → $u' = 2x$",
+        "* $1 = x$ → $v' = 1$",
+        "",
+        "$$f'(x) = \\frac{(2x)(x) - (x^2)(1)}{x^2}$$",
+        "$$f'(x) = \\frac{2x^2 - x^2}{x^2} = \\frac{x^2}{x^2} = 1$$ ✓",
+        "",
+        "✅ **Respuesta**",
+        "Ambos métodos dan: $f'(x) = 1$"
+      ],
+      "explanation": "Simplificar primero: x²/x = x, entonces f'(x) = 1"
+    },
+    {
+      "id": "rc-005",
+      "topic": "cociente-polinomios",
+      "question": "¿Cuál es la derivada de $f(x) = \\frac{x^2 + 1}{x}$? Usa la regla del cociente: $(u/v)' = (u'v - uv')/v²$. Identifica u = x² + 1 y v = x, calcula u' = 2x y v' = 1, luego aplica la fórmula.",
+      "type": "multiple-choice",
+      "options": [
+        "$1 - \\frac{1}{x^2}$",
+        "$\\frac{2x}{1}$",
+        "$\\frac{x^2 - 1}{x^2}$",
+        "$2x$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "method": "regla-cociente",
+      "hints": [
+        "u = x² + 1, v = x",
+        "u' = 2x, v' = 1",
+        "Aplica (u'v - uv')/v²"
+      ],
+      "stepByStep": [
+        "📝 **Identificación**",
+        "",
+        "**Función:** $f(x) = \\frac{x^2 + 1}{x}$",
+        "",
+        "* $1 = x^2 + 1$ → $u' = 2x$",
+        "* $1 = x$ → $v' = 1$",
+        "",
+        "🧮 **Regla del cociente**",
+        "",
+        "$$f'(x) = \\frac{u'v - uv'}{v^2}$$",
+        "$$f'(x) = \\frac{(2x)(x) - (x^2 + 1)(1)}{x^2}$$",
+        "",
+        "🔄 **Expandimos el numerador**",
+        "$$f'(x) = \\frac{2x^2 - x^2 - 1}{x^2}$$",
+        "$$f'(x) = \\frac{x^2 - 1}{x^2}$$",
+        "",
+        "📊 **Separamos fracciones**",
+        "$$f'(x) = \\frac{x^2}{x^2} - \\frac{1}{x^2} = 1 - \\frac{1}{x^2}$$",
+        "",
+        "✅ **Respuesta**",
+        "$f'(x) = 1 - \\frac{1}{x^2}$ o $f'(x) = 1 - x^{-2}$"
+      ],
+      "explanation": "f'(x) = (2x·x - (x²+1)·1)/x² = (x² - 1)/x² = 1 - 1/x²"
+    },
+    {
+      "id": "rc-006",
+      "topic": "cociente-polinomios",
+      "question": "Deriva: $g(x) = \\frac{2x - 1}{x + 3}$",
+      "type": "multiple-choice",
+      "options": [
+        "$\\frac{7}{(x+3)^2}$",
+        "$\\frac{2}{1}$",
+        "$\\frac{1}{(x+3)^2}$",
+        "$\\frac{2(x+3) - (2x-1)}{(x+3)^2}$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "u = 2x - 1, v = x + 3",
+        "u' = 2, v' = 1",
+        "Numerador: (2)(x+3) - (2x-1)(1)"
+      ],
+      "stepByStep": [
+        "📝 **Identificación**",
+        "",
+        "**Función:** $g(x) = \\frac{2x - 1}{x + 3}$",
+        "",
+        "* $1 = 2x - 1$ → $u' = 2$",
+        "* $1 = x + 3$ → $v' = 1$",
+        "",
+        "🧮 **Regla del cociente**",
+        "",
+        "$$g'(x) = \\frac{u'v - uv'}{v^2}$$",
+        "$$g'(x) = \\frac{(2)(x + 3) - (2x - 1)(1)}{(x + 3)^2}$$",
+        "",
+        "🔄 **Expandimos el numerador**",
+        "$$g'(x) = \\frac{2x + 6 - 2x + 1}{(x + 3)^2}$$",
+        "$$g'(x) = \\frac{7}{(x + 3)^2}$$",
+        "",
+        "✅ **Respuesta**",
+        "$g'(x) = \\frac{7}{(x + 3)^2}$",
+        "",
+        "**Nota:** El numerador se simplifica a una constante."
+      ],
+      "explanation": "g'(x) = [2(x+3) - (2x-1)·1]/(x+3)² = 7/(x+3)²"
+    },
+    {
+      "id": "rc-007",
+      "topic": "cociente-polinomios",
+      "question": "Si $h(x) = \\frac{x^3 - 2x}{x^2}$, encuentra $h'(x)$",
+      "type": "multiple-choice",
+      "options": [
+        "$1 + \\frac{2}{x^2}$",
+        "$\\frac{3x^2 - 2}{x^2}$",
+        "$1$",
+        "$\\frac{x^2 + 2}{x^2}$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Opción 1: Simplifica primero dividiendo cada término",
+        "h(x) = x³/x² - 2x/x² = x - 2/x",
+        "Luego deriva: 1 + 2/x²"
+      ],
+      "stepByStep": [
+        "🧮 **Método: Simplificar primero**",
+        "",
+        "**Función:** $h(x) = \\frac{x^3 - 2x}{x^2}$",
+        "",
+        "**Separamos fracciones:**",
+        "$$h(x) = \\frac{x^3}{x^2} - \\frac{2x}{x^2}$$",
+        "$$h(x) = x - \\frac{2}{x}$$",
+        "$$h(x) = x - 2x^{-1}$$",
+        "",
+        "📐 **Derivamos**",
+        "$$h'(x) = \\frac{d}{dx}[x] - \\frac{d}{dx}[2x^{-1}]$$",
+        "$$h'(x) = 1 - 2(-1)x^{-2}$$",
+        "$$h'(x) = 1 + 2x^{-2}$$",
+        "$$h'(x) = 1 + \\frac{2}{x^2}$$",
+        "",
+        "✅ **Respuesta**",
+        "$h'(x) = 1 + \\frac{2}{x^2}$"
+      ],
+      "explanation": "Simplificando: h(x) = x - 2/x, entonces h'(x) = 1 + 2/x²"
+    },
+    {
+      "id": "rc-008",
+      "topic": "cociente-trigonometricas",
+      "question": "¿Cuál es la derivada de $f(x) = \\frac{\\sin(x)}{x}$? Usa la regla del cociente: $(u/v)' = (u'v - uv')/v²$. Identifica u = sin(x) y v = x, calcula u' = cos(x) y v' = 1, luego aplica la fórmula.",
+      "type": "multiple-choice",
+      "options": [
+        "$\\frac{x\\cos(x) - \\sin(x)}{x^2}$",
+        "$\\frac{\\cos(x)}{1}$",
+        "$\\frac{\\cos(x)}{x}$",
+        "$\\frac{\\sin(x)}{x^2}$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "method": "regla-cociente",
+      "hints": [
+        "u = sin(x), v = x",
+        "u' = cos(x), v' = 1",
+        "(u'v - uv')/v² = [cos(x)·x - sin(x)·1]/x²"
+      ],
+      "stepByStep": [
+        "📝 **Cociente con trigonométrica**",
+        "",
+        "**Función:** $f(x) = \\frac{\\sin(x)}{x}$",
+        "",
+        "**Identificamos:**",
+        "* $1 = \\sin(x)$ → $u' = \\cos(x)$",
+        "* $1 = x$ → $v' = 1$",
+        "",
+        "🧮 **Regla del cociente**",
+        "",
+        "$$f'(x) = \\frac{u'v - uv'}{v^2}$$",
+        "$$f'(x) = \\frac{(\\cos x)(x) - (\\sin x)(1)}{x^2}$$",
+        "$$f'(x) = \\frac{x\\cos x - \\sin x}{x^2}$$",
+        "",
+        "✅ **Respuesta**",
+        "$f'(x) = \\frac{x\\cos x - \\sin x}{x^2}$"
+      ],
+      "explanation": "f'(x) = [cos(x)·x - sin(x)·1]/x² = (xcos(x) - sin(x))/x²"
+    },
+    {
+      "id": "rc-009",
+      "topic": "cociente-trigonometricas",
+      "question": "Deriva: $g(x) = \\frac{x}{\\cos(x)}$",
+      "type": "multiple-choice",
+      "options": [
+        "$\\frac{\\cos(x) + x\\sin(x)}{\\cos^2(x)}$",
+        "$\\frac{1}{-\\sin(x)}$",
+        "$\\frac{\\cos(x)}{x}$",
+        "$\\frac{\\cos(x) - x\\sin(x)}{\\cos^2(x)}$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "u = x, v = cos(x)",
+        "u' = 1, v' = -sin(x)",
+        "Nota el signo: v' = -sin(x)"
+      ],
+      "stepByStep": [
+        "📝 **Identificación**",
+        "",
+        "**Función:** $g(x) = \\frac{x}{\\cos(x)}$",
+        "",
+        "* $1 = x$ → $u' = 1$",
+        "* $1 = \\cos(x)$ → $v' = -\\sin(x)$",
+        "",
+        "🧮 **Regla del cociente**",
+        "",
+        "$$g'(x) = \\frac{u'v - uv'}{v^2}$$",
+        "$$g'(x) = \\frac{(1)(\\cos x) - (x)(-\\sin x)}{\\cos^2 x}$$",
+        "",
+        "⚠️ **Cuidado con el signo doble negativo**",
+        "$$g'(x) = \\frac{\\cos x - (-x\\sin x)}{\\cos^2 x}$$",
+        "$$g'(x) = \\frac{\\cos x + x\\sin x}{\\cos^2 x}$$",
+        "",
+        "✅ **Respuesta**",
+        "$g'(x) = \\frac{\\cos x + x\\sin x}{\\cos^2 x}$"
+      ],
+      "explanation": "g'(x) = [1·cos(x) - x·(-sin(x))]/cos²(x) = (cos(x) + xsin(x))/cos²(x)"
+    },
+    {
+      "id": "rc-010",
+      "topic": "cociente-trigonometricas",
+      "question": "Arrastra cada FUNCIÓN hacia su DERIVADA",
+      "description": "Funciones con cocientes trigonométricos a la izquierda, derivadas a la derecha.",
+      "type": "drag-drop",
+      "items": [
+        "$\\frac{\\sin(x)}{x}$",
+        "$\\frac{x}{\\sin(x)}$",
+        "$\\frac{\\cos(x)}{x}$",
+        "$\\frac{1}{\\sin(x)}$"
+      ],
+      "categories": [
+        "$\\frac{x\\cos(x) - \\sin(x)}{x^2}$",
+        "$\\frac{\\sin(x) - x\\cos(x)}{\\sin^2(x)}$",
+        "$\\frac{-x\\sin(x) - \\cos(x)}{x^2}$",
+        "$\\frac{-\\cos(x)}{\\sin^2(x)}$"
+      ],
+      "correctMapping": [0, 1, 2, 3],
+      "difficulty": "avanzado",
+      "hints": [
+        "Aplica (u'v - uv')/v² a cada función",
+        "Recuerda: d/dx[sin(x)] = cos(x), d/dx[cos(x)] = -sin(x)",
+        "Para 1/sin(x): u=1 (u'=0), v=sin(x)"
+      ],
+      "stepByStep": [
+        "🔍 **Derivadas de cocientes trigonométricos**",
+        "",
+        "**1. sin(x)/x:**",
+        "- $(\\cos x \\cdot x - \\sin x \\cdot 1)/x^2 = \\frac{x\\cos x - \\sin x}{x^2}$",
+        "",
+        "**2. x/sin(x):**",
+        "- $(1 \\cdot \\sin x - x \\cdot \\cos x)/\\sin^2 x = \\frac{\\sin x - x\\cos x}{\\sin^2 x}$",
+        "",
+        "**3. cos(x)/x:**",
+        "- $(-\\sin x \\cdot x - \\cos x \\cdot 1)/x^2 = \\frac{-x\\sin x - \\cos x}{x^2}$",
+        "",
+        "**4. 1/sin(x):**",
+        "- $(0 \\cdot \\sin x - 1 \\cdot \\cos x)/\\sin^2 x = \\frac{-\\cos x}{\\sin^2 x}$",
+        "",
+        "✅ **Todas usando (u'v - uv')/v²**"
+      ],
+      "explanation": "Cada derivada aplica la regla del cociente con derivadas trigonométricas."
+    },
+    {
+      "id": "rc-011",
+      "topic": "simplificacion-cocientes",
+      "question": "Completa: La derivada de $\\frac{x^2 + 3x}{x}$ es _____",
+      "type": "fill-blank",
+      "blanks": ["$1$"],
+      "distractors": ["$2x + 3$", "$\\frac{2x + 3}{x}$", "$\\frac{x(x+3)}{x^2}$", "$x + 3$", "$2$"],
+      "template": "La derivada de $\\frac{x^2 + 3x}{x}$ es _____",
+      "difficulty": "medio",
+      "hints": [
+        "Simplifica primero: (x² + 3x)/x = x + 3",
+        "Deriva: d/dx[x + 3] = ?",
+        "La derivada de una función lineal es su pendiente"
+      ],
+      "stepByStep": [
+        "🧮 **Simplificar antes de derivar**",
+        "",
+        "**Función:** $f(x) = \\frac{x^2 + 3x}{x}$",
+        "",
+        "**Paso 1: Factorizamos el numerador**",
+        "$$f(x) = \\frac{x(x + 3)}{x}$$",
+        "",
+        "**Paso 2: Simplificamos**",
+        "$$f(x) = x + 3$$",
+        "",
+        "**Paso 3: Derivamos**",
+        "$$f'(x) = 1 + 0 = 1$$",
+        "",
+        "✅ **Respuesta**",
+        "$f'(x) = 1$"
+      ],
+      "explanation": "Simplificando: (x²+3x)/x = x+3, entonces f'(x) = 1"
+    },
+    {
+      "id": "rc-012",
+      "topic": "simplificacion-cocientes",
+      "question": "Deriva: $f(x) = \\frac{x^3 + x^2 + x}{x}$",
+      "type": "multiple-choice",
+      "options": [
+        "$2x + 1$",
+        "$3x^2 + 2x + 1$",
+        "$\\frac{3x^2 + 2x + 1}{x}$",
+        "$x^2 + x$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Divide cada término por x primero",
+        "f(x) = x² + x + 1",
+        "Deriva término por término"
+      ],
+      "stepByStep": [
+        "📝 **Simplificación primero**",
+        "",
+        "**Función:** $f(x) = \\frac{x^3 + x^2 + x}{x}$",
+        "",
+        "**Dividimos cada término:**",
+        "$$f(x) = \\frac{x^3}{x} + \\frac{x^2}{x} + \\frac{x}{x}$$",
+        "$$f(x) = x^2 + x + 1$$",
+        "",
+        "🧮 **Derivamos**",
+        "$$f'(x) = 2x + 1 + 0$$",
+        "$$f'(x) = 2x + 1$$",
+        "",
+        "✅ **Respuesta**",
+        "$f'(x) = 2x + 1$"
+      ],
+      "explanation": "Simplificando: f(x) = x² + x + 1, entonces f'(x) = 2x + 1"
+    },
+    {
+      "id": "rc-013",
+      "topic": "simplificacion-cocientes",
+      "question": "¿Cuál estrategia es mejor para $f(x) = \\frac{(x+1)(x-1)}{x^2}$?",
+      "type": "multiple-choice",
+      "options": [
+        "Expandir el numerador primero: $(x+1)(x-1) = x^2 - 1$",
+        "Aplicar regla del cociente directamente",
+        "Separar en dos fracciones: $\\frac{x+1}{x} \\cdot \\frac{x-1}{x}$",
+        "Usar regla del producto primero"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Reconoce la diferencia de cuadrados",
+        "(x+1)(x-1) = x² - 1",
+        "Luego simplifica: (x² - 1)/x²"
+      ],
+      "stepByStep": [
+        "🧮 **Estrategia óptima**",
+        "",
+        "**Función:** $f(x) = \\frac{(x+1)(x-1)}{x^2}$",
+        "",
+        "**Paso 1: Expandir numerador (diferencia de cuadrados)**",
+        "$$f(x) = \\frac{x^2 - 1}{x^2}$$",
+        "",
+        "**Paso 2: Separar fracciones**",
+        "$$f(x) = \\frac{x^2}{x^2} - \\frac{1}{x^2} = 1 - x^{-2}$$",
+        "",
+        "**Paso 3: Derivar**",
+        "$$f'(x) = 0 - (-2)x^{-3} = 2x^{-3} = \\frac{2}{x^3}$$",
+        "",
+        "✅ **Respuesta**",
+        "Expandir primero es más eficiente.",
+        "$f'(x) = \\frac{2}{x^3}$"
+      ],
+      "explanation": "Expandir (x+1)(x-1) = x²-1 simplifica mucho antes de derivar."
+    },
+    {
+      "id": "rc-014",
+      "topic": "aplicaciones-cociente",
+      "question": "Si $f(x) = \\frac{e^x}{x}$, ¿cuál es $f'(x)$?",
+      "type": "multiple-choice",
+      "options": [
+        "$\\frac{xe^x - e^x}{x^2} = \\frac{e^x(x-1)}{x^2}$",
+        "$\\frac{e^x}{1}$",
+        "$\\frac{e^x}{x^2}$",
+        "$\\frac{xe^x}{x^2}$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "u = eˣ, v = x",
+        "u' = eˣ, v' = 1",
+        "Factoriza eˣ en el numerador"
+      ],
+      "stepByStep": [
+        "📝 **Cociente con exponencial**",
+        "",
+        "**Función:** $f(x) = \\frac{e^x}{x}$",
+        "",
+        "**Identificamos:**",
+        "* $1 = e^x$ → $u' = e^x$",
+        "* $1 = x$ → $v' = 1$",
+        "",
+        "🧮 **Regla del cociente**",
+        "",
+        "$$f'(x) = \\frac{u'v - uv'}{v^2}$$",
+        "$$f'(x) = \\frac{(e^x)(x) - (e^x)(1)}{x^2}$$",
+        "",
+        "🔄 **Factorizamos eˣ**",
+        "$$f'(x) = \\frac{e^x(x - 1)}{x^2}$$",
+        "",
+        "✅ **Respuesta**",
+        "$f'(x) = \\frac{e^x(x - 1)}{x^2}$ o $\\frac{xe^x - e^x}{x^2}$"
+      ],
+      "explanation": "f'(x) = (eˣ·x - eˣ·1)/x² = eˣ(x-1)/x²"
+    },
+    {
+      "id": "rc-015",
+      "topic": "aplicaciones-cociente",
+      "question": "Deriva: $g(x) = \\frac{x^2}{e^x}$",
+      "type": "multiple-choice",
+      "options": [
+        "$\\frac{2x - x^2}{e^x}$",
+        "$\\frac{2x}{e^x}$",
+        "$\\frac{x^2}{e^x}$",
+        "$\\frac{2xe^x - x^2}{e^{2x}}$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "u = x², v = eˣ",
+        "u' = 2x, v' = eˣ",
+        "Factoriza en el numerador"
+      ],
+      "stepByStep": [
+        "📝 **Identificación**",
+        "",
+        "**Función:** $g(x) = \\frac{x^2}{e^x}$",
+        "",
+        "* $1 = x^2$ → $u' = 2x$",
+        "* $1 = e^x$ → $v' = e^x$",
+        "",
+        "🧮 **Regla del cociente**",
+        "",
+        "$$g'(x) = \\frac{u'v - uv'}{v^2}$$",
+        "$$g'(x) = \\frac{(2x)(e^x) - (x^2)(e^x)}{(e^x)^2}$$",
+        "",
+        "🔄 **Factorizamos eˣ en numerador**",
+        "$$g'(x) = \\frac{e^x(2x - x^2)}{e^{2x}}$$",
+        "",
+        "📊 **Simplificamos**",
+        "$$g'(x) = \\frac{2x - x^2}{e^x}$$",
+        "",
+        "✅ **Respuesta**",
+        "$g'(x) = \\frac{2x - x^2}{e^x}$ o $\\frac{x(2 - x)}{e^x}$"
+      ],
+      "explanation": "g'(x) = [2x·eˣ - x²·eˣ]/(eˣ)² = (2x - x²)/eˣ"
+    },
+    {
+      "id": "rc-016",
+      "topic": "aplicaciones-cociente",
+      "question": "La concentración de un medicamento es $C(t) = \\frac{5t}{t^2 + 1}$ mg/L. ¿Cuál es la tasa de cambio $C'(t)$?",
+      "type": "multiple-choice",
+      "options": [
+        "$C'(t) = \\frac{5 - 5t^2}{(t^2 + 1)^2}$",
+        "$C'(t) = \\frac{5}{2t}$",
+        "$C'(t) = \\frac{5t^2}{(t^2+1)^2}$",
+        "$C'(t) = \\frac{5(t^2+1) - 10t^2}{(t^2+1)^2}$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "u = 5t, v = t² + 1",
+        "u' = 5, v' = 2t",
+        "Factoriza 5 en el numerador"
+      ],
+      "stepByStep": [
+        "💊 **Aplicación: Concentración de medicamento**",
+        "",
+        "**Concentración:** $C(t) = \\frac{5t}{t^2 + 1}$ mg/L",
+        "",
+        "**Identificamos:**",
+        "* $1 = 5t$ → $u' = 5$",
+        "* $1 = t^2 + 1$ → $v' = 2t$",
+        "",
+        "🧮 **Tasa de cambio (derivada)**",
+        "",
+        "$$C'(t) = \\frac{u'v - uv'}{v^2}$$",
+        "$$C'(t) = \\frac{(5)(t^2 + 1) - (5t)(2t)}{(t^2 + 1)^2}$$",
+        "",
+        "🔄 **Expandimos numerador**",
+        "$$C'(t) = \\frac{5t^2 + 5 - 10t^2}{(t^2 + 1)^2}$$",
+        "$$C'(t) = \\frac{5 - 5t^2}{(t^2 + 1)^2}$$",
+        "",
+        "📊 **Factorizamos (opcional)**",
+        "$$C'(t) = \\frac{5(1 - t^2)}{(t^2 + 1)^2}$$",
+        "",
+        "✅ **Respuesta**",
+        "$C'(t) = \\frac{5 - 5t^2}{(t^2 + 1)^2}$ mg/(L·hora)"
+      ],
+      "explanation": "Tasa de cambio: C'(t) = [5(t²+1) - 5t·2t]/(t²+1)² = (5-5t²)/(t²+1)²"
+    },
+    {
+      "id": "rc-017",
+      "topic": "aplicaciones-cociente",
+      "question": "¿Cuál es $f'(2)$ si $f(x) = \\frac{x^2 + 1}{x - 1}$?",
+      "type": "numeric",
+      "correct": 3,
+      "tolerance": 0.1,
+      "difficulty": "medio",
+      "hints": [
+        "Primero deriva f(x) usando regla del cociente",
+        "u = x² + 1, v = x - 1",
+        "Luego evalúa f'(x) en x = 2"
+      ],
+      "stepByStep": [
+        "🎯 **Paso 1: Derivamos**",
+        "",
+        "**Función:** $f(x) = \\frac{x^2 + 1}{x - 1}$",
+        "",
+        "* $1 = x^2 + 1$ → $u' = 2x$",
+        "* $1 = x - 1$ → $v' = 1$",
+        "",
+        "$$f'(x) = \\frac{(2x)(x - 1) - (x^2 + 1)(1)}{(x - 1)^2}$$",
+        "",
+        "🔄 **Expandimos**",
+        "$$f'(x) = \\frac{2x^2 - 2x - x^2 - 1}{(x - 1)^2}$$",
+        "$$f'(x) = \\frac{x^2 - 2x - 1}{(x - 1)^2}$$",
+        "",
+        "🎯 **Paso 2: Evaluamos en x = 2**",
+        "$$f'(2) = \\frac{(2)^2 - 2(2) - 1}{(2 - 1)^2}$$",
+        "$$f'(2) = \\frac{4 - 4 - 1}{1}$$",
+        "$$f'(2) = \\frac{-1}{1} = -1$$",
+        "",
+        "✅ **Respuesta**",
+        "$f'(2) = -1$"
+      ],
+      "explanation": "f'(x) = (x²-2x-1)/(x-1)², entonces f'(2) = (4-4-1)/1 = -1"
+    },
+    {
+      "id": "rc-018",
+      "topic": "aplicaciones-cociente",
+      "question": "Clasifica estas funciones según la mejor estrategia de derivación",
+      "description": "Organiza según si conviene simplificar primero o aplicar la regla del cociente directamente.",
+      "type": "categorize",
+      "items": [
+        "$\\frac{x^3}{x}$",
+        "$\\frac{x^2 + 1}{x - 1}$",
+        "$\\frac{x(x+1)}{x}$",
+        "$\\frac{\\sin(x)}{x}$"
+      ],
+      "categories": {
+        "simplificar-primero": "Simplificar antes de derivar",
+        "regla-cociente": "Aplicar regla del cociente directamente",
+        "ambas-funciones": "Ambas estrategias funcionan bien"
+      },
+      "correctCategories": {
+        "$\\frac{x^3}{x}$": "simplificar-primero",
+        "$\\frac{x^2 + 1}{x - 1}$": "regla-cociente",
+        "$\\frac{x(x+1)}{x}$": "simplificar-primero",
+        "$\\frac{\\sin(x)}{x}$": "regla-cociente"
+      },
+      "difficulty": "medio",
+      "hints": [
+        "Si puedes cancelar factores comunes, simplifica primero",
+        "x³/x = x² se simplifica fácilmente",
+        "sin(x)/x no se puede simplificar, usa regla del cociente"
+      ],
+      "stepByStep": [
+        "🔍 **Análisis de estrategias**",
+        "",
+        "**1. x³/x:**",
+        "* Se simplifica a x²",
+        "* Mejor: simplificar primero",
+        "",
+        "**2. (x²+1)/(x-1):**",
+        "* No se puede simplificar",
+        "* Mejor: regla del cociente",
+        "",
+        "**3. x(x+1)/x:**",
+        "* Se cancela x: queda x+1",
+        "* Mejor: simplificar primero",
+        "",
+        "**4. sin(x)/x:**",
+        "* No se puede simplificar algebraicamente",
+        "* Mejor: regla del cociente",
+        "",
+        "✅ **Principio**",
+        "Simplifica cuando haya factores comunes que se cancelen."
+      ],
+      "explanation": "Simplifica primero cuando haya factores comunes; usa la regla del cociente cuando no se pueda simplificar."
+    },
+    {
+      "id": "rc-019",
+      "topic": "aplicaciones-cociente",
+      "question": "Si $f(x) = g(x)/h(x)$, $g(3) = 6$, $g'(3) = 2$, $h(3) = 2$, $h'(3) = 4$, ¿cuál es $f'(3)$?",
+      "type": "numeric",
+      "correct": -5,
+      "tolerance": 0.1,
+      "difficulty": "avanzado",
+      "hints": [
+        "Usa la regla del cociente: f'(x) = [g'(x)h(x) - g(x)h'(x)]/[h(x)]²",
+        "f'(3) = [g'(3)·h(3) - g(3)·h'(3)]/[h(3)]²",
+        "Sustituye los valores dados"
+      ],
+      "stepByStep": [
+        "🎯 **Problema con valores dados**",
+        "",
+        "**Datos:**",
+        "* $1(x) = \\frac{g(x)}{h(x)}$",
+        "* $1(3) = 6$, $g'(3) = 2$",
+        "* $1(3) = 2$, $h'(3) = 4$",
+        "",
+        "🧮 **Regla del cociente**",
+        "",
+        "$$f'(x) = \\frac{g'(x)h(x) - g(x)h'(x)}{[h(x)]^2}$$",
+        "",
+        "**En x = 3:**",
+        "$$f'(3) = \\frac{g'(3) \\cdot h(3) - g(3) \\cdot h'(3)}{[h(3)]^2}$$",
+        "",
+        "🔢 **Sustituimos valores**",
+        "$$f'(3) = \\frac{(2)(2) - (6)(4)}{(2)^2}$$",
+        "$$f'(3) = \\frac{4 - 24}{4}$$",
+        "$$f'(3) = \\frac{-20}{4}$$",
+        "$$f'(3) = -5$$",
+        "",
+        "✅ **Respuesta**",
+        "$f'(3) = -5$"
+      ],
+      "explanation": "f'(3) = [g'(3)·h(3) - g(3)·h'(3)]/[h(3)]² = [2·2 - 6·4]/4 = -20/4 = -5"
+    },
+    {
+      "id": "rc-020",
+      "topic": "aplicaciones-cociente",
+      "question": "La eficiencia de una máquina es $E(t) = \\frac{100t}{t^2 + 4}$%. ¿En qué momento $E'(t) = 0$ (eficiencia máxima)?",
+      "type": "multiple-choice",
+      "options": [
+        "$t = 2$ horas",
+        "$t = 0$ horas",
+        "$t = 4$ horas",
+        "$t = 1$ hora"
+      ],
+      "correct": 0,
+      "difficulty": "avanzado",
+      "hints": [
+        "Deriva E(t) y busca cuando E'(t) = 0",
+        "E'(t) = [100(t²+4) - 100t·2t]/(t²+4)²",
+        "E'(t) = 0 cuando el numerador es 0"
+      ],
+      "stepByStep": [
+        "🏭 **Aplicación: Eficiencia máxima**",
+        "",
+        "**Eficiencia:** $E(t) = \\frac{100t}{t^2 + 4}$%",
+        "",
+        "🧮 **Derivamos**",
+        "",
+        "* $1 = 100t$ → $u' = 100$",
+        "* $1 = t^2 + 4$ → $v' = 2t$",
+        "",
+        "$$E'(t) = \\frac{(100)(t^2 + 4) - (100t)(2t)}{(t^2 + 4)^2}$$",
+        "$$E'(t) = \\frac{100t^2 + 400 - 200t^2}{(t^2 + 4)^2}$$",
+        "$$E'(t) = \\frac{400 - 100t^2}{(t^2 + 4)^2}$$",
+        "",
+        "🎯 **Buscamos E'(t) = 0**",
+        "",
+        "**El numerador debe ser 0:**",
+        "$$400 - 100t^2 = 0$$",
+        "$$100t^2 = 400$$",
+        "$$t^2 = 4$$",
+        "$$t = 2$$ (tomamos el positivo)",
+        "",
+        "✅ **Respuesta**",
+        "La eficiencia es máxima en $t = 2$ horas"
+      ],
+      "explanation": "E'(t) = 0 cuando 400 - 100t² = 0, es decir, cuando t = 2 horas"
+    }
+  ]
+}

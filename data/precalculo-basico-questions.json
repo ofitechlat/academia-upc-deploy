@@ -1,0 +1,310 @@
+{
+  "expresiones-algebraicas": [
+    {
+      "id": "ea-001",
+      "topic": "binomio-cuadrado",
+      "question": "Expande: $(x + 3)^2$",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$x^2 + 6x + 9$",
+        "$x^2 + 9$",
+        "$x^2 + 3x + 9$",
+        "$x^2 + 6x + 6$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "$(a + b)^2 = a^2 + 2ab + b^2$",
+        "a = x, b = 3",
+        "$x^2 + 2(x)(3) + 3^2$"
+      ],
+      "stepByStep": [
+        "📚 **Binomio al Cuadrado**",
+        "",
+        "**Fórmula:** $(a + b)^2 = a^2 + 2ab + b^2$",
+        "",
+        "**Aplicación:** $(x + 3)^2$",
+        "* $a = x$",
+        "* $b = 3$",
+        "",
+        "$(x + 3)^2 = x^2 + 2(x)(3) + 3^2$",
+        "$= x^2 + 6x + 9$",
+        "",
+        "✅ **$x^2 + 6x + 9$**"
+      ],
+      "explanation": "Usando (a+b)²=a²+2ab+b²: (x+3)²=x²+6x+9"
+    },
+    {
+      "id": "ea-002",
+      "topic": "diferencia-cuadrados",
+      "question": "Factoriza: $x^2 - 25$",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$(x - 5)(x + 5)$",
+        "$(x - 25)(x + 1)$",
+        "$(x - 5)^2$",
+        "$x(x - 25)$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Diferencia de cuadrados: $a^2 - b^2 = (a-b)(a+b)$",
+        "$x^2 - 25 = x^2 - 5^2$",
+        "$(x - 5)(x + 5)$"
+      ],
+      "stepByStep": [
+        "📚 **Diferencia de Cuadrados**",
+        "",
+        "**Fórmula:** $a^2 - b^2 = (a - b)(a + b)$",
+        "",
+        "**Identificar:**",
+        "$$x^2 - 25 = x^2 - 5^2$$",
+        "",
+        "**Factorizar:**",
+        "$$(x - 5)(x + 5)$$",
+        "",
+        "✅ **$(x - 5)(x + 5)$**"
+      ],
+      "explanation": "a²-b² = (a-b)(a+b), entonces x²-25 = (x-5)(x+5)"
+    },
+    {
+      "id": "ea-003",
+      "topic": "producto-binomios",
+      "question": "Multiplica: $(x + 2)(x + 5)$",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$x^2 + 7x + 10$",
+        "$x^2 + 10$",
+        "$x^2 + 5x + 10$",
+        "$2x + 7$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Método FOIL: First, Outer, Inner, Last",
+        "x·x + x·5 + 2·x + 2·5",
+        "x² + 5x + 2x + 10 = x² + 7x + 10"
+      ],
+      "stepByStep": [
+        "📚 **Producto de Binomios (FOIL)**",
+        "",
+        "$(x + 2)(x + 5)$",
+        "",
+        "**F**irst: $x \\cdot x = x^2$",
+        "**O**uter: $x \\cdot 5 = 5x$",
+        "**I**nner: $2 \\cdot x = 2x$",
+        "**L**ast: $2 \\cdot 5 = 10$",
+        "",
+        "**Sumar:**",
+        "$$x^2 + 5x + 2x + 10 = x^2 + 7x + 10$$",
+        "",
+        "✅ **$x^2 + 7x + 10$**"
+      ],
+      "explanation": "Método FOIL: x², 5x, 2x, 10 → x²+7x+10"
+    }
+  ],
+  "ecuaciones-inecuaciones": [
+    {
+      "id": "ei-001",
+      "topic": "ecuaciones-lineales",
+      "question": "Resuelve: $3x - 7 = 11$",
+      "type": "numeric",
+      "correct": 6,
+      "tolerance": 0,
+      "difficulty": "facil",
+      "hints": [
+        "Suma 7 a ambos lados",
+        "3x = 18",
+        "Divide entre 3"
+      ],
+      "stepByStep": [
+        "🎯 **Ecuación Lineal**",
+        "",
+        "$3x - 7 = 11$",
+        "",
+        "**Sumar 7:**",
+        "$3x = 18$",
+        "",
+        "**Dividir entre 3:**",
+        "$x = 6$",
+        "",
+        "✅ **x = 6**"
+      ],
+      "explanation": "3x-7=11 → 3x=18 → x=6"
+    },
+    {
+      "id": "ei-002",
+      "topic": "formula-general",
+      "question": "Resuelve con fórmula general: $x^2 - 5x + 6 = 0$",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$x = 2$ y $x = 3$",
+        "$x = -2$ y $x = -3$",
+        "$x = 1$ y $x = 6$",
+        "No tiene solución real"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Fórmula: $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$",
+        "a=1, b=-5, c=6",
+        "Discriminante: 25-24=1"
+      ],
+      "stepByStep": [
+        "📚 **Fórmula General**",
+        "",
+        "$$x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$$",
+        "",
+        "**Identificar:** $a=1, b=-5, c=6$",
+        "",
+        "$$x = \\frac{5 \\pm \\sqrt{25 - 24}}{2} = \\frac{5 \\pm 1}{2}$$",
+        "",
+        "$x_1 = \\frac{5+1}{2} = 3$",
+        "$x_2 = \\frac{5-1}{2} = 2$",
+        "",
+        "✅ **x = 2 y x = 3**"
+      ],
+      "explanation": "Fórmula general con a=1, b=-5, c=6 da x=2 y x=3"
+    },
+    {
+      "id": "ei-003",
+      "topic": "inecuaciones-lineales",
+      "question": "Resuelve: $-2x + 5 > 1$",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$x < 2$ o $(-\\infty, 2)$",
+        "$x > 2$ o $(2, \\infty)$",
+        "$x \\leq 2$",
+        "$x = 2$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Resta 5: -2x > -4",
+        "Divide entre -2: ¡INVIERTE el signo!",
+        "x < 2"
+      ],
+      "stepByStep": [
+        "⚠️ **Inecuación con Negativo**",
+        "",
+        "$-2x + 5 > 1$",
+        "",
+        "**Restar 5:**",
+        "$-2x > -4$",
+        "",
+        "**Dividir entre -2 (INVIERTE signo):**",
+        "$x < 2$",
+        "",
+        "**Intervalo:** $(-\\infty, 2)$",
+        "",
+        "✅ **$x < 2$**"
+      ],
+      "explanation": "Al dividir entre -2, el signo > se invierte a <: x < 2"
+    }
+  ],
+  "conceptos-basicos-funciones": [
+    {
+      "id": "cbf-001",
+      "topic": "definicion-funcion",
+      "question": "¿Cuál es la característica principal de una **función**?",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "A cada elemento del dominio le corresponde **exactamente UN** elemento del codominio",
+        "A cada elemento del dominio le pueden corresponder varios elementos",
+        "Todos los elementos del codominio deben tener preimagen",
+        "Debe ser una línea recta"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Función: relación donde cada x tiene UNA y única y",
+        "No puede haber dos valores de y para un mismo x",
+        "Test de la línea vertical"
+      ],
+      "stepByStep": [
+        "📚 **Definición de Función**",
+        "",
+        "**Función:** Relación que asigna a cada elemento $x$ del dominio **exactamente UN** elemento $y$ del codominio",
+        "",
+        "$$f: A \\to B$$",
+        "$$x \\mapsto f(x) = y$$",
+        "",
+        "**Test de línea vertical:**",
+        "Si una línea vertical corta la gráfica en más de un punto, NO es función",
+        "",
+        "✅ **Cada x → UNA y**"
+      ],
+      "explanation": "Una función asigna a cada entrada exactamente una salida, no más de una."
+    },
+    {
+      "id": "cbf-002",
+      "topic": "dominio-codominio",
+      "question": "¿Cuál es el dominio de $f(x) = \\frac{1}{x-2}$?",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$\\mathbb{R} - \\{2\\}$ o $(-\\infty, 2) \\cup (2, \\infty)$",
+        "$\\mathbb{R}$ (todos los reales)",
+        "$[2, \\infty)$",
+        "$(2, \\infty)$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "El denominador NO puede ser cero",
+        "x - 2 ≠ 0",
+        "x ≠ 2"
+      ],
+      "stepByStep": [
+        "🔍 **Dominio: ¿Dónde está definida?**",
+        "",
+        "$f(x) = \\frac{1}{x-2}$",
+        "",
+        "**Restricción:** Denominador ≠ 0",
+        "$$x - 2 \\neq 0$$",
+        "$$x \\neq 2$$",
+        "",
+        "**Dominio:**",
+        "$$Dom(f) = \\mathbb{R} - \\{2\\}$$",
+        "$$= (-\\infty, 2) \\cup (2, \\infty)$$",
+        "",
+        "✅ **Todos los reales excepto 2**"
+      ],
+      "explanation": "El denominador no puede ser cero, entonces x≠2. Dominio: ℝ-{2}"
+    },
+    {
+      "id": "cbf-003",
+      "topic": "intersecciones-ejes",
+      "question": "Para $f(x) = 2x - 6$, ¿cuál es la intersección con el eje x (raíz)?",
+      "type": "numeric",
+      "correct": 3,
+      "tolerance": 0,
+      "difficulty": "facil",
+      "hints": [
+        "Intersección con eje x: hacer f(x) = 0",
+        "0 = 2x - 6",
+        "x = 3"
+      ],
+      "stepByStep": [
+        "🎯 **Intersección con eje X**",
+        "",
+        "**Método:** Hacer $f(x) = 0$",
+        "",
+        "$$0 = 2x - 6$$",
+        "$$2x = 6$$",
+        "$$x = 3$$",
+        "",
+        "**Punto:** $(3, 0)$",
+        "",
+        "✅ **x = 3**"
+      ],
+      "explanation": "Intersección con eje x: f(x)=0 → 2x-6=0 → x=3"
+    }
+  ]
+}

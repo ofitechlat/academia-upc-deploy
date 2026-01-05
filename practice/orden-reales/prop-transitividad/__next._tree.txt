@@ -1,0 +1,6 @@
+:HL["/_next/static/chunks/08eadfa2ea9ebf43.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/245dfe675a454031.css","style"]
+:HL["https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css","style"]
+:HL["https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css","style",{"crossOrigin":"anonymous","integrity":"sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"}]
+0:{"buildId":"LQc1_gyiYYyYSr6zdI6rC","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"practice","paramType":null,"paramKey":"practice","hasRuntimePrefetch":false,"slots":{"children":{"name":"courseId","paramType":"d","paramKey":"orden-reales","hasRuntimePrefetch":false,"slots":{"children":{"name":"topicId","paramType":"d","paramKey":"prop-transitividad","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}

@@ -1,0 +1,839 @@
+﻿{
+  "regla-producto": [
+    {
+      "id": "rp-001",
+      "topic": "introduccion-producto",
+      "question": "Si $f(x) = u(x) \\cdot v(x)$, ¿cuál es la fórmula correcta para $f'(x)$?",
+      "type": "multiple-choice",
+      "shuffle": true,
+      "options": [
+        "$f'(x) = u'(x) \\cdot v(x) + u(x) \\cdot v'(x)$",
+        "$f'(x) = u'(x) \\cdot v'(x)$",
+        "$f'(x) = u(x) \\cdot v'(x)$",
+        "$f'(x) = u'(x) + v'(x)$"
+      ],
+      "correct": 0,
+      "difficulty": "facil",
+      "hints": [
+        "La regla del producto NO es simplemente multiplicar las derivadas",
+        "Se llama 'regla del producto' porque deriva un PRODUCTO de funciones",
+        "La fórmula es: (uv)' = u'v + uv'"
+      ],
+      "stepByStep": [
+        "📚 **Regla del Producto**",
+        "",
+        "**Fórmula fundamental:**",
+        "$$\\frac{d}{dx}[u(x) \\cdot v(x)] = u'(x) \\cdot v(x) + u(x) \\cdot v'(x)$$",
+        "",
+        "**En notación corta:**",
+        "$$(uv)' = u'v + uv'$$",
+        "",
+        "💡 **Regla mnemotécnica**",
+        "",
+        "\"La derivada del primero por el segundo, MÁS el primero por la derivada del segundo\"",
+        "",
+        "✅ **Respuesta correcta**",
+        "$f'(x) = u'(x) \\cdot v(x) + u(x) \\cdot v'(x)$"
+      ],
+      "explanation": "La regla del producto establece que (uv)' = u'v + uv'. No se multiplican las derivadas directamente."
+    },
+    {
+      "id": "rp-002",
+      "topic": "introduccion-producto",
+      "question": "¿Por qué NO podemos simplemente multiplicar $u'(x) \\cdot v'(x)$ cuando derivamos un producto?",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "Porque la derivada mide cambios instantáneos y ambos términos contribuyen al cambio total",
+        "Porque es una regla arbitraria del cálculo",
+        "Porque las funciones deben ser sumadas primero",
+        "Porque solo funciona con polinomios"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Piensa en cómo cambia el área de un rectángulo cuando ambos lados cambian",
+        "El cambio total incluye el cambio de u multiplicado por v, más u multiplicado por el cambio de v",
+        "Es una consecuencia del límite de la definición de derivada"
+      ],
+      "stepByStep": [
+        "🔍 **Intuición geométrica**",
+        "",
+        "**Ejemplo visual:** Área de un rectángulo",
+        "",
+        "Si tenemos un rectángulo con lados $u(x)$ y $v(x)$:",
+        "- Área = $u(x) \\cdot v(x)$",
+        "",
+        "**Cuando ambos lados cambian:**",
+        "* El cambio en área incluye:",
+        "  * El cambio en $u$ multiplicado por $v$ → $\\Delta u \\cdot v$",
+        "  * El cambio en $v$ multiplicado por $u$ → $u \\cdot \\Delta v$",
+        "  * Un término de segundo orden despreciable → $\\Delta u \\cdot \\Delta v$",
+        "",
+        "**En el límite:**",
+        "$$\\frac{d(uv)}{dx} = \\frac{du}{dx} \\cdot v + u \\cdot \\frac{dv}{dx}$$",
+        "",
+        "✅ **Conclusión**",
+        "Ambos términos contribuyen al cambio total del producto."
+      ],
+      "explanation": "La regla del producto surge naturalmente de cómo ambas funciones contribuyen al cambio del producto."
+    },
+    {
+      "id": "rp-003",
+      "topic": "demostracion-formula",
+      "question": "Ordena los pasos de la demostración de la regla del producto",
+      "type": "ordering",
+      "items": [
+        "Partir de la definición: $f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}$",
+        "Sustituir: $f(x) = u(x)v(x)$",
+        "Sumar y restar $u(x+h)v(x)$ en el numerador (truco algebraico)",
+        "Separar en dos límites",
+        "Aplicar límites: llegar a $u'(x)v(x) + u(x)v'(x)$"
+      ],
+      "correctOrder": [0, 1, 2, 3, 4],
+      "difficulty": "avanzado",
+      "hints": [
+        "Comienza con la definición fundamental de derivada",
+        "El truco clave es sumar y restar el mismo término",
+        "Al final separas en dos límites independientes"
+      ],
+      "stepByStep": [
+        "📐 **Demostración formal**",
+        "",
+        "**Paso 1:** Definición de derivada",
+        "$$f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}$$",
+        "",
+        "**Paso 2:** Sustituimos $f(x) = u(x)v(x)$",
+        "$$f'(x) = \\lim_{h \\to 0} \\frac{u(x+h)v(x+h) - u(x)v(x)}{h}$$",
+        "",
+        "**Paso 3:** Truco algebraico (sumar y restar $u(x+h)v(x)$)",
+        "$$= \\lim_{h \\to 0} \\frac{u(x+h)v(x+h) - u(x+h)v(x) + u(x+h)v(x) - u(x)v(x)}{h}$$",
+        "",
+        "**Paso 4:** Factorizamos y separamos",
+        "$$= \\lim_{h \\to 0} \\left[u(x+h)\\frac{v(x+h)-v(x)}{h} + v(x)\\frac{u(x+h)-u(x)}{h}\\right]$$",
+        "",
+        "**Paso 5:** Aplicamos límites",
+        "$$= u(x)v'(x) + v(x)u'(x)$$",
+        "",
+        "✅ **Resultado**",
+        "$$(uv)' = u'v + uv'$$"
+      ],
+      "explanation": "La demostración usa la definición de derivada con un truco algebraico clave."
+    },
+    {
+      "id": "rp-004",
+      "topic": "producto-polinomios",
+      "question": "Deriva: $f(x) = x^2 \\cdot x^3$",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "$5x^4$",
+        "$2x \\cdot 3x^2$",
+        "$6x^5$",
+        "$x^5$"
+      ],
+      "correct": 0,
+      "difficulty": "facil",
+      "hints": [
+        "Puedes usar la regla del producto, o simplificar primero",
+        "x² · x³ = x⁵",
+        "d/dx[x⁵] = 5x⁴"
+      ],
+      "stepByStep": [
+        "🧮 **Método 1: Simplificar primero**",
+        "",
+        "**Función:** $f(x) = x^2 \\cdot x^3$",
+        "",
+        "**Simplificamos:**",
+        "$$f(x) = x^{2+3} = x^5$$",
+        "",
+        "**Derivamos:**",
+        "$$f'(x) = 5x^4$$",
+        "",
+        "🔄 **Método 2: Regla del producto**",
+        "",
+        "**$u = x^2$, $v = x^3$**",
+        "* $1' = 2x$",
+        "* $1' = 3x^2$",
+        "",
+        "**Aplicamos (uv)' = u'v + uv':**",
+        "$$f'(x) = (2x)(x^3) + (x^2)(3x^2)$$",
+        "$$f'(x) = 2x^4 + 3x^4 = 5x^4$$",
+        "",
+        "✅ **Respuesta**",
+        "Ambos métodos dan: $f'(x) = 5x^4$"
+      ],
+      "explanation": "Puedes simplificar primero o usar la regla del producto. Resultado: 5x⁴"
+    },
+    {
+      "id": "rp-005",
+      "topic": "producto-polinomios",
+      "question": "¿Cuál es la derivada de $f(x) = (x^2 + 1)(x^3 - 2)$? Usa la regla del producto: $(uv)' = u'v + uv'$. Identifica u = x² + 1 y v = x³ - 2, calcula u' = 2x y v' = 3x², luego aplica la fórmula.",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "$5x^4 + 3x^2 - 4x$",
+        "$2x \\cdot 3x^2$",
+        "$5x^4 - 4x$",
+        "$2x^5 + 3x^2$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "method": "regla-producto",
+      "hints": [
+        "u = x² + 1, v = x³ - 2",
+        "u' = 2x, v' = 3x²",
+        "Aplica (uv)' = u'v + uv'"
+      ],
+      "stepByStep": [
+        "📝 **Identificamos funciones**",
+        "",
+        "**Función:** $f(x) = (x^2 + 1)(x^3 - 2)$",
+        "",
+        "$u = x^2 + 1$ → $u' = 2x$",
+        "$v = x^3 - 2$ → $v' = 3x^2$",
+        "",
+        "🧮 **Aplicamos regla del producto**",
+        "",
+        "$$f'(x) = u'v + uv'$$",
+        "$$f'(x) = (2x)(x^3 - 2) + (x^2 + 1)(3x^2)$$",
+        "",
+        "🔄 **Expandimos**",
+        "",
+        "**Primer término:**",
+        "$$2x(x^3 - 2) = 2x^4 - 4x$$",
+        "",
+        "**Segundo término:**",
+        "$$(x^2 + 1)(3x^2) = 3x^4 + 3x^2$$",
+        "",
+        "✅ **Sumamos**",
+        "$$f'(x) = 2x^4 - 4x + 3x^4 + 3x^2$$",
+        "$$f'(x) = 5x^4 + 3x^2 - 4x$$"
+      ],
+      "explanation": "f'(x) = (2x)(x³-2) + (x²+1)(3x²) = 5x⁴ + 3x² - 4x"
+    },
+    {
+      "id": "rp-006",
+      "topic": "producto-polinomios",
+      "question": "Deriva: $g(x) = (2x - 3)(x^2 + 4)$",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "$6x^2 - 6x + 8$",
+        "$2x^3 - 6x + 8$",
+        "$6x^2 + 8$",
+        "$2(2x^2) = 4x^2$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "u = 2x - 3, v = x² + 4",
+        "u' = 2, v' = 2x",
+        "(uv)' = u'v + uv' = 2(x²+4) + (2x-3)(2x)"
+      ],
+      "stepByStep": [
+        "📝 **Identificación**",
+        "",
+        "**Función:** $g(x) = (2x - 3)(x^2 + 4)$",
+        "",
+        "$u = 2x - 3$ → $u' = 2$",
+        "$v = x^2 + 4$ → $v' = 2x$",
+        "",
+        "🧮 **Regla del producto**",
+        "",
+        "$$g'(x) = u'v + uv'$$",
+        "$$g'(x) = (2)(x^2 + 4) + (2x - 3)(2x)$$",
+        "",
+        "🔄 **Expandimos**",
+        "",
+        "**Término 1:**",
+        "$$2(x^2 + 4) = 2x^2 + 8$$",
+        "",
+        "**Término 2:**",
+        "$$(2x - 3)(2x) = 4x^2 - 6x$$",
+        "",
+        "✅ **Combinamos**",
+        "$$g'(x) = 2x^2 + 8 + 4x^2 - 6x$$",
+        "$$g'(x) = 6x^2 - 6x + 8$$"
+      ],
+      "explanation": "g'(x) = 2(x²+4) + (2x-3)(2x) = 6x² - 6x + 8"
+    },
+    {
+      "id": "rp-007",
+      "topic": "producto-trigonometricas",
+      "question": "Si $f(x) = x \\cdot \\sin(x)$, ¿cuál es $f'(x)$?",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "$\\sin(x) + x\\cos(x)$",
+        "$x\\cos(x)$",
+        "$\\cos(x)$",
+        "$\\sin(x) - x\\cos(x)$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "u = x, v = sin(x)",
+        "u' = 1, v' = cos(x)",
+        "(uv)' = u'v + uv' = (1)sin(x) + (x)cos(x)"
+      ],
+      "stepByStep": [
+        "📝 **Producto con trigonométrica**",
+        "",
+        "**Función:** $f(x) = x \\cdot \\sin(x)$",
+        "",
+        "**Identificamos:**",
+        "* $1 = x$ → $u' = 1$",
+        "* $1 = \\sin(x)$ → $v' = \\cos(x)$",
+        "",
+        "🧮 **Aplicamos regla del producto**",
+        "",
+        "$$(uv)' = u'v + uv'$$",
+        "$$f'(x) = (1)(\\sin(x)) + (x)(\\cos(x))$$",
+        "$$f'(x) = \\sin(x) + x\\cos(x)$$",
+        "",
+        "✅ **Respuesta**",
+        "$f'(x) = \\sin(x) + x\\cos(x)$"
+      ],
+      "explanation": "f'(x) = (1)sin(x) + (x)cos(x) = sin(x) + xcos(x)"
+    },
+    {
+      "id": "rp-008",
+      "topic": "producto-trigonometricas",
+      "question": "Deriva: $g(x) = x^2 \\cdot \\cos(x)$",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "$2x\\cos(x) - x^2\\sin(x)$",
+        "$2x\\sin(x)$",
+        "$-x^2\\sin(x)$",
+        "$2x\\cos(x) + x^2\\sin(x)$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "u = x², v = cos(x)",
+        "u' = 2x, v' = -sin(x)",
+        "(uv)' = (2x)cos(x) + (x²)(-sin(x))"
+      ],
+      "stepByStep": [
+        "📝 **Identificación**",
+        "",
+        "**Función:** $g(x) = x^2 \\cdot \\cos(x)$",
+        "",
+        "* $1 = x^2$ → $u' = 2x$",
+        "* $1 = \\cos(x)$ → $v' = -\\sin(x)$",
+        "",
+        "🧮 **Regla del producto**",
+        "",
+        "$$g'(x) = u'v + uv'$$",
+        "$$g'(x) = (2x)(\\cos(x)) + (x^2)(-\\sin(x))$$",
+        "$$g'(x) = 2x\\cos(x) - x^2\\sin(x)$$",
+        "",
+        "✅ **Respuesta**",
+        "$g'(x) = 2x\\cos(x) - x^2\\sin(x)$"
+      ],
+      "explanation": "g'(x) = (2x)cos(x) + (x²)(-sin(x)) = 2xcos(x) - x²sin(x)"
+    },
+    {
+      "id": "rp-009",
+      "topic": "producto-trigonometricas",
+      "question": "Arrastra cada FUNCIÓN hacia su DERIVADA",
+      "description": "Funciones a la izquierda, derivadas a la derecha. Usa la regla del producto.",
+      "type": "drag-drop",
+      "items": [
+        "$x\\sin(x)$",
+        "$x\\cos(x)$",
+        "$x^2\\sin(x)$",
+        "$(x+1)\\cos(x)$"
+      ],
+      "categories": [
+        "$\\sin(x) + x\\cos(x)$",
+        "$\\cos(x) - x\\sin(x)$",
+        "$2x\\sin(x) + x^2\\cos(x)$",
+        "$\\cos(x) - (x+1)\\sin(x)$"
+      ],
+      "correctMapping": [0, 1, 2, 3],
+      "difficulty": "medio",
+      "hints": [
+        "Aplica (uv)' = u'v + uv' a cada función",
+        "Recuerda: d/dx[sin(x)] = cos(x), d/dx[cos(x)] = -sin(x)",
+        "Para x·sin(x): u'=1, v'=cos(x)"
+      ],
+      "stepByStep": [
+        "🔍 **Derivadas con regla del producto**",
+        "",
+        "**1. x·sin(x):**",
+        "- $(1)(\\sin x) + (x)(\\cos x) = \\sin x + x\\cos x$",
+        "",
+        "**2. x·cos(x):**",
+        "- $(1)(\\cos x) + (x)(-\\sin x) = \\cos x - x\\sin x$",
+        "",
+        "**3. x²·sin(x):**",
+        "- $(2x)(\\sin x) + (x^2)(\\cos x) = 2x\\sin x + x^2\\cos x$",
+        "",
+        "**4. (x+1)·cos(x):**",
+        "- $(1)(\\cos x) + (x+1)(-\\sin x) = \\cos x - (x+1)\\sin x$",
+        "",
+        "✅ **Todas aplicando (uv)' = u'v + uv'**"
+      ],
+      "explanation": "Cada derivada usa la regla del producto con las derivadas trigonométricas básicas."
+    },
+    {
+      "id": "rp-010",
+      "topic": "producto-exponenciales",
+      "question": "¿Cuál es la derivada de $f(x) = x \\cdot e^x$?",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "$e^x + xe^x = (1+x)e^x$",
+        "$xe^x$",
+        "$e^x$",
+        "$e^x - xe^x$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "u = x, v = eˣ",
+        "u' = 1, v' = eˣ (la exponencial es su propia derivada)",
+        "(uv)' = (1)(eˣ) + (x)(eˣ)"
+      ],
+      "stepByStep": [
+        "📝 **Producto con exponencial**",
+        "",
+        "**Función:** $f(x) = x \\cdot e^x$",
+        "",
+        "**Identificamos:**",
+        "* $1 = x$ → $u' = 1$",
+        "* $1 = e^x$ → $v' = e^x$",
+        "",
+        "🧮 **Regla del producto**",
+        "",
+        "$$f'(x) = u'v + uv'$$",
+        "$$f'(x) = (1)(e^x) + (x)(e^x)$$",
+        "$$f'(x) = e^x + xe^x$$",
+        "",
+        "🔄 **Factorizamos (opcional)**",
+        "$$f'(x) = e^x(1 + x)$$",
+        "",
+        "✅ **Respuesta**",
+        "$f'(x) = (1+x)e^x$ o $e^x + xe^x$"
+      ],
+      "explanation": "f'(x) = (1)(eˣ) + (x)(eˣ) = eˣ + xeˣ = (1+x)eˣ"
+    },
+    {
+      "id": "rp-011",
+      "topic": "producto-exponenciales",
+      "question": "Deriva: $g(x) = (x^2 + 2x)e^x$",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "$(x^2 + 4x + 2)e^x$",
+        "$(2x + 2)e^x$",
+        "$(x^2 + 2x)e^x$",
+        "$(x^2 + 2)e^x$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "u = x² + 2x, v = eˣ",
+        "u' = 2x + 2, v' = eˣ",
+        "(uv)' = (2x+2)eˣ + (x²+2x)eˣ"
+      ],
+      "stepByStep": [
+        "📝 **Identificación**",
+        "",
+        "**Función:** $g(x) = (x^2 + 2x)e^x$",
+        "",
+        "* $1 = x^2 + 2x$ → $u' = 2x + 2$",
+        "* $1 = e^x$ → $v' = e^x$",
+        "",
+        "🧮 **Regla del producto**",
+        "",
+        "$$g'(x) = u'v + uv'$$",
+        "$$g'(x) = (2x + 2)e^x + (x^2 + 2x)e^x$$",
+        "",
+        "🔄 **Factorizamos eˣ**",
+        "$$g'(x) = e^x[(2x + 2) + (x^2 + 2x)]$$",
+        "$$g'(x) = e^x[x^2 + 4x + 2]$$",
+        "",
+        "✅ **Respuesta**",
+        "$g'(x) = (x^2 + 4x + 2)e^x$"
+      ],
+      "explanation": "g'(x) = (2x+2)eˣ + (x²+2x)eˣ = (x²+4x+2)eˣ"
+    },
+    {
+      "id": "rp-012",
+      "topic": "producto-exponenciales",
+      "question": "Si $h(x) = (3x - 1)e^x$, encuentra $h'(x)$",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "$(3x + 2)e^x$",
+        "$3e^x$",
+        "$(3x - 1)e^x$",
+        "$(3x + 1)e^x$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "u = 3x - 1, v = eˣ",
+        "u' = 3, v' = eˣ",
+        "(uv)' = 3eˣ + (3x-1)eˣ"
+      ],
+      "stepByStep": [
+        "📝 **Solución**",
+        "",
+        "**Función:** $h(x) = (3x - 1)e^x$",
+        "",
+        "* $1 = 3x - 1$ → $u' = 3$",
+        "* $1 = e^x$ → $v' = e^x$",
+        "",
+        "🧮 **Aplicamos (uv)' = u'v + uv'**",
+        "",
+        "$$h'(x) = (3)(e^x) + (3x - 1)(e^x)$$",
+        "$$h'(x) = 3e^x + (3x - 1)e^x$$",
+        "",
+        "🔄 **Factorizamos**",
+        "$$h'(x) = e^x[3 + (3x - 1)]$$",
+        "$$h'(x) = e^x[3x + 2]$$",
+        "",
+        "✅ **Respuesta**",
+        "$h'(x) = (3x + 2)e^x$"
+      ],
+      "explanation": "h'(x) = 3eˣ + (3x-1)eˣ = (3x+2)eˣ"
+    },
+    {
+      "id": "rp-013",
+      "topic": "casos-combinados",
+      "question": "Deriva: $f(x) = (x^2 + 1)(x^3 - x)$",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "$5x^4 - 3x^2 + 3x^2 - 1 = 5x^4 - 1$",
+        "$5x^4$",
+        "$2x \\cdot 3x^2$",
+        "$5x^4 + 3x^2$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "u = x² + 1, v = x³ - x",
+        "u' = 2x, v' = 3x² - 1",
+        "Expande y combina términos semejantes"
+      ],
+      "stepByStep": [
+        "📝 **Identificación**",
+        "",
+        "**Función:** $f(x) = (x^2 + 1)(x^3 - x)$",
+        "",
+        "* $1 = x^2 + 1$ → $u' = 2x$",
+        "* $1 = x^3 - x$ → $v' = 3x^2 - 1$",
+        "",
+        "🧮 **Regla del producto**",
+        "",
+        "$$f'(x) = u'v + uv'$$",
+        "$$f'(x) = (2x)(x^3 - x) + (x^2 + 1)(3x^2 - 1)$$",
+        "",
+        "🔄 **Expandimos**",
+        "",
+        "**Término 1:**",
+        "$$(2x)(x^3 - x) = 2x^4 - 2x^2$$",
+        "",
+        "**Término 2:**",
+        "$$(x^2 + 1)(3x^2 - 1) = 3x^4 - x^2 + 3x^2 - 1 = 3x^4 + 2x^2 - 1$$",
+        "",
+        "✅ **Combinamos**",
+        "$$f'(x) = 2x^4 - 2x^2 + 3x^4 + 2x^2 - 1$$",
+        "$$f'(x) = 5x^4 - 1$$"
+      ],
+      "explanation": "f'(x) = (2x)(x³-x) + (x²+1)(3x²-1) = 5x⁴ - 1"
+    },
+    {
+      "id": "rp-014",
+      "topic": "casos-combinados",
+      "question": "¿Cuál es $f'(1)$ si $f(x) = (x^2 - 2)(x + 3)$? Usa la regla del producto para derivar, luego evalúa en x = 1. Ingresa tu respuesta como número entero.",
+      "type": "numeric",
+      "correct": 7,
+      "tolerance": 0.1,
+      "difficulty": "medio",
+      "instructions": "Deriva f(x) usando (uv)' = u'v + uv' con u = x²-2, v = x+3. Luego evalúa f'(1). Ingresa el valor entero resultante.",
+      "format": "integer",
+      "method": "regla-producto",
+      "hints": [
+        "Primero deriva f(x) usando regla del producto",
+        "u = x² - 2, v = x + 3",
+        "Luego evalúa f'(x) en x = 1"
+      ],
+      "stepByStep": [
+        "🎯 **Paso 1: Derivamos**",
+        "",
+        "**Función:** $f(x) = (x^2 - 2)(x + 3)$",
+        "",
+        "* $1 = x^2 - 2$ → $u' = 2x$",
+        "* $1 = x + 3$ → $v' = 1$",
+        "",
+        "$$f'(x) = (2x)(x + 3) + (x^2 - 2)(1)$$",
+        "$$f'(x) = 2x^2 + 6x + x^2 - 2$$",
+        "$$f'(x) = 3x^2 + 6x - 2$$",
+        "",
+        "🎯 **Paso 2: Evaluamos en x = 1**",
+        "",
+        "$$f'(1) = 3(1)^2 + 6(1) - 2$$",
+        "$$f'(1) = 3 + 6 - 2$$",
+        "$$f'(1) = 7$$",
+        "",
+        "✅ **Respuesta**",
+        "$f'(1) = 7$"
+      ],
+      "explanation": "f'(x) = 3x² + 6x - 2, entonces f'(1) = 3 + 6 - 2 = 7"
+    },
+    {
+      "id": "rp-015",
+      "topic": "casos-combinados",
+      "question": "Completa: La derivada de $(2x + 1)\\sin(x)$ es _____",
+      "type": "fill-blank",
+      "blanks": ["$2\\sin(x) + (2x+1)\\cos(x)$"],
+      "distractors": [
+        "$2\\cos(x)$",
+        "$(2x+1)\\cos(x)$",
+        "$2\\sin(x)$",
+        "$2\\sin(x) - (2x+1)\\cos(x)$",
+        "$(2x)\\cos(x)$"
+      ],
+      "template": "La derivada de $(2x + 1)\\sin(x)$ es _____",
+      "difficulty": "medio",
+      "hints": [
+        "u = 2x + 1, v = sin(x)",
+        "u' = 2, v' = cos(x)",
+        "(uv)' = u'v + uv'"
+      ],
+      "stepByStep": [
+        "📝 **Solución**",
+        "",
+        "**Función:** $f(x) = (2x + 1)\\sin(x)$",
+        "",
+        "* $1 = 2x + 1$ → $u' = 2$",
+        "* $1 = \\sin(x)$ → $v' = \\cos(x)$",
+        "",
+        "🧮 **Aplicamos regla del producto**",
+        "",
+        "$$f'(x) = u'v + uv'$$",
+        "$$f'(x) = (2)(\\sin x) + (2x + 1)(\\cos x)$$",
+        "$$f'(x) = 2\\sin x + (2x + 1)\\cos x$$",
+        "",
+        "✅ **Respuesta**",
+        "$2\\sin x + (2x + 1)\\cos x$"
+      ],
+      "explanation": "f'(x) = 2sin(x) + (2x+1)cos(x)"
+    },
+    {
+      "id": "rp-016",
+      "topic": "casos-combinados",
+      "question": "Clasifica estas funciones según la complejidad de su derivada",
+      "description": "Organiza las funciones según cuántos términos tendrá su derivada.",
+      "type": "categorize",
+      "items": [
+        "$x \\cdot x^2$",
+        "$x \\cdot \\sin(x)$",
+        "$(x^2+1)(x^3-2)$",
+        "$(2x-1)e^x$"
+      ],
+      "categories": {
+        "simplifica-primero": "Se puede simplificar antes de derivar",
+        "dos-terminos": "La derivada tiene 2 términos",
+        "necesita-expansion": "Requiere expandir para simplificar la derivada"
+      },
+      "correctCategories": {
+        "$x \\cdot x^2$": "simplifica-primero",
+        "$x \\cdot \\sin(x)$": "dos-terminos",
+        "$(x^2+1)(x^3-2)$": "necesita-expansion",
+        "$(2x-1)e^x$": "dos-terminos"
+      },
+      "difficulty": "avanzado",
+      "hints": [
+        "x·x² = x³ se puede simplificar antes",
+        "x·sin(x) da sin(x) + xcos(x) (2 términos)",
+        "(x²+1)(x³-2) requiere expandir ambos productos"
+      ],
+      "stepByStep": [
+        "🔍 **Análisis de cada función**",
+        "",
+        "**1. x·x²:**",
+        "* Se simplifica a x³ antes de derivar",
+        "* Derivada: 3x²",
+        "",
+        "**2. x·sin(x):**",
+        "* Derivada: sin(x) + xcos(x)",
+        "- 2 términos claros",
+        "",
+        "**3. (x²+1)(x³-2):**",
+        "* Derivada: (2x)(x³-2) + (x²+1)(3x²)",
+        "* Necesita expansión completa",
+        "",
+        "**4. (2x-1)eˣ:**",
+        "* Derivada: 2eˣ + (2x-1)eˣ = (2x+1)eˣ",
+        "- 2 términos (se puede factorizar)",
+        "",
+        "✅ **Clasificación correcta**"
+      ],
+      "explanation": "Clasificamos según la estrategia de derivación más eficiente."
+    },
+    {
+      "id": "rp-017",
+      "topic": "producto-polinomios",
+      "question": "Si $f(x) = (x-1)(x+1)$, ¿cuál es $f'(x)$?",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "$2x$",
+        "$x^2 - 1$",
+        "$1$",
+        "$0$"
+      ],
+      "correct": 0,
+      "difficulty": "facil",
+      "hints": [
+        "Reconoce la diferencia de cuadrados: (x-1)(x+1) = x² - 1",
+        "Deriva x² - 1",
+        "d/dx[x² - 1] = 2x"
+      ],
+      "stepByStep": [
+        "🧮 **Método eficiente**",
+        "",
+        "**Función:** $f(x) = (x-1)(x+1)$",
+        "",
+        "**Reconocemos:** Diferencia de cuadrados",
+        "$$f(x) = x^2 - 1$$",
+        "",
+        "**Derivamos:**",
+        "$$f'(x) = 2x - 0 = 2x$$",
+        "",
+        "🔄 **Verificación con regla del producto**",
+        "",
+        "* $1 = x - 1$ → $u' = 1$",
+        "* $1 = x + 1$ → $v' = 1$",
+        "",
+        "$$f'(x) = (1)(x+1) + (x-1)(1)$$",
+        "$$f'(x) = x + 1 + x - 1 = 2x$$ ✓",
+        "",
+        "✅ **Respuesta**",
+        "$f'(x) = 2x$"
+      ],
+      "explanation": "Simplificando: (x-1)(x+1) = x² - 1, entonces f'(x) = 2x"
+    },
+    {
+      "id": "rp-018",
+      "topic": "casos-combinados",
+      "question": "Deriva: $f(x) = x^2 \\cdot e^x \\cdot \\sin(x)$",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "Usa la regla del producto extendida: $(uvw)' = u'vw + uv'w + uvw'$",
+        "Solo $(uv)' = u'v + uv'$",
+        "Deriva cada función por separado",
+        "No se puede derivar este producto"
+      ],
+      "correct": 0,
+      "difficulty": "avanzado",
+      "hints": [
+        "Para tres funciones multiplicadas, la regla se extiende",
+        "(uvw)' = u'vw + uv'w + uvw'",
+        "Cada función se deriva una vez mientras las otras permanecen"
+      ],
+      "stepByStep": [
+        "📚 **Regla del producto extendida**",
+        "",
+        "**Para tres funciones:**",
+        "$$(uvw)' = u'vw + uv'w + uvw'$$",
+        "",
+        "**Función:** $f(x) = x^2 \\cdot e^x \\cdot \\sin(x)$",
+        "",
+        "* $1 = x^2$ → $u' = 2x$",
+        "* $1 = e^x$ → $v' = e^x$",
+        "* $1 = \\sin(x)$ → $w' = \\cos(x)$",
+        "",
+        "🧮 **Aplicamos**",
+        "",
+        "$$f'(x) = (2x)(e^x)(\\sin x) + (x^2)(e^x)(\\sin x) + (x^2)(e^x)(\\cos x)$$",
+        "",
+        "🔄 **Factorizamos $x \\cdot e^x$**",
+        "",
+        "$$f'(x) = xe^x[2\\sin x + x\\sin x + x\\cos x]$$",
+        "",
+        "✅ **Respuesta**",
+        "Se usa la regla del producto extendida para tres funciones."
+      ],
+      "explanation": "Para tres funciones: (uvw)' = u'vw + uv'w + uvw'"
+    },
+    {
+      "id": "rp-019",
+      "topic": "casos-combinados",
+      "question": "Una población de bacterias crece según $P(t) = (100 + 50t)e^{0.5t}$. ¿Cuál es la tasa de crecimiento $P'(t)$?",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "$P'(t) = 50e^{0.5t} + (100 + 50t)(0.5e^{0.5t})$",
+        "$P'(t) = 50e^{0.5t}$",
+        "$P'(t) = (100 + 50t)e^{0.5t}$",
+        "$P'(t) = 50(0.5)e^{0.5t}$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "u = 100 + 50t, v = e^(0.5t)",
+        "u' = 50, v' = 0.5·e^(0.5t)",
+        "Aplica (uv)' = u'v + uv'"
+      ],
+      "stepByStep": [
+        "🦠 **Aplicación: Crecimiento bacteriano**",
+        "",
+        "**Población:** $P(t) = (100 + 50t)e^{0.5t}$",
+        "",
+        "**Identificamos:**",
+        "* $1 = 100 + 50t$ → $u' = 50$",
+        "* $1 = e^{0.5t}$ → $v' = 0.5e^{0.5t}$",
+        "",
+        "🧮 **Tasa de crecimiento (derivada)**",
+        "",
+        "$$P'(t) = u'v + uv'$$",
+        "$$P'(t) = (50)(e^{0.5t}) + (100 + 50t)(0.5e^{0.5t})$$",
+        "",
+        "🔄 **Simplificamos (opcional)**",
+        "$$P'(t) = 50e^{0.5t} + 0.5(100 + 50t)e^{0.5t}$$",
+        "$$P'(t) = e^{0.5t}[50 + 50 + 25t]$$",
+        "$$P'(t) = e^{0.5t}(100 + 25t)$$",
+        "",
+        "✅ **Respuesta**",
+        "$P'(t) = 50e^{0.5t} + (100 + 50t)(0.5e^{0.5t})$"
+      ],
+      "explanation": "Tasa de crecimiento: P'(t) = 50e^(0.5t) + (100+50t)(0.5e^(0.5t))"
+    },
+    {
+      "id": "rp-020",
+      "topic": "casos-combinados",
+      "question": "Si $f(x) = g(x) \\cdot h(x)$ y $f(2) = 10$, $g(2) = 5$, $g'(2) = 3$, $h(2) = 2$, $h'(2) = 4$, ¿cuál es $f'(2)$?",
+      "type": "numeric",
+      "correct": 26,
+      "tolerance": 0.1,
+      "difficulty": "avanzado",
+      "hints": [
+        "Usa la regla del producto: f'(x) = g'(x)h(x) + g(x)h'(x)",
+        "f'(2) = g'(2)·h(2) + g(2)·h'(2)",
+        "Sustituye los valores dados"
+      ],
+      "stepByStep": [
+        "🎯 **Problema con valores dados**",
+        "",
+        "**Datos:**",
+        "* $1(x) = g(x) \\cdot h(x)$",
+        "* $1(2) = 5$, $g'(2) = 3$",
+        "* $1(2) = 2$, $h'(2) = 4$",
+        "",
+        "🧮 **Aplicamos regla del producto**",
+        "",
+        "$$f'(x) = g'(x)h(x) + g(x)h'(x)$$",
+        "",
+        "**En x = 2:**",
+        "$$f'(2) = g'(2) \\cdot h(2) + g(2) \\cdot h'(2)$$",
+        "",
+        "🔢 **Sustituimos valores**",
+        "",
+        "$$f'(2) = (3)(2) + (5)(4)$$",
+        "$$f'(2) = 6 + 20$$",
+        "$$f'(2) = 26$$",
+        "",
+        "✅ **Respuesta**",
+        "$f'(2) = 26$"
+      ],
+      "explanation": "f'(2) = g'(2)·h(2) + g(2)·h'(2) = (3)(2) + (5)(4) = 26"
+    }
+  ]
+}

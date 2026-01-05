@@ -1,0 +1,28 @@
+{
+    "matrices-determinantes": {
+        "operaciones-matrices": [
+            {
+                "title": "📺 Multiplicación de Matrices",
+                "url": "https://es.khanacademy.org/math/algebra-home/alg-matrices/alg-multiplying-matrices-by-matrices/v/matrix-multiplication-intro",
+                "type": "video",
+                "description": "Aprende cuándo está definida la multiplicación y cómo calcular el producto de dos matrices."
+            }
+        ],
+        "inversa-matriz": [
+            {
+                "title": "✍️ Inversa de una Matriz 3x3 (Gauss-Jordan)",
+                "url": "https://es.khanacademy.org/math/algebra-home/alg-matrices/alg-finding-inverse-matrix/v/inverse-of-a-3x3-matrix",
+                "type": "video",
+                "description": "Procedimiento paso a paso para hallar la inversa usando la matriz aumentada y reducción por filas."
+            }
+        ],
+        "regla-cramer": [
+            {
+                "title": "📖 La Regla de Cramer",
+                "url": "https://es.khanacademy.org/math/algebra-home/alg-matrices/alg-determinants-and-cramer-s-rule/a/cramers-rule",
+                "type": "article",
+                "description": "Artículo explicativo sobre cómo usar determinantes para resolver sistemas lineales cuadrados."
+            }
+        ]
+    }
+}

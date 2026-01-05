@@ -1,0 +1,363 @@
+{
+  "series-numericas": {
+    "videos": [
+      {
+        "title": "Introducción a Sucesiones Numéricas",
+        "url": "https://www.youtube.com/watch?v=YXIyF1qk8Qs",
+        "duration": "15:30",
+        "difficulty": "facil",
+        "topics": ["sucesiones-numericas", "convergencia-sucesiones"],
+        "description": "Definición de sucesión, ejemplos y concepto de convergencia"
+      },
+      {
+        "title": "Límites de Sucesiones - Ejercicios Resueltos",
+        "url": "https://www.youtube.com/watch?v=Ea8dSKMCQVs",
+        "duration": "22:45",
+        "difficulty": "medio",
+        "topics": ["sucesiones-numericas", "convergencia-sucesiones"],
+        "description": "Cálculo de límites de sucesiones usando técnicas algebraicas"
+      },
+      {
+        "title": "Series Infinitas - Concepto y Ejemplos",
+        "url": "https://www.youtube.com/watch?v=P31AaUvxIgs",
+        "duration": "18:20",
+        "difficulty": "facil",
+        "topics": ["series-numericas-intro"],
+        "description": "Diferencia entre sucesión y serie, sumas parciales, convergencia"
+      },
+      {
+        "title": "Criterio de Divergencia para Series",
+        "url": "https://www.youtube.com/watch?v=7CNp4x34fqY",
+        "duration": "12:15",
+        "difficulty": "facil",
+        "topics": ["criterio-divergencia"],
+        "description": "Teorema 1.5: Si lim a_n ≠ 0, entonces la serie diverge"
+      },
+      {
+        "title": "Serie p - Criterio de Convergencia",
+        "url": "https://www.youtube.com/watch?v=eUoZsj1VUA8",
+        "duration": "16:40",
+        "difficulty": "medio",
+        "topics": ["serie-p"],
+        "description": "Teorema 1.9: Σ(1/n^p) converge si p > 1"
+      },
+      {
+        "title": "Serie Geométrica - Fórmula y Aplicaciones",
+        "url": "https://www.youtube.com/watch?v=LzLz4V0nk70",
+        "duration": "20:10",
+        "difficulty": "medio",
+        "topics": ["serie-geometrica"],
+        "description": "Convergencia cuando |r| < 1, suma = a/(1-r)"
+      },
+      {
+        "title": "Series Telescópicas con Fracciones Parciales",
+        "url": "https://www.youtube.com/watch?v=VdLy8p0_RuI",
+        "duration": "25:30",
+        "difficulty": "medio",
+        "topics": ["serie-telescopica"],
+        "description": "Descomposición en fracciones parciales y cancelación telescópica"
+      },
+      {
+        "title": "Criterio de la Integral - Teorema y Ejemplos",
+        "url": "https://www.youtube.com/watch?v=nnYaU7h-Nhc",
+        "duration": "19:50",
+        "difficulty": "medio",
+        "topics": ["criterio-integral"],
+        "description": "Relación entre series e integrales impropias"
+      },
+      {
+        "title": "Criterios de Comparación Directa y por Límite",
+        "url": "https://www.youtube.com/watch?v=MgNg1Jq1d_U",
+        "duration": "28:15",
+        "difficulty": "medio",
+        "topics": ["criterio-comparacion-directa", "criterio-comparacion-limite"],
+        "description": "Comparación con series conocidas para determinar convergencia"
+      },
+      {
+        "title": "Criterio del Cociente (Ratio Test)",
+        "url": "https://www.youtube.com/watch?v=2ZfxJW4-5v0",
+        "duration": "17:30",
+        "difficulty": "medio",
+        "topics": ["criterio-cociente"],
+        "description": "L = lim(a_{n+1}/a_n): L < 1 converge, L > 1 diverge"
+      },
+      {
+        "title": "Criterio de la Raíz (Root Test)",
+        "url": "https://www.youtube.com/watch?v=kGZIJU_sdHU",
+        "duration": "15:45",
+        "difficulty": "medio",
+        "topics": ["criterio-raiz"],
+        "description": "L = lim(n√a_n): útil para series con potencias de n"
+      },
+      {
+        "title": "Series Alternantes - Criterio de Leibniz",
+        "url": "https://www.youtube.com/watch?v=4UZs_LdAjhc",
+        "duration": "21:20",
+        "difficulty": "medio",
+        "topics": ["series-alternantes", "criterio-series-alternantes"],
+        "description": "Convergencia de series que alternan signos"
+      },
+      {
+        "title": "Convergencia Absoluta vs Condicional",
+        "url": "https://www.youtube.com/watch?v=ooYlKi3wkL8",
+        "duration": "23:10",
+        "difficulty": "avanzado",
+        "topics": ["convergencia-absoluta", "convergencia-absoluta-condicional"],
+        "description": "Diferencia entre convergencia absoluta y condicional, ejemplos"
+      },
+      {
+        "title": "Resumen de Criterios de Convergencia",
+        "url": "https://www.youtube.com/watch?v=9_s5J7ISJhI",
+        "duration": "30:00",
+        "difficulty": "avanzado",
+        "topics": ["serie-p", "serie-geometrica", "criterio-cociente", "criterio-raiz", "criterio-series-alternantes"],
+        "description": "Tabla comparativa de todos los criterios y cuándo usar cada uno"
+      }
+    ],
+    "articles": [
+      {
+        "title": "Sucesiones: Definición Formal y Propiedades",
+        "url": "https://es.wikipedia.org/wiki/Sucesi%C3%B3n_matem%C3%A1tica",
+        "type": "teoria",
+        "difficulty": "facil",
+        "topics": ["sucesiones-numericas"],
+        "description": "Artículo completo sobre sucesiones numéricas con ejemplos"
+      },
+      {
+        "title": "Teoremas de Convergencia de Sucesiones",
+        "url": "https://www.superprof.es/apuntes/escolar/matematicas/calculo/sucesiones/convergencia-de-sucesiones.html",
+        "type": "teoria",
+        "difficulty": "medio",
+        "topics": ["convergencia-sucesiones"],
+        "description": "Teorema del Sandwich, límites y monotonía"
+      },
+      {
+        "title": "Series Numéricas - Introducción y Definiciones",
+        "url": "https://www.matematicasonline.es/cidead/3esomatematicas/pdf/QuincenaT15.pdf",
+        "type": "teoria",
+        "difficulty": "facil",
+        "topics": ["series-numericas-intro"],
+        "description": "Diferencia entre sucesión y serie, sumas parciales"
+      },
+      {
+        "title": "Serie Geométrica: Demostración de la Fórmula",
+        "url": "https://es.khanacademy.org/math/ap-calculus-bc/bc-series-new/bc-10-2/a/geometric-series",
+        "type": "teoria",
+        "difficulty": "medio",
+        "topics": ["serie-geometrica"],
+        "description": "Derivación de la fórmula S = a/(1-r) con ejemplos"
+      },
+      {
+        "title": "Serie p y Serie Armónica",
+        "url": "https://www.sangakoo.com/es/temas/series-numericas/serie-p-y-serie-armonica",
+        "type": "teoria",
+        "difficulty": "medio",
+        "topics": ["serie-p"],
+        "description": "Demostración de por qué la serie armónica diverge"
+      },
+      {
+        "title": "Fracciones Parciales para Series Telescópicas",
+        "url": "https://www.universoformulas.com/matematicas/analisis/fracciones-parciales/",
+        "type": "tutorial",
+        "difficulty": "medio",
+        "topics": ["serie-telescopica"],
+        "description": "Técnica de descomposición en fracciones parciales"
+      },
+      {
+        "title": "Criterio de la Integral - Demostración y Aplicaciones",
+        "url": "https://calculo21.com/criterio-de-la-integral/",
+        "type": "teoria",
+        "difficulty": "avanzado",
+        "topics": ["criterio-integral"],
+        "description": "Prueba del teorema y ejemplos detallados"
+      },
+      {
+        "title": "Estrategias para Elegir el Criterio Correcto",
+        "url": "https://tutorial.math.lamar.edu/Classes/CalcII/SeriesStrategy.aspx",
+        "type": "guia",
+        "difficulty": "avanzado",
+        "topics": ["criterio-comparacion-directa", "criterio-cociente", "criterio-raiz"],
+        "description": "Árbol de decisión para seleccionar el mejor criterio"
+      },
+      {
+        "title": "Series Alternantes y Estimación de Error",
+        "url": "https://www.stewartcalculus.com/data/CALCULUS%20Concepts%20and%20Contexts/upfiles/3c3-AlternSerEstim_Stu.pdf",
+        "type": "teoria",
+        "difficulty": "medio",
+        "topics": ["series-alternantes", "criterio-series-alternantes"],
+        "description": "Criterio de Leibniz y cómo estimar el error de truncamiento"
+      },
+      {
+        "title": "Convergencia Absoluta y Teorema de Reordenamiento",
+        "url": "https://personales.unican.es/gonzaleof/Ciencias_1/series_complejas.pdf",
+        "type": "teoria",
+        "difficulty": "avanzado",
+        "topics": ["convergencia-absoluta", "convergencia-absoluta-condicional"],
+        "description": "Teorema de Riemann sobre reordenamiento de series condicionalmente convergentes"
+      }
+    ],
+    "exercises": [
+      {
+        "title": "Ejercicios de Límites de Sucesiones",
+        "url": "https://www.ugr.es/~fjperez/apuntes/sucesiones_ejercicios.pdf",
+        "type": "practica",
+        "difficulty": "medio",
+        "topics": ["sucesiones-numericas", "convergencia-sucesiones"],
+        "description": "50 ejercicios resueltos de límites de sucesiones"
+      },
+      {
+        "title": "Problemas de Serie Geométrica",
+        "url": "https://www.uv.es/~montes/biologia/curso0405/serie_geometrica.pdf",
+        "type": "practica",
+        "difficulty": "medio",
+        "topics": ["serie-geometrica"],
+        "description": "Problemas con series geométricas y aplicaciones"
+      },
+      {
+        "title": "Ejercicios de Series Telescópicas",
+        "url": "https://www.dm.uba.ar/materias/analisis_II/2012/2/Series_telescopicas.pdf",
+        "type": "practica",
+        "difficulty": "medio",
+        "topics": ["serie-telescopica"],
+        "description": "15 ejercicios con fracciones parciales y series telescópicas"
+      },
+      {
+        "title": "Problemas Mixtos de Criterios de Convergencia",
+        "url": "https://ocw.uc3m.es/pluginfile.php/5095/mod_resource/content/1/Series_ejercicios.pdf",
+        "type": "practica",
+        "difficulty": "avanzado",
+        "topics": ["criterio-comparacion-directa", "criterio-cociente", "criterio-raiz", "serie-p"],
+        "description": "40 problemas donde debes elegir el criterio apropiado"
+      },
+      {
+        "title": "Ejercicios de Series Alternantes",
+        "url": "https://www.unizar.es/aragon_tres/unidad3/u3seralt.pdf",
+        "type": "practica",
+        "difficulty": "medio",
+        "topics": ["series-alternantes", "criterio-series-alternantes"],
+        "description": "Problemas con criterio de Leibniz y estimación de errores"
+      },
+      {
+        "title": "Problemas de Convergencia Absoluta vs Condicional",
+        "url": "https://www.matematicas.unam.mx/lars/0398/serie15.pdf",
+        "type": "practica",
+        "difficulty": "avanzado",
+        "topics": ["convergencia-absoluta", "convergencia-absoluta-condicional"],
+        "description": "Clasificación de series según tipo de convergencia"
+      }
+    ],
+    "tools": [
+      {
+        "title": "Calculadora de Series - Symbolab",
+        "url": "https://es.symbolab.com/solver/series-calculator",
+        "type": "calculadora",
+        "topics": ["series-numericas-intro", "serie-geometrica", "serie-p"],
+        "description": "Calcula sumas de series y determina convergencia automáticamente"
+      },
+      {
+        "title": "Wolfram Alpha - Series Convergence",
+        "url": "https://www.wolframalpha.com/examples/mathematics/calculus-and-analysis/series",
+        "type": "calculadora",
+        "topics": ["criterio-cociente", "criterio-raiz", "criterio-integral"],
+        "description": "Herramienta poderosa para análisis de series con pasos detallados"
+      },
+      {
+        "title": "Desmos - Visualizador de Sumas Parciales",
+        "url": "https://www.desmos.com/calculator",
+        "type": "visualizacion",
+        "topics": ["sucesiones-numericas", "series-numericas-intro", "series-alternantes"],
+        "description": "Grafica sucesiones y sumas parciales para ver convergencia visualmente"
+      },
+      {
+        "title": "GeoGebra - Sucesiones y Series",
+        "url": "https://www.geogebra.org/m/uDdvjfGY",
+        "type": "visualizacion",
+        "topics": ["sucesiones-numericas", "convergencia-sucesiones"],
+        "description": "Aplicación interactiva para explorar sucesiones numéricas"
+      }
+    ],
+    "books": [
+      {
+        "title": "Cálculo de Stewart - Capítulo 11: Sucesiones y Series Infinitas",
+        "author": "James Stewart",
+        "isbn": "978-6075195366",
+        "difficulty": "medio",
+        "topics": ["sucesiones-numericas", "series-numericas-intro", "criterio-cociente", "criterio-raiz"],
+        "description": "Libro clásico de cálculo con excelente cobertura de series"
+      },
+      {
+        "title": "Calculus - Early Transcendentals (Thomas)",
+        "author": "George B. Thomas",
+        "isbn": "978-0134439020",
+        "difficulty": "medio",
+        "topics": ["serie-p", "serie-geometrica", "convergencia-absoluta"],
+        "description": "Explicaciones claras y muchos ejercicios resueltos"
+      },
+      {
+        "title": "Análisis Matemático I (Apostol)",
+        "author": "Tom M. Apostol",
+        "isbn": "978-8429150063",
+        "difficulty": "avanzado",
+        "topics": ["convergencia-sucesiones", "criterio-comparacion-limite", "convergencia-absoluta-condicional"],
+        "description": "Tratamiento riguroso con demostraciones completas"
+      }
+    ],
+    "cheatsheets": [
+      {
+        "title": "Tabla Resumen: Todos los Criterios de Convergencia",
+        "type": "resumen",
+        "difficulty": "medio",
+        "topics": ["serie-p", "serie-geometrica", "criterio-cociente", "criterio-raiz", "criterio-series-alternantes"],
+        "content": {
+          "Serie Geométrica": {
+            "forma": "Σar^n",
+            "converge": "|r| < 1",
+            "suma": "a/(1-r)"
+          },
+          "Serie p": {
+            "forma": "Σ(1/n^p)",
+            "converge": "p > 1",
+            "diverge": "p ≤ 1"
+          },
+          "Criterio Divergencia": {
+            "condicion": "lim a_n ≠ 0",
+            "conclusion": "Serie DIVERGE"
+          },
+          "Criterio del Cociente": {
+            "formula": "L = lim(a_{n+1}/a_n)",
+            "L < 1": "CONVERGE",
+            "L > 1": "DIVERGE",
+            "L = 1": "INCONCLUSO"
+          },
+          "Criterio de la Raíz": {
+            "formula": "L = lim(n√a_n)",
+            "L < 1": "CONVERGE",
+            "L > 1": "DIVERGE",
+            "L = 1": "INCONCLUSO"
+          },
+          "Criterio de Leibniz": {
+            "forma": "Σ(-1)^n b_n",
+            "condiciones": "b_n decreciente Y lim b_n = 0",
+            "conclusion": "CONVERGE"
+          }
+        }
+      },
+      {
+        "title": "Árbol de Decisión: ¿Qué Criterio Usar?",
+        "type": "guia",
+        "difficulty": "avanzado",
+        "topics": ["criterio-comparacion-directa", "criterio-cociente", "criterio-integral"],
+        "steps": [
+          "1. ¿lim a_n ≠ 0? → USA Criterio de Divergencia",
+          "2. ¿Es geométrica (ar^n)? → USA Serie Geométrica",
+          "3. ¿Es p-serie (1/n^p)? → USA Criterio de la p-Serie",
+          "4. ¿Tiene factoriales o exponenciales? → USA Criterio del Cociente",
+          "5. ¿Tiene n en el exponente ((algo)^n)? → USA Criterio de la Raíz",
+          "6. ¿Alterna signos? → USA Criterio de Leibniz",
+          "7. ¿Se puede comparar fácilmente? → USA Comparación Directa o por Límite",
+          "8. ¿Es f(n) continua, positiva y decreciente? → USA Criterio de la Integral"
+        ]
+      }
+    ]
+  }
+}

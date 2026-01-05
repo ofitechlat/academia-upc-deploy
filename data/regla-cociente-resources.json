@@ -1,0 +1,176 @@
+{
+  "introduccion-cociente": [
+    {
+      "title": "Regla del Cociente - Khan Academy",
+      "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-9/v/quotient-rule",
+      "type": "video",
+      "description": "Introducción completa a la regla del cociente con ejemplos paso a paso"
+    },
+    {
+      "title": "Quotient Rule - Paul's Online Notes",
+      "url": "https://tutorial.math.lamar.edu/classes/calci/productquotientrule.aspx",
+      "type": "article",
+      "description": "Explicación teórica de la regla del cociente con múltiples ejemplos"
+    },
+    {
+      "title": "Derivada del Cociente - Unicoos",
+      "url": "https://www.youtube.com/watch?v=quotient-rule-unicoos",
+      "type": "video",
+      "description": "Tutorial en español con ejemplos prácticos de la fórmula (u'v - uv')/v²"
+    },
+    {
+      "title": "Ejercicios de Regla del Cociente",
+      "url": "https://www.symbolab.com/solver/quotient-rule-calculator",
+      "type": "practice",
+      "description": "Calculadora interactiva que muestra el proceso paso a paso"
+    }
+  ],
+  "demostracion-cociente": [
+    {
+      "title": "Proof of Quotient Rule - Khan Academy",
+      "url": "https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-9/v/proof-of-quotient-rule",
+      "type": "video",
+      "description": "Demostración formal de la regla del cociente usando la regla del producto"
+    },
+    {
+      "title": "Derivación de la Regla del Cociente",
+      "url": "https://www.youtube.com/watch?v=quotient-rule-proof",
+      "type": "video",
+      "description": "Demostración paso a paso: convertir u/v en u·v⁻¹ y aplicar regla del producto"
+    },
+    {
+      "title": "Quotient Rule Proof - Math is Fun",
+      "url": "https://www.mathsisfun.com/calculus/derivatives-quotient-rule.html",
+      "type": "article",
+      "description": "Demostración con visualizaciones geométricas y algebraicas"
+    },
+    {
+      "title": "Intuición Geométrica del Cociente",
+      "url": "https://www.youtube.com/watch?v=geometric-quotient-intuition",
+      "type": "video",
+      "description": "Interpretación visual de por qué la fórmula tiene sentido"
+    }
+  ],
+  "cociente-polinomios": [
+    {
+      "title": "Quotient Rule with Polynomials",
+      "url": "https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-9/e/quotient-rule-polynomials",
+      "type": "practice",
+      "description": "Ejercicios interactivos: cocientes de polinomios"
+    },
+    {
+      "title": "Simplificar Antes de Derivar",
+      "url": "https://www.youtube.com/watch?v=simplify-before-deriving",
+      "type": "video",
+      "description": "Cuándo conviene simplificar el cociente antes de aplicar la regla"
+    },
+    {
+      "title": "Polynomial Quotient Derivatives - Paul's Notes",
+      "url": "https://tutorial.math.lamar.edu/problems/calci/quotientrule.aspx",
+      "type": "practice",
+      "description": "Hoja de problemas con soluciones detalladas"
+    },
+    {
+      "title": "Cociente de Polinomios - Ejemplos",
+      "url": "https://www.analyzemath.com/calculus/Differentiation/quotient_rule.html",
+      "type": "article",
+      "description": "Ejemplos variados con estrategias de simplificación"
+    }
+  ],
+  "cociente-trigonometricas": [
+    {
+      "title": "Quotient Rule with Trig Functions",
+      "url": "https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-1a/v/quotient-rule-trig",
+      "type": "video",
+      "description": "Cocientes con funciones trigonométricas: sin(x)/x, x/cos(x)"
+    },
+    {
+      "title": "Derivadas Trigonométricas con Cociente",
+      "url": "https://www.youtube.com/watch?v=trig-quotient-derivatives",
+      "type": "video",
+      "description": "Técnicas especiales para cocientes trigonométricos"
+    },
+    {
+      "title": "Tangente como Cociente",
+      "url": "https://www.mathsisfun.com/calculus/derivatives-rules.html",
+      "type": "article",
+      "description": "Derivar tan(x) = sin(x)/cos(x) usando la regla del cociente"
+    },
+    {
+      "title": "Trig Quotient Practice",
+      "url": "https://www.symbolab.com/solver/step-by-step/trig-quotient",
+      "type": "practice",
+      "description": "Ejercicios interactivos con funciones trigonométricas"
+    },
+    {
+      "title": "Identidades Trigonométricas en Derivadas",
+      "url": "https://tutorial.math.lamar.edu/classes/calci/DiffTrigFcns.aspx",
+      "type": "reference",
+      "description": "Referencia rápida de derivadas trigonométricas comunes"
+    }
+  ],
+  "simplificacion-cocientes": [
+    {
+      "title": "Simplificar vs. Regla del Cociente",
+      "url": "https://www.youtube.com/watch?v=when-to-simplify",
+      "type": "video",
+      "description": "Criterios para decidir cuándo simplificar antes de derivar"
+    },
+    {
+      "title": "Factoring Before Differentiation",
+      "url": "https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-10/v/simplify-first",
+      "type": "video",
+      "description": "Técnicas de factorización para simplificar cocientes"
+    },
+    {
+      "title": "Optimización de Derivadas",
+      "url": "https://www.mathsisfun.com/calculus/derivatives-introduction.html",
+      "type": "article",
+      "description": "Estrategias para hacer derivadas más eficientes"
+    },
+    {
+      "title": "Álgebra para Cálculo",
+      "url": "https://tutorial.math.lamar.edu/classes/calci/ReviewAlgebra.aspx",
+      "type": "reference",
+      "description": "Repaso de álgebra útil para simplificar antes de derivar"
+    }
+  ],
+  "aplicaciones-cociente": [
+    {
+      "title": "Real-World Quotient Rule Applications",
+      "url": "https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-1b/v/quotient-applications",
+      "type": "video",
+      "description": "Aplicaciones en economía, biología y física"
+    },
+    {
+      "title": "Concentración de Medicamentos",
+      "url": "https://www.youtube.com/watch?v=drug-concentration-calculus",
+      "type": "video",
+      "description": "Modelado farmacocinético con cocientes"
+    },
+    {
+      "title": "Average Cost Functions",
+      "url": "https://tutorial.math.lamar.edu/classes/calci/RatesOfChange.aspx",
+      "type": "article",
+      "description": "Costo promedio y marginal usando derivadas de cocientes"
+    },
+    {
+      "title": "Quotient Rule in Physics",
+      "url": "https://www.youtube.com/watch?v=physics-quotient-rule",
+      "type": "video",
+      "description": "Eficiencia, densidad, y otras razones físicas"
+    },
+    {
+      "title": "Optimización con Cocientes",
+      "url": "https://www.analyzemath.com/calculus/optimization/optimization.html",
+      "type": "article",
+      "description": "Encontrar máximos y mínimos de funciones racionales"
+    },
+    {
+      "title": "Ejercicios de Aplicación",
+      "url": "https://www.symbolab.com/practice/quotient-rule-applications",
+      "type": "practice",
+      "description": "Problemas aplicados con soluciones paso a paso"
+    }
+  ]
+}

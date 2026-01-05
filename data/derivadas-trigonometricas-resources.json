@@ -1,0 +1,194 @@
+{
+  "derivadas-trigonometricas": {
+    "derivada-seno-coseno": [
+      {
+        "title": "📺 Derivadas de sin(x) y cos(x) - Khan Academy",
+        "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-2/v/derivatives-of-sin-x-and-cos-x",
+        "type": "video",
+        "description": "Video fundamental sobre las derivadas del seno y coseno. Incluye demostración por límites y ejemplos básicos."
+      },
+      {
+        "title": "🧮 Demostración por Límite: d/dx[sin(x)]",
+        "url": "https://www.youtube.com/watch?v=example-sin-proof",
+        "type": "video",
+        "description": "Demostración rigurosa usando definición de derivada y límites especiales: lim[sin(h)/h]=1 y lim[(cos(h)-1)/h]=0."
+      },
+      {
+        "title": "📊 Visualización: sin(x) y su Derivada cos(x)",
+        "url": "https://www.geogebra.org/m/sin-cos-derivatives",
+        "type": "practice",
+        "description": "App GeoGebra interactiva que muestra gráficamente cómo cos(x) representa la pendiente de sin(x) en cada punto."
+      },
+      {
+        "title": "✍️ Ejercicios: Derivadas de sin y cos",
+        "url": "https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-2/e/derivatives-of-sin-and-cos",
+        "type": "practice",
+        "description": "Práctica interactiva de Khan Academy: 20+ ejercicios sobre derivadas de seno y coseno, con y sin coeficientes."
+      },
+      {
+        "title": "📖 Ciclo de Derivadas Trigonométricas",
+        "url": "https://tutorial.math.lamar.edu/classes/calci/DerivTrigFcns.aspx",
+        "type": "article",
+        "description": "Artículo de Paul's Math Notes sobre el patrón cíclico: sin→cos→-sin→-cos→sin. Incluye tabla completa."
+      },
+      {
+        "title": "🎓 Límites Especiales Trigonométricos",
+        "url": "https://mathworld.wolfram.com/TrigonometricLimit.html",
+        "type": "reference",
+        "description": "Referencia sobre límites fundamentales: lim[sin(x)/x]=1 cuando x→0, esencial para derivar funciones trigonométricas."
+      }
+    ],
+    "derivada-tangente-cotangente": [
+      {
+        "title": "📺 Derivada de tan(x) - Demostración",
+        "url": "https://www.youtube.com/watch?v=example-tan-derivative",
+        "type": "video",
+        "description": "Video que demuestra d/dx[tan(x)] = sec²(x) usando regla del cociente con tan(x) = sin(x)/cos(x)."
+      },
+      {
+        "title": "🧮 Derivada de cot(x) con Regla del Cociente",
+        "url": "https://www.youtube.com/watch?v=example-cot-derivative",
+        "type": "video",
+        "description": "Demostración de d/dx[cot(x)] = -csc²(x) a partir de cot(x) = cos(x)/sin(x). Nota el signo negativo."
+      },
+      {
+        "title": "📊 Identidades: sec²(x) = 1 + tan²(x)",
+        "url": "https://www.mathsisfun.com/algebra/trigonometric-identities.html",
+        "type": "article",
+        "description": "Identidades trigonométricas útiles para trabajar con derivadas de tan y cot. Incluye demostraciones."
+      },
+      {
+        "title": "✍️ Ejercicios: Derivar tan(f(x))",
+        "url": "https://www.analyzemath.com/calculus/derivatives/tan_derivatives.html",
+        "type": "practice",
+        "description": "Problemas de derivadas de tangente con regla de la cadena: tan(2x), tan(x²), tan(eˣ), etc."
+      },
+      {
+        "title": "📝 Tabla Comparativa: tan vs cot",
+        "url": "https://tutorial.math.lamar.edu/classes/calci/DerivTrigFcns.aspx#TanCot",
+        "type": "reference",
+        "description": "Tabla que compara derivadas de tan y cot, con énfasis en signos y formas alternativas usando identidades."
+      }
+    ],
+    "derivada-secante-cosecante": [
+      {
+        "title": "📺 Derivadas de sec(x) y csc(x)",
+        "url": "https://www.youtube.com/watch?v=example-sec-csc-derivatives",
+        "type": "video",
+        "description": "Video completo sobre derivadas de secante y cosecante. Demostraciones usando regla del cociente y cadena."
+      },
+      {
+        "title": "🧮 Demostración: d/dx[sec(x)] = sec(x)tan(x)",
+        "url": "https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-2/v/derivative-of-sec-x",
+        "type": "video",
+        "description": "Khan Academy demuestra paso a paso por qué la derivada de sec(x) es sec(x)tan(x) a partir de 1/cos(x)."
+      },
+      {
+        "title": "📐 Patrón: Derivadas Contienen la Función",
+        "url": "https://www.mathsisfun.com/calculus/derivatives-sec-csc.html",
+        "type": "article",
+        "description": "Artículo sobre el patrón mnemotécnico: las derivadas de sec y csc contienen la función original."
+      },
+      {
+        "title": "✍️ Ejercicios: sec, csc y sus Derivadas",
+        "url": "https://www.analyzemath.com/calculus/derivatives/sec_csc_derivatives.html",
+        "type": "practice",
+        "description": "Colección de problemas sobre derivadas de sec(x) y csc(x), con y sin regla de la cadena."
+      },
+      {
+        "title": "📊 GeoGebra: Visualizar sec y csc",
+        "url": "https://www.geogebra.org/m/sec-csc-derivatives",
+        "type": "practice",
+        "description": "Herramienta interactiva para visualizar sec(x), csc(x) y sus derivadas. Observa discontinuidades."
+      },
+      {
+        "title": "🎓 Signos en Derivadas Trigonométricas",
+        "url": "https://mathworld.wolfram.com/TrigonometricDerivatives.html",
+        "type": "reference",
+        "description": "Tabla completa de Wolfram con todas las derivadas trigonométricas y sus signos. Referencia rápida."
+      }
+    ],
+    "trig-con-regla-cadena": [
+      {
+        "title": "📺 Regla de la Cadena con Trigonométricas",
+        "url": "https://www.youtube.com/watch?v=example-chain-rule-trig",
+        "type": "video",
+        "description": "Video tutorial sobre cómo combinar derivadas trigonométricas con regla de la cadena. Múltiples ejemplos."
+      },
+      {
+        "title": "🧮 Derivar sin(f(x)) y cos(g(x))",
+        "url": "https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-2/v/chain-rule-with-trig",
+        "type": "video",
+        "description": "Khan Academy explica el patrón: d/dx[sin(f(x))] = cos(f(x))·f'(x). Aplicación sistemática de la cadena."
+      },
+      {
+        "title": "📊 Ejercicios Progresivos: sin(2x) hasta sin(x³)",
+        "url": "https://www.analyzemath.com/calculus/chain_rule_trig.html",
+        "type": "practice",
+        "description": "Problemas organizados por dificultad: desde sin(kx) hasta composiciones complejas como sin(cos(x²))."
+      },
+      {
+        "title": "✍️ Práctica: [sin(x)]ⁿ y [cos(x)]ⁿ",
+        "url": "https://www.mathway.com/examples/calculus/derivatives/chain-rule-trig",
+        "type": "practice",
+        "description": "Ejercicios sobre derivadas de potencias de funciones trigonométricas: sin²(x), cos³(x), etc."
+      },
+      {
+        "title": "📝 Identidades de Ángulo Doble",
+        "url": "https://www.mathsisfun.com/algebra/trigonometry-double-angle.html",
+        "type": "article",
+        "description": "Identidades útiles: 2sin(x)cos(x) = sin(2x), para simplificar derivadas. Incluye triple ángulo."
+      },
+      {
+        "title": "🎯 Calculadora con Pasos: Derivadas Trig",
+        "url": "https://www.symbolab.com/solver/derivative-calculator",
+        "type": "reference",
+        "description": "Calculadora Symbolab que muestra cada paso al derivar funciones trigonométricas complejas."
+      }
+    ],
+    "aplicaciones-trig": [
+      {
+        "title": "📺 Movimiento Armónico Simple",
+        "url": "https://www.youtube.com/watch?v=example-simple-harmonic-motion",
+        "type": "video",
+        "description": "Video sobre física del movimiento armónico simple: x(t)=Asin(ωt). Derivadas dan velocidad y aceleración."
+      },
+      {
+        "title": "🔬 Oscilaciones: Péndulo y Resorte",
+        "url": "https://www.physicsclassroom.com/class/waves/Lesson-0/Oscillations",
+        "type": "article",
+        "description": "Aplicación física de derivadas trigonométricas: análisis de péndulos, resortes y ondas."
+      },
+      {
+        "title": "📊 Ondas: Amplitud, Frecuencia y Fase",
+        "url": "https://www.khanacademy.org/science/physics/mechanical-waves-and-sound/harmonic-motion",
+        "type": "video",
+        "description": "Relación entre parámetros de ondas y sus derivadas. Cómo ω afecta velocidad y aceleración."
+      },
+      {
+        "title": "✍️ Problemas: Velocidad y Aceleración",
+        "url": "https://www.analyzemath.com/calculus/applications/harmonic_motion.html",
+        "type": "practice",
+        "description": "Problemas de aplicación: dada posición trigonométrica, encontrar velocidad y aceleración instantáneas."
+      },
+      {
+        "title": "🎓 Ecuación Diferencial: a = -ω²x",
+        "url": "https://tutorial.math.lamar.edu/classes/de/SimpleHarmonicMotion.aspx",
+        "type": "article",
+        "description": "Derivación de la ecuación diferencial del MAS. Muestra por qué sin y cos son soluciones naturales."
+      },
+      {
+        "title": "📐 Gráficas: Posición, Velocidad, Aceleración",
+        "url": "https://www.geogebra.org/m/harmonic-motion-graphs",
+        "type": "practice",
+        "description": "App GeoGebra que grafica simultáneamente x(t), v(t) y a(t) para movimiento armónico. Observa desfases."
+      },
+      {
+        "title": "🌊 Ondas Electromagnéticas",
+        "url": "https://www.physicsclassroom.com/class/light/Lesson-1/Electromagnetic-Waves",
+        "type": "article",
+        "description": "Aplicación en electricidad y magnetismo: campos E y B oscilan sinusoidalmente. Derivadas temporales."
+      }
+    ]
+  }
+}

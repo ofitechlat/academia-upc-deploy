@@ -1,0 +1,182 @@
+{
+  "funciones-implicitas": [
+    {
+      "title": "Funciones Implícitas vs Explícitas - Khan Academy",
+      "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-2/v/implicit-vs-explicit-functions",
+      "type": "video",
+      "description": "Diferencia entre y = f(x) y ecuaciones donde x e y están mezcladas"
+    },
+    {
+      "title": "Implicit Functions - Math is Fun",
+      "url": "https://www.mathsisfun.com/calculus/implicit-differentiation.html",
+      "type": "article",
+      "description": "Introducción visual a funciones implícitas con ejemplos gráficos"
+    },
+    {
+      "title": "¿Qué es una Función Implícita?",
+      "url": "https://www.youtube.com/watch?v=implicit-functions-intro",
+      "type": "video",
+      "description": "Tutorial en español sobre funciones implícitas y por qué no se pueden despejar"
+    }
+  ],
+  "tecnica-derivacion-implicita": [
+    {
+      "title": "Derivación Implícita - Khan Academy",
+      "url": "https://es.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-2/v/implicit-differentiation-1",
+      "type": "video",
+      "description": "Introducción completa a la técnica de derivación implícita paso a paso"
+    },
+    {
+      "title": "Implicit Differentiation - 3Blue1Brown",
+      "url": "https://www.youtube.com/watch?v=qb40J4N1fa4",
+      "type": "video",
+      "description": "Visualización animada de por qué funciona la derivación implícita"
+    },
+    {
+      "title": "Implicit Differentiation - Paul's Notes",
+      "url": "https://tutorial.math.lamar.edu/classes/calci/implicitdiff.aspx",
+      "type": "article",
+      "description": "Explicación detallada con múltiples ejemplos resueltos"
+    },
+    {
+      "title": "Técnica Paso a Paso",
+      "url": "https://www.youtube.com/watch?v=implicit-step-by-step",
+      "type": "video",
+      "description": "Método sistemático para derivar implícitamente cualquier ecuación"
+    },
+    {
+      "title": "Implicit Differentiation Calculator",
+      "url": "https://www.symbolab.com/solver/implicit-derivative-calculator",
+      "type": "practice",
+      "description": "Calculadora que muestra cada paso de la derivación implícita"
+    }
+  ],
+  "circunferencias-elipses": [
+    {
+      "title": "Círculos y Derivación Implícita",
+      "url": "https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-2/v/implicit-differentiation-circle",
+      "type": "video",
+      "description": "Derivar x² + y² = r² y encontrar tangentes"
+    },
+    {
+      "title": "Elipses con Derivación Implícita",
+      "url": "https://www.youtube.com/watch?v=ellipse-implicit-derivative",
+      "type": "video",
+      "description": "Derivadas de elipses: x²/a² + y²/b² = 1"
+    },
+    {
+      "title": "Tangent Lines to Circles",
+      "url": "https://tutorial.math.lamar.edu/classes/calci/TangentNormalLines.aspx",
+      "type": "article",
+      "description": "Encontrar ecuaciones de tangentes a circunferencias"
+    },
+    {
+      "title": "Interpretación Geométrica",
+      "url": "https://www.youtube.com/watch?v=geometric-interpretation-implicit",
+      "type": "video",
+      "description": "Por qué dy/dx = -x/y es perpendicular al radio"
+    },
+    {
+      "title": "Practice: Circles and Ellipses",
+      "url": "https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-2/e/implicit-differentiation-circles",
+      "type": "practice",
+      "description": "Ejercicios interactivos con circunferencias y elipses"
+    }
+  ],
+  "derivadas-orden-superior": [
+    {
+      "title": "Segunda Derivada Implícita - Khan Academy",
+      "url": "https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-2/v/second-derivative-implicit",
+      "type": "video",
+      "description": "Cómo hallar d²y/dx² usando derivación implícita"
+    },
+    {
+      "title": "Higher Order Implicit Derivatives",
+      "url": "https://www.youtube.com/watch?v=second-order-implicit",
+      "type": "video",
+      "description": "Técnicas para derivadas de segundo y tercer orden"
+    },
+    {
+      "title": "Second Derivative Test (Implicit)",
+      "url": "https://tutorial.math.lamar.edu/classes/calci/HigherOrderDerivatives.aspx",
+      "type": "article",
+      "description": "Concavidad usando segunda derivada implícita"
+    }
+  ],
+  "rectas-tangentes-implicitas": [
+    {
+      "title": "Tangent Lines via Implicit Differentiation",
+      "url": "https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-2/v/tangent-line-implicit",
+      "type": "video",
+      "description": "Encontrar ecuaciones de rectas tangentes a curvas implícitas"
+    },
+    {
+      "title": "Rectas Tangentes a Circunferencias",
+      "url": "https://www.youtube.com/watch?v=tangent-lines-circles",
+      "type": "video",
+      "description": "Tutorial completo: tangentes a x² + y² = r²"
+    },
+    {
+      "title": "Horizontal and Vertical Tangents",
+      "url": "https://www.youtube.com/watch?v=horizontal-vertical-tangents",
+      "type": "video",
+      "description": "Dónde dy/dx = 0 (horizontal) o indefinido (vertical)"
+    },
+    {
+      "title": "Tangent Line Problems",
+      "url": "https://tutorial.math.lamar.edu/problems/calci/implicitdiff.aspx",
+      "type": "practice",
+      "description": "Problemas de práctica con soluciones detalladas"
+    },
+    {
+      "title": "Perpendicular Tangents",
+      "url": "https://www.analyzemath.com/calculus/implicit/tangent_perpendicular.html",
+      "type": "article",
+      "description": "Tangentes y normales usando derivación implícita"
+    }
+  ],
+  "aplicaciones-implicitas": [
+    {
+      "title": "Real-World Implicit Differentiation",
+      "url": "https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-2/v/implicit-applications",
+      "type": "video",
+      "description": "Aplicaciones en física, economía, ingeniería"
+    },
+    {
+      "title": "Folium de Descartes",
+      "url": "https://www.youtube.com/watch?v=folium-descartes-derivative",
+      "type": "video",
+      "description": "Análisis completo de x³ + y³ = 6xy"
+    },
+    {
+      "title": "Lemniscata y Otras Curvas",
+      "url": "https://www.youtube.com/watch?v=famous-implicit-curves",
+      "type": "video",
+      "description": "Derivación de curvas famosas: lemniscata, cardioide"
+    },
+    {
+      "title": "Related Rates (Implicit)",
+      "url": "https://tutorial.math.lamar.edu/classes/calci/RelatedRates.aspx",
+      "type": "article",
+      "description": "Problemas de tasas relacionadas con ecuaciones implícitas"
+    },
+    {
+      "title": "Thermodynamics and Implicit Derivatives",
+      "url": "https://www.youtube.com/watch?v=thermodynamics-implicit",
+      "type": "video",
+      "description": "Derivadas parciales implícitas en termodinámica"
+    },
+    {
+      "title": "Economics: Indifference Curves",
+      "url": "https://www.youtube.com/watch?v=indifference-curves-calculus",
+      "type": "video",
+      "description": "Tasas marginales de sustitución con derivación implícita"
+    },
+    {
+      "title": "Advanced Implicit Problems",
+      "url": "https://www.analyzemath.com/calculus/implicit/implicit_differentiation.html",
+      "type": "practice",
+      "description": "Problemas desafiantes con soluciones completas"
+    }
+  ]
+}

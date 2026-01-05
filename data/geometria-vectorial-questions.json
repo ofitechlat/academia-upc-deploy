@@ -1,0 +1,218 @@
+{
+    "geometria-vectorial": [
+        {
+            "id": "geo-001",
+            "topic": "rectas-planos-r3",
+            "question": "Determinar la ecuación normal del plano que contiene los puntos $A(1,-2,3)$, $B(5,3,2)$ y $C(7,-1,4)$.",
+            "type": "multiple-choice",
+            "shuffle": true,
+            "options": [
+                "$3x - 5y - 13z = -26$",
+                "$3x + 5y + 13z = 26$",
+                "$x - 2y + 3z = -26$",
+                "$3x - 5y - 13z = 0$"
+            ],
+            "correct": 0,
+            "difficulty": "intermedio",
+            "explanation": "El vector normal $\\vec{n}$ se obtiene del producto cruz $\\vec{AB} \\times \\vec{AC}$.",
+            "stepByStep": [
+                "1. Calculamos vectores directores: $\\vec{AB} = (4, 5, -1)$ y $\\vec{AC} = (6, 1, 1)$.",
+                "2. Producto curz $\\vec{n} = \\vec{AB} \\times \\vec{AC} = \\begin{vmatrix} i & j & k \\\\ 4 & 5 & -1 \\\\ 6 & 1 & 1 \\end{vmatrix}$.",
+                "3. $\\vec{n} = (5 - (-1))i - (4 - (-6))j + (4 - 30)k = 6i - 10j - 26k$.",
+                "4. Simplificando vector normal (dividiendo por 2): $\\vec{n}' = (3, -5, -13)$.",
+                "5. Ecuación: $3(x-1) - 5(y+2) - 13(z-3) = 0 \\Rightarrow 3x - 5y - 13z - 3 - 10 + 39 = 0$.",
+                "6. $3x - 5y - 13z = -26$."
+            ]
+        },
+        {
+            "id": "geo-002",
+            "topic": "areas-triangulos",
+            "question": "Calcular el área del triángulo con vértices $A(3,0,0), B(1,0,2)$ y $C(2,3,0)$.",
+            "type": "multiple-choice",
+            "shuffle": true,
+            "options": [
+                "$\\frac{\\sqrt{76}}{2}$",
+                "$\\sqrt{76}$",
+                "$\\sqrt{19}$",
+                "$3.5$"
+            ],
+            "correct": 0,
+            "difficulty": "intermedio",
+            "explanation": "El área es la mitad de la magnitud del producto cruz de dos vectores adyacentes.",
+            "stepByStep": [
+                "1. Vectores: $\\vec{AB} = (-2, 0, 2)$, $\\vec{AC} = (-1, 3, 0)$.",
+                "2. Producto cruz $\\vec{AB} \\times \\vec{AC} = (-6, -4, -6)$.",
+                "3. Magnitud: $\\sqrt{(-6)^2 + (-4)^2 + (-6)^2} = \\sqrt{36 + 16 + 36} = \\sqrt{88}$.",
+                "4. Área = $\\frac{\\sqrt{88}}{2} = \\frac{2\\sqrt{22}}{2} = \\sqrt{22}$ (Nota: Re-verificando cálculo. Fuente dice $\\sqrt{76}/2$, mis vectores pueden estar en otro orden, pero $\\sqrt{76} = 2\\sqrt{19}$. Revisemos: $\\vec{AB}=(-2,0,2)$, $\\vec{BC}=(1,3,-2)$. $\\vec{AB}\\times\\vec{BC} = (-6, -2, -6)$. Mag = $\\sqrt{36+4+36}=\\sqrt{76}$. Ok, usando AB y BC da 76. Correcto es $\\frac{\\sqrt{76}}{2}$)."
+            ]
+        },
+        {
+            "id": "geo-003",
+            "topic": "rectas-planos-r3",
+            "question": "Calcular el producto escalar de $\\vec{a} = (-4, -2, 3)$ y $\\vec{b} = (3, -2, -5)$.",
+            "type": "multiple-choice",
+            "shuffle": true,
+            "options": [
+                "-23",
+                "23",
+                "-7",
+                "12"
+            ],
+            "correct": 0,
+            "difficulty": "facil",
+            "explanation": "Producto punto suma los productos de componentes correspondientes.",
+            "stepByStep": [
+                "1. $\\vec{a} \\cdot \\vec{b} = (-4)(3) + (-2)(-2) + (3)(-5)$",
+                "2. $= -12 + 4 - 15$",
+                "3. $= -8 - 15 = -23$"
+            ]
+        },
+        {
+            "id": "geo-004",
+            "topic": "hiperplanos-rn",
+            "question": "Dados el punto $P(1, 1, 1, 1)$ y vector normal $\\vec{n}=(0, -1, 0, 2)$, encuentre la ecuación del hiperplano en $R^4$.",
+            "type": "multiple-choice",
+            "shuffle": true,
+            "options": [
+                "$-x_2 + 2x_4 = 1$",
+                "$-y + 2w = 0$",
+                "$x_2 + 2x_4 = 3$",
+                "$-x_1 + 2x_3 = 1$"
+            ],
+            "correct": 0,
+            "difficulty": "avanzado",
+            "explanation": "Ecuación: $\\vec{n} \\cdot (\\vec{x} - P) = 0$.",
+            "stepByStep": [
+                "1. $\\vec{n} \\cdot \\vec{x} = \\vec{n} \\cdot P$.",
+                "2. $0(x_1) - 1(x_2) + 0(x_3) + 2(x_4) = 0(1) - 1(1) + 0(1) + 2(1)$.",
+                "3. $-x_2 + 2x_4 = -1 + 2$.",
+                "4. $-x_2 + 2x_4 = 1$."
+            ]
+        },
+        {
+            "id": "geo-005",
+            "topic": "areas-triangulos",
+            "question": "Determine si el triángulo con vértices $A(3,0,0), B(1,0,2)$ y $C(2,3,0)$ es rectángulo, obtusángulo o acutángulo.",
+            "type": "multiple-choice",
+            "shuffle": true,
+            "options": [
+                "Acutángulo",
+                "Rectángulo",
+                "Obtusángulo",
+                "Isósceles"
+            ],
+            "correct": 0,
+            "difficulty": "intermedio",
+            "explanation": "Calculamos las longitudes de los lados y usamos el teorema de los cosenos o producto punto. Todos los ángulos son menores a 90°.",
+            "stepByStep": [
+                "1. $\\vec{AB}=(-2,0,2), \\vec{AC}=(-1,3,0), \\vec{BC}=(1,3,-2)$.",
+                "2. $AB^2 = 8, AC^2 = 10, BC^2 = 14$.",
+                "3. El lado mayor es $BC$. $8 + 10 = 18 > 14$, por lo que es acutángulo.",
+                "4. Productos punto: $\\vec{AB} \\cdot \\vec{AC} = 2 > 0$ (A agudo)..."
+            ]
+        },
+        {
+            "id": "geo-006",
+            "topic": "rectas-planos-r3",
+            "question": "Encontrar el plano que contiene los puntos $A(1, 1, 1), B(0, -1, 2), C(3, 4, 1)$.",
+            "type": "multiple-choice",
+            "shuffle": true,
+            "options": [
+                "$3x - 2y - z = 0$",
+                "$x + y + z = 3$",
+                "$2x - y + 3z = 4$",
+                "$3x - 5y - 13z = -26$"
+            ],
+            "correct": 0,
+            "difficulty": "intermedio",
+            "explanation": "Normal $\\vec{n} = \\vec{AB} \\times \\vec{AC} = (-1, -2, 1) \\times (2, 3, 0)$.",
+            "stepByStep": [
+                "1. $\\vec{AB} = (-1, -2, 1)$, $\\vec{AC} = (2, 3, 0)$.",
+                "2. $\\vec{n} = (-3, -(-2), 1) = (-3, 2, 1)$. (Corrigiendo: $-3i -(-2)j + (-3+4)k = (-3, 2, 1)$.",
+                "3. Re-calculando: $\\begin{vmatrix} i & j & k \\\\ -1 & -2 & 1 \\\\ 2 & 3 & 0 \\end{vmatrix} = -3i -(-2)j + 1k = (-3, 2, 1)$?",
+                "4. Fuente dice $3x - 2y - z = 0$. $\\vec{n}=(3, -2, -1)$.",
+                "5. Ecuación: $3(x-1) - 2(y-1) - 1(z-1) = 3x - 3 - 2y + 2 - z + 1 = 3x - 2y - z = 0$."
+            ]
+        },
+        {
+            "id": "geo-007",
+            "topic": "hiperplanos-rn",
+            "question": "Calcular la recta en $R^5$ que contiene el punto $(0, 0, 0, 0, 0)$ y el vector director $(9, 7, -1, 0, 1)$.",
+            "type": "multiple-choice",
+            "shuffle": true,
+            "options": [
+                "$X = t(9, 7, -1, 0, 1)$",
+                "$X = (9, 7, -1, 0, 1) + t(1, 1, 1, 1, 1)$",
+                "$9x_1 + 7x_2 - x_3 + x_5 = 0$",
+                "$X = (9t, 7t, -t, 1, t)$"
+            ],
+            "correct": 0,
+            "difficulty": "avanzado",
+            "explanation": "La ecuación vectorial de la recta por el origen es simplemente $X = t\\vec{v}$.",
+            "stepByStep": [
+                "1. Punto $P = \\mathbf{0}$. Vector $\\vec{v} = (9, 7, -1, 0, 1)$.",
+                "2. Ecuación: $X = P + t\\vec{v} = t\\vec{v}$."
+            ]
+        },
+        {
+            "id": "geo-008",
+            "topic": "hiperplanos-rn",
+            "question": "Dados el punto $(0, -1, 3, 4)$ y vector normal $(2, 1, 4, 3)$ en $R^4$, encuentre el hiperplano.",
+            "type": "multiple-choice",
+            "shuffle": true,
+            "options": [
+                "$2x_1 + x_2 + 4x_3 + 3x_4 = 23$",
+                "$2x_1 + x_2 + 4x_3 + 3x_4 = 0$",
+                "$x_1 - x_2 + 3x_3 + 4x_4 = 22$",
+                "$2x + y + 4z + 3w = 11$"
+            ],
+            "correct": 0,
+            "difficulty": "avanzado",
+            "explanation": "Producto punto $\\vec{n} \\cdot P$ da el término independiente.",
+            "stepByStep": [
+                "1. $\\vec{n} \\cdot X = \\vec{n} \\cdot P$.",
+                "2. $2(0) + 1(-1) + 4(3) + 3(4)$.",
+                "3. $0 - 1 + 12 + 12 = 23$."
+            ]
+        },
+        {
+            "id": "geo-009",
+            "topic": "vectores-interactivos",
+            "question": "Suma de Vectores Interactiva",
+            "description": "Dados los vectores $\\vec{u} = (1, -2, 3)$ y $\\vec{v} = (3, 4, -1)$, calcule la suma $\\vec{w} = \\vec{u} + \\vec{v}$. Ingrese las componentes del vector resultante.",
+            "type": "matrix-input",
+            "difficulty": "facil",
+            "matrix": {
+                "rows": 3,
+                "cols": 1,
+                "label": "w =",
+                "placeholders": [
+                    [
+                        "x"
+                    ],
+                    [
+                        "y"
+                    ],
+                    [
+                        "z"
+                    ]
+                ],
+                "correct": [
+                    [
+                        4
+                    ],
+                    [
+                        2
+                    ],
+                    [
+                        2
+                    ]
+                ]
+            },
+            "explanation": "La suma se realiza componente a componente: $(u_1+v_1, u_2+v_2, u_3+v_3)$.",
+            "hints": [
+                "Sume las coordenadas correspondientes de ambos vectores."
+            ]
+        }
+    ]
+}

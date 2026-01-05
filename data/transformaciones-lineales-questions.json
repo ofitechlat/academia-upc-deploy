@@ -1,0 +1,173 @@
+{
+    "transformaciones-lineales": [
+        {
+            "id": "tl-t1-dd1",
+            "topic": "definicion-propiedades",
+            "question": "Clasifica cada afirmación sobre transformaciones lineales.",
+            "type": "drag-drop",
+            "items": [
+                "En toda transformación lineal, T(0⃗) = 0⃗",
+                "Toda transformación preserva el producto punto",
+                "T(αv⃗) = αT(v⃗) para cualquier escalar α",
+                "T(u⃗+v⃗) = T(u⃗) + T(v⃗)"
+            ],
+            "categories": [
+                "Verdadero",
+                "Falso"
+            ],
+            "correctMapping": [
+                0,
+                1,
+                0,
+                0
+            ],
+            "difficulty": "facil",
+            "hints": [
+                "Revisa las dos propiedades que definen linealidad",
+                "No todas las transformaciones preservan producto punto (solo las ortogonales)"
+            ],
+            "explanation": "**T(0⃗)=0⃗: VERDADERO** (consecuencia de T(αv⃗)=αT(v⃗) con α=0)\\n**Preserva producto punto: FALSO** (solo transformaciones ortogonales)\\n**T(αv⃗)=αT(v⃗): VERDADERO** (def. linealidad)\\n**T(u⃗+v⃗)=T(u⃗)+T(v⃗): VERDADERO** (def. linealidad)"
+        },
+        {
+            "id": "tl-t2-cat1",
+            "topic": "nucleo-imagen",
+            "question": "Clasifica cada transformación según su tipo.",
+            "type": "categorize",
+            "items": [
+                "T con ker(T) = {0⃗}",
+                "T con Im(T) = codominio",
+                "T con ker(T) = dominio"
+            ],
+            "categories": {
+                "inyectiva": "Inyectiva",
+                "sobreyectiva": "Sobreyectiva",
+                "cero": "Transformación Cero"
+            },
+            "correctCategories": {
+                "T con ker(T) = {0⃗}": "inyectiva",
+                "T con Im(T) = codominio": "sobreyectiva",
+                "T con ker(T) = dominio": "cero"
+            },
+            "difficulty": "medio",
+            "hints": [
+                "T inyectiva ⟺ ker(T) = {0⃗}",
+                "T sobreyectiva ⟺ Im(T) = codominio"
+            ],
+            "explanation": "**ker(T)={0⃗}** → **Inyectiva** (teorema)\\n**Im(T)=codominio** → **Sobreyectiva** (def.)\\n**ker(T)=dominio** → **Transformación Cero** (todo va a 0⃗)"
+        },
+        {
+            "id": "tl-t3-dd2",
+            "topic": "tipos-transformaciones",
+            "question": "Clasifica las afirmaciones sobre biyectividad e invertibilidad.",
+            "type": "drag-drop",
+            "items": [
+                "Si T es biyectiva, su núcleo es {0⃗}",
+                "Si dom(T) = codom(T), T es biyectiva",
+                "Si T es invertible, es sobreyectiva",
+                "Biyectiva implica inyectiva y sobreyectiva"
+            ],
+            "categories": [
+                "Verdadero",
+                "Falso"
+            ],
+            "correctMapping": [
+                0,
+                1,
+                0,
+                0
+            ],
+            "difficulty": "medio",
+            "hints": [
+                "Biyectiva = Inyectiva + Sobreyectiva",
+                "Contraejemplo para dom=codom: T(v⃗)=0⃗"
+            ],
+            "explanation": "**Biyectiva → ker={0⃗}: VERDADERO** (biyectiva ⊇ inyectiva)\\n**dom=codom → biyectiva: FALSO** (contraej.: T=0)\\n**Invertible → sobre: VERDADERO** (invertible = biyectiva)\\n**Biyectiva = iny+sobre: VERDADERO** (def.)"
+        },
+        {
+            "id": "tl-t4-mi1",
+            "topic": "matriz-asociada",
+            "question": "Encuentra la matriz asociada a la transformación $T:\\mathbb{R}^2 \\to \\mathbb{R}^2$ definida por $T(x,y) = (2x, -y)$.",
+            "type": "matrix-input",
+            "matrix": {
+                "rows": 2,
+                "cols": 2,
+                "correctAnswer": [
+                    [
+                        2,
+                        0
+                    ],
+                    [
+                        0,
+                        -1
+                    ]
+                ]
+            },
+            "difficulty": "medio",
+            "hints": [
+                "Aplica T a los vectores de la base canónica",
+                "T(1,0) es la primera columna, T(0,1) es la segunda"
+            ],
+            "explanation": "**Método:**\\n1. $T(1,0) = (2,0)$ → primera columna: $\\begin{bmatrix} 2 \\\\ 0 \\end{bmatrix}$\\n2. $T(0,1) = (0,-1)$ → segunda columna: $\\begin{bmatrix} 0 \\\\ -1 \\end{bmatrix}$\\n\\n$$[T] = \\begin{bmatrix} 2 & 0 \\\\ 0 & -1 \\end{bmatrix}$$"
+        },
+        {
+            "id": "tl-t2-n1",
+            "topic": "nucleo-imagen",
+            "question": "Si $T:\\mathbb{R}^5 \\to \\mathbb{R}^3$ tiene dim(ker(T)) = 2, ¿cuál es dim(Im(T))?",
+            "type": "numeric",
+            "answer": 3,
+            "tolerance": 0.01,
+            "difficulty": "medio",
+            "hints": [
+                "Usa el Teorema del Rango-Nulidad",
+                "dim(dom) = dim(ker) + dim(Im)"
+            ],
+            "explanation": "**Teorema del Rango-Nulidad:**\\n$$\\dim(\\text{dom}) = \\dim(\\text{ker}) + \\dim(\\text{Im})$$\\n$$5 = 2 + \\dim(\\text{Im})$$\\n$$\\dim(\\text{Im}) = 3$$"
+        },
+        {
+            "id": "tl-t2-or1",
+            "topic": "nucleo-imagen",
+            "question": "Ordena los pasos para encontrar el núcleo de una transformación lineal.",
+            "type": "ordering",
+            "items": [
+                "Escribir la ecuación T(x⃗) = 0⃗",
+                "Convertir a sistema de ecuaciones Ax⃗ = 0⃗",
+                "Resolver el sistema homogéneo",
+                "Expresar la solución general en forma paramétrica",
+                "Los vectores base de la solución forman base de ker(T)"
+            ],
+            "correctOrder": [
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "difficulty": "medio",
+            "hints": [
+                "El núcleo es la solución de T(x⃗) = 0⃗",
+                "Es un sistema homogéneo"
+            ],
+            "explanation": "Para encontrar **ker(T)**:\\n1. Plantear T(x⃗)=0⃗\\n2. Usar matriz asociada: Ax⃗=0⃗\\n3. Gauss-Jordan\\n4. Solución paramétrica\\n5. Vectores base"
+        },
+        {
+            "id": "tl-t3-mc1",
+            "topic": "tipos-transformaciones",
+            "question": "¿Cuál de las siguientes NO es una transformación lineal?",
+            "type": "multiple-choice",
+            "shuffle": true,
+            "options": [
+                "$T(x,y) = (x+y, 2x)$",
+                "$T(x,y) = (x, y, 0)$",
+                "$T(x,y) = (x, y+1)$",
+                "$T(x,y) = (0, 0)$"
+            ],
+            "correct": 2,
+            "difficulty": "medio",
+            "hints": [
+                "Verifica T(0⃗) = 0⃗",
+                "Una transformación lineal no puede tener términos constantes"
+            ],
+            "explanation": "**Opción 3: $T(x,y) = (x, y+1)$** NO es lineal porque:\\n- $T(0,0) = (0,1) \\neq (0,0)$\\n- Tiene un término constante (+1)\\n\\nLas demás sí son lineales."
+        }
+    ]
+}

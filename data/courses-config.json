@@ -1,0 +1,1823 @@
+{
+  "courses": [
+    {
+      "id": "numeros-reales",
+      "title": "Números Reales y sus Subconjuntos",
+      "description": "Fundamentos de los números reales: naturales, enteros, racionales, irracionales. Base esencial para todo el precálculo.",
+      "icon": "fas fa-infinity",
+      "difficulty": "principiante",
+      "estimatedTime": "1 semana",
+      "prerequisites": [],
+      "topics": [
+        {
+          "id": "numeros-naturales",
+          "title": "1.1 Números Naturales ℕ"
+        },
+        {
+          "id": "numeros-enteros",
+          "title": "1.2 Números Enteros ℤ"
+        },
+        {
+          "id": "numeros-racionales",
+          "title": "1.3 Números Racionales ℚ"
+        },
+        {
+          "id": "numeros-irracionales",
+          "title": "1.4 Números Irracionales 𝕀"
+        },
+        {
+          "id": "numeros-reales-conjunto",
+          "title": "1.5 Conjunto de Números Reales ℝ"
+        },
+        {
+          "id": "recta-numerica",
+          "title": "1.6 Recta Numérica"
+        },
+        {
+          "id": "valor-absoluto-basico",
+          "title": "1.7 Valor Absoluto"
+        },
+        {
+          "id": "conjuntos-subconjuntos",
+          "title": "1.8 Conjuntos y Subconjuntos"
+        }
+      ]
+    },
+    {
+      "id": "propiedades-operaciones",
+      "title": "Propiedades de la Suma y Multiplicación",
+      "description": "Propiedades fundamentales: conmutativa, asociativa, distributiva, elementos neutro e inverso en ℝ.",
+      "icon": "fas fa-plus-circle",
+      "difficulty": "principiante",
+      "estimatedTime": "1 semana",
+      "prerequisites": [
+        "numeros-reales"
+      ],
+      "topics": [
+        {
+          "id": "prop-conmutativa",
+          "title": "2.1 Propiedad Conmutativa"
+        },
+        {
+          "id": "prop-asociativa",
+          "title": "2.2 Propiedad Asociativa"
+        },
+        {
+          "id": "prop-distributiva",
+          "title": "2.3 Propiedad Distributiva"
+        },
+        {
+          "id": "elemento-neutro",
+          "title": "2.4 Elementos Neutros (0 y 1)"
+        },
+        {
+          "id": "elemento-inverso",
+          "title": "2.5 Elementos Inversos"
+        },
+        {
+          "id": "prop-cerradura",
+          "title": "2.6 Propiedad de Cerradura"
+        },
+        {
+          "id": "aplicaciones-propiedades",
+          "title": "2.7 Aplicaciones y Simplificación"
+        }
+      ]
+    },
+    {
+      "id": "orden-reales",
+      "title": "Orden en los Números Reales",
+      "description": "Relaciones de orden (<, >, ≤, ≥), propiedades tricotomía, transitividad y monotonía. Comparación de números.",
+      "icon": "fas fa-sort-amount-up",
+      "difficulty": "principiante",
+      "estimatedTime": "1 semana",
+      "prerequisites": [
+        "numeros-reales"
+      ],
+      "topics": [
+        {
+          "id": "relaciones-orden",
+          "title": "3.1 Relaciones de Orden (<, >, ≤, ≥)"
+        },
+        {
+          "id": "prop-tricotomia",
+          "title": "3.2 Propiedad de Tricotomía"
+        },
+        {
+          "id": "prop-transitividad",
+          "title": "3.3 Propiedad Transitiva"
+        },
+        {
+          "id": "prop-monotonia",
+          "title": "3.4 Propiedad de Monotonía"
+        },
+        {
+          "id": "comparacion-numeros",
+          "title": "3.5 Comparación de Números"
+        },
+        {
+          "id": "orden-valor-absoluto",
+          "title": "3.6 Orden y Valor Absoluto"
+        }
+      ]
+    },
+    {
+      "id": "desigualdades-intervalos",
+      "title": "Desigualdades e Intervalos",
+      "description": "Notación de intervalos, intervalos abiertos/cerrados, infinito, unión e intersección de intervalos.",
+      "icon": "fas fa-arrows-alt-h",
+      "difficulty": "principiante",
+      "estimatedTime": "1 semana",
+      "prerequisites": [
+        "orden-reales"
+      ],
+      "topics": [
+        {
+          "id": "notacion-intervalos",
+          "title": "4.1 Notación de Intervalos"
+        },
+        {
+          "id": "intervalos-abiertos-cerrados",
+          "title": "4.2 Intervalos Abiertos y Cerrados"
+        },
+        {
+          "id": "intervalos-infinitos",
+          "title": "4.3 Intervalos con Infinito"
+        },
+        {
+          "id": "union-interseccion",
+          "title": "4.4 Unión e Intersección"
+        },
+        {
+          "id": "resolver-desigualdades",
+          "title": "4.5 Resolver Desigualdades Lineales"
+        },
+        {
+          "id": "desigualdades-compuestas",
+          "title": "4.6 Desigualdades Compuestas"
+        }
+      ]
+    },
+    {
+      "id": "operaciones-numeros-reales",
+      "title": "Operaciones con Números Reales",
+      "description": "Operaciones fundamentales: suma, resta, multiplicación, división, potencias, raíces y orden de operaciones.",
+      "icon": "fas fa-calculator",
+      "difficulty": "principiante",
+      "estimatedTime": "1 semana",
+      "prerequisites": [
+        "propiedades-operaciones"
+      ],
+      "topics": [
+        {
+          "id": "suma-resta-reales",
+          "title": "5.1 Suma y Resta"
+        },
+        {
+          "id": "multiplicacion-division",
+          "title": "5.2 Multiplicación y División"
+        },
+        {
+          "id": "potencias-exponentes",
+          "title": "5.3 Potencias y Exponentes"
+        },
+        {
+          "id": "raices-radicales",
+          "title": "5.4 Raíces y Radicales"
+        },
+        {
+          "id": "orden-operaciones",
+          "title": "5.5 Orden de Operaciones (PEMDAS)"
+        },
+        {
+          "id": "fracciones-decimales",
+          "title": "5.6 Fracciones y Decimales"
+        }
+      ]
+    },
+    {
+      "id": "expresiones-algebraicas",
+      "title": "Expresiones Algebraicas y Productos Notables",
+      "description": "Suma, resta, multiplicación de polinomios. Productos notables: binomio al cuadrado, diferencia de cuadrados, binomio al cubo.",
+      "icon": "fas fa-square-root-alt",
+      "difficulty": "intermedio",
+      "estimatedTime": "2 semanas",
+      "prerequisites": [
+        "operaciones-numeros-reales"
+      ],
+      "topics": [
+        {
+          "id": "terminos-semejantes",
+          "title": "6.1 Términos Semejantes"
+        },
+        {
+          "id": "suma-resta-polinomios",
+          "title": "6.2 Suma y Resta de Polinomios"
+        },
+        {
+          "id": "multiplicacion-monomios",
+          "title": "6.3 Multiplicación de Monomios"
+        },
+        {
+          "id": "binomio-cuadrado",
+          "title": "6.4 (a±b)² - Binomio al Cuadrado"
+        },
+        {
+          "id": "diferencia-cuadrados",
+          "title": "6.5 a²-b² - Diferencia de Cuadrados"
+        },
+        {
+          "id": "binomio-cubo",
+          "title": "6.6 (a±b)³ - Binomio al Cubo"
+        },
+        {
+          "id": "producto-binomios",
+          "title": "6.7 (a+b)(c+d) - Producto de Binomios"
+        }
+      ]
+    },
+    {
+      "id": "ecuaciones-inecuaciones",
+      "title": "Ecuaciones e Inecuaciones",
+      "description": "Resolución de ecuaciones lineales, cuadráticas (fórmula general), e inecuaciones lineales.",
+      "icon": "fas fa-equals",
+      "difficulty": "intermedio",
+      "estimatedTime": "2 semanas",
+      "prerequisites": [
+        "expresiones-algebraicas",
+        "desigualdades-intervalos"
+      ],
+      "topics": [
+        {
+          "id": "ecuaciones-lineales",
+          "title": "7.1 Ecuaciones Lineales ax+b=c"
+        },
+        {
+          "id": "ecuaciones-literales",
+          "title": "7.2 Ecuaciones Literales"
+        },
+        {
+          "id": "ecuaciones-cuadraticas",
+          "title": "7.3 Ecuaciones Cuadráticas ax²+bx+c=0"
+        },
+        {
+          "id": "formula-general",
+          "title": "7.4 Fórmula General Cuadrática"
+        },
+        {
+          "id": "discriminante",
+          "title": "7.5 Discriminante y Tipos de Raíces"
+        },
+        {
+          "id": "inecuaciones-lineales",
+          "title": "7.6 Inecuaciones Lineales"
+        },
+        {
+          "id": "aplicaciones-ecuaciones",
+          "title": "7.7 Problemas con Ecuaciones"
+        }
+      ]
+    },
+    {
+      "id": "conceptos-basicos-funciones",
+      "title": "Conceptos Básicos de Funciones",
+      "description": "Definición de función, dominio, codominio, rango, imagen, preimagen, gráfica, intersecciones con ejes.",
+      "icon": "fas fa-project-diagram",
+      "difficulty": "intermedio",
+      "estimatedTime": "2 semanas",
+      "prerequisites": [
+        "ecuaciones-inecuaciones"
+      ],
+      "topics": [
+        {
+          "id": "definicion-funcion",
+          "title": "8.1 Definición de Función"
+        },
+        {
+          "id": "dominio-codominio",
+          "title": "8.2 Dominio y Codominio"
+        },
+        {
+          "id": "rango-ambito",
+          "title": "8.3 Rango o Ámbito"
+        },
+        {
+          "id": "imagen-preimagen",
+          "title": "8.4 Imagen y Preimagen"
+        },
+        {
+          "id": "grafica-funcion",
+          "title": "8.5 Gráfica de una Función"
+        },
+        {
+          "id": "intersecciones-ejes",
+          "title": "8.6 Intersecciones con los Ejes"
+        },
+        {
+          "id": "funcion-uno-a-uno",
+          "title": "8.7 Función Inyectiva (1-1)"
+        },
+        {
+          "id": "notacion-funcional",
+          "title": "8.8 Notación f(x)"
+        }
+      ]
+    },
+    {
+      "id": "derivadas",
+      "title": "Cálculo Diferencial - Derivadas",
+      "description": "Domina el concepto de derivada y todas sus aplicaciones con práctica interactiva",
+      "icon": "fas fa-chart-line",
+      "difficulty": "intermedio",
+      "estimatedTime": "12 semanas",
+      "prerequisites": [],
+      "topics": [
+        {
+          "id": "introduccion-concepto",
+          "title": "Introducción al Concepto"
+        },
+        {
+          "id": "regla-potencia",
+          "title": "Regla de la Potencia"
+        },
+        {
+          "id": "reglas-basicas",
+          "title": "Reglas Básicas"
+        },
+        {
+          "id": "regla-producto",
+          "title": "Regla del Producto"
+        },
+        {
+          "id": "regla-cociente",
+          "title": "Regla del Cociente"
+        },
+        {
+          "id": "regla-cadena",
+          "title": "Regla de la Cadena"
+        },
+        {
+          "id": "derivacion-implicita",
+          "title": "Derivación Implícita"
+        },
+        {
+          "id": "derivadas-orden-superior",
+          "title": "Derivadas de Orden Superior"
+        },
+        {
+          "id": "recta-tangente",
+          "title": "Recta Tangente y Normal"
+        },
+        {
+          "id": "puntos-maximos-minimos-inflexion",
+          "title": "Máximos, Mínimos y Puntos de Inflexión"
+        },
+        {
+          "id": "criterio-segunda-derivada",
+          "title": "Criterio de la Segunda Derivada"
+        },
+        {
+          "id": "monotonia-funciones",
+          "title": "Monotonía de Funciones"
+        },
+        {
+          "id": "intervalos-concavidad-convexidad",
+          "title": "Concavidad y Convexidad"
+        },
+        {
+          "id": "aplicaciones-pendiente",
+          "title": "Aplicaciones: Pendiente"
+        },
+        {
+          "id": "aplicaciones-maximos-minimos",
+          "title": "Aplicaciones: Máximos y Mínimos"
+        },
+        {
+          "id": "aplicaciones-optimizacion",
+          "title": "Aplicaciones: Optimización"
+        },
+        {
+          "id": "problemas-relacionados",
+          "title": "Problemas Relacionados"
+        }
+      ]
+    },
+    {
+      "id": "contabilidad-basica",
+      "title": "PC-0200 Contabilidad Básica",
+      "description": "Fundamentos de contabilidad financiera para principiantes. Aprende el ciclo contable completo con ejercicios prácticos reales.",
+      "icon": "fas fa-calculator",
+      "difficulty": "principiante",
+      "estimatedTime": "14 semanas",
+      "prerequisites": [],
+      "topics": [
+        {
+          "id": "fundamentos-contabilidad",
+          "title": "Tema 1: Fundamentos de la Contabilidad"
+        },
+        {
+          "id": "ciclo-contable-servicios",
+          "title": "Tema 2: Ciclo Contable - Empresa de Servicios"
+        },
+        {
+          "id": "estados-financieros-basicos",
+          "title": "Tema 3: Estados Financieros Básicos"
+        },
+        {
+          "id": "ciclo-contable-comercial",
+          "title": "Tema 4: Ciclo Contable - Empresa Comercial"
+        },
+        {
+          "id": "estados-financieros-nic1",
+          "title": "Tema 5: Estados Financieros según NIC 1"
+        },
+        {
+          "id": "inventarios-nic2",
+          "title": "Tema 6: Inventarios según NIC 2"
+        },
+        {
+          "id": "efectivo-caja-nic7",
+          "title": "Tema 7: Efectivo y Caja según NIC 7"
+        },
+        {
+          "id": "practica-asesorando",
+          "title": "Práctica #6: ASESORANDO E.I.R.L."
+        },
+        {
+          "id": "practica-paisajismo",
+          "title": "Práctica #5: PAISAJISMO ILUSTRADO EIRL"
+        },
+        {
+          "id": "practica-ave-paraiso",
+          "title": "Práctica #4: AVE DEL PARAÍSO S.A."
+        },
+        {
+          "id": "practica-inventarios",
+          "title": "Práctica #7: Valuación de Inventarios"
+        },
+        {
+          "id": "practica-conciliaciones",
+          "title": "Práctica #8: Conciliaciones Bancarias"
+        },
+        {
+          "id": "primer-examen",
+          "title": "Preparación I Examen Parcial"
+        },
+        {
+          "id": "segundo-examen",
+          "title": "Preparación II Examen Parcial"
+        },
+        {
+          "id": "tercer-examen",
+          "title": "Preparación III Examen Parcial"
+        }
+      ]
+    },
+    {
+      "id": "precalculo",
+      "title": "Precálculo - I Parcial",
+      "description": "Guía completa para el primer parcial de Precálculo: factorización, racionales, ecuaciones e inecuaciones.",
+      "icon": "fas fa-calculator",
+      "difficulty": "intermedio",
+      "estimatedTime": "4 semanas",
+      "prerequisites": [
+        "algebra-basica"
+      ],
+      "topics": [
+        {
+          "id": "factorizacion",
+          "title": "Factorización completa de polinomios"
+        },
+        {
+          "id": "racionales",
+          "title": "Operaciones con expresiones racionales"
+        },
+        {
+          "id": "ecuaciones",
+          "title": "Resolución de ecuaciones"
+        },
+        {
+          "id": "inecuaciones",
+          "title": "Resolución de inecuaciones"
+        },
+        {
+          "id": "racionalizacion",
+          "title": "Racionalización"
+        },
+        {
+          "id": "problemas-aplicados",
+          "title": "Aplicación de ecuaciones en problemas"
+        }
+      ]
+    },
+    {
+      "id": "reglas-basicas-derivacion",
+      "title": "2.1 Reglas Básicas de Derivación",
+      "description": "Fundamentos esenciales de derivación: regla de la constante, potencia, suma y diferencia. Domina las técnicas básicas antes de avanzar a reglas complejas.",
+      "icon": "fas fa-square-root-alt",
+      "difficulty": "principiante",
+      "estimatedTime": "2 semanas",
+      "prerequisites": [
+        "derivadas"
+      ],
+      "topics": [
+        {
+          "id": "regla-constante",
+          "title": "Regla de la Constante"
+        },
+        {
+          "id": "regla-potencia",
+          "title": "Regla de la Potencia"
+        },
+        {
+          "id": "regla-suma-diferencia",
+          "title": "Regla de la Suma y Diferencia"
+        },
+        {
+          "id": "constante-multiplicada",
+          "title": "Derivada de Constante por Función"
+        },
+        {
+          "id": "ejercicios-combinados",
+          "title": "Ejercicios Combinados de Reglas Básicas"
+        }
+      ]
+    },
+    {
+      "id": "regla-producto",
+      "title": "Regla del Producto",
+      "description": "Aprende a derivar productos de funciones con la fórmula (uv)' = u'v + uv'. Desde la demostración hasta aplicaciones complejas.",
+      "icon": "fas fa-times",
+      "difficulty": "intermedio",
+      "estimatedTime": "1.5 semanas",
+      "prerequisites": [
+        "reglas-basicas-derivacion"
+      ],
+      "topics": [
+        {
+          "id": "introduccion-producto",
+          "title": "Introducción a la Regla del Producto"
+        },
+        {
+          "id": "demostracion-formula",
+          "title": "Demostración de la Fórmula"
+        },
+        {
+          "id": "producto-polinomios",
+          "title": "Producto con Funciones Polinomiales"
+        },
+        {
+          "id": "producto-trigonometricas",
+          "title": "Producto con Funciones Trigonométricas"
+        },
+        {
+          "id": "producto-exponenciales",
+          "title": "Producto con Funciones Exponenciales"
+        },
+        {
+          "id": "casos-combinados",
+          "title": "Casos Combinados y Aplicaciones"
+        }
+      ]
+    },
+    {
+      "id": "regla-cociente",
+      "title": "Regla del Cociente",
+      "description": "Domina la derivación de cocientes de funciones con la fórmula (u/v)' = (u'v - uv')/v². Incluye simplificación y casos especiales.",
+      "icon": "fas fa-divide",
+      "difficulty": "intermedio",
+      "estimatedTime": "1.5 semanas",
+      "prerequisites": [
+        "regla-producto"
+      ],
+      "topics": [
+        {
+          "id": "introduccion-cociente",
+          "title": "Introducción a la Regla del Cociente"
+        },
+        {
+          "id": "demostracion-cociente",
+          "title": "Demostración de la Fórmula"
+        },
+        {
+          "id": "cociente-polinomios",
+          "title": "Cociente con Funciones Polinomiales"
+        },
+        {
+          "id": "cociente-trigonometricas",
+          "title": "Cociente con Funciones Trigonométricas"
+        },
+        {
+          "id": "simplificacion-cocientes",
+          "title": "Simplificación de Derivadas de Cocientes"
+        },
+        {
+          "id": "aplicaciones-cociente",
+          "title": "Aplicaciones y Casos Especiales"
+        }
+      ]
+    },
+    {
+      "id": "regla-cadena",
+      "title": "Regla de la Cadena",
+      "description": "La regla más poderosa del cálculo: deriva funciones compuestas con (f∘g)' = f'(g(x))·g'(x). Desde composiciones simples hasta casos anidados complejos.",
+      "icon": "fas fa-link",
+      "difficulty": "intermedio",
+      "estimatedTime": "2 semanas",
+      "prerequisites": [
+        "regla-cociente"
+      ],
+      "topics": [
+        {
+          "id": "composicion-funciones",
+          "title": "Composición de Funciones y Notación"
+        },
+        {
+          "id": "introduccion-cadena",
+          "title": "Introducción a la Regla de la Cadena"
+        },
+        {
+          "id": "demostracion-cadena",
+          "title": "Demostración e Intuición Geométrica"
+        },
+        {
+          "id": "cadena-polinomios",
+          "title": "Cadena con Funciones Polinomiales"
+        },
+        {
+          "id": "cadena-trigonometricas",
+          "title": "Cadena con Funciones Trigonométricas"
+        },
+        {
+          "id": "cadena-exponenciales",
+          "title": "Cadena con Funciones Exponenciales y Logarítmicas"
+        },
+        {
+          "id": "cadenas-multiples",
+          "title": "Cadenas Múltiples y Anidadas"
+        },
+        {
+          "id": "aplicaciones-cadena",
+          "title": "Aplicaciones y Problemas Complejos"
+        }
+      ]
+    },
+    {
+      "id": "derivacion-implicita",
+      "title": "Derivación Implícita",
+      "description": "Técnica poderosa para derivar ecuaciones implícitas como x² + y² = 25. Esencial para curvas que no son funciones explícitas y = f(x).",
+      "icon": "fas fa-project-diagram",
+      "difficulty": "intermedio",
+      "estimatedTime": "1.5 semanas",
+      "prerequisites": [
+        "regla-cadena"
+      ],
+      "topics": [
+        {
+          "id": "funciones-implicitas",
+          "title": "Funciones Implícitas vs Explícitas"
+        },
+        {
+          "id": "tecnica-derivacion-implicita",
+          "title": "Técnica de Derivación Implícita"
+        },
+        {
+          "id": "circunferencias-elipses",
+          "title": "Derivadas de Circunferencias y Elipses"
+        },
+        {
+          "id": "derivadas-orden-superior",
+          "title": "Derivadas de Segundo Orden Implícitas"
+        },
+        {
+          "id": "rectas-tangentes-implicitas",
+          "title": "Rectas Tangentes a Curvas Implícitas"
+        },
+        {
+          "id": "aplicaciones-implicitas",
+          "title": "Aplicaciones y Problemas Complejos"
+        }
+      ]
+    },
+    {
+      "id": "recta-tangente",
+      "title": "Recta Tangente y Aproximación Lineal",
+      "description": "Encuentra ecuaciones de rectas tangentes y úsalas para aproximar funciones. Incluye diferencial, aproximación lineal y aplicaciones geométricas.",
+      "icon": "fas fa-slash",
+      "difficulty": "intermedio",
+      "estimatedTime": "1 semana",
+      "prerequisites": [
+        "derivacion-implicita"
+      ],
+      "topics": [
+        {
+          "id": "ecuacion-tangente",
+          "title": "Ecuación de la Recta Tangente"
+        },
+        {
+          "id": "tangentes-horizontales-verticales",
+          "title": "Tangentes Horizontales y Verticales"
+        },
+        {
+          "id": "aproximacion-lineal",
+          "title": "Aproximación Lineal"
+        },
+        {
+          "id": "diferencial",
+          "title": "Diferencial dy y dx"
+        },
+        {
+          "id": "aplicaciones-geometricas",
+          "title": "Aplicaciones Geométricas"
+        }
+      ]
+    },
+    {
+      "id": "recta-normal",
+      "title": "Recta Normal y Relaciones Perpendiculares",
+      "description": "Aprende a calcular la recta normal (perpendicular a la tangente) y sus aplicaciones en geometría analítica y optimización de distancias.",
+      "icon": "fas fa-arrows-alt-v",
+      "difficulty": "intermedio",
+      "estimatedTime": "4-5 días",
+      "prerequisites": [
+        "recta-tangente"
+      ],
+      "topics": [
+        {
+          "id": "concepto-normal",
+          "title": "Concepto de Recta Normal"
+        },
+        {
+          "id": "pendiente-perpendicular",
+          "title": "Pendiente Perpendicular"
+        },
+        {
+          "id": "ecuacion-normal",
+          "title": "Ecuación de la Recta Normal"
+        },
+        {
+          "id": "distancia-punto-curva",
+          "title": "Distancia Mínima Punto-Curva"
+        },
+        {
+          "id": "aplicaciones-geometricas-normal",
+          "title": "Aplicaciones Geométricas"
+        }
+      ]
+    },
+    {
+      "id": "derivadas-trigonometricas",
+      "title": "Derivadas de Funciones Trigonométricas",
+      "description": "Domina las derivadas de seno, coseno, tangente, cotangente, secante y cosecante. Incluye demostraciones, identidades y aplicaciones físicas.",
+      "icon": "fas fa-wave-square",
+      "difficulty": "intermedio",
+      "estimatedTime": "1 semana",
+      "prerequisites": [
+        "recta-normal"
+      ],
+      "topics": [
+        {
+          "id": "derivada-seno-coseno",
+          "title": "Derivadas de sin(x) y cos(x)"
+        },
+        {
+          "id": "derivada-tangente-cotangente",
+          "title": "Derivadas de tan(x) y cot(x)"
+        },
+        {
+          "id": "derivada-secante-cosecante",
+          "title": "Derivadas de sec(x) y csc(x)"
+        },
+        {
+          "id": "trig-con-regla-cadena",
+          "title": "Trigonométricas con Regla de la Cadena"
+        },
+        {
+          "id": "aplicaciones-trig",
+          "title": "Aplicaciones en Física y Oscilaciones"
+        }
+      ]
+    },
+    {
+      "id": "derivadas-exponenciales",
+      "title": "Derivadas de Funciones Exponenciales",
+      "description": "Aprende a derivar e^x, a^x y sus composiciones. Incluye la propiedad única de e^x, crecimiento exponencial y aplicaciones en ciencias.",
+      "icon": "fas fa-chart-line",
+      "difficulty": "intermedio",
+      "estimatedTime": "1 semana",
+      "prerequisites": [
+        "derivadas-trigonometricas"
+      ],
+      "topics": [
+        {
+          "id": "derivada-e-elevado-x",
+          "title": "Derivada de e^x: La Función Especial"
+        },
+        {
+          "id": "derivada-a-elevado-x",
+          "title": "Derivada de a^x con Base Arbitraria"
+        },
+        {
+          "id": "exponencial-regla-cadena",
+          "title": "Exponenciales con Regla de la Cadena"
+        },
+        {
+          "id": "crecimiento-decrecimiento",
+          "title": "Modelos de Crecimiento y Decrecimiento"
+        },
+        {
+          "id": "aplicaciones-exponenciales",
+          "title": "Aplicaciones: Interés Compuesto, Población, Radioactividad"
+        }
+      ]
+    },
+    {
+      "id": "derivadas-logaritmicas",
+      "title": "Derivadas de Funciones Logarítmicas",
+      "description": "Domina las derivadas de ln(x) y log_a(x). Incluye logaritmo natural, cambio de base, propiedades logarítmicas y aplicaciones en escalas.",
+      "icon": "fas fa-superscript",
+      "difficulty": "intermedio",
+      "estimatedTime": "1 semana",
+      "prerequisites": [
+        "derivadas-exponenciales"
+      ],
+      "topics": [
+        {
+          "id": "derivada-ln-x",
+          "title": "Derivada de ln(x): Logaritmo Natural"
+        },
+        {
+          "id": "derivada-log-base-a",
+          "title": "Derivada de log_a(x)"
+        },
+        {
+          "id": "logaritmo-regla-cadena",
+          "title": "Logaritmos con Regla de la Cadena"
+        },
+        {
+          "id": "propiedades-logaritmicas",
+          "title": "Uso de Propiedades para Simplificar"
+        },
+        {
+          "id": "aplicaciones-logaritmicas",
+          "title": "Aplicaciones: Escalas, pH, Decibeles"
+        }
+      ]
+    },
+    {
+      "id": "derivacion-logaritmica-avanzada",
+      "title": "Derivación Logarítmica Avanzada",
+      "description": "Técnica poderosa para derivar productos, cocientes y potencias complejas. Ideal para x^x, (sin(x))^x, y expresiones con exponentes variables.",
+      "icon": "fas fa-infinity",
+      "difficulty": "avanzado",
+      "estimatedTime": "1 semana",
+      "prerequisites": [
+        "derivadas-logaritmicas"
+      ],
+      "topics": [
+        {
+          "id": "tecnica-logaritmica",
+          "title": "Técnica de Derivación Logarítmica"
+        },
+        {
+          "id": "exponentes-variables",
+          "title": "Funciones con Exponentes Variables"
+        },
+        {
+          "id": "productos-complejos",
+          "title": "Productos y Cocientes Complejos"
+        },
+        {
+          "id": "casos-especiales",
+          "title": "Casos Especiales: x^x, x^(1/x)"
+        },
+        {
+          "id": "aplicaciones-avanzadas",
+          "title": "Aplicaciones en Optimización y Física"
+        }
+      ]
+    },
+    {
+      "id": "tasas-cambio-relacionadas",
+      "title": "Tasas de Cambio Relacionadas",
+      "description": "Problemas donde múltiples cantidades cambian simultáneamente. Aprende a relacionar sus tasas de cambio usando derivación implícita: globos inflándose, escaleras deslizándose, sombras moviéndose.",
+      "icon": "fas fa-exchange-alt",
+      "difficulty": "avanzado",
+      "estimatedTime": "1 semana",
+      "prerequisites": [
+        "derivacion-implicita"
+      ],
+      "topics": [
+        {
+          "id": "concepto-tasas-relacionadas",
+          "title": "Concepto de Tasas Relacionadas"
+        },
+        {
+          "id": "problemas-geometricos",
+          "title": "Problemas Geométricos"
+        },
+        {
+          "id": "problemas-movimiento",
+          "title": "Problemas de Movimiento"
+        },
+        {
+          "id": "problemas-volumenes",
+          "title": "Problemas de Volúmenes"
+        },
+        {
+          "id": "estrategias-resolucion",
+          "title": "Estrategias de Resolución"
+        }
+      ]
+    },
+    {
+      "id": "calculo-avanzado",
+      "title": "Cálculo Avanzado y Geometría Analítica",
+      "description": "Un curso intensivo sobre cálculo vectorial, geometría tridimensional, derivadas parciales y sus aplicaciones.",
+      "icon": "fas fa-cube",
+      "difficulty": "experto",
+      "estimatedTime": "4 semanas",
+      "prerequisites": [
+        "integrales"
+      ],
+      "topics": [
+        {
+          "id": "rectas-planos",
+          "title": "Semana 1: Rectas y Planos"
+        },
+        {
+          "id": "conicas-cuadricas",
+          "title": "Semana 1: Cónicas y Cuádricas"
+        },
+        {
+          "id": "funciones-vectoriales",
+          "title": "Semana 2: Funciones Vectoriales"
+        },
+        {
+          "id": "geometria-curvas",
+          "title": "Semana 2: Geometría de Curvas"
+        },
+        {
+          "id": "campos-escalares",
+          "title": "Semana 3: Campos Escalares y Límites"
+        },
+        {
+          "id": "derivadas-parciales",
+          "title": "Semana 3: Derivadas Parciales"
+        },
+        {
+          "id": "gradiente-direccional",
+          "title": "Semana 4: Gradiente y Derivada Direccional"
+        },
+        {
+          "id": "plano-tangente",
+          "title": "Semana 4: Plano Tangente y Aplicaciones"
+        }
+      ]
+    },
+    {
+      "id": "series-numericas",
+      "title": "Series Numéricas y Criterios de Convergencia",
+      "description": "Domina sucesiones, series infinitas y todos los criterios de convergencia: p-series, geométricas, telescópicas, comparación, razón, raíz y series alternadas.",
+      "icon": "fas fa-infinity",
+      "difficulty": "avanzado",
+      "estimatedTime": "3 semanas",
+      "prerequisites": [
+        "derivadas-logaritmicas"
+      ],
+      "topics": [
+        {
+          "id": "sucesiones-numericas",
+          "title": "1.1 Sucesiones Numéricas"
+        },
+        {
+          "id": "convergencia-sucesiones",
+          "title": "1.2 Convergencia de Sucesiones"
+        },
+        {
+          "id": "series-numericas-intro",
+          "title": "1.3 Introducción a Series Numéricas"
+        },
+        {
+          "id": "criterio-divergencia",
+          "title": "1.4.1 Criterio de la Divergencia"
+        },
+        {
+          "id": "criterio-p-serie",
+          "title": "1.4.2 Criterio de la p-serie"
+        },
+        {
+          "id": "serie-geometrica",
+          "title": "1.4.3 Serie Geométrica"
+        },
+        {
+          "id": "serie-telescopica",
+          "title": "1.4.4 Serie Telescópica"
+        },
+        {
+          "id": "criterio-integral",
+          "title": "1.4.5 Criterio de la Integral"
+        },
+        {
+          "id": "comparacion-directa",
+          "title": "1.4.6 Comparación Directa"
+        },
+        {
+          "id": "comparacion-limite",
+          "title": "1.4.7 Comparación en el Límite"
+        },
+        {
+          "id": "criterio-razon",
+          "title": "1.4.8 Criterio de la Razón"
+        },
+        {
+          "id": "criterio-raiz",
+          "title": "1.4.9 Criterio de la Raíz"
+        },
+        {
+          "id": "serie-alternada",
+          "title": "1.4.10 Criterio de la Serie Alternada"
+        },
+        {
+          "id": "convergencia-absoluta",
+          "title": "1.5 Convergencia Absoluta y Condicional"
+        }
+      ]
+    },
+    {
+      "id": "monotonia-funciones",
+      "title": "Monotonía de Funciones",
+      "description": "Analiza el comportamiento de crecimiento y decrecimiento de funciones usando derivadas. Domina los criterios de monotonía y aplicaciones prácticas.",
+      "icon": "fas fa-chart-line",
+      "difficulty": "intermedio",
+      "estimatedTime": "1 semana",
+      "prerequisites": [
+        "precalculo"
+      ],
+      "topics": [
+        {
+          "id": "crecimiento-decrecimiento",
+          "title": "Crecimiento y Decrecimiento"
+        },
+        {
+          "id": "criterio-primera-derivada",
+          "title": "Criterio de la Primera Derivada"
+        },
+        {
+          "id": "monotonia-estricta",
+          "title": "Monotonía Estricta vs Creciente"
+        },
+        {
+          "id": "analisis-puntos-criticos",
+          "title": "Análisis de Puntos Críticos"
+        }
+      ]
+    },
+    {
+      "id": "puntos-maximos-minimos-inflexion",
+      "title": "Puntos Máximos, Mínimos y de Inflexión",
+      "description": "Identifica y clasifica extremos relativos y absolutos. Aprende a encontrar puntos de inflexión y analizar cambios de curvatura.",
+      "icon": "fas fa-mountain",
+      "difficulty": "intermedio",
+      "estimatedTime": "1 semana",
+      "prerequisites": [
+        "monotonia-funciones"
+      ],
+      "topics": [
+        {
+          "id": "extremos-relativos",
+          "title": "Extremos Relativos"
+        },
+        {
+          "id": "extremos-absolutos",
+          "title": "Extremos Absolutos"
+        },
+        {
+          "id": "puntos-inflexion",
+          "title": "Puntos de Inflexión"
+        },
+        {
+          "id": "criterio-segunda-derivada",
+          "title": "Criterio de la Segunda Derivada"
+        }
+      ]
+    },
+    {
+      "id": "ecuaciones-asintotas",
+      "title": "Ecuaciones de Asíntotas",
+      "description": "Calcula asíntotas verticales, horizontales y oblicuas. Analiza el comportamiento de funciones en los infinitos y cerca de discontinuidades.",
+      "icon": "fas fa-arrows-alt",
+      "difficulty": "intermedio",
+      "estimatedTime": "1 semana",
+      "prerequisites": [
+        "puntos-maximos-minimos-inflexion"
+      ],
+      "topics": [
+        {
+          "id": "asintotas-verticales",
+          "title": "Asíntotas Verticales"
+        },
+        {
+          "id": "asintotas-horizontales",
+          "title": "Asíntotas Horizontales"
+        },
+        {
+          "id": "asintotas-oblicuas",
+          "title": "Asíntotas Oblicuas"
+        },
+        {
+          "id": "comportamiento-infinitos",
+          "title": "Comportamiento en los Infinitos"
+        }
+      ]
+    },
+    {
+      "id": "intervalos-concavidad-convexidad",
+      "title": "Intervalos de Concavidad y Convexidad",
+      "description": "Analiza la curvatura de funciones usando la segunda derivada. Identifica intervalos de concavidad y convexidad.",
+      "icon": "fas fa-wave-square",
+      "difficulty": "intermedio",
+      "estimatedTime": "1 semana",
+      "prerequisites": [
+        "ecuaciones-asintotas"
+      ],
+      "topics": [
+        {
+          "id": "concavidad-convexidad",
+          "title": "Concavidad y Convexidad"
+        },
+        {
+          "id": "criterio-segunda-derivada-concavidad",
+          "title": "Criterio de la Segunda Derivada"
+        },
+        {
+          "id": "puntos-inflexion-concavidad",
+          "title": "Puntos de Inflexión"
+        },
+        {
+          "id": "aplicaciones-concavidad",
+          "title": "Aplicaciones de la Concavidad"
+        }
+      ]
+    },
+    {
+      "id": "intersecciones-ejes",
+      "title": "Intersecciones con los Ejes",
+      "description": "Calcula puntos donde las gráficas cruzan los ejes coordenados. Aplica estos conceptos a diferentes tipos de funciones.",
+      "icon": "fas fa-crosshairs",
+      "difficulty": "intermedio",
+      "estimatedTime": "4 días",
+      "prerequisites": [
+        "intervalos-concavidad-convexidad"
+      ],
+      "topics": [
+        {
+          "id": "interseccion-eje-x",
+          "title": "Intersección con el Eje X"
+        },
+        {
+          "id": "interseccion-eje-y",
+          "title": "Intersección con el Eje Y"
+        },
+        {
+          "id": "intersecciones-funciones-especiales",
+          "title": "Funciones Especiales"
+        },
+        {
+          "id": "aplicaciones-intersecciones",
+          "title": "Aplicaciones Prácticas"
+        }
+      ]
+    },
+    {
+      "id": "dominio-maximo-funcion",
+      "title": "Dominio Máximo de una Función",
+      "description": "Determina el dominio de diferentes tipos de funciones. Analiza restricciones y condiciones para funciones polinomiales, racionales, radicales y más.",
+      "icon": "fas fa-infinity",
+      "difficulty": "intermedio",
+      "estimatedTime": "1 semana",
+      "prerequisites": [
+        "intersecciones-ejes"
+      ],
+      "topics": [
+        {
+          "id": "dominio-funciones-basicas",
+          "title": "Funciones Básicas"
+        },
+        {
+          "id": "dominio-funciones-racionales",
+          "title": "Funciones Racionales"
+        },
+        {
+          "id": "dominio-funciones-radicales",
+          "title": "Funciones Radicales"
+        },
+        {
+          "id": "dominio-funciones-compuestas",
+          "title": "Funciones Compuestas"
+        }
+      ]
+    },
+    {
+      "id": "funcion-compuesta",
+      "title": "Función Compuesta",
+      "description": "Domina la composición y descomposición de funciones. Aprende a evaluar, construir y analizar funciones compuestas.",
+      "icon": "fas fa-project-diagram",
+      "difficulty": "intermedio",
+      "estimatedTime": "1 semana",
+      "prerequisites": [
+        "dominio-maximo-funcion"
+      ],
+      "topics": [
+        {
+          "id": "concepto-funcion-compuesta",
+          "title": "Concepto de Función Compuesta"
+        },
+        {
+          "id": "evaluacion-funcion-compuesta",
+          "title": "Evaluación de Funciones Compuestas"
+        },
+        {
+          "id": "dominio-funcion-compuesta",
+          "title": "Dominio de Funciones Compuestas"
+        },
+        {
+          "id": "propiedades-funcion-compuesta",
+          "title": "Propiedades y Aplicaciones"
+        }
+      ]
+    },
+    {
+      "id": "funcion-polinomial",
+      "title": "Función Polinomial",
+      "description": "Estudia las propiedades y comportamiento de polinomios. Analiza raíces, grado, coeficientes y aplicaciones en geometría analítica.",
+      "icon": "fas fa-chart-area",
+      "difficulty": "intermedio",
+      "estimatedTime": "1 semana",
+      "prerequisites": [
+        "funcion-compuesta"
+      ],
+      "topics": [
+        {
+          "id": "definicion-funcion-polinomial",
+          "title": "Definición y Clasificación"
+        },
+        {
+          "id": "grado-polinomio",
+          "title": "Grado y Coeficientes"
+        },
+        {
+          "id": "raices-polinomio",
+          "title": "Raíces y Teorema Fundamental"
+        },
+        {
+          "id": "comportamiento-polinomios",
+          "title": "Comportamiento y Aplicaciones"
+        }
+      ]
+    },
+    {
+      "id": "criterio-segunda-derivada",
+      "title": "Criterio de la Segunda Derivada para Extremos",
+      "description": "Aprende a clasificar puntos críticos usando la segunda derivada. Determina si son máximos o mínimos analizando la concavidad: f''(c) > 0 → mínimo, f''(c) < 0 → máximo.",
+      "icon": "fas fa-mountain",
+      "difficulty": "intermedio",
+      "estimatedTime": "1 semana",
+      "prerequisites": [
+        "puntos-maximos-minimos-inflexion"
+      ],
+      "topics": [
+        {
+          "id": "introduccion-criterio",
+          "title": "Introducción al Criterio"
+        },
+        {
+          "id": "aplicacion-polinomios",
+          "title": "Aplicación en Polinomios"
+        },
+        {
+          "id": "casos-no-concluyentes",
+          "title": "Casos No Concluyentes"
+        },
+        {
+          "id": "comparacion-criterios",
+          "title": "Comparación con Primer Derivada"
+        },
+        {
+          "id": "aplicaciones-optimizacion",
+          "title": "Aplicaciones en Optimización"
+        },
+        {
+          "id": "funciones-trigonometricas",
+          "title": "Funciones Trigonométricas"
+        },
+        {
+          "id": "funciones-exponenciales",
+          "title": "Funciones Exponenciales"
+        },
+        {
+          "id": "interpretacion-geometrica",
+          "title": "Interpretación Geométrica"
+        },
+        {
+          "id": "ejercicios-mixtos",
+          "title": "Ejercicios Mixtos"
+        }
+      ]
+    },
+    {
+      "id": "derivadas-orden-superior",
+      "title": "Derivadas de Orden Superior",
+      "description": "Domina las derivadas de segundo, tercero y n-ésimo orden. Aprende notaciones (Leibniz, Lagrange), patrones para exponenciales y trigonométricas, fórmula de Leibniz y aplicaciones en física (velocidad, aceleración, jerk).",
+      "icon": "fas fa-layer-group",
+      "difficulty": "intermedio",
+      "estimatedTime": "1-2 semanas",
+      "prerequisites": [
+        "puntos-maximos-minimos-inflexion"
+      ],
+      "topics": [
+        {
+          "id": "introduccion-orden-superior",
+          "title": "Introducción y Notación"
+        },
+        {
+          "id": "polinomios-orden-superior",
+          "title": "Derivadas de Polinomios"
+        },
+        {
+          "id": "exponenciales-orden-superior",
+          "title": "Derivadas de Exponenciales"
+        },
+        {
+          "id": "trigonometricas-orden-superior",
+          "title": "Derivadas de Trigonométricas"
+        },
+        {
+          "id": "formula-leibniz",
+          "title": "Fórmula de Leibniz"
+        },
+        {
+          "id": "aplicaciones-fisica",
+          "title": "Aplicaciones en Física"
+        },
+        {
+          "id": "ecuaciones-diferenciales",
+          "title": "Ecuaciones Diferenciales"
+        },
+        {
+          "id": "series-taylor",
+          "title": "Series de Taylor"
+        }
+      ]
+    },
+    {
+      "id": "maximos-minimos-absolutos",
+      "title": "Máximos y Mínimos Absolutos",
+      "description": "Encuentra valores extremos absolutos en intervalos cerrados y abiertos. Aplica el Teorema del Valor Extremo y técnicas de optimización en problemas del mundo real.",
+      "icon": "fas fa-chart-bar",
+      "difficulty": "intermedio",
+      "estimatedTime": "1 semana",
+      "prerequisites": [
+        "puntos-maximos-minimos-inflexion"
+      ],
+      "topics": [
+        {
+          "id": "teorema-valor-extremo",
+          "title": "Teorema del Valor Extremo"
+        },
+        {
+          "id": "metodo-candidatos",
+          "title": "Método de Puntos Candidatos"
+        },
+        {
+          "id": "extremos-intervalos-cerrados",
+          "title": "Extremos en Intervalos Cerrados"
+        },
+        {
+          "id": "extremos-intervalos-abiertos",
+          "title": "Extremos en Intervalos Abiertos"
+        },
+        {
+          "id": "problemas-optimizacion",
+          "title": "Problemas de Optimización"
+        },
+        {
+          "id": "aplicaciones-geometria",
+          "title": "Aplicaciones Geométricas"
+        },
+        {
+          "id": "aplicaciones-economia",
+          "title": "Aplicaciones en Economía"
+        }
+      ]
+    },
+    {
+      "id": "problemas-optimizacion-aplicados",
+      "title": "Problemas de Optimización Aplicados",
+      "description": "Resuelve problemas del mundo real usando cálculo: maximizar áreas y volúmenes, minimizar costos y distancias, optimizar producción y ganancias. Estrategias sistemáticas de modelado y solución.",
+      "icon": "fas fa-bullseye",
+      "difficulty": "avanzado",
+      "estimatedTime": "2 semanas",
+      "prerequisites": [
+        "maximos-minimos-absolutos"
+      ],
+      "topics": [
+        {
+          "id": "estrategia-optimizacion",
+          "title": "Estrategia General de Optimización"
+        },
+        {
+          "id": "problemas-areas-maximas",
+          "title": "Maximización de Áreas"
+        },
+        {
+          "id": "problemas-volumenes-maximos",
+          "title": "Maximización de Volúmenes"
+        },
+        {
+          "id": "problemas-distancias-minimas",
+          "title": "Minimización de Distancias"
+        },
+        {
+          "id": "problemas-costos-minimos",
+          "title": "Minimización de Costos"
+        },
+        {
+          "id": "problemas-ganancias-maximas",
+          "title": "Maximización de Ganancias"
+        },
+        {
+          "id": "problemas-geometricos-avanzados",
+          "title": "Problemas Geométricos Avanzados"
+        },
+        {
+          "id": "problemas-fisica-ingenieria",
+          "title": "Aplicaciones en Física e Ingeniería"
+        }
+      ]
+    },
+    {
+      "id": "teorema-valor-medio",
+      "title": "Teorema del Valor Medio",
+      "description": "Comprende uno de los teoremas fundamentales del cálculo. Relaciona derivadas con tasas de cambio promedio y úsalo para probar propiedades de funciones.",
+      "icon": "fas fa-balance-scale",
+      "difficulty": "avanzado",
+      "estimatedTime": "1 semana",
+      "prerequisites": [
+        "derivadas-orden-superior"
+      ],
+      "topics": [
+        {
+          "id": "teorema-rolle",
+          "title": "Teorema de Rolle"
+        },
+        {
+          "id": "teorema-valor-medio-enunciado",
+          "title": "Enunciado del TVM"
+        },
+        {
+          "id": "interpretacion-geometrica-tvm",
+          "title": "Interpretación Geométrica"
+        },
+        {
+          "id": "aplicaciones-tvm",
+          "title": "Aplicaciones del TVM"
+        },
+        {
+          "id": "consecuencias-tvm",
+          "title": "Consecuencias del TVM"
+        }
+      ]
+    },
+    {
+      "id": "analisis-grafico-completo",
+      "title": "Análisis Gráfico Completo de Funciones",
+      "description": "Integra todas las técnicas aprendidas para realizar análisis exhaustivos: dominio, asíntotas, intervalos de crecimiento, concavidad, extremos y gráfica completa.",
+      "icon": "fas fa-chart-line",
+      "difficulty": "avanzado",
+      "estimatedTime": "2 semanas",
+      "prerequisites": [
+        "intervalos-concavidad-convexidad",
+        "ecuaciones-asintotas"
+      ],
+      "topics": [
+        {
+          "id": "metodologia-analisis",
+          "title": "Metodología de Análisis Completo"
+        },
+        {
+          "id": "analisis-funciones-racionales",
+          "title": "Análisis de Funciones Racionales"
+        },
+        {
+          "id": "analisis-funciones-radicales",
+          "title": "Análisis de Funciones Radicales"
+        },
+        {
+          "id": "analisis-funciones-trigonometricas-completo",
+          "title": "Análisis de Funciones Trigonométricas"
+        },
+        {
+          "id": "analisis-funciones-exponenciales-completo",
+          "title": "Análisis de Funciones Exponenciales"
+        },
+        {
+          "id": "analisis-funciones-logaritmicas-completo",
+          "title": "Análisis de Funciones Logarítmicas"
+        },
+        {
+          "id": "construccion-graficas",
+          "title": "Construcción de Gráficas Precisas"
+        }
+      ]
+    },
+    {
+      "id": "derivadas-inversas-trigonometricas",
+      "title": "Derivadas de Funciones Trigonométricas Inversas",
+      "description": "Aprende a derivar arcsin(x), arccos(x), arctan(x) y otras funciones inversas trigonométricas. Incluye demostraciones, aplicaciones y casos con regla de la cadena.",
+      "icon": "fas fa-undo",
+      "difficulty": "avanzado",
+      "estimatedTime": "1 semana",
+      "prerequisites": [
+        "derivadas-trigonometricas"
+      ],
+      "topics": [
+        {
+          "id": "derivada-arcsin",
+          "title": "Derivada de arcsin(x)"
+        },
+        {
+          "id": "derivada-arccos",
+          "title": "Derivada de arccos(x)"
+        },
+        {
+          "id": "derivada-arctan",
+          "title": "Derivada de arctan(x)"
+        },
+        {
+          "id": "derivada-arcsec-arccsc-arccot",
+          "title": "Derivadas de arcsec, arccsc, arccot"
+        },
+        {
+          "id": "inversas-trig-con-cadena",
+          "title": "Inversas Trigonométricas con Regla de la Cadena"
+        },
+        {
+          "id": "aplicaciones-inversas-trig",
+          "title": "Aplicaciones y Problemas"
+        }
+      ]
+    },
+    {
+      "id": "derivadas-hiperbolicas",
+      "title": "Funciones Hiperbólicas y sus Derivadas",
+      "description": "Explora sinh(x), cosh(x), tanh(x) y sus derivadas. Comprende sus propiedades únicas, relaciones con exponenciales y aplicaciones en ingeniería y física.",
+      "icon": "fas fa-project-diagram",
+      "difficulty": "avanzado",
+      "estimatedTime": "1 semana",
+      "prerequisites": [
+        "derivadas-exponenciales"
+      ],
+      "topics": [
+        {
+          "id": "funciones-hiperbolicas",
+          "title": "Definición de Funciones Hiperbólicas"
+        },
+        {
+          "id": "identidades-hiperbolicas",
+          "title": "Identidades Hiperbólicas"
+        },
+        {
+          "id": "derivadas-sinh-cosh",
+          "title": "Derivadas de sinh(x) y cosh(x)"
+        },
+        {
+          "id": "derivadas-tanh-otras",
+          "title": "Derivadas de tanh, coth, sech, csch"
+        },
+        {
+          "id": "aplicaciones-hiperbolicas",
+          "title": "Aplicaciones en Ingeniería"
+        }
+      ]
+    },
+    {
+      "id": "sistemas-ecuaciones-lineales",
+      "title": "Sistemas de Ecuaciones Lineales",
+      "description": "Resolución de sistemas mediante métodos de sustitución, eliminación gaussiana y Gauss-Jordan. Análisis de tipos de soluciones.",
+      "icon": "fas fa-equals",
+      "difficulty": "intermedio",
+      "estimatedTime": "2 semanas",
+      "prerequisites": [
+        "ecuaciones-inecuaciones"
+      ],
+      "topics": [
+        {
+          "id": "sistemas-interactivos",
+          "title": "Práctica Interactiva: Sistemas"
+        },
+        {
+          "id": "introduccion-sistemas",
+          "title": "Introducción y Métodos Básicos (R2)"
+        },
+        {
+          "id": "eliminacion-gaussiana",
+          "title": "Eliminación Gaussiana y Gauss-Jordan (R3)"
+        },
+        {
+          "id": "gauss-jordan-avanzado",
+          "title": "Sistemas en Rn y Análisis Paramétrico"
+        },
+        {
+          "id": "aplicaciones-sistemas",
+          "title": "Aplicaciones en Ciencias y Economía"
+        }
+      ]
+    },
+    {
+      "id": "matrices-determinantes",
+      "title": "Matrices y Determinantes",
+      "description": "Operaciones con matrices, cálculo de la inversa, determinantes y la Regla de Cramer para resolver sistemas.",
+      "icon": "fas fa-table",
+      "difficulty": "intermedio",
+      "estimatedTime": "2 semanas",
+      "prerequisites": [
+        "sistemas-ecuaciones-lineales"
+      ],
+      "topics": [
+        {
+          "id": "matrices-interactivas",
+          "title": "Práctica Interactiva: Matrices"
+        },
+        {
+          "id": "operaciones-matrices",
+          "title": "Operaciones Básicas y Producto"
+        },
+        {
+          "id": "inversa-matriz",
+          "title": "Inversa de una Matriz y Elementales"
+        },
+        {
+          "id": "determinantes-menores",
+          "title": "Determinantes por Desarrollo de Menores"
+        },
+        {
+          "id": "regla-cramer",
+          "title": "Sistemas mediante Regla de Cramer"
+        }
+      ]
+    },
+    {
+      "id": "geometria-vectorial",
+      "title": "Geometría Vectorial y del Espacio",
+      "description": "Vectores en el espacio, rectas, planos e hiperplanos. Cálculo de áreas y volúmenes mediante vectores.",
+      "icon": "fas fa-cube",
+      "difficulty": "intermedio",
+      "estimatedTime": "1.5 semanas",
+      "prerequisites": [
+        "matrices-determinantes"
+      ],
+      "topics": [
+        {
+          "id": "vectores-interactivos",
+          "title": "Práctica Interactiva: Vectores"
+        },
+        {
+          "id": "rectas-planos-r3",
+          "title": "Rectas y Planos en R3"
+        },
+        {
+          "id": "hiperplanos-rn",
+          "title": "Hiperplanos en Rn"
+        },
+        {
+          "id": "areas-triangulos",
+          "title": "Geometría del Triángulo y Áreas"
+        }
+      ]
+    },
+    {
+      "id": "espacios-vectoriales",
+      "title": "Espacios Vectoriales",
+      "description": "Conceptos abstractos: subespacios, combinaciones lineales, independencia lineal, bases y dimensión.",
+      "icon": "fas fa-layer-group",
+      "difficulty": "avanzado",
+      "estimatedTime": "2 semanas",
+      "prerequisites": [
+        "geometria-vectorial"
+      ],
+      "topics": [
+        {
+          "id": "subespacios-M2R",
+          "title": "Definición y Subespacios en Matrices"
+        },
+        {
+          "id": "independencia-lineal",
+          "title": "Independencia Lineal de Vectores"
+        },
+        {
+          "id": "bases-dimension",
+          "title": "Bases y Dimensión de Espacios"
+        }
+      ]
+    },
+    {
+      "id": "transformaciones-lineales-algebra",
+      "title": "Transformaciones Lineales",
+      "description": "Estudio de mapeos lineales: núcleo, imagen, matriz asociada y proyecciones geométricas.",
+      "icon": "fas fa-exchange-alt",
+      "difficulty": "avanzado",
+      "estimatedTime": "2 semanas",
+      "prerequisites": [
+        "espacios-vectoriales"
+      ],
+      "topics": [
+        {
+          "id": "definicion-transformacion",
+          "title": "Definición y Propiedades de Linealidad"
+        },
+        {
+          "id": "matriz-asociada",
+          "title": "Matriz de Transformación y Bases"
+        },
+        {
+          "id": "nucleo-imagen",
+          "title": "Núcleo e Imagen de una Transformación"
+        },
+        {
+          "id": "proyecciones-proyeccion-xy",
+          "title": "Proyecciones Geométricas"
+        }
+      ]
+    },
+    {
+      "id": "valores-vectores-propios",
+      "title": "Valores y Vectores Propios",
+      "description": "Análisis característico de matrices: autovalores, autovectores y criterios de diagonalización.",
+      "icon": "fas fa-bolt",
+      "difficulty": "avanzado",
+      "estimatedTime": "1.5 semanas",
+      "prerequisites": [
+        "transformaciones-lineales-algebra"
+      ],
+      "topics": [
+        {
+          "id": "calculo-valores-propios",
+          "title": "Cálculo de Valores Propios"
+        },
+        {
+          "id": "subespacios-propios",
+          "title": "Vectores Propios y Subespacios"
+        },
+        {
+          "id": "diagonalizacion",
+          "title": "Criterios y Matrices Diagonalizables"
+        }
+      ]
+    },
+    {
+      "id": "conicas-cuadricas",
+      "title": "Secciones Cónicas y Cuadráticas",
+      "description": "Identificación y rotación de elipses, hipérbolas y superficies cuadráticas en el espacio.",
+      "icon": "fas fa-circle",
+      "difficulty": "avanzado",
+      "estimatedTime": "1.5 semanas",
+      "prerequisites": [
+        "valores-vectores-propios"
+      ],
+      "topics": [
+        {
+          "id": "secciones-conicas",
+          "title": "Cónicas en el Plano y Rotación"
+        },
+        {
+          "id": "superficies-cuadricas",
+          "title": "Cuadráticas en el Espacio"
+        }
+      ]
+    },
+    {
+      "id": "test",
+      "title": "Curso de Prueba QA",
+      "description": "Curso para verificar la funcionalidad de todos los tipos de preguntas y características del sistema.",
+      "icon": "fas fa-vial",
+      "difficulty": "avanzado",
+      "estimatedTime": "1 hora",
+      "prerequisites": [],
+      "topics": [
+        {
+          "id": "test-topic-1",
+          "title": "Tipos Básicos (Activos)"
+        },
+        {
+          "id": "test-topic-2",
+          "title": "Tipos Interactivos (Beta)"
+        },
+        {
+          "id": "test-topic-3",
+          "title": "Tipos en Desarrollo"
+        }
+      ]
+    }
+  ]
+}

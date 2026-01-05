@@ -1,0 +1,38 @@
+{
+  "monotonia-funciones": [
+    {
+      "title": "Guía Completa: Monotonía de Funciones",
+      "type": "text",
+      "content": "# Monotonía de Funciones\n\n## Conceptos Fundamentales\n\n### Definiciones\n\n**Función Creciente:**\nUna función f es creciente en un intervalo I si para todo x₁, x₂ ∈ I con x₁ < x₂, se cumple que f(x₁) ≤ f(x₂).\n\n**Función Estrictamente Creciente:**\nUna función f es estrictamente creciente en un intervalo I si para todo x₁, x₂ ∈ I con x₁ < x₂, se cumple que f(x₁) < f(x₂).\n\n**Función Decreciente:**\nUna función f es decreciente en un intervalo I si para todo x₁, x₂ ∈ I con x₁ < x₂, se cumple que f(x₁) ≥ f(x₂).\n\n**Función Estrictamente Decreciente:**\nUna función f es estrictamente decreciente en un intervalo I si para todo x₁, x₂ ∈ I con x₁ < x₂, se cumple que f(x₁) > f(x₂).\n\n## Criterio de la Primera Derivada\n\n### Teorema Fundamental\n\nSi f es derivable en un intervalo abierto I:\n\n- Si f'(x) > 0 para todo x ∈ I, entonces f es estrictamente creciente en I.\n- Si f'(x) < 0 para todo x ∈ I, entonces f es estrictamente decreciente en I.\n- Si f'(x) ≥ 0 para todo x ∈ I, entonces f es creciente en I.\n- Si f'(x) ≤ 0 para todo x ∈ I, entonces f es decreciente en I.\n\n### Proceso de Análisis\n\n1. **Calcular la derivada** f'(x)\n2. **Encontrar puntos críticos** resolviendo f'(x) = 0\n3. **Determinar intervalos** usando los puntos críticos\n4. **Analizar el signo** de f'(x) en cada intervalo\n5. **Concluir la monotonía** de f en cada intervalo\n\n## Ejemplos Detallados\n\n### Ejemplo 1: Función Polinomial\n\nAnalizar la monotonía de f(x) = x³ - 3x² + 2\n\n**Solución:**\n\n1. f'(x) = 3x² - 6x = 3x(x - 2)\n2. Puntos críticos: x = 0, x = 2\n3. Intervalos: (-∞, 0), (0, 2), (2, ∞)\n4. Análisis de signos:\n   - Para x < 0: f'(x) > 0 (creciente)\n   - Para 0 < x < 2: f'(x) < 0 (decreciente)\n   - Para x > 2: f'(x) > 0 (creciente)\n\n### Ejemplo 2: Función Racional\n\nAnalizar la monotonía de f(x) = x/(x² + 1)\n\n**Solución:**\n\n1. f'(x) = (1·(x² + 1) - x·2x)/(x² + 1)² = (1 - x²)/(x² + 1)²\n2. Puntos críticos: x = -1, x = 1\n3. Intervalos: (-∞, -1), (-1, 1), (1, ∞)\n4. Análisis de signos:\n   - Para |x| > 1: f'(x) < 0 (decreciente)\n   - Para |x| < 1: f'(x) > 0 (creciente)\n\n## Casos Especiales\n\n### Funciones Constantes\n\nUna función f es constante en un intervalo I si f'(x) = 0 para todo x ∈ I.\n\n### Puntos Críticos\n\nUn punto c ∈ ℝ es un punto crítico de f si:\n- f'(c) = 0, o\n- f'(c) no existe\n\nLos puntos críticos son candidatos a extremos relativos y puntos donde la monotonía puede cambiar.\n\n## Aplicaciones\n\n### Optimización\n\nLa monotonía es fundamental para encontrar máximos y mínimos relativos:\n- Si f cambia de creciente a decreciente en c, entonces c es un máximo relativo.\n- Si f cambia de decreciente a creciente en c, entonces c es un mínimo relativo.\n\n### Análisis de Graficas\n\nLa monotonía nos permite:\n- Determinar la forma general de la gráfica\n- Identificar intervalos de aumento y disminución\n- Comprender el comportamiento global de la función\n\n## Errores Comunes\n\n1. **Confundir creciente con estrictamente creciente**\n   - Creciente permite tramos horizontales\n   - Estrictamente creciente no los permite\n\n2. **Olvidar puntos donde f'(x) no existe**\n   - También son puntos críticos\n   - Pueden cambiar la monotonía\n\n3. **No verificar el dominio de la función**\n   - El análisis debe restringirse al dominio de f\n   - Los puntos fuera del dominio no se consideran\n\n## Tabla de Referencia Rápida\n\n| Función | Derivada | Monotonía | Dominio |\n|---------|----------|-----------|---------|\n| f(x) = x² | f'(x) = 2x | Decreciente en (-∞, 0], Creciente en [0, ∞) | ℝ |\n| f(x) = x³ | f'(x) = 3x² | Creciente en todo ℝ | ℝ |\n| f(x) = eˣ | f'(x) = eˣ | Creciente en todo ℝ | ℝ |\n| f(x) = ln(x) | f'(x) = 1/x | Creciente en (0, ∞) | (0, ∞) |\n| f(x) = 1/x | f'(x) = -1/x² | Decreciente en (-∞, 0) y (0, ∞) | ℝ \\ {0} |\n| f(x) = √x | f'(x) = 1/(2√x) | Creciente en (0, ∞) | [0, ∞) |"
+    },
+    {
+      "title": "Video: Introducción a la Monotonía",
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=ej25mxhA8oQ",
+      "description": "Explicación visual del concepto de monotonía y cómo identificar funciones crecientes y decrecientes."
+    },
+    {
+      "title": "Video: Criterio de la Primera Derivada",
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=OHh_5m1tq3g",
+      "description": "Demostración y aplicación del criterio de la primera derivada para determinar monotonía."
+    },
+    {
+      "title": "Calculadora Interactiva de Monotonía",
+      "type": "interactive",
+      "url": "https://www.geogebra.org/m/ZHtNnrJp",
+      "description": "Explora cómo cambia la monotonía de diferentes funciones al modificar sus parámetros."
+    },
+    {
+      "title": "Ejercicios Propuestos",
+      "type": "text",
+      "content": "# Ejercicios de Monotonía\n\n## Nivel Básico\n\n1. Determina si las siguientes funciones son crecientes o decrecientes en todo su dominio:\n   a) f(x) = 2x + 3\n   b) f(x) = -x + 5\n   c) f(x) = x²\n   d) f(x) = -x²\n\n2. Encuentra los intervalos de monotonía de:\n   a) f(x) = x³ - 3x\n   b) f(x) = x⁴ - 2x²\n\n## Nivel Intermedio\n\n3. Analiza la monotonía de:\n   a) f(x) = x³ - 3x² + 2\n   b) f(x) = x/(x² + 1)\n   c) f(x) = x·e^(-x)\n\n4. Determina los intervalos donde f(x) = ln(x² + 1) es creciente.\n\n## Nivel Avanzado\n\n5. Analiza la monotonía de:\n   a) f(x) = x·√(x² - 1)\n   b) f(x) = e^x/(1 + e^x)\n   c) f(x) = arctan(x) + x/(1 + x²)\n\n6. Si f es creciente y g es decreciente, ¿qué puedes decir de h(x) = f(x) - g(x)?\n\n## Soluciones\n\n### Nivel Básico\n\n1. a) Creciente (f'(x) = 2 > 0)\n   b) Decreciente (f'(x) = -1 < 0)\n   c) Decreciente en (-∞, 0], creciente en [0, ∞)\n   d) Creciente en (-∞, 0], decreciente en [0, ∞)\n\n2. a) Creciente en (-∞, -1] ∪ [1, ∞), decreciente en [-1, 1]\n   b) Decreciente en (-∞, -1] ∪ [0, 1], creciente en [-1, 0] ∪ [1, ∞)\n\n### Nivel Intermedio\n\n3. a) Creciente en (-∞, 0] ∪ [2, ∞), decreciente en [0, 2]\n   b) Creciente en [-1, 1], decreciente en (-∞, -1] ∪ [1, ∞)\n   c) Creciente en (-∞, 1], decreciente en [1, ∞)\n\n4. Creciente en (0, ∞)\n\n### Nivel Avanzado\n\n5. a) Creciente en (-∞, -1] ∪ [1, ∞)\n   b) Creciente en todo ℝ\n   c) Creciente en todo ℝ\n\n6. h es creciente, ya que h'(x) = f'(x) - g'(x) ≥ 0 - (negativo) > 0"
+    },
+    {
+      "title": "Infografía: Monotonía de Funciones",
+      "type": "image",
+      "url": "https://i.imgur.com/example1.png",
+      "description": "Resumen visual de los conceptos clave de monotonía con ejemplos gráficos."
+    }
+  ]
+}

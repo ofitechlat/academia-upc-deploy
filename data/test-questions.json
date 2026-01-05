@@ -1,0 +1,225 @@
+{
+    "test": [
+        {
+            "id": "test-multiple-choice",
+            "topic": "test-topic-1",
+            "question": "¿Cuál es la capital de Francia?",
+            "type": "multiple-choice",
+            "options": [
+                "Madrid",
+                "París",
+                "Berlín",
+                "Roma"
+            ],
+            "correct": 1,
+            "difficulty": "facil"
+        },
+        {
+            "id": "test-numeric",
+            "topic": "test-topic-1",
+            "question": "¿Cuánto es 5 + 5?",
+            "type": "numeric",
+            "correct": 10,
+            "tolerance": 0.1,
+            "difficulty": "facil"
+        },
+        {
+            "id": "test-matrix",
+            "topic": "test-topic-1",
+            "question": "Escribe la matriz identidad 2x2",
+            "type": "matrix-input",
+            "rows": 2,
+            "columns": 2,
+            "correct": [
+                [
+                    1,
+                    0
+                ],
+                [
+                    0,
+                    1
+                ]
+            ],
+            "difficulty": "medio"
+        },
+        {
+            "id": "test-fill-blank",
+            "topic": "test-topic-1",
+            "question": "El agua hierve a _____ grados Celsius.",
+            "type": "fill-blank",
+            "blanks": [
+                "100"
+            ],
+            "distractors": [
+                "0",
+                "50",
+                "90",
+                "200"
+            ],
+            "template": "El agua hierve a _____ grados Celsius.",
+            "difficulty": "facil"
+        },
+        {
+            "id": "test-drag-drop",
+            "topic": "test-topic-2",
+            "question": "Empareja los animales con su grupo",
+            "type": "drag-drop",
+            "items": [
+                "Perro",
+                "Águila",
+                "Salmón"
+            ],
+            "categories": [
+                "Mamífero",
+                "Ave",
+                "Pez"
+            ],
+            "correctMapping": [
+                0,
+                1,
+                2
+            ],
+            "difficulty": "medio"
+        },
+        {
+            "id": "test-ordering",
+            "topic": "test-topic-2",
+            "question": "Ordena los números de menor a mayor",
+            "type": "ordering",
+            "items": [
+                "10",
+                "50",
+                "100"
+            ],
+            "correctOrder": [
+                0,
+                1,
+                2
+            ],
+            "difficulty": "facil"
+        },
+        {
+            "id": "test-categorize",
+            "topic": "test-topic-2",
+            "question": "Clasifica los números",
+            "type": "categorize",
+            "items": [
+                "2",
+                "3",
+                "4",
+                "5"
+            ],
+            "categories": {
+                "par": "Par",
+                "impar": "Impar"
+            },
+            "correctCategories": {
+                "2": "par",
+                "3": "impar",
+                "4": "par",
+                "5": "impar"
+            },
+            "difficulty": "medio"
+        },
+        {
+            "id": "test-dev-types",
+            "topic": "test-topic-3",
+            "question": "Pregunta de prueba para tipos en desarrollo",
+            "type": "graph-analysis",
+            "difficulty": "dificil"
+        },
+        {
+            "id": "test-graphic-2d",
+            "topic": "test-topic-3",
+            "question": "Analiza la función cuadrática f(x) = x². Mueve el punto P para encontrar el vértice.",
+            "type": "graphic",
+            "subtype": "2d-function",
+            "config": {
+                "functions": [
+                    {
+                        "expression": "x^2",
+                        "color": "blue"
+                    }
+                ],
+                "points": [
+                    {
+                        "x": 2,
+                        "y": 4,
+                        "color": "red"
+                    }
+                ],
+                "domain": {
+                    "x": [
+                        -5,
+                        5
+                    ],
+                    "y": [
+                        -2,
+                        10
+                    ]
+                },
+                "interactivePoints": [
+                    {
+                        "id": "p1",
+                        "x": 0,
+                        "y": 5
+                    }
+                ]
+            },
+            "interactive": true
+        },
+        {
+            "id": "test-graphic-3d",
+            "topic": "test-topic-3",
+            "question": "Visualiza el sólido de revolución (esfera).",
+            "type": "graphic",
+            "subtype": "3d-plot",
+            "config": {
+                "shapes": [
+                    {
+                        "type": "sphere",
+                        "color": "orange"
+                    }
+                ],
+                "axis": true
+            },
+            "interactive": true
+        },
+        {
+            "id": "test-graphic-chart",
+            "topic": "test-topic-3",
+            "question": "Interpreta el siguiente histograma de notas.",
+            "type": "graphic",
+            "subtype": "chart",
+            "config": {
+                "type": "bar",
+                "data": [
+                    {
+                        "name": "0-10",
+                        "count": 5
+                    },
+                    {
+                        "name": "11-13",
+                        "count": 12
+                    },
+                    {
+                        "name": "14-17",
+                        "count": 25
+                    },
+                    {
+                        "name": "18-20",
+                        "count": 8
+                    }
+                ],
+                "dataKeys": [
+                    {
+                        "key": "count",
+                        "color": "#82ca9d"
+                    }
+                ],
+                "xAxisKey": "name"
+            },
+            "interactive": false
+        }
+    ]
+}

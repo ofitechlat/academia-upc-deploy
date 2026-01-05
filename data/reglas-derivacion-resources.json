@@ -1,0 +1,262 @@
+{
+  "reglas-derivacion": {
+    "reglas-basicas": [
+      {
+        "title": "Reglas básicas de derivación",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-diff-intro",
+        "type": "video",
+        "description": "Introducción a las reglas fundamentales de derivación: constantes, potencias y múltiplos"
+      },
+      {
+        "title": "Tabla de derivadas básicas",
+        "url": "https://www.mathsisfun.com/calculus/derivatives-rules.html",
+        "type": "reference",
+        "description": "Referencia rápida de las reglas de derivación más comunes"
+      },
+      {
+        "title": "Ejercicios: Regla de la potencia",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-diff-intro/dc-basic-diff-rules/e/power-rule",
+        "type": "practice",
+        "description": "Práctica interactiva de la regla de la potencia"
+      }
+    ],
+    "regla-producto": [
+      {
+        "title": "Regla del producto explicada",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-diff-intro/dc-product-rule/v/product-rule",
+        "type": "video",
+        "description": "Cómo derivar el producto de dos funciones usando (f·g)' = f'·g + f·g'"
+      },
+      {
+        "title": "Demostración de la regla del producto",
+        "url": "https://www.mathsisfun.com/calculus/derivatives-product-rule.html",
+        "type": "article",
+        "description": "Demostración formal y ejemplos de la regla del producto"
+      },
+      {
+        "title": "Práctica: Regla del producto",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-diff-intro/dc-product-rule/e/product-rule",
+        "type": "practice",
+        "description": "Ejercicios variados de aplicación de la regla del producto"
+      }
+    ],
+    "regla-cociente": [
+      {
+        "title": "Regla del cociente paso a paso",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-diff-intro/dc-quotient-rule/v/quotient-rule",
+        "type": "video",
+        "description": "Aprende a derivar cocientes con la fórmula (f/g)' = (f'g - fg')/g²"
+      },
+      {
+        "title": "Regla del cociente - Teoría",
+        "url": "https://www.mathsisfun.com/calculus/derivatives-quotient-rule.html",
+        "type": "article",
+        "description": "Explicación detallada y ejemplos resueltos de la regla del cociente"
+      },
+      {
+        "title": "Ejercicios: Regla del cociente",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-diff-intro/dc-quotient-rule/e/quotient-rule",
+        "type": "practice",
+        "description": "Práctica de derivación de funciones racionales"
+      }
+    ],
+    "regla-cadena": [
+      {
+        "title": "Regla de la cadena explicada",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-chain/dc-chain-rule-intro/v/chain-rule-introduction",
+        "type": "video",
+        "description": "Introducción a la regla de la cadena para funciones compuestas"
+      },
+      {
+        "title": "Regla de la cadena - Múltiples ejemplos",
+        "url": "https://www.mathsisfun.com/calculus/derivatives-chain-rule.html",
+        "type": "article",
+        "description": "Diversos ejemplos de aplicación de la regla de la cadena"
+      },
+      {
+        "title": "Práctica: Regla de la cadena",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-chain/dc-chain-rule-intro/e/chain-rule",
+        "type": "practice",
+        "description": "Ejercicios progresivos de funciones compuestas"
+      }
+    ],
+    "derivacion-implicita": [
+      {
+        "title": "Derivación implícita - Introducción",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-implicit/dc-implicit-diff/v/implicit-differentiation-1",
+        "type": "video",
+        "description": "Cómo derivar ecuaciones donde y no está despejada"
+      },
+      {
+        "title": "Derivación implícita explicada",
+        "url": "https://www.mathsisfun.com/calculus/implicit-differentiation.html",
+        "type": "article",
+        "description": "Guía completa con ejemplos de derivación implícita"
+      },
+      {
+        "title": "Ejercicios: Derivación implícita",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-implicit/dc-implicit-diff/e/implicit-differentiation",
+        "type": "practice",
+        "description": "Practica encontrando dy/dx en ecuaciones implícitas"
+      }
+    ],
+    "recta-tangente": [
+      {
+        "title": "Ecuación de la recta tangente",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-analytic-app-diff/dc-tangent-normal/v/equation-of-a-tangent-line",
+        "type": "video",
+        "description": "Cómo encontrar la ecuación de la recta tangente usando derivadas"
+      },
+      {
+        "title": "Recta tangente y normal",
+        "url": "https://www.mathsisfun.com/calculus/tangent-line.html",
+        "type": "article",
+        "description": "Teoría y ejemplos de rectas tangentes y normales"
+      },
+      {
+        "title": "Práctica: Rectas tangentes",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-analytic-app-diff/dc-tangent-normal/e/equation-of-tangent-line",
+        "type": "practice",
+        "description": "Ejercicios de ecuaciones de rectas tangentes"
+      }
+    ],
+    "recta-normal": [
+      {
+        "title": "Recta normal a una curva",
+        "url": "https://www.youtube.com/watch?v=example",
+        "type": "video",
+        "description": "Cómo calcular la recta perpendicular a la tangente"
+      },
+      {
+        "title": "Rectas tangentes y normales - Teoría",
+        "url": "https://www.mathsisfun.com/calculus/tangent-normal.html",
+        "type": "reference",
+        "description": "Fórmulas y propiedades de rectas tangentes y normales"
+      }
+    ],
+    "funciones-trigonometricas": [
+      {
+        "title": "Derivadas de funciones trigonométricas",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-trig-diff/dc-diff-trig-funcs/v/derivatives-of-sin-x-and-cos-x",
+        "type": "video",
+        "description": "Derivadas de sen(x), cos(x), tan(x) y demás funciones trigonométricas"
+      },
+      {
+        "title": "Tabla de derivadas trigonométricas",
+        "url": "https://www.mathsisfun.com/calculus/derivatives-trigonometric.html",
+        "type": "reference",
+        "description": "Referencia completa de todas las derivadas trigonométricas"
+      },
+      {
+        "title": "Demostración: Límite sen(x)/x",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-limits/dc-trig-limits/v/proof-limit-of-sin-x-over-x-as-x-approaches-0",
+        "type": "article",
+        "description": "Demostración del límite fundamental usado en derivadas trigonométricas"
+      },
+      {
+        "title": "Práctica: Derivadas trigonométricas",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-trig-diff/dc-diff-trig-funcs/e/derivatives-of-trigonometric-functions",
+        "type": "practice",
+        "description": "Ejercicios de derivadas de funciones trigonométricas"
+      }
+    ],
+    "funciones-exponenciales": [
+      {
+        "title": "Derivada de funciones exponenciales",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-exp-log-diff/dc-diff-exp/v/derivative-of-exponential-functions",
+        "type": "video",
+        "description": "Cómo derivar e^x y a^x con la regla de la cadena"
+      },
+      {
+        "title": "Propiedades de la función exponencial",
+        "url": "https://www.mathsisfun.com/calculus/derivatives-exponential.html",
+        "type": "article",
+        "description": "Derivadas de funciones exponenciales y sus propiedades"
+      },
+      {
+        "title": "Práctica: Derivadas exponenciales",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-exp-log-diff/dc-diff-exp/e/derivatives-of-exponential-functions",
+        "type": "practice",
+        "description": "Ejercicios de derivación de funciones exponenciales"
+      }
+    ],
+    "funciones-logaritmicas": [
+      {
+        "title": "Derivada de funciones logarítmicas",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-exp-log-diff/dc-diff-log/v/derivative-of-logarithmic-functions",
+        "type": "video",
+        "description": "Derivadas de ln(x) y log_a(x)"
+      },
+      {
+        "title": "Leyes de los logaritmos",
+        "url": "https://www.mathsisfun.com/algebra/logarithms.html",
+        "type": "reference",
+        "description": "Propiedades fundamentales de los logaritmos necesarias para derivar"
+      },
+      {
+        "title": "Práctica: Derivadas logarítmicas",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-exp-log-diff/dc-diff-log/e/derivatives-of-logarithmic-functions",
+        "type": "practice",
+        "description": "Ejercicios de derivación de funciones logarítmicas"
+      }
+    ],
+    "derivacion-logaritmica": [
+      {
+        "title": "Derivación logarítmica - Técnica",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-exp-log-diff/dc-logarithmic-diff/v/logarithmic-differentiation",
+        "type": "video",
+        "description": "Técnica especial para derivar funciones complejas tomando logaritmo"
+      },
+      {
+        "title": "Cuándo usar derivación logarítmica",
+        "url": "https://www.mathsisfun.com/calculus/logarithmic-differentiation.html",
+        "type": "article",
+        "description": "Casos donde la derivación logarítmica simplifica el proceso"
+      },
+      {
+        "title": "Ejemplos: Derivación logarítmica",
+        "url": "https://tutorial.math.lamar.edu/classes/calci/LogDiff.aspx",
+        "type": "article",
+        "description": "Ejemplos detallados paso a paso de derivación logarítmica"
+      },
+      {
+        "title": "Práctica: Derivación logarítmica",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-exp-log-diff/dc-logarithmic-diff/e/logarithmic-differentiation",
+        "type": "practice",
+        "description": "Ejercicios aplicando la técnica de derivación logarítmica"
+      }
+    ],
+    "tasas-cambio-relacionadas": [
+      {
+        "title": "Tasas de cambio relacionadas - Introducción",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-analytic-app-diff/dc-related-rates/v/related-rates-intro",
+        "type": "video",
+        "description": "Introducción a problemas donde múltiples variables cambian simultáneamente"
+      },
+      {
+        "title": "Estrategia para tasas relacionadas",
+        "url": "https://tutorial.math.lamar.edu/classes/calci/RelatedRates.aspx",
+        "type": "article",
+        "description": "Método paso a paso para resolver problemas de tasas relacionadas"
+      },
+      {
+        "title": "Problema del cono con agua",
+        "url": "https://www.youtube.com/watch?v=example2",
+        "type": "video",
+        "description": "Ejemplo clásico: velocidad de llenado de un recipiente cónico"
+      },
+      {
+        "title": "Problemas variados - Tasas relacionadas",
+        "url": "https://www.mathsisfun.com/calculus/related-rates.html",
+        "type": "article",
+        "description": "Colección de problemas de aplicación de tasas de cambio"
+      },
+      {
+        "title": "Práctica: Tasas relacionadas",
+        "url": "https://es.khanacademy.org/math/differential-calculus/dc-analytic-app-diff/dc-related-rates/e/related-rates",
+        "type": "practice",
+        "description": "Ejercicios de tasas de cambio relacionadas"
+      }
+    ]
+  }
+}

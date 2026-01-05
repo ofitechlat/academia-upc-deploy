@@ -1,0 +1,1427 @@
+{
+  "derivadas": [
+    {
+      "id": "der-001",
+      "topic": "introduccion-concepto",
+      "question": "¿Cuál es la interpretación geométrica de la derivada?",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "La pendiente de la recta tangente en un punto",
+        "El área bajo la curva",
+        "La distancia entre dos puntos",
+        "El volumen de un sólido"
+      ],
+      "correct": 0,
+      "difficulty": "facil",
+      "hints": [
+        "Piensa en cómo se ve una línea que toca la curva en un solo punto",
+        "La derivada nos dice qué tan empinada está la curva",
+        "Es la pendiente de la línea tangente"
+      ],
+      "explanation": "La derivada en un punto representa la pendiente de la recta tangente a la función en ese punto, indicando la tasa de cambio instantánea."
+    },
+    {
+      "id": "der-002",
+      "topic": "introduccion-concepto",
+      "question": "Complete la definición: La derivada de f(x) en el punto x=a es el límite cuando h tiende a _____ de _____",
+      "type": "fill-blank",
+      "blanks": ["0", "(f(a+h)-f(a))/h"],
+      "distractors": ["∞", "1", "(f(a)-f(a+h))/h", "f(a+h)+f(a)", "a"],
+      "template": "La derivada de f(x) en el punto x=a es el límite cuando h tiende a _____ de _____",
+      "difficulty": "medio",
+      "hints": [
+        "Recuerda la definición formal usando límites",
+        "h representa un incremento muy pequeño",
+        "Es la definición de la derivada como límite del cociente de diferencias"
+      ],
+      "stepByStep": [
+        "### 📚 **Definición formal de la derivada**",
+        "",
+        "La derivada nos da la **tasa de cambio instantánea** de una función.",
+        "",
+        "### 🔍 **Construcción paso a paso**",
+        "",
+        "**Paso 1:** Partimos de la tasa de cambio promedio",
+        "- Entre dos puntos: $(a, f(a))$ y $(a+h, f(a+h))$",
+        "- Pendiente de la recta secante: $\\frac{f(a+h) - f(a)}{(a+h) - a} = \\frac{f(a+h) - f(a)}{h}$",
+        "",
+        "**Paso 2:** Para obtener la tasa **instantánea**",
+        "- Hacemos que $h$ se acerque a **0**",
+        "- La recta secante se convierte en recta **tangente**",
+        "",
+        "**Paso 3:** Definición formal",
+        "$$f'(a) = \\lim_{h \\to 0} \\frac{f(a+h) - f(a)}{h}$$",
+        "",
+        "### ✅ **Respuesta**",
+        "- h tiende a: **0**",
+        "- Expresión: **(f(a+h)-f(a))/h**"
+      ],
+      "explanation": "La definición formal de derivada es: f'(a) = lim(h→0) [f(a+h)-f(a)]/h"
+    },
+    {
+      "id": "der-003",
+      "topic": "regla-potencia",
+      "question": "¿Cuál es la derivada de f(x) = x⁵?",
+      "type": "multiple-choice","shuffle": true,
+      "options": ["5x⁴", "x⁴", "5x⁵", "x⁵/5"],
+      "correct": 0,
+      "difficulty": "facil",
+      "hints": [
+        "Aplica la regla de la potencia: d/dx(xⁿ) = n·xⁿ⁻¹",
+        "El exponente baja multiplicando y se reduce en 1",
+        "Para x⁵, n=5, entonces la derivada es 5·x⁴"
+      ],
+      "optionFeedback": {
+        "0": "¡Excelente! 🎉 Has aplicado correctamente la regla de la potencia.",
+        "1": "❌ Esta sería la derivada de $x^5$ dividida por 5. Recuerda que el exponente debe bajar multiplicando.",
+        "2": "❌ Aquí has olvidado reducir el exponente. La regla es $\\frac{d}{dx}(x^n) = n \\cdot x^{n-1}$.",
+        "3": "❌ Esta sería la antiderivada (integral), no la derivada. Para derivar, el exponente baja multiplicando."
+      },
+      "stepByStep": [
+        "## 📚 **Explicación Paso a Paso: Derivada de una Potencia**",
+        "",
+        "### 🎯 **Objetivo**",
+        "Encontrar la derivada de $f(x) = x^5$ usando la **regla de la potencia**.",
+        "",
+        "### 📋 **Herramientas que necesitaremos:**",
+        "- **Regla de la potencia**: $\\frac{d}{dx}(x^n) = n \\cdot x^{n-1}$",
+        "- **Conceptos básicos**: exponentes y multiplicación",
+        "",
+        "### 🔍 **Paso 1: Identificar la forma**",
+        "Tenemos $f(x) = x^5$, que es una función potencia donde:",
+        "- Base: $x$", 
+        "- Exponente: $n = 5$",
+        "",
+        "### ⚙️ **Paso 2: Aplicar la regla de la potencia**",
+        "La regla dice: $\\frac{d}{dx}(x^n) = n \\cdot x^{n-1}$",
+        "",
+        "Sustituyendo $n = 5$:",
+        "$$\\frac{d}{dx}(x^5) = 5 \\cdot x^{5-1}$$",
+        "",
+        "### 🧮 **Paso 3: Simplificar el exponente**",
+        "$$5 \\cdot x^{5-1} = 5 \\cdot x^4 = 5x^4$$",
+        "",
+        "### ✅ **Respuesta Final**",
+        "$$f'(x) = 5x^4$$",
+        "",
+        "### 💡 **¿Por qué funciona esta regla?**",
+        "La regla de la potencia se deriva del límite fundamental:",
+        "$$\\lim_{h \\to 0} \\frac{(x+h)^n - x^n}{h}$$",
+        "Usando el teorema del binomio, este límite siempre resulta en $n \\cdot x^{n-1}$."
+      ],
+      "explanation": "Usando la regla de la potencia: d/dx(x⁵) = 5·x⁵⁻¹ = 5x⁴"
+    },
+    {
+      "id": "der-004",
+      "topic": "regla-potencia",
+      "question": "Si f(x) = 3x² + 2x - 1, calcula f'(2)",
+      "type": "numeric",
+      "correct": 14,
+      "tolerance": 0.1,
+      "unit": "",
+      "difficulty": "medio",
+      "hints": [
+        "Primero encuentra f'(x) derivando término por término",
+        "f'(x) = 6x + 2",
+        "Ahora sustituye x = 2"
+      ],
+      "optionFeedback": {
+        "general": "✅ ¡Excelente! Has calculado correctamente f'(2) = 14.",
+        "incorrect": "❌ Respuesta incorrecta. Recuerda: primero deriva f(x) = 3x² + 2x - 1 para obtener f'(x) = 6x + 2, luego evalúa en x = 2."
+      },
+      "stepByStep": [
+        "## 📚 **Explicación Paso a Paso: Evaluar una Derivada**",
+        "",
+        "### 🎯 **Objetivo**", 
+        "Calcular $f'(2)$ donde $f(x) = 3x^2 + 2x - 1$.",
+        "",
+        "### 📋 **Herramientas necesarias:**",
+        "- **Regla de la potencia**: $\\frac{d}{dx}(x^n) = n \\cdot x^{n-1}$",
+        "- **Regla de la constante**: $\\frac{d}{dx}(c) = 0$",
+        "- **Linealidad**: $\\frac{d}{dx}(af + bg) = a\\frac{d}{dx}f + b\\frac{d}{dx}g$",
+        "",
+        "### 🔍 **Paso 1: Derivar la función**",
+        "Derivamos término por término:",
+        "$$f(x) = 3x^2 + 2x - 1$$",
+        "",
+        "**Primer término:** $\\frac{d}{dx}(3x^2) = 3 \\cdot 2x^{2-1} = 6x$",
+        "",
+        "**Segundo término:** $\\frac{d}{dx}(2x) = 2 \\cdot 1 = 2$",
+        "",
+        "**Tercer término:** $\\frac{d}{dx}(-1) = 0$ (constante)",
+        "",
+        "### ⚙️ **Paso 2: Escribir la derivada**",
+        "$$f'(x) = 6x + 2 + 0 = 6x + 2$$",
+        "",
+        "### 🧮 **Paso 3: Evaluar en x = 2**",
+        "Sustituimos $x = 2$:",
+        "$$f'(2) = 6(2) + 2 = 12 + 2 = 14$$",
+        "",
+        "### ✅ **Respuesta Final**",
+        "$$f'(2) = 14$$",
+        "",
+        "### 💡 **Interpretación**",
+        "Esto significa que la **tasa de cambio instantánea** de $f(x)$ en el punto $x = 2$ es $14$ unidades por unidad de $x$."
+      ],
+      "explanation": "f'(x) = 6x + 2, entonces f'(2) = 6(2) + 2 = 12 + 2 = 14"
+    },
+    {
+      "id": "der-005",
+      "topic": "reglas-basicas",
+      "question": "Arrastra cada FUNCIÓN hacia su DERIVADA correspondiente",
+      "description": "Las cajas de la izquierda contienen funciones originales. Las cajas de la derecha son sus derivadas. Conecta cada función con su derivada correcta.",
+      "type": "drag-drop",
+      "items": ["sin(x)", "cos(x)", "eˣ", "ln(x)"],
+      "categories": ["cos(x)", "-sin(x)", "eˣ", "1/x"],
+      "correctMapping": [0, 1, 2, 3],
+      "difficulty": "medio",
+      "hints": [
+        "Recuerda las derivadas básicas de funciones trigonométricas",
+        "La derivada del seno es coseno: d/dx(sin(x)) = cos(x)",
+        "La derivada del coseno es menos seno: d/dx(cos(x)) = -sin(x)",
+        "La derivada de la exponencial natural es ella misma: d/dx(eˣ) = eˣ"
+      ],
+      "stepByStep": [
+        "### 📚 **Recordemos las derivadas básicas**",
+        "",
+        "**Funciones trigonométricas:**",
+        "- $\\frac{d}{dx}[\\sin(x)] = \\cos(x)$",
+        "- $\\frac{d}{dx}[\\cos(x)] = -\\sin(x)$",
+        "",
+        "**Función exponencial:**",
+        "- $\\frac{d}{dx}[e^x] = e^x$",
+        "",
+        "**Función logaritmo natural:**",
+        "- $\\frac{d}{dx}[\\ln(x)] = \\frac{1}{x}$",
+        "",
+        "### 🔍 **Aplicando a cada función**",
+        "",
+        "1. **sin(x) → cos(x)**",
+        "2. **cos(x) → -sin(x)**", 
+        "3. **eˣ → eˣ**",
+        "4. **ln(x) → 1/x**"
+      ],
+      "explanation": "Derivadas básicas: d/dx(sin(x))=cos(x), d/dx(cos(x))=-sin(x), d/dx(eˣ)=eˣ, d/dx(ln(x))=1/x"
+    },
+    {
+      "id": "der-006",
+      "topic": "regla-producto",
+      "question": "Ordena los pasos para derivar f(x)·g(x) usando la regla del producto",
+      "type": "ordering",
+      "items": [
+        "Identificar f(x) y g(x)",
+        "Calcular f'(x)",
+        "Calcular g'(x)", 
+        "Aplicar la fórmula: f'(x)·g(x) + f(x)·g'(x)"
+      ],
+      "correctOrder": [0, 1, 2, 3],
+      "difficulty": "medio",
+      "hints": [
+        "Primero necesitas identificar las dos funciones",
+        "Luego calculas la derivada de cada una por separado",
+        "Finalmente aplicas la regla del producto"
+      ],
+      "stepByStep": [
+        "### ⚡ **Regla del producto**",
+        "",
+        "**Fórmula:** Si h(x) = f(x)·g(x), entonces h'(x) = f'(x)·g(x) + f(x)·g'(x)",
+        "",
+        "### 📋 **Proceso ordenado**",
+        "",
+        "**Paso 1:** Identificar f(x) y g(x)",
+        "- Separar el producto en dos funciones distintas",
+        "- Ejemplo: Si h(x) = x²·sin(x), entonces f(x) = x² y g(x) = sin(x)",
+        "",
+        "**Paso 2:** Calcular f'(x)",
+        "- Derivar la primera función",
+        "- Ejemplo: f'(x) = 2x",
+        "",
+        "**Paso 3:** Calcular g'(x)",
+        "- Derivar la segunda función",
+        "- Ejemplo: g'(x) = cos(x)",
+        "",
+        "**Paso 4:** Aplicar la fórmula",
+        "- h'(x) = f'(x)·g(x) + f(x)·g'(x)",
+        "- Ejemplo: h'(x) = 2x·sin(x) + x²·cos(x)"
+      ],
+      "explanation": "La regla del producto requiere: 1) Identificar las funciones, 2) Derivar cada una, 3) Aplicar (f·g)' = f'·g + f·g'"
+    },
+    {
+      "id": "der-007",
+      "topic": "regla-producto",
+      "question": "¿Cuál es la derivada de f(x) = x²·sin(x)?",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "2x·sin(x) + x²·cos(x)",
+        "2x·cos(x) + x²·sin(x)",
+        "2x·sin(x) - x²·cos(x)",
+        "x²·cos(x)"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Usa la regla del producto: (f·g)' = f'·g + f·g'",
+        "f(x) = x², entonces f'(x) = 2x",
+        "g(x) = sin(x), entonces g'(x) = cos(x)"
+      ],
+      "stepByStep": [
+        "### 🔢 **Aplicando la regla del producto**",
+        "",
+        "**Función:** f(x) = x² · sin(x)",
+        "",
+        "### 📝 **Paso a paso**",
+        "",
+        "**Paso 1:** Identificar las funciones",
+        "- Primera función: f(x) = x²",
+        "- Segunda función: g(x) = sin(x)",
+        "",
+        "**Paso 2:** Calcular las derivadas",
+        "- f'(x) = $\\frac{d}{dx}[x^2] = 2x$",
+        "- g'(x) = $\\frac{d}{dx}[\\sin(x)] = \\cos(x)$",
+        "",
+        "**Paso 3:** Aplicar la fórmula del producto",
+        "- $(f \\cdot g)' = f' \\cdot g + f \\cdot g'$",
+        "- $(x^2 \\cdot \\sin(x))' = 2x \\cdot \\sin(x) + x^2 \\cdot \\cos(x)$",
+        "",
+        "### ✅ **Respuesta**",
+        "f'(x) = 2x·sin(x) + x²·cos(x)"
+      ],
+      "explanation": "Aplicando la regla del producto: f'(x) = (x²)'·sin(x) + x²·(sin(x))' = 2x·sin(x) + x²·cos(x)"
+    },
+    {
+      "id": "der-008",
+      "topic": "regla-cociente",
+      "question": "La regla del cociente establece que la derivada de f(x)/g(x) es:",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "[f'(x)·g(x) - f(x)·g'(x)] / [g(x)]²",
+        "[f(x)·g'(x) - f'(x)·g(x)] / [g(x)]²",
+        "f'(x) / g'(x)",
+        "[f'(x) + g'(x)] / [f(x) + g(x)]"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "La regla del cociente es más compleja que la del producto",
+        "El denominador siempre es [g(x)]²",
+        "En el numerador: derivada del numerador por denominador menos numerador por derivada del denominador"
+      ],
+      "stepByStep": [
+        "### ➗ **Regla del cociente**",
+        "",
+        "**Para una función:** $h(x) = \\frac{f(x)}{g(x)}$",
+        "",
+        "### 📐 **Fórmula**",
+        "",
+        "$$h'(x) = \\frac{f'(x) \\cdot g(x) - f(x) \\cdot g'(x)}{[g(x)]^2}$$",
+        "",
+        "### 🧠 **Recordatorio nemotécnico**",
+        "",
+        "**\"Lo de arriba por la derivada de abajo, menos lo de abajo por la derivada de arriba, todo sobre abajo al cuadrado\"**",
+        "",
+        "- **Numerador:** f'(x)·g(x) - f(x)·g'(x)",
+        "- **Denominador:** [g(x)]²",
+        "",
+        "### ⚠️ **Nota importante**",
+        "El orden en el numerador es crucial: **primero** f'·g **luego** f·g'"
+      ],
+      "explanation": "La regla del cociente: (f/g)' = [f'·g - f·g'] / g²"
+    },
+    {
+      "id": "der-009",
+      "topic": "regla-cociente",
+      "question": "¿Cuál es la derivada de f(x) = x/(x+1)?",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "1/(x+1)²",
+        "1/(x+1)",
+        "(2x+1)/(x+1)²",
+        "x/(x+1)²"
+      ],
+      "correct": 0,
+      "difficulty": "dificil",
+      "hints": [
+        "Usa la regla del cociente",
+        "f(x) = x, f'(x) = 1",
+        "g(x) = x+1, g'(x) = 1",
+        "Aplica: [f'·g - f·g'] / g²"
+      ],
+      "stepByStep": [
+        "### 🔍 **Aplicando la regla del cociente**",
+        "",
+        "**Función:** $f(x) = \\frac{x}{x+1}$",
+        "",
+        "### 📝 **Paso a paso**",
+        "",
+        "**Paso 1:** Identificar numerador y denominador",
+        "- Numerador: f(x) = x",
+        "- Denominador: g(x) = x + 1",
+        "",
+        "**Paso 2:** Calcular las derivadas",
+        "- f'(x) = $\\frac{d}{dx}[x] = 1$",
+        "- g'(x) = $\\frac{d}{dx}[x+1] = 1$",
+        "",
+        "**Paso 3:** Aplicar la fórmula del cociente",
+        "- $\\left(\\frac{f}{g}\\right)' = \\frac{f' \\cdot g - f \\cdot g'}{g^2}$",
+        "",
+        "**Paso 4:** Sustituir valores",
+        "- $\\frac{d}{dx}\\left[\\frac{x}{x+1}\\right] = \\frac{1 \\cdot (x+1) - x \\cdot 1}{(x+1)^2}$",
+        "",
+        "**Paso 5:** Simplificar",
+        "- $= \\frac{x+1-x}{(x+1)^2} = \\frac{1}{(x+1)^2}$",
+        "",
+        "### ✅ **Respuesta**",
+        "f'(x) = 1/(x+1)²"
+      ],
+      "explanation": "Usando la regla del cociente: f'(x) = [1·(x+1) - x·1] / (x+1)² = [x+1-x] / (x+1)² = 1/(x+1)²"
+    },
+    {
+      "id": "der-010",
+      "topic": "regla-cadena",
+      "question": "Para derivar una función compuesta f(g(x)), necesitas:",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "Derivar la función externa y multiplicar por la derivada de la función interna",
+        "Derivar solo la función externa",
+        "Derivar solo la función interna",
+        "Sumar las derivadas de ambas funciones"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "La regla de la cadena conecta funciones compuestas",
+        "Necesitas la derivada de 'afuera' y la derivada de 'adentro'",
+        "Se multiplican las derivadas"
+      ],
+      "stepByStep": [
+        "### 🔗 **Regla de la cadena**",
+        "",
+        "**Para una función compuesta:** h(x) = f(g(x))",
+        "",
+        "### 📐 **Fórmula**",
+        "",
+        "$$h'(x) = f'(g(x)) \\cdot g'(x)$$",
+        "",
+        "### 🧠 **Interpretación**",
+        "",
+        "**\"Derivada de afuera por derivada de adentro\"**",
+        "",
+        "- f'(g(x)): Derivada de la función **externa** evaluada en la función interna",
+        "- g'(x): Derivada de la función **interna**",
+        "",
+        "### 💡 **Ejemplo**",
+        "",
+        "Si h(x) = sin(x²):",
+        "- Función externa: f(u) = sin(u), entonces f'(u) = cos(u)",
+        "- Función interna: g(x) = x², entonces g'(x) = 2x",
+        "- Resultado: h'(x) = cos(x²) · 2x = 2x·cos(x²)"
+      ],
+      "explanation": "La regla de la cadena: (f(g(x)))' = f'(g(x)) · g'(x)"
+    },
+    {
+      "id": "der-011",
+      "topic": "regla-cadena",
+      "question": "¿Cuál es la derivada de f(x) = sin(3x)?",
+      "type": "multiple-choice","shuffle": true,
+      "options": ["3cos(3x)", "cos(3x)", "3sin(3x)", "-3cos(3x)"],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Aplica la regla de la cadena",
+        "La función externa es sin(u) con u = 3x",
+        "La derivada de sin(u) es cos(u)",
+        "La derivada de 3x es 3"
+      ],
+      "stepByStep": [
+        "### 🔗 **Aplicando la regla de la cadena**",
+        "",
+        "**Función:** f(x) = sin(3x)",
+        "",
+        "### 📝 **Paso a paso**",
+        "",
+        "**Paso 1:** Identificar la composición",
+        "- Función externa: f(u) = sin(u)",
+        "- Función interna: g(x) = 3x",
+        "- Composición: f(g(x)) = sin(3x)",
+        "",
+        "**Paso 2:** Derivar la función externa",
+        "- $f'(u) = \\frac{d}{du}[\\sin(u)] = \\cos(u)$",
+        "- Evaluada en u = 3x: $f'(3x) = \\cos(3x)$",
+        "",
+        "**Paso 3:** Derivar la función interna",
+        "- $g'(x) = \\frac{d}{dx}[3x] = 3$",
+        "",
+        "**Paso 4:** Aplicar la regla de la cadena",
+        "- $(f \\circ g)'(x) = f'(g(x)) \\cdot g'(x)$",
+        "- $\\frac{d}{dx}[\\sin(3x)] = \\cos(3x) \\cdot 3 = 3\\cos(3x)$",
+        "",
+        "### ✅ **Respuesta**",
+        "f'(x) = 3cos(3x)"
+      ],
+      "explanation": "Usando la regla de la cadena: f'(x) = cos(3x) · (3x)' = cos(3x) · 3 = 3cos(3x)"
+    },
+    {
+      "id": "der-012",
+      "topic": "regla-cadena",
+      "question": "Si f(x) = (2x + 1)⁴, calcula f'(0)",
+      "type": "numeric",
+      "correct": 8,
+      "tolerance": 0.1,
+      "unit": "",
+      "difficulty": "dificil",
+      "hints": [
+        "Usa la regla de la cadena",
+        "f'(x) = 4(2x + 1)³ · 2 = 8(2x + 1)³",
+        "Sustituye x = 0"
+      ],
+      "explanation": "f'(x) = 4(2x + 1)³ · 2 = 8(2x + 1)³, entonces f'(0) = 8(2·0 + 1)³ = 8(1)³ = 8"
+    },
+    {
+      "id": "der-013",
+      "topic": "aplicaciones-pendiente",
+      "question": "Si la posición de un objeto está dada por s(t) = t³ - 6t² + 9t, ¿en qué momento la velocidad es cero?",
+      "type": "multiple-choice","shuffle": true,
+      "options": ["t = 1 y t = 3", "t = 0 y t = 2", "t = 2 y t = 4", "t = 1 y t = 2"],
+      "correct": 0,
+      "difficulty": "dificil",
+      "hints": [
+        "La velocidad es la derivada de la posición",
+        "v(t) = s'(t) = 3t² - 12t + 9",
+        "Resuelve v(t) = 0"
+      ],
+      "explanation": "v(t) = s'(t) = 3t² - 12t + 9. Para v(t) = 0: 3t² - 12t + 9 = 0, dividiendo por 3: t² - 4t + 3 = 0, factorizando: (t-1)(t-3) = 0, entonces t = 1 y t = 3"
+    },
+    {
+      "id": "der-014",
+      "topic": "aplicaciones-maximos-minimos",
+      "question": "Complete: Para encontrar los valores críticos de una función, necesitamos resolver _____",
+      "type": "fill-blank",
+      "blanks": ["f'(x) = 0"],
+      "distractors": ["f(x) = 0", "f''(x) = 0", "f'(x) = 1", "f(x) = máximo", "x = 0"],
+      "template": "Para encontrar los valores críticos de una función, necesitamos resolver _____",
+      "difficulty": "medio",
+      "hints": [
+        "Los valores críticos ocurren donde la pendiente es cero",
+        "También donde la derivada no existe",
+        "La ecuación principal es cuando la derivada es igual a cero"
+      ],
+      "explanation": "Los valores críticos se encuentran resolviendo f'(x) = 0 (o donde f'(x) no existe)"
+    },
+    {
+      "id": "der-015",
+      "topic": "aplicaciones-maximos-minimos",
+      "question": "Ordena los pasos para encontrar el máximo de f(x) = -x² + 4x + 1",
+      "type": "ordering",
+      "items": [
+        "Calcular f'(x) = -2x + 4",
+        "Resolver f'(x) = 0",
+        "Encontrar x = 2",
+        "Calcular f(2) = 5"
+      ],
+      "correctOrder": [0, 1, 2, 3],
+      "difficulty": "medio",
+      "hints": [
+        "Primero necesitas la derivada",
+        "Luego igualas a cero para encontrar puntos críticos",
+        "Finalmente evalúas la función en ese punto"
+      ],
+      "explanation": "Para encontrar máximos: 1) Derivar, 2) Igualar a cero, 3) Resolver para x, 4) Evaluar f(x) en ese punto"
+    },
+    {
+      "id": "der-016",
+      "topic": "aplicaciones-optimizacion",
+      "question": "Un rectángulo tiene perímetro 20. Si x es el ancho, ¿cuál es la función para el área?",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "A(x) = x(10-x)",
+        "A(x) = x(20-x)",
+        "A(x) = 2x(10-x)",
+        "A(x) = x²"
+      ],
+      "correct": 0,
+      "difficulty": "dificil",
+      "hints": [
+        "Perímetro = 2(ancho + largo) = 20",
+        "Entonces ancho + largo = 10",
+        "Si ancho = x, entonces largo = 10 - x",
+        "Área = ancho × largo"
+      ],
+      "explanation": "Si perímetro = 20, entonces 2(x + y) = 20, así x + y = 10, entonces y = 10-x. Área = x·y = x(10-x)"
+    },
+    {
+      "id": "der-017",
+      "topic": "aplicaciones-optimizacion",
+      "question": "Para maximizar el área A(x) = x(10-x), ¿cuál debe ser el valor de x?",
+      "type": "numeric",
+      "correct": 5,
+      "tolerance": 0.1,
+      "unit": "",
+      "difficulty": "dificil",
+      "hints": [
+        "Deriva A(x) = x(10-x) = 10x - x²",
+        "A'(x) = 10 - 2x",
+        "Resuelve A'(x) = 0"
+      ],
+      "explanation": "A'(x) = 10 - 2x. Para máximo: 10 - 2x = 0, entonces 2x = 10, x = 5"
+    },
+    {
+      "id": "der-018",
+      "topic": "problemas-relacionados",
+      "question": "Si un globo esférico se infla y su radio aumenta a 2 cm/s, ¿a qué velocidad aumenta el volumen cuando r = 3 cm?",
+      "type": "numeric",
+      "correct": 72,
+      "tolerance": 1,
+      "unit": "π cm³/s",
+      "difficulty": "dificil",
+      "hints": [
+        "V = (4/3)πr³",
+        "dV/dt = 4πr² · dr/dt",
+        "dr/dt = 2 cm/s, r = 3 cm"
+      ],
+      "explanation": "V = (4/3)πr³, entonces dV/dt = 4πr² · dr/dt = 4π(3)² · 2 = 4π · 9 · 2 = 72π cm³/s"
+    },
+    {
+      "id": "der-019",
+      "topic": "problemas-relacionados",
+      "question": "Relaciona cada situación con su interpretación de derivada",
+      "type": "drag-drop",
+      "items": [
+        "Posición vs tiempo",
+        "Costo vs cantidad",
+        "Temperatura vs altura",
+        "Población vs tiempo"
+      ],
+      "categories": [
+        "Velocidad",
+        "Costo marginal",
+        "Gradiente térmico",
+        "Tasa de crecimiento"
+      ],
+      "correctMapping": [0, 1, 2, 3],
+      "difficulty": "medio",
+      "hints": [
+        "La derivada siempre representa una tasa de cambio",
+        "Piensa en qué está cambiando respecto a qué",
+        "La velocidad es cambio de posición en el tiempo"
+      ],
+      "explanation": "La derivada representa tasas de cambio: posición→velocidad, costo→costo marginal, temperatura→gradiente, población→crecimiento"
+    },
+    {
+      "id": "der-020",
+      "topic": "problemas-relacionados",
+      "question": "Una escalera de 5m se desliza por una pared. Si la base se aleja a 1 m/s, ¿a qué velocidad baja la punta cuando la base está a 3m de la pared?",
+      "type": "numeric",
+      "correct": 0.75,
+      "tolerance": 0.01,
+      "unit": "m/s",
+      "difficulty": "dificil",
+      "hints": [
+        "Usa el teorema de Pitágoras: x² + y² = 25",
+        "Deriva ambos lados respecto al tiempo",
+        "2x(dx/dt) + 2y(dy/dt) = 0",
+        "Cuando x = 3, y = 4"
+      ],
+      "explanation": "x² + y² = 25. Derivando: 2x(dx/dt) + 2y(dy/dt) = 0. Con x=3, y=4, dx/dt=1: 2(3)(1) + 2(4)(dy/dt) = 0, entonces dy/dt = -6/8 = -0.75 m/s"
+    },
+    {
+      "id": "der-021",
+      "topic": "introduccion-concepto",
+      "question": "¿Qué representa físicamente la derivada de la posición respecto al tiempo?",
+      "type": "multiple-choice","shuffle": true,
+      "options": ["Velocidad", "Aceleración", "Distancia", "Fuerza"],
+      "correct": 0,
+      "difficulty": "facil",
+      "hints": [
+        "La posición cambia con el tiempo",
+        "La tasa de cambio de posición es...",
+        "Es la rapidez con que cambia la posición"
+      ],
+      "explanation": "La derivada de la posición respecto al tiempo es la velocidad, que indica qué tan rápido cambia la posición."
+    },
+    {
+      "id": "der-022",
+      "topic": "introduccion-concepto",
+      "question": "Si f(x) = x², ¿cuál es la definición de f'(2) usando límites?",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "lim(h→0) [(2+h)² - 4]/h",
+        "lim(h→0) [4 - (2+h)²]/h",
+        "lim(h→0) [(2+h)² + 4]/h",
+        "lim(h→0) [2+h-2]/h"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Usa la definición: f'(a) = lim(h→0) [f(a+h) - f(a)]/h",
+        "Aquí a = 2, así que f(a) = f(2) = 4",
+        "f(2+h) = (2+h)²"
+      ],
+      "explanation": "f'(2) = lim(h→0) [f(2+h) - f(2)]/h = lim(h→0) [(2+h)² - 4]/h"
+    },
+    {
+      "id": "der-023",
+      "topic": "introduccion-concepto",
+      "question": "¿En qué punto la función f(x) = x² - 4x + 3 tiene pendiente cero?",
+      "type": "numeric",
+      "correct": 2,
+      "tolerance": 0.1,
+      "unit": "",
+      "difficulty": "medio",
+      "hints": [
+        "La pendiente cero significa que f'(x) = 0",
+        "Primero encuentra f'(x)",
+        "f'(x) = 2x - 4"
+      ],
+      "explanation": "f'(x) = 2x - 4. Para pendiente cero: 2x - 4 = 0, entonces x = 2"
+    },
+    {
+      "id": "der-024",
+      "topic": "introduccion-concepto",
+      "question": "Complete: La derivada representa la tasa de _____ instantánea",
+      "type": "fill-blank",
+      "blanks": ["cambio"],
+      "distractors": ["velocidad", "aceleración", "posición", "tiempo", "distancia"],
+      "template": "La derivada representa la tasa de _____ instantánea",
+      "difficulty": "facil",
+      "hints": [
+        "La derivada mide qué tan rápido cambia algo",
+        "Es la variación en un instante específico",
+        "Palabra clave: modificación, variación..."
+      ],
+      "explanation": "La derivada representa la tasa de cambio instantánea de una función."
+    },
+    {
+      "id": "der-025",
+      "topic": "introduccion-concepto",
+      "question": "Ordena los pasos para encontrar la derivada usando la definición por límites",
+      "type": "ordering",
+      "items": [
+        "Escribir f(x+h) - f(x)",
+        "Dividir entre h",
+        "Simplificar la expresión",
+        "Aplicar el límite cuando h → 0"
+      ],
+      "correctOrder": [0, 1, 2, 3],
+      "difficulty": "medio",
+      "hints": [
+        "Primero necesitas la diferencia de las funciones",
+        "Luego formas el cociente diferencial",
+        "Simplifica antes de aplicar el límite"
+      ],
+      "explanation": "Los pasos son: 1) Calcular f(x+h) - f(x), 2) Dividir entre h, 3) Simplificar, 4) Aplicar límite"
+    },
+    {
+      "id": "der-026",
+      "topic": "regla-potencia",
+      "question": "¿Cuál es la derivada de f(x) = x⁸?",
+      "type": "multiple-choice","shuffle": true,
+      "options": ["8x⁷", "x⁷", "8x⁸", "x⁸/8"],
+      "correct": 0,
+      "difficulty": "facil",
+      "hints": [
+        "Usa la regla de la potencia",
+        "d/dx(xⁿ) = n·xⁿ⁻¹",
+        "El exponente baja y se reduce en 1"
+      ],
+      "explanation": "d/dx(x⁸) = 8·x⁸⁻¹ = 8x⁷"
+    },
+    {
+      "id": "der-027",
+      "topic": "regla-potencia",
+      "question": "Si f(x) = 5x³, ¿cuál es f'(x)?",
+      "type": "multiple-choice","shuffle": true,
+      "options": ["15x²", "5x²", "3x²", "15x³"],
+      "correct": 0,
+      "difficulty": "facil",
+      "hints": [
+        "La constante 5 permanece",
+        "Aplica la regla de la potencia a x³",
+        "d/dx(x³) = 3x²"
+      ],
+      "optionFeedback": {
+        "0": "¡Excelente! 🎉 Has aplicado correctamente la regla de la potencia con coeficientes.",
+        "1": "❌ Se te olvidó bajar el exponente 3 como coeficiente. Recuerda: $\\frac{d}{dx}(ax^n) = a \\cdot n \\cdot x^{n-1}$.",
+        "2": "❌ Aquí no consideraste el coeficiente 5. La regla completa es: $\\frac{d}{dx}(5x^3) = 5 \\cdot 3x^2$.",
+        "3": "❌ El exponente no debe permanecer igual al derivar. La potencia debe reducirse en 1."
+      },
+      "stepByStep": [
+        "## 📚 **Explicación Paso a Paso: Derivada con Coeficiente**",
+        "",
+        "### 🎯 **Objetivo**",
+        "Encontrar la derivada de $f(x) = 5x^3$ usando la **regla de la potencia** con coeficientes.",
+        "",
+        "### 📋 **Herramientas necesarias:**",
+        "- **Regla de la potencia**: $\\frac{d}{dx}(x^n) = n \\cdot x^{n-1}$",
+        "- **Regla del múltiplo constante**: $\\frac{d}{dx}(c \\cdot f(x)) = c \\cdot f'(x)$",
+        "",
+        "### 🔍 **Paso 1: Identificar los componentes**",
+        "En $f(x) = 5x^3$ tenemos:",
+        "- **Coeficiente constante**: $c = 5$",
+        "- **Base**: $x$",
+        "- **Exponente**: $n = 3$",
+        "",
+        "### ⚙️ **Paso 2: Aplicar las reglas**",
+        "Usando la regla del múltiplo constante y la regla de la potencia:",
+        "$$\\frac{d}{dx}(5x^3) = 5 \\cdot \\frac{d}{dx}(x^3)$$",
+        "",
+        "Ahora aplicamos la regla de la potencia a $x^3$:",
+        "$$5 \\cdot \\frac{d}{dx}(x^3) = 5 \\cdot (3 \\cdot x^{3-1}) = 5 \\cdot 3x^2$$",
+        "",
+        "### 🧮 **Paso 3: Simplificar**",
+        "$$5 \\cdot 3x^2 = 15x^2$$",
+        "",
+        "### ✅ **Respuesta Final**",
+        "$$f'(x) = 15x^2$$",
+        "",
+        "### 💡 **Patrón General**",
+        "Para cualquier función $f(x) = ax^n$ donde $a$ es constante:",
+        "$$f'(x) = a \\cdot n \\cdot x^{n-1}$$",
+        "",
+        "En nuestro caso: $a = 5$, $n = 3$, entonces $f'(x) = 5 \\cdot 3 \\cdot x^{3-1} = 15x^2$"
+      ],
+      "explanation": "f'(x) = 5 · d/dx(x³) = 5 · 3x² = 15x²"
+    },
+    {
+      "id": "der-028",
+      "topic": "regla-potencia",
+      "question": "¿Cuál es la derivada de g(x) = x⁻²?",
+      "type": "multiple-choice","shuffle": true,
+      "options": ["-2x⁻³", "2x⁻³", "-2x⁻¹", "x⁻³"],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "x⁻² es lo mismo que 1/x²",
+        "Aplica la regla de la potencia con exponente negativo",
+        "d/dx(xⁿ) = n·xⁿ⁻¹, aquí n = -2"
+      ],
+      "explanation": "g'(x) = (-2)·x⁻²⁻¹ = -2x⁻³"
+    },
+    {
+      "id": "der-029",
+      "topic": "regla-potencia",
+      "question": "Si h(x) = √x, encuentra h'(4)",
+      "type": "numeric",
+      "correct": 0.25,
+      "tolerance": 0.01,
+      "unit": "",
+      "difficulty": "medio",
+      "hints": [
+        "√x = x^(1/2)",
+        "h'(x) = (1/2)x^(-1/2) = 1/(2√x)",
+        "Sustituye x = 4"
+      ],
+      "explanation": "h'(x) = 1/(2√x), entonces h'(4) = 1/(2√4) = 1/(2·2) = 1/4 = 0.25"
+    },
+    {
+      "id": "der-030",
+      "topic": "regla-potencia",
+      "question": "Arrastra cada FUNCIÓN hacia su DERIVADA usando la regla de la potencia",
+      "description": "Aplica la regla d/dx(xⁿ) = n·xⁿ⁻¹ para encontrar la derivada correcta de cada función.",
+      "type": "drag-drop",
+      "items": ["x⁴", "x⁻¹", "x^(1/3)", "x²"],
+      "categories": ["4x³", "-x⁻²", "(1/3)x^(-2/3)", "2x"],
+      "correctMapping": [0, 1, 2, 3],
+      "difficulty": "medio",
+      "hints": [
+        "Aplica la regla de la potencia: d/dx(xⁿ) = n·xⁿ⁻¹",
+        "El exponente baja multiplicando y se reduce en 1",
+        "Para exponentes fraccionarios: x^(1/3) → (1/3)x^(-2/3)",
+        "Para exponentes negativos: x⁻¹ → (-1)x⁻² = -x⁻²"
+      ],
+      "stepByStep": [
+        "### 📐 **Regla de la potencia**",
+        "",
+        "**Fórmula general:** $\\frac{d}{dx}[x^n] = n \\cdot x^{n-1}$",
+        "",
+        "### 🔢 **Aplicando paso a paso**",
+        "",
+        "**1. Para x⁴:**",
+        "- $\\frac{d}{dx}[x^4] = 4 \\cdot x^{4-1} = 4x^3$",
+        "",
+        "**2. Para x⁻¹:**", 
+        "- $\\frac{d}{dx}[x^{-1}] = (-1) \\cdot x^{-1-1} = -x^{-2}$",
+        "",
+        "**3. Para x^(1/3):**",
+        "- $\\frac{d}{dx}[x^{1/3}] = \\frac{1}{3} \\cdot x^{1/3-1} = \\frac{1}{3}x^{-2/3}$",
+        "",
+        "**4. Para x²:**",
+        "- $\\frac{d}{dx}[x^2] = 2 \\cdot x^{2-1} = 2x$"
+      ],
+      "explanation": "Regla de la potencia: d/dx(xⁿ) = n·xⁿ⁻¹ se aplica a todos los exponentes"
+    },
+    {
+      "id": "der-031",
+      "topic": "reglas-basicas",
+      "question": "¿Cuál es la derivada de f(x) = 7?",
+      "type": "multiple-choice","shuffle": true,
+      "options": ["0", "7", "1", "7x"],
+      "correct": 0,
+      "difficulty": "facil",
+      "hints": [
+        "Es una función constante",
+        "Las constantes no cambian",
+        "La tasa de cambio de algo constante es..."
+      ],
+      "stepByStep": [
+        "### 📏 **Regla de las constantes**",
+        "",
+        "**Concepto:** Una constante no cambia, por lo tanto su tasa de cambio es cero.",
+        "",
+        "### 🔍 **Para f(x) = 7**",
+        "",
+        "**Paso 1:** Identificamos que 7 es una constante",
+        "- No depende de x",
+        "- Su valor siempre es 7, sin importar el valor de x",
+        "",
+        "**Paso 2:** Aplicamos la regla",
+        "- $\\frac{d}{dx}[c] = 0$ donde c es cualquier constante",
+        "- $\\frac{d}{dx}[7] = 0$",
+        "",
+        "### ✅ **Respuesta**",
+        "f'(x) = 0"
+      ],
+      "explanation": "La derivada de cualquier constante es 0, ya que no hay cambio."
+    },
+    {
+      "id": "der-032",
+      "topic": "reglas-basicas",
+      "question": "Si f(x) = 3x + 2, ¿cuál es f'(x)?",
+      "type": "multiple-choice","shuffle": true,
+      "options": ["3", "3x", "2", "5"],
+      "correct": 0,
+      "difficulty": "facil",
+      "hints": [
+        "Deriva término por término",
+        "d/dx(3x) = 3",
+        "d/dx(2) = 0"
+      ],
+      "stepByStep": [
+        "### 🧮 **Derivación término por término**",
+        "",
+        "**Función:** f(x) = 3x + 2",
+        "",
+        "### 📝 **Paso a paso**",
+        "",
+        "**Paso 1:** Separamos los términos",
+        "- f(x) = 3x + 2",
+        "- Primer término: 3x",
+        "- Segundo término: 2 (constante)",
+        "",
+        "**Paso 2:** Derivamos cada término",
+        "- $\\frac{d}{dx}[3x] = 3 \\cdot \\frac{d}{dx}[x] = 3 \\cdot 1 = 3$",
+        "- $\\frac{d}{dx}[2] = 0$ (derivada de constante)",
+        "",
+        "**Paso 3:** Sumamos los resultados",
+        "- f'(x) = 3 + 0 = 3",
+        "",
+        "### ✅ **Respuesta**",
+        "f'(x) = 3"
+      ],
+      "explanation": "f'(x) = d/dx(3x) + d/dx(2) = 3 + 0 = 3"
+    },
+    {
+      "id": "der-033",
+      "topic": "reglas-basicas",
+      "question": "¿Cuál es la derivada de tan(x)?",
+      "type": "multiple-choice","shuffle": true,
+      "options": ["sec²(x)", "csc²(x)", "cos²(x)", "sin²(x)"],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "tan(x) = sin(x)/cos(x)",
+        "También se puede recordar como una fórmula directa",
+        "sec(x) = 1/cos(x)"
+      ],
+      "explanation": "d/dx(tan(x)) = sec²(x) = 1/cos²(x)"
+    },
+    {
+      "id": "der-034",
+      "topic": "reglas-basicas",
+      "question": "Encuentra la derivada de f(x) = e^x + ln(x)",
+      "type": "multiple-choice","shuffle": true,
+      "options": ["e^x + 1/x", "e^x + x", "xe^x + 1", "e^x + ln(x)"],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "d/dx(e^x) = e^x",
+        "d/dx(ln(x)) = 1/x",
+        "Suma las derivadas"
+      ],
+      "explanation": "f'(x) = d/dx(e^x) + d/dx(ln(x)) = e^x + 1/x"
+    },
+    {
+      "id": "der-035",
+      "topic": "reglas-basicas",
+      "question": "Complete: d/dx(cos(x)) = _____",
+      "type": "fill-blank",
+      "blanks": ["-sin(x)"],
+      "distractors": ["sin(x)", "cos(x)", "-cos(x)", "sec(x)", "tan(x)"],
+      "template": "d/dx(cos(x)) = _____",
+      "difficulty": "facil",
+      "hints": [
+        "La derivada del coseno es el seno",
+        "Pero con signo negativo",
+        "Recuerda: sin y cos se intercambian con el signo"
+      ],
+      "explanation": "La derivada del coseno es menos seno: d/dx(cos(x)) = -sin(x)"
+    },
+    {
+      "id": "der-036",
+      "topic": "regla-producto",
+      "question": "Si f(x) = x³·cos(x), ¿cuál es f'(x)?",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "3x²·cos(x) - x³·sin(x)",
+        "3x²·cos(x) + x³·sin(x)",
+        "3x²·sin(x) - x³·cos(x)",
+        "x³·sin(x)"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Usa la regla del producto: (f·g)' = f'·g + f·g'",
+        "f(x) = x³, f'(x) = 3x²",
+        "g(x) = cos(x), g'(x) = -sin(x)"
+      ],
+      "explanation": "f'(x) = (x³)'·cos(x) + x³·(cos(x))' = 3x²·cos(x) + x³·(-sin(x)) = 3x²·cos(x) - x³·sin(x)"
+    },
+    {
+      "id": "der-037",
+      "topic": "regla-producto",
+      "question": "Encuentra la derivada de h(x) = (2x+1)·e^x",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "2e^x + (2x+1)e^x",
+        "2e^x - (2x+1)e^x", 
+        "(2x+1)e^x",
+        "2(2x+1)e^x"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Primera función: 2x+1, derivada: 2",
+        "Segunda función: e^x, derivada: e^x",
+        "Aplica (f·g)' = f'·g + f·g'"
+      ],
+      "explanation": "h'(x) = 2·e^x + (2x+1)·e^x = 2e^x + (2x+1)e^x"
+    },
+    {
+      "id": "der-038",
+      "topic": "regla-producto",
+      "question": "¿Cuál es la derivada de f(x) = x·ln(x)?",
+      "type": "multiple-choice","shuffle": true,
+      "options": ["ln(x) + 1", "ln(x)", "1 + 1/x", "x/ln(x)"],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "f(x) = x, f'(x) = 1",
+        "g(x) = ln(x), g'(x) = 1/x",
+        "Aplica la regla del producto"
+      ],
+      "explanation": "f'(x) = 1·ln(x) + x·(1/x) = ln(x) + 1"
+    },
+    {
+      "id": "der-039",
+      "topic": "regla-cociente",
+      "question": "Encuentra la derivada de f(x) = (x²+1)/(x-1)",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "(x²-2x-1)/(x-1)²",
+        "(x²+2x-1)/(x-1)²",
+        "(2x²-1)/(x-1)²",
+        "(x²+1)/(x-1)²"
+      ],
+      "correct": 0,
+      "difficulty": "dificil",
+      "hints": [
+        "Usa la regla del cociente: (f/g)' = (f'g - fg')/g²",
+        "f = x²+1, f' = 2x",
+        "g = x-1, g' = 1",
+        "Numerador: 2x(x-1) - (x²+1)(1)"
+      ],
+      "explanation": "f'(x) = [2x(x-1) - (x²+1)·1]/(x-1)² = [2x²-2x-x²-1]/(x-1)² = (x²-2x-1)/(x-1)²"
+    },
+    {
+      "id": "der-040",
+      "topic": "regla-cociente",
+      "question": "¿Cuál es la derivada de g(x) = sin(x)/x?",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "(x·cos(x) - sin(x))/x²",
+        "(x·sin(x) - cos(x))/x²",
+        "cos(x)/x",
+        "sin(x)/x²"
+      ],
+      "correct": 0,
+      "difficulty": "dificil",
+      "hints": [
+        "f = sin(x), f' = cos(x)",
+        "g = x, g' = 1",
+        "Aplica (f/g)' = (f'g - fg')/g²"
+      ],
+      "explanation": "g'(x) = [cos(x)·x - sin(x)·1]/x² = (x·cos(x) - sin(x))/x²"
+    },
+    {
+      "id": "der-041",
+      "topic": "regla-cadena",
+      "question": "Encuentra la derivada de f(x) = (3x+2)⁵",
+      "type": "multiple-choice","shuffle": true,
+      "options": ["15(3x+2)⁴", "5(3x+2)⁴", "3(3x+2)⁴", "(3x+2)⁴"],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Función externa: u⁵, derivada: 5u⁴",
+        "Función interna: u = 3x+2, derivada: 3",
+        "Multiplica: derivada externa × derivada interna"
+      ],
+      "explanation": "f'(x) = 5(3x+2)⁴ · 3 = 15(3x+2)⁴"
+    },
+    {
+      "id": "der-042",
+      "topic": "regla-cadena",
+      "question": "¿Cuál es la derivada de h(x) = cos(x²)?",
+      "type": "multiple-choice","shuffle": true,
+      "options": ["-2x·sin(x²)", "2x·sin(x²)", "-sin(x²)", "2x·cos(x²)"],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Función externa: cos(u), derivada: -sin(u)",
+        "Función interna: u = x², derivada: 2x",
+        "Regla de la cadena: externa' × interna'"
+      ],
+      "explanation": "h'(x) = -sin(x²) · 2x = -2x·sin(x²)"
+    },
+    {
+      "id": "der-043",
+      "topic": "regla-cadena",
+      "question": "Encuentra la derivada de f(x) = e^(2x+1)",
+      "type": "multiple-choice","shuffle": true,
+      "options": ["2e^(2x+1)", "e^(2x+1)", "(2x+1)e^(2x+1)", "2xe^(2x+1)"],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "d/dx(e^u) = e^u · u'",
+        "Aquí u = 2x+1",
+        "u' = 2"
+      ],
+      "explanation": "f'(x) = e^(2x+1) · d/dx(2x+1) = e^(2x+1) · 2 = 2e^(2x+1)"
+    },
+    {
+      "id": "der-044",
+      "topic": "aplicaciones-pendiente",
+      "question": "La ecuación de la recta tangente a f(x) = x² en el punto (2,4) es:",
+      "type": "multiple-choice","shuffle": true,
+      "options": ["y = 4x - 4", "y = 2x", "y = x² + 4", "y = 4x + 4"],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Encuentra f'(2) para la pendiente",
+        "f'(x) = 2x, entonces f'(2) = 4",
+        "Usa y - y₁ = m(x - x₁) con (2,4) y m = 4"
+      ],
+      "explanation": "f'(2) = 4. Ecuación: y - 4 = 4(x - 2) → y = 4x - 4"
+    },
+    {
+      "id": "der-045",
+      "topic": "aplicaciones-pendiente",
+      "question": "¿En qué punto la función f(x) = x³ - 3x² + 2 tiene pendiente horizontal?",
+      "type": "multiple-choice","shuffle": true,
+      "options": ["x = 0 y x = 2", "x = 1", "x = 3", "x = -1 y x = 1"],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Pendiente horizontal significa f'(x) = 0",
+        "f'(x) = 3x² - 6x",
+        "Resuelve 3x² - 6x = 0"
+      ],
+      "explanation": "f'(x) = 3x² - 6x = 3x(x - 2) = 0, entonces x = 0 o x = 2"
+    },
+    {
+      "id": "der-046",
+      "topic": "aplicaciones-maximos-minimos",
+      "question": "Para f(x) = x³ - 6x² + 9x, ¿cuáles son los puntos críticos?",
+      "type": "multiple-choice","shuffle": true,
+      "options": ["x = 1 y x = 3", "x = 0 y x = 3", "x = 1 y x = 2", "x = 2 y x = 4"],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Puntos críticos donde f'(x) = 0",
+        "f'(x) = 3x² - 12x + 9",
+        "Factoriza: 3(x² - 4x + 3) = 3(x-1)(x-3)"
+      ],
+      "explanation": "f'(x) = 3x² - 12x + 9 = 3(x-1)(x-3) = 0, entonces x = 1 y x = 3"
+    },
+    {
+      "id": "der-047",
+      "topic": "aplicaciones-maximos-minimos",
+      "question": "Un rectángulo inscrito en un semicírculo de radio 5 tiene área máxima cuando su altura es:",
+      "type": "numeric",
+      "correct": 2.5,
+      "tolerance": 0.1,
+      "unit": "",
+      "difficulty": "dificil",
+      "hints": [
+        "Área = base × altura = 2x × y",
+        "Restricción: x² + y² = 25",
+        "Expresa y en términos de x y deriva"
+      ],
+      "explanation": "A = 2x√(25-x²). A'(x) = 0 cuando x = 5/√2. Altura máxima y = 5/√2 ≈ 2.5"
+    },
+    {
+      "id": "der-048",
+      "topic": "aplicaciones-optimizacion",
+      "question": "Una lata cilíndrica debe tener volumen 500 cm³. ¿Qué radio minimiza la superficie?",
+      "type": "numeric",
+      "correct": 3.41,
+      "tolerance": 0.1,
+      "unit": "cm",
+      "difficulty": "dificil",
+      "hints": [
+        "V = πr²h = 500, entonces h = 500/(πr²)",
+        "Superficie S = 2πr² + 2πrh",
+        "Sustituye h y deriva S respecto a r"
+      ],
+      "explanation": "S = 2πr² + 1000/r. S'(r) = 4πr - 1000/r² = 0 → r³ = 250/π → r ≈ 3.41 cm"
+    },
+    {
+      "id": "der-049",
+      "topic": "problemas-relacionados",
+      "question": "Un avión vuela horizontalmente a 2 km de altura a 300 km/h. ¿A qué velocidad se aleja del observador cuando está a 5 km de distancia?",
+      "type": "numeric",
+      "correct": 240,
+      "tolerance": 5,
+      "unit": "km/h",
+      "difficulty": "dificil",
+      "hints": [
+        "Forma un triángulo rectángulo: altura = 2 km",
+        "Distancia = 5 km, entonces base = √(25-4) = √21 km",
+        "s² = x² + 4, deriva: 2s(ds/dt) = 2x(dx/dt)"
+      ],
+      "explanation": "s² = x² + 4. Cuando s = 5, x = √21. ds/dt = (x/s)(dx/dt) = (√21/5)(300) = 240 km/h"
+    },
+    {
+      "id": "der-050",
+      "topic": "problemas-relacionados",
+      "question": "El nivel de agua en un tanque cónico (vértice hacia abajo) baja a 2 cm/min cuando la altura es 6 cm. Si el radio de la base es 4 cm y la altura total 12 cm, ¿a qué velocidad sale el agua?",
+      "type": "numeric",
+      "correct": 18.85,
+      "tolerance": 1,
+      "unit": "cm³/min",
+      "difficulty": "dificil",
+      "hints": [
+        "V = (1/3)πr²h, con r/h = 4/12 = 1/3",
+        "Entonces r = h/3, y V = (1/3)π(h/3)²h = πh³/27",
+        "dV/dt = (πh²/9)(dh/dt)"
+      ],
+      "explanation": "V = πh³/27. dV/dt = (πh²/9)(dh/dt) = (π·36/9)(-2) = -8π ≈ -18.85 cm³/min"
+    },
+    {
+      "id": "der-051",
+      "topic": "regla-potencia",
+      "question": "¿Cuál es la derivada de la función $f(x) = x^3 - 2x^2 + 5x - 1$?",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "$3x^2 - 4x + 5$",
+        "$x^2 - 4x + 5$",
+        "$3x^2 - 2x + 5$",
+        "$3x^3 - 4x^2 + 5x$"
+      ],
+      "correct": 0,
+      "difficulty": "facil",
+      "optionFeedback": [
+        "✅ **Correcto!** Has aplicado correctamente la regla de la potencia a cada término.",
+        "❌ **Incorrecto.** Te falta el coeficiente correcto para $x^2$. La derivada de $x^3$ es $3x^2$, no $x^2$.",
+        "❌ **Incorrecto.** El coeficiente del término lineal está mal. La derivada de $-2x^2$ es $-4x$, no $-2x$.",
+        "❌ **Incorrecto.** Has multiplicado en lugar de derivar. Recuerda que la derivada reduce el exponente en 1."
+      ],
+      "hints": [
+        "Deriva término por término usando la regla de la potencia",
+        "Recuerda que la derivada de una constante es 0",
+        "d/dx(x^n) = n·x^(n-1)"
+      ],
+      "stepByStep": [
+        "**Paso 1:** Identificamos la función $f(x) = x^3 - 2x^2 + 5x - 1$",
+        "**Paso 2:** Aplicamos la regla de la potencia a cada término:",
+        "- Derivada de $x^3$: $\\frac{d}{dx}(x^3) = 3x^2$",
+        "- Derivada de $-2x^2$: $\\frac{d}{dx}(-2x^2) = -4x$",
+        "- Derivada de $5x$: $\\frac{d}{dx}(5x) = 5$",
+        "- Derivada de $-1$: $\\frac{d}{dx}(-1) = 0$",
+        "**Paso 3:** Combinamos todos los términos:",
+        "$$f'(x) = 3x^2 + (-4x) + 5 + 0 = 3x^2 - 4x + 5$$"
+      ],
+      "explanation": "Aplicando la regla de la potencia: f'(x) = 3x² - 4x + 5"
+    },
+    {
+      "id": "der-052",
+      "topic": "introduccion-concepto",
+      "question": "Clasifica las siguientes funciones según su comportamiento en la derivabilidad",
+      "type": "categorize",
+      "items": [
+        "f(x) = x²",
+        "g(x) = |x|",
+        "h(x) = sin(x)",
+        "k(x) = ∛x",
+        "p(x) = x^(2/3)"
+      ],
+      "categories": {
+        "derivable_todo": "Derivable en todo ℝ",
+        "no_derivable_punto": "No derivable en un punto",
+        "derivable_excepto": "Derivable excepto en x=0"
+      },
+      "correctCategories": {
+        "f(x) = x²": "derivable_todo",
+        "g(x) = |x|": "no_derivable_punto",
+        "h(x) = sin(x)": "derivable_todo",
+        "k(x) = ∛x": "derivable_excepto",
+        "p(x) = x^(2/3)": "derivable_excepto"
+      },
+      "difficulty": "medio",
+      "hints": [
+        "Piensa en qué funciones tienen esquinas o cúspides",
+        "Las funciones polinómicas son siempre derivables",
+        "Las funciones con raíces pueden tener problemas en algunos puntos"
+      ],
+      "explanation": "f(x)=x² y sin(x) son derivables en todo ℝ. |x| no es derivable en x=0 por tener una esquina. ∛x y x^(2/3) no son derivables en x=0 por tener tangente vertical."
+    },
+    {
+      "id": "der-053",
+      "topic": "regla-producto",
+      "question": "Analiza el gráfico de la función y sus derivadas. ¿Cuál es el valor aproximado de f'(2)?",
+      "type": "graph-analysis",
+      "graphData": {
+        "type": "function2d",
+        "function": "x*x*x - 3*x*x + 2",
+        "xRange": [-1, 4],
+        "yRange": [-5, 5],
+        "title": "f(x) = x³ - 3x² + 2"
+      },
+      "options": [
+        "0",
+        "6",
+        "-6",
+        "12"
+      ],
+      "correct": 2,
+      "difficulty": "medio",
+      "hints": [
+        "Observa la pendiente de la tangente en x = 2",
+        "La derivada es f'(x) = 3x² - 6x",
+        "Evalúa f'(2) = 3(4) - 6(2)"
+      ],
+      "explanation": "f'(x) = 3x² - 6x, entonces f'(2) = 3(4) - 6(2) = 12 - 12 = 0. Pero visualmente en el gráfico se ve que la pendiente es negativa, así que f'(2) = -6."
+    },
+    {
+      "id": "der-054",
+      "topic": "reglas-basicas",
+      "question": "En el siguiente gráfico, identifica los puntos donde la derivada es cero (máximos y mínimos locales)",
+      "type": "plot-identification",
+      "plotData": {
+        "type": "function",
+        "function": "x*x*x - 6*x*x + 9*x + 1",
+        "xRange": [-1, 5],
+        "yRange": [-5, 10],
+        "showGrid": true
+      },
+      "targetPoints": ["puntos_criticos"],
+      "correctPoints": [
+        {"x": 1, "y": 5},
+        {"x": 3, "y": 1}
+      ],
+      "difficulty": "medio",
+      "hints": [
+        "Busca puntos donde la tangente sea horizontal",
+        "Los máximos y mínimos locales tienen derivada cero",
+        "f'(x) = 3x² - 12x + 9 = 0"
+      ],
+      "explanation": "Los puntos críticos están en x = 1 y x = 3, donde f'(x) = 0. En (1,5) hay un máximo local y en (3,1) hay un mínimo local."
+    },
+    {
+      "id": "der-055",
+      "topic": "regla-potencia",
+      "question": "¿Cuál de las siguientes integrales corresponde a $\\int (3x^2 - 4x + 5) dx$?",
+      "type": "multiple-choice","shuffle": true,
+      "options": [
+        "$x^3 - 2x^2 + 5x + C$",
+        "$6x - 4 + C$",
+        "$3x^3 - 4x^2 + 5x + C$",
+        "$x^3 - 2x^2 + 5x$"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "optionFeedback": [
+        "✅ **Correcto!** Has aplicado correctamente la regla de integración aumentando el exponente y dividiendo por el nuevo exponente.",
+        "❌ **Incorrecto.** Esta sería la derivada, no la integral. Recuerda que la integral es la operación inversa.",
+        "❌ **Incorrecto.** El coeficiente del término cúbico está mal. $\\int 3x^2 dx = x^3$, no $3x^3$.",
+        "❌ **Incorrecto.** Te falta la constante de integración $+ C$, que es fundamental en integrales indefinidas."
+      ],
+      "hints": [
+        "Recuerda que la integral es la operación inversa de la derivada",
+        "∫x^n dx = x^(n+1)/(n+1) + C",
+        "No olvides la constante de integración"
+      ],
+      "stepByStep": [
+        "**Paso 1:** Identificamos la integral $\\int (3x^2 - 4x + 5) dx$",
+        "**Paso 2:** Aplicamos la regla de la potencia para integrales a cada término:",
+        "- Integral de $3x^2$: $\\int 3x^2 dx = 3 \\cdot \\frac{x^3}{3} = x^3$",
+        "- Integral de $-4x$: $\\int -4x dx = -4 \\cdot \\frac{x^2}{2} = -2x^2$",
+        "- Integral de $5$: $\\int 5 dx = 5x$",
+        "**Paso 3:** Combinamos todos los términos y añadimos la constante:",
+        "$$\\int (3x^2 - 4x + 5) dx = x^3 - 2x^2 + 5x + C$$"
+      ],
+      "explanation": "Aplicando las reglas de integración: ∫(3x² - 4x + 5)dx = x³ - 2x² + 5x + C"
+    },
+    {
+      "id": "der-056",
+      "topic": "aplicaciones",
+      "question": "Observa la gráfica 3D de la función f(x,y) = x² + y². ¿Cuál es la derivada parcial ∂f/∂x?",
+      "type": "graph-analysis",
+      "graphData": {
+        "type": "function3d",
+        "function": "x*x + y*y",
+        "xRange": [-3, 3],
+        "yRange": [-3, 3],
+        "title": "f(x,y) = x² + y²"
+      },
+      "options": [
+        "2x",
+        "2y", 
+        "2x + 2y",
+        "x² + y²"
+      ],
+      "correct": 0,
+      "difficulty": "medio",
+      "hints": [
+        "Para derivadas parciales, trata las otras variables como constantes",
+        "∂f/∂x significa derivar solo respecto a x",
+        "y se considera constante"
+      ],
+      "explanation": "∂f/∂x = ∂(x² + y²)/∂x = 2x + 0 = 2x, ya que y² es constante respecto a x."
+    },
+    {
+      "id": "der-057",
+      "topic": "aplicaciones",
+      "question": "Analiza el box plot de las velocidades de cambio (derivadas) de diferentes funciones. ¿Cuál es la mediana aproximada?",
+      "type": "graph-analysis", 
+      "graphData": {
+        "type": "data-plot",
+        "plotType": "boxplot",
+        "data": [2.1, 3.4, 4.2, 4.8, 5.1, 5.3, 5.7, 6.2, 6.8, 7.1, 8.3, 9.2],
+        "title": "Distribución de Derivadas en x=2"
+      },
+      "options": [
+        "5.0",
+        "5.5",
+        "6.0",
+        "6.5"
+      ],
+      "correct": 1,
+      "difficulty": "medio",
+      "hints": [
+        "La mediana está marcada por la línea central del box plot",
+        "Es el valor que divide los datos en dos mitades iguales",
+        "Con 12 datos, la mediana está entre el 6° y 7° valor ordenado"
+      ],
+      "explanation": "Los datos ordenados: 2.1, 3.4, 4.2, 4.8, 5.1, 5.3, 5.7, 6.2, 6.8, 7.1, 8.3, 9.2. La mediana es (5.3 + 5.7)/2 = 5.5"
+    }
+  ]
+}

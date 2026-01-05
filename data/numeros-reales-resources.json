@@ -1,0 +1,148 @@
+{
+  "numeros-reales": [
+    {
+      "topic": "numeros-naturales",
+      "title": "Video: Introducción a los Números Naturales",
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=IkUxVkxNm3A",
+      "description": "Explicación visual de qué son los números naturales, sus propiedades y operaciones básicas.",
+      "duration": "8 min",
+      "difficulty": "principiante"
+    },
+    {
+      "topic": "numeros-naturales",
+      "title": "Artículo: Operaciones Cerradas en ℕ",
+      "type": "article",
+      "url": "https://es.khanacademy.org/math/pre-algebra/pre-algebra-arith-prop",
+      "description": "Khan Academy explica qué operaciones están cerradas en los números naturales y por qué.",
+      "difficulty": "principiante"
+    },
+    {
+      "topic": "numeros-enteros",
+      "title": "Video: Números Enteros y la Recta Numérica",
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=d8FZF0j-pn4",
+      "description": "Comprende los números negativos, el cero y cómo representarlos en la recta numérica.",
+      "duration": "10 min",
+      "difficulty": "principiante"
+    },
+    {
+      "topic": "numeros-enteros",
+      "title": "Práctica: Operaciones con Enteros",
+      "type": "practice",
+      "url": "https://es.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic",
+      "description": "Ejercicios interactivos de suma, resta, multiplicación y división con números enteros.",
+      "difficulty": "principiante"
+    },
+    {
+      "topic": "numeros-racionales",
+      "title": "Video: ¿Qué son los Números Racionales?",
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=EBU-5ZqJqpk",
+      "description": "Explicación completa de fracciones, decimales finitos y decimales periódicos.",
+      "duration": "12 min",
+      "difficulty": "intermedio"
+    },
+    {
+      "topic": "numeros-racionales",
+      "title": "Artículo: Convertir Decimales Periódicos a Fracciones",
+      "type": "article",
+      "url": "https://www.matemovil.com/conversion-de-decimal-periodico-a-fraccion/",
+      "description": "Método algebraico para convertir 0.333... y otros decimales periódicos a fracciones.",
+      "difficulty": "intermedio"
+    },
+    {
+      "topic": "numeros-racionales",
+      "title": "Práctica: Operaciones con Fracciones",
+      "type": "practice",
+      "url": "https://es.khanacademy.org/math/pre-algebra/pre-algebra-arith-prop/pre-algebra-fractions",
+      "description": "Ejercicios de suma, resta, multiplicación y división de números racionales.",
+      "difficulty": "intermedio"
+    },
+    {
+      "topic": "numeros-irracionales",
+      "title": "Video: Números Irracionales - Pi, e y Raíces",
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=5TkIe60y2GI",
+      "description": "Descubre por qué √2, π y e no pueden escribirse como fracciones.",
+      "duration": "15 min",
+      "difficulty": "intermedio"
+    },
+    {
+      "topic": "numeros-irracionales",
+      "title": "Artículo: Demostración de que √2 es Irracional",
+      "type": "article",
+      "url": "https://www.gaussianos.com/demostracion-por-reduccion-al-absurdo-de-que-raiz-de-2-es-irracional/",
+      "description": "Demostración histórica por reducción al absurdo (descubrimiento de los pitagóricos).",
+      "difficulty": "avanzado"
+    },
+    {
+      "topic": "numeros-reales-conjunto",
+      "title": "Video: El Conjunto de Números Reales ℝ",
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=RPoBfd_X5aA",
+      "description": "Unión de racionales e irracionales. Visualización completa del sistema numérico real.",
+      "duration": "10 min",
+      "difficulty": "intermedio"
+    },
+    {
+      "topic": "numeros-reales-conjunto",
+      "title": "Diagrama: Jerarquía de Conjuntos Numéricos",
+      "type": "article",
+      "url": "https://www.unprofesor.com/matematicas/conjuntos-numericos-ejemplos-4234.html",
+      "description": "Diagrama visual mostrando ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ con ejemplos de cada conjunto.",
+      "difficulty": "principiante"
+    },
+    {
+      "topic": "recta-numerica",
+      "title": "Video: Representación en la Recta Numérica",
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=hx1VRE8V8UE",
+      "description": "Cómo ubicar números racionales e irracionales en la recta real.",
+      "duration": "8 min",
+      "difficulty": "principiante"
+    },
+    {
+      "topic": "recta-numerica",
+      "title": "Práctica: Ordenar Números en la Recta",
+      "type": "practice",
+      "url": "https://es.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic/cc-6th-number-line",
+      "description": "Ejercicios interactivos para ubicar y comparar números en la recta numérica.",
+      "difficulty": "principiante"
+    },
+    {
+      "topic": "valor-absoluto-basico",
+      "title": "Video: Concepto de Valor Absoluto",
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=CZv98KwZOOs",
+      "description": "Definición de |x| como distancia al origen. Propiedades y ejemplos.",
+      "duration": "7 min",
+      "difficulty": "principiante"
+    },
+    {
+      "topic": "valor-absoluto-basico",
+      "title": "Práctica: Ejercicios de Valor Absoluto",
+      "type": "practice",
+      "url": "https://es.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic/cc-6th-absolute-value",
+      "description": "Cálculo de valores absolutos y aplicaciones geométricas.",
+      "difficulty": "principiante"
+    },
+    {
+      "topic": "conjuntos-subconjuntos",
+      "title": "Video: Teoría de Conjuntos Básica",
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=xm0J5rJFJ7o",
+      "description": "Notación de conjuntos, pertenencia (∈), inclusión (⊂), unión e intersección.",
+      "duration": "12 min",
+      "difficulty": "intermedio"
+    },
+    {
+      "topic": "conjuntos-subconjuntos",
+      "title": "Artículo: Operaciones con Conjuntos",
+      "type": "article",
+      "url": "https://www.superprof.es/apuntes/escolar/matematicas/algebra/conjuntos/operaciones-con-conjuntos.html",
+      "description": "Unión, intersección, diferencia y complemento de conjuntos con ejemplos.",
+      "difficulty": "intermedio"
+    }
+  ]
+}
